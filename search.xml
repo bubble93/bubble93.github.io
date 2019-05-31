@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[ie盒模型和google盒模型区别]]></title>
+    <url>%2F2019%2F05%2F31%2Fie%E7%9B%92%E6%A8%A1%E5%9E%8B%E5%92%8Cgoogle%E7%9B%92%E6%A8%A1%E5%9E%8B%E5%8C%BA%E5%88%AB%2F</url>
+    <content type="text"><![CDATA[IE 盒子模型的 content 部分包含了 border 和 padding。这意味着当宽高固定时增加border和padding会压缩内容的显示，而不会扩大盒子。好处是：当想要给固定好的布局中增加border和padding的面积不会改变原有布局可通过css3新属性box-sizing来设置box-sizing: content-box|border-box|inherit;简单来说就是border-box为ie盒模型，content-box为正常盒模型，inherit为继承父元素的box-sizing值]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[MAC空格键和回车键失效问题]]></title>
+    <url>%2F2019%2F05%2F31%2FMAC%E7%A9%BA%E6%A0%BC%E9%94%AE%E5%92%8C%E5%9B%9E%E8%BD%A6%E9%94%AE%E5%A4%B1%E6%95%88%E9%97%AE%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[问题描述：空格键和回车键失效，选中输入法，选择显示虚拟键盘，按下空格以及回车后键盘不会变灰（变灰表示有反应），按下fn后再点击空格以及回车会有反应 解决方式1：按下电源键开机的同时，马上按住option + command + P + R 持续30秒 然后解决解决方式2：关机状态下，按下control + option + shift + 电源键 持续10秒ps: 需要接入电源再执行1,2 解决方式. 未接入电源情况下 1 方式失效. 百度资料OPTION+CMD+R+P+POWER：重置NVRAM 或 PRAMMac 会将某些设置储存在特殊内存区域中，而且即使关机这些设置也不会丢失（除非存在电池问题）。 在基于 Intel 的 Mac 上，存储位置是称为 NVRAM 的内存；而在基于 PowerPC 的 Mac 上，存储位置则是称为 PRAM 的内存。操作步骤为：关闭电脑。在键盘上找到以下按键：Command、Option、P 和 R。您需要在步骤 4 中同时按下这些键。启动电脑。按住 Command-Option-P-R 键。必须在出现灰屏前按下此组合键。按住上述键，直到电脑重新启动，您会再次听到启动声。松开这些键。]]></content>
+      <categories>
+        <category>电脑使用问题</category>
+      </categories>
+      <tags>
+        <tag>MAC</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Mac下使用终端查看某个端口号对应的进程和杀死进程]]></title>
     <url>%2F2019%2F05%2F31%2FMac%E4%B8%8B%E4%BD%BF%E7%94%A8%E7%BB%88%E7%AB%AF%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AF%B9%E5%BA%94%E7%9A%84%E8%BF%9B%E7%A8%8B%E5%92%8C%E6%9D%80%E6%AD%BB%E8%BF%9B%E7%A8%8B%2F</url>
     <content type="text"><![CDATA[lsof -i tcp:port，port即为端口号，如5037kill PID 进程id，PID就是上面我们查到的的PID。]]></content>
