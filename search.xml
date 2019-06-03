@@ -1,6 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[vscode更改其他后缀文件识别为html文件方法]]></title>
+    <url>%2F2019%2F06%2F03%2Fvscode%E6%9B%B4%E6%94%B9%E5%85%B6%E4%BB%96%E5%90%8E%E7%BC%80%E6%96%87%E4%BB%B6%E8%AF%86%E5%88%AB%E4%B8%BAhtml%E6%96%87%E4%BB%B6%E6%96%B9%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[File -&gt; Preferences -&gt; setting -&gt; Edit in setting.json增加属性 “files.associations”: { “*.tpl”: “html” }]]></content>
+      <categories>
+        <category>开发工具</category>
+      </categories>
+      <tags>
+        <tag>vscode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[git拉取远程分支文件]]></title>
+    <url>%2F2019%2F06%2F03%2Fgit%E6%8B%89%E5%8F%96%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E6%96%87%E4%BB%B6%2F</url>
+    <content type="text"><![CDATA[git拉取远程分支文件 拉取远程分支 git fetch &lt;远程主机名&gt; &lt;分支名&gt; 取回更新并在本地创建新的分支 git checkout -b newBrach origin/master 切换回本地分支git checkout &lt;分支名&gt; 合并新创建的分支到当前分支上 git merge ps：查看分支：git branch创建分支：git branch 切换分支：git checkout 创建+切换分支：git checkout -b 合并某分支到当前分支：git merge 删除分支：git branch -d]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[本地分支提交到远程分支，并不同名]]></title>
+    <url>%2F2019%2F06%2F03%2F%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E6%8F%90%E4%BA%A4%E5%88%B0%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%EF%BC%8C%E5%B9%B6%E4%B8%8D%E5%90%8C%E5%90%8D%2F</url>
+    <content type="text"><![CDATA[本地分支提交到远程分支，并不同名 提交当前分支到指定分支$ git branch –set-upstream-to=origin/production]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[git忽略文件]]></title>
+    <url>%2F2019%2F06%2F03%2Fgit%E5%BF%BD%E7%95%A5%E6%96%87%E4%BB%B6%2F</url>
+    <content type="text"><![CDATA[https://www.cnblogs.com/kevingrace/p/5690241.html .gitignore]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[使用Git下载指定分支命令为]]></title>
+    <url>%2F2019%2F06%2F03%2F%E4%BD%BF%E7%94%A8Git%E4%B8%8B%E8%BD%BD%E6%8C%87%E5%AE%9A%E5%88%86%E6%94%AF%E5%91%BD%E4%BB%A4%E4%B8%BA%2F</url>
+    <content type="text"><![CDATA[使用Git下载指定分支命令为：git clone -b 分支名 仓库地址]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[将远程分支与本地分支进行关联]]></title>
+    <url>%2F2019%2F06%2F03%2F%E5%B0%86%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E4%B8%8E%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E8%BF%9B%E8%A1%8C%E5%85%B3%E8%81%94%2F</url>
+    <content type="text"><![CDATA[git pull origin master(如果你想拉到本地的dev分支上，首先git checkout -b dev，然后使用git pull origin dev，这样就将本地dev分支与远程origin/dev相绑定了） git branch -vv可以看到master后面蓝色部分origin/master，说明master分支已经与origin/master绑定在一起了]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[给hexo添加搜索功能]]></title>
     <url>%2F2019%2F06%2F03%2F%E7%BB%99hexo%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD%2F</url>
     <content type="text"><![CDATA[按网上配置https://www.jianshu.com/p/d388119a90ec发布后弹出警告 YAMLException: duplicated mapping key at line 863, column -677: local_search: 运行后就直接报错 有两份重复配置导致的 最后发现原因是next默认有seach 的配置，但设置为false。 保留其一即可]]></content>

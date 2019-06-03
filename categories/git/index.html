@@ -98,7 +98,7 @@
 
   <meta property="og:type" content="website">
 <meta property="og:title" content="bubble">
-<meta property="og:url" content="http://www.bubbleo.club/tags/hexo/index.html">
+<meta property="og:url" content="http://www.bubbleo.club/categories/git/index.html">
 <meta property="og:site_name" content="bubble">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
@@ -110,7 +110,7 @@
 
   
   
-  <link rel="canonical" href="http://www.bubbleo.club/tags/hexo/">
+  <link rel="canonical" href="http://www.bubbleo.club/categories/git/">
 
 
 
@@ -120,7 +120,7 @@
   };
 </script>
 
-  <title>Tag: hexo | bubble</title>
+  <title>Category: git | bubble</title>
   
 
 
@@ -314,11 +314,11 @@
   
   
   
-  <div class="post-block tag">
+  <div class="post-block category">
 
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h1>hexo<small>Tag</small>
+        <h1>git<small>Category</small>
         </h1>
       </div>
 
@@ -330,17 +330,121 @@
 
       <h2 class="post-title">
         
-          <a class="post-title-link" href="/2019/05/31/未找到相关的Issues进行评论，请联系XXX进行创建/" itemprop="url">
+          <a class="post-title-link" href="/2019/06/03/git拉取远程分支文件/" itemprop="url">
             
-              <span itemprop="name">未找到相关的Issues进行评论，请联系XXX进行创建</span>
+              <span itemprop="name">git拉取远程分支文件</span>
             
           </a>
         
       </h2>
 
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-31T18:25:14+08:00" content="2019-05-31">
-          05-31
+        <time class="post-time" itemprop="dateCreated" datetime="2019-06-03T13:24:04+08:00" content="2019-06-03">
+          06-03
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+          <a class="post-title-link" href="/2019/06/03/本地分支提交到远程分支，并不同名/" itemprop="url">
+            
+              <span itemprop="name">本地分支提交到远程分支，并不同名</span>
+            
+          </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-06-03T13:23:37+08:00" content="2019-06-03">
+          06-03
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+          <a class="post-title-link" href="/2019/06/03/git忽略文件/" itemprop="url">
+            
+              <span itemprop="name">git忽略文件</span>
+            
+          </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-06-03T13:23:04+08:00" content="2019-06-03">
+          06-03
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+          <a class="post-title-link" href="/2019/06/03/使用Git下载指定分支命令为/" itemprop="url">
+            
+              <span itemprop="name">使用Git下载指定分支命令为</span>
+            
+          </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-06-03T13:22:34+08:00" content="2019-06-03">
+          06-03
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+          <a class="post-title-link" href="/2019/06/03/将远程分支与本地分支进行关联/" itemprop="url">
+            
+              <span itemprop="name">将远程分支与本地分支进行关联</span>
+            
+          </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-06-03T13:20:51+08:00" content="2019-06-03">
+          06-03
         </time>
       </div>
 
@@ -936,61 +1040,6 @@
     // handle and trigger popup window;
     $('.popup-trigger').click(function(e) {
       e.stopPropagation();
-      if (isfetched === false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
-    });
-
-    $('.popup-btn-close').click(onPopupClose);
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-    $(document).on('keyup', function (event) {
-      var shouldDismissSearchPopup = event.which === 27 &&
-        $('.search-popup').is(':visible');
-      if (shouldDismissSearchPopup) {
-        onPopupClose();
-      }
-    });
-  </script>
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-</body>
-</html>
-e.stopPropagation();
       if (isfetched === false) {
         searchFunc(path, 'local-search-input', 'local-search-result');
       } else {
