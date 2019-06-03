@@ -1,235 +1,534 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title><![CDATA[div水平垂直居中方式]]></title>
-    <url>%2F2019%2F06%2F03%2Fdiv%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E6%96%B9%E5%BC%8F%2F</url>
-    <content type="text"><![CDATA[1 div{ width: 200px; height: 200px; background: green; position:absolute; left:0; top: 0; bottom: 0; right: 0; margin: auto; } 2 div{ width:200px; height: 200px; background:green; position: absolute; left:50%; top:50%; margin-left:-100px; margin-top:-100px; } 3 div{ width: 200px; height: 200px; background: green; position:absolute; left:50%; /* 定位父级的50% / top:50%; transform: translate(-50%,-50%); /自己的50% */ }]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>div水平垂直居中方式</title>
+      <link href="/2019/06/03/div%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E6%96%B9%E5%BC%8F/"/>
+      <url>/2019/06/03/div%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E6%96%B9%E5%BC%8F/</url>
+      
+        <content type="html"><![CDATA[<p>1        div{<br>            width: 200px;<br>            height: 200px;<br>            background: green;<br>            position:absolute;<br>            left:0;<br>            top: 0;<br>            bottom: 0;<br>            right: 0;<br>            margin: auto;<br>            }<br>    2<br>        div{<br>            width:200px;<br>            height: 200px;<br>            background:green;<br>            position: absolute;<br>            left:50%;<br>            top:50%;<br>            margin-left:-100px;<br>            margin-top:-100px;<br>        }<br>    3<br>        div{<br>            width: 200px;<br>            height: 200px;<br>            background: green;<br>            position:absolute;<br>            left:50%;    /* 定位父级的50% <em>/            top:50%;<br>            transform: translate(-50%,-50%); /</em>自己的50% */<br>        }</p>]]></content>
+      
+      
       <categories>
-        <category>前端</category>
+          
+          <category> 前端 </category>
+          
       </categories>
-      <tags>
-        <tag>CSS</tag>
-        <tag>前端面试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[typeof返回值]]></title>
-    <url>%2F2019%2F06%2F03%2Ftypeof%E8%BF%94%E5%9B%9E%E5%80%BC%2F</url>
-    <content type="text"><![CDATA[// 基本数据类型// number类型var num = 1;console.log(typeof num);//返回的是number// string 类型var str = ‘jack’;console.log(typeof str);//返回的是string// boolean类型var boo =true;console.log(typeof boo);//返回的是boolean// undefined类型var und ;console.log(typeof und);//返回的是undefined// null类型var nul =null;console.log(nul); //返回的是null // 可以得出：基本数据类型返回的是自己对应的类型 // 复杂数据类型// Array类型var arr = new Array();console.log(typeof arr); //返回的是object// function类型var fn = function(){};console.log(typeof fn); //返回的是function// Object类型var obj = new Object();console.log(typeof obj); //返回的是object// 字面量的数组var arr2 = [1,32];console.log(typeof arr2);//返回的是object // 自定义对象function Person(name){ this.name =name;} var stu = new Person();console.log(typeof stu); //返回的是object]]></content>
+      
+      
+        <tags>
+            
+            <tag> CSS </tag>
+            
+            <tag> 前端面试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>typeof返回值</title>
+      <link href="/2019/06/03/typeof%E8%BF%94%E5%9B%9E%E5%80%BC/"/>
+      <url>/2019/06/03/typeof%E8%BF%94%E5%9B%9E%E5%80%BC/</url>
+      
+        <content type="html"><![CDATA[<p>// 基本数据类型<br>// number类型<br>var num = 1;<br>console.log(typeof num);//返回的是number<br>// string 类型<br>var str = ‘jack’;<br>console.log(typeof str);//返回的是string<br>// boolean类型<br>var boo =true;<br>console.log(typeof boo);//返回的是boolean<br>// undefined类型<br>var und ;<br>console.log(typeof und);//返回的是undefined<br>// null类型<br>var nul =null;<br>console.log(nul); //返回的是null</p><p>// 可以得出：基本数据类型返回的是自己对应的类型</p><p>// 复杂数据类型<br>// Array类型<br>var arr = new Array();<br>console.log(typeof arr); //返回的是object<br>// function类型<br>var fn = function(){};<br>console.log(typeof fn); //返回的是function<br>// Object类型<br>var  obj = new Object();<br>console.log(typeof obj); //返回的是object<br>// 字面量的数组<br>var arr2 = [1,32];<br>console.log(typeof arr2);//返回的是object</p><p>// 自定义对象<br>function Person(name){<br>    this.name =name;<br>}</p><p>var stu = new Person();<br>console.log(typeof stu); //返回的是object</p>]]></content>
+      
+      
       <categories>
-        <category>前端</category>
+          
+          <category> 前端 </category>
+          
       </categories>
-      <tags>
-        <tag>前端面试</tag>
-        <tag>js</tag>
-        <tag>前端基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[状态码整理]]></title>
-    <url>%2F2019%2F06%2F03%2F%E7%8A%B6%E6%80%81%E7%A0%81%E6%95%B4%E7%90%86%2F</url>
-    <content type="text"><![CDATA[200 OK 请求正常处理完毕204 No Content 请求成功处理，没有实体的主体返回206 Partial Content GET范围请求已成功处理301 Moved Permanently 永久重定向，资源已永久分配新URI302 Found 临时重定向，资源已临时分配新URI303 See Other 临时重定向，期望使用GET定向获取304 Not Modified 发送的附带条件请求未满足307 Temporary Redirect 临时重定向，POST不会变成GET400 Bad Request 请求报文语法错误或参数错误401 Unauthorized 需要通过HTTP认证，或认证失败403 Forbidden 请求资源被拒绝404 Not Found 无法找到请求资源（服务器无理由拒绝）500 Internal Server Error 服务器故障或Web应用故障503 Service Unavailable 服务器超负载或停机维护]]></content>
+      
+      
+        <tags>
+            
+            <tag> 前端面试 </tag>
+            
+            <tag> js </tag>
+            
+            <tag> 前端基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>状态码整理</title>
+      <link href="/2019/06/03/%E7%8A%B6%E6%80%81%E7%A0%81%E6%95%B4%E7%90%86/"/>
+      <url>/2019/06/03/%E7%8A%B6%E6%80%81%E7%A0%81%E6%95%B4%E7%90%86/</url>
+      
+        <content type="html"><![CDATA[<p>200 OK 请求正常处理完毕<br>204 No Content 请求成功处理，没有实体的主体返回<br>206 Partial Content GET范围请求已成功处理<br>301 Moved Permanently 永久重定向，资源已永久分配新URI<br>302 Found 临时重定向，资源已临时分配新URI<br>303 See Other 临时重定向，期望使用GET定向获取<br>304 Not Modified 发送的附带条件请求未满足<br>307 Temporary Redirect 临时重定向，POST不会变成GET<br>400 Bad Request 请求报文语法错误或参数错误<br>401 Unauthorized 需要通过HTTP认证，或认证失败<br>403 Forbidden 请求资源被拒绝<br>404 Not Found 无法找到请求资源（服务器无理由拒绝）<br>500 Internal Server Error 服务器故障或Web应用故障<br>503 Service Unavailable 服务器超负载或停机维护</p>]]></content>
+      
+      
       <categories>
-        <category>前端</category>
+          
+          <category> 前端 </category>
+          
       </categories>
-      <tags>
-        <tag>JS</tag>
-        <tag>http</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[ES6新增特性]]></title>
-    <url>%2F2019%2F06%2F03%2FES6%E6%96%B0%E5%A2%9E%E7%89%B9%E6%80%A7%2F</url>
-    <content type="text"><![CDATA[1.默认参数 var height || 502.模板表达式 ${name} 使用反引号3.拼接多行字符串 使用反引号包裹文字开头结尾即可，不必在每个换行使用+4.拆包表达式 var {username, password} = req.body 可以直接获取body中对应的属性值5.箭头函数 this在上下文和函数中的值应当是相同的， 而箭头函数可以帮我们确保这一点6.Promise 可以异步执行js代码，使用then形成链式调用7.块级作用于：let：声明块级变量 const 声明块级变量并且不可修改8.模块化 通过module.export导出，使用import导入9.引入了class和extends]]></content>
+      
+      
+        <tags>
+            
+            <tag> JS </tag>
+            
+            <tag> http </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ES6新增特性</title>
+      <link href="/2019/06/03/ES6%E6%96%B0%E5%A2%9E%E7%89%B9%E6%80%A7/"/>
+      <url>/2019/06/03/ES6%E6%96%B0%E5%A2%9E%E7%89%B9%E6%80%A7/</url>
+      
+        <content type="html"><![CDATA[<p>1.默认参数    var height || 50<br>2.模板表达式 <code>${name}</code>    使用反引号<br>3.拼接多行字符串    使用反引号包裹文字开头结尾即可，不必在每个换行使用+<br>4.拆包表达式 var {username, password} = req.body 可以直接获取body中对应的属性值<br>5.箭头函数 this在上下文和函数中的值应当是相同的， 而箭头函数可以帮我们确保这一点<br>6.Promise    可以异步执行js代码，使用then形成链式调用<br>7.块级作用于：let：声明块级变量  const 声明块级变量并且不可修改<br>8.模块化 通过module.export导出，使用import导入<br>9.引入了class和extends</p>]]></content>
+      
+      
       <categories>
-        <category>前端</category>
+          
+          <category> 前端 </category>
+          
       </categories>
-      <tags>
-        <tag>ES6</tag>
-        <tag>JS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[apply,call,bind用法和区别]]></title>
-    <url>%2F2019%2F06%2F03%2Fapply-call-bind%E7%94%A8%E6%B3%95%E5%92%8C%E5%8C%BA%E5%88%AB%2F</url>
-    <content type="text"><![CDATA[apply和call的作用都是改变this的指向，并传入参数 区别在于接收参数方式不同，例如： var func = function(arg1, arg2) { }; func.call(this, arg1, arg2); func.apply(this, [arg1, arg2]) bind作用也是改变this的指向，区别在于改变this指向后并不会执行该方法，而是返回一个函数。]]></content>
+      
+      
+        <tags>
+            
+            <tag> ES6 </tag>
+            
+            <tag> JS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>apply,call,bind用法和区别</title>
+      <link href="/2019/06/03/apply-call-bind%E7%94%A8%E6%B3%95%E5%92%8C%E5%8C%BA%E5%88%AB/"/>
+      <url>/2019/06/03/apply-call-bind%E7%94%A8%E6%B3%95%E5%92%8C%E5%8C%BA%E5%88%AB/</url>
+      
+        <content type="html"><![CDATA[<p>apply和call的作用都是改变this的指向，并传入参数<br>    区别在于接收参数方式不同，例如：<br>        var func = function(arg1, arg2) {<br>        };<br>        func.call(this, arg1, arg2);<br>        func.apply(this, [arg1, arg2])<br>    bind作用也是改变this的指向，区别在于改变this指向后并不会执行该方法，而是返回一个函数。</p>]]></content>
+      
+      
       <categories>
-        <category>前端</category>
+          
+          <category> 前端 </category>
+          
       </categories>
-      <tags>
-        <tag>JS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[文本垂直居中]]></title>
-    <url>%2F2019%2F06%2F03%2F%E6%96%87%E6%9C%AC%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%2F</url>
-    <content type="text"><![CDATA[{ height: 40px; line-height: 40px; }]]></content>
+      
+      
+        <tags>
+            
+            <tag> JS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>文本垂直居中</title>
+      <link href="/2019/06/03/%E6%96%87%E6%9C%AC%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/"/>
+      <url>/2019/06/03/%E6%96%87%E6%9C%AC%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/</url>
+      
+        <content type="html"><![CDATA[<pre><code>{    height: 40px;        line-height: 40px;}</code></pre>]]></content>
+      
+      
       <categories>
-        <category>前端</category>
+          
+          <category> 前端 </category>
+          
       </categories>
-      <tags>
-        <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[css隐藏元素]]></title>
-    <url>%2F2019%2F06%2F03%2Fcss%E9%9A%90%E8%97%8F%E5%85%83%E7%B4%A0%2F</url>
-    <content type="text"><![CDATA[visibility: hidden 显示设置为隐藏 还占据元素本身位置 display: none; 不占据元素本身位置 opacity: 0; 透明度设置为0 还占据元素本身位置 position 设为 absolute 然后将位置设到不可见区域]]></content>
+      
+      
+        <tags>
+            
+            <tag> CSS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>css隐藏元素</title>
+      <link href="/2019/06/03/css%E9%9A%90%E8%97%8F%E5%85%83%E7%B4%A0/"/>
+      <url>/2019/06/03/css%E9%9A%90%E8%97%8F%E5%85%83%E7%B4%A0/</url>
+      
+        <content type="html"><![CDATA[<pre><code>visibility: hidden    显示设置为隐藏    还占据元素本身位置display: none;                                        不占据元素本身位置opacity: 0;    透明度设置为0                            还占据元素本身位置position 设为 absolute 然后将位置设到不可见区域</code></pre>]]></content>
+      
+      
       <categories>
-        <category>前端</category>
+          
+          <category> 前端 </category>
+          
       </categories>
-      <tags>
-        <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[清除浮动]]></title>
-    <url>%2F2019%2F06%2F03%2F%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%2F</url>
-    <content type="text"><![CDATA[1 设置父元素高度 2 在父元素标签结束前增加div并设置样式为 clear:both 3 在父元素中增加样式 overflow:hidden 新增伪类：before 也可以用于清除浮动（待更新）]]></content>
+      
+      
+        <tags>
+            
+            <tag> CSS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>清除浮动</title>
+      <link href="/2019/06/03/%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8/"/>
+      <url>/2019/06/03/%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8/</url>
+      
+        <content type="html"><![CDATA[<pre><code>1 设置父元素高度2 在父元素标签结束前增加div并设置样式为 clear:both3 在父元素中增加样式 overflow:hidden</code></pre><blockquote><p>新增伪类：before 也可以用于清除浮动（待更新）</p></blockquote>]]></content>
+      
+      
       <categories>
-        <category>前端</category>
+          
+          <category> 前端 </category>
+          
       </categories>
-      <tags>
-        <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[vscode更改其他后缀文件识别为html文件方法]]></title>
-    <url>%2F2019%2F06%2F03%2Fvscode%E6%9B%B4%E6%94%B9%E5%85%B6%E4%BB%96%E5%90%8E%E7%BC%80%E6%96%87%E4%BB%B6%E8%AF%86%E5%88%AB%E4%B8%BAhtml%E6%96%87%E4%BB%B6%E6%96%B9%E6%B3%95%2F</url>
-    <content type="text"><![CDATA[File -&gt; Preferences -&gt; setting -&gt; Edit in setting.json增加属性 “files.associations”: { “*.tpl”: “html” }]]></content>
+      
+      
+        <tags>
+            
+            <tag> CSS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>vscode更改其他后缀文件识别为html文件方法</title>
+      <link href="/2019/06/03/vscode%E6%9B%B4%E6%94%B9%E5%85%B6%E4%BB%96%E5%90%8E%E7%BC%80%E6%96%87%E4%BB%B6%E8%AF%86%E5%88%AB%E4%B8%BAhtml%E6%96%87%E4%BB%B6%E6%96%B9%E6%B3%95/"/>
+      <url>/2019/06/03/vscode%E6%9B%B4%E6%94%B9%E5%85%B6%E4%BB%96%E5%90%8E%E7%BC%80%E6%96%87%E4%BB%B6%E8%AF%86%E5%88%AB%E4%B8%BAhtml%E6%96%87%E4%BB%B6%E6%96%B9%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<p>File -&gt;    Preferences -&gt; setting -&gt; Edit in setting.json<br>增加属性<br>    “files.associations”: {<br>            “*.tpl”: “html”<br>    }</p>]]></content>
+      
+      
       <categories>
-        <category>开发工具</category>
+          
+          <category> 开发工具 </category>
+          
       </categories>
-      <tags>
-        <tag>vscode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[git拉取远程分支文件]]></title>
-    <url>%2F2019%2F06%2F03%2Fgit%E6%8B%89%E5%8F%96%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E6%96%87%E4%BB%B6%2F</url>
-    <content type="text"><![CDATA[git拉取远程分支文件 拉取远程分支 git fetch &lt;远程主机名&gt; &lt;分支名&gt; 取回更新并在本地创建新的分支 git checkout -b newBrach origin/master 切换回本地分支git checkout &lt;分支名&gt; 合并新创建的分支到当前分支上 git merge ps：查看分支：git branch创建分支：git branch 切换分支：git checkout 创建+切换分支：git checkout -b 合并某分支到当前分支：git merge 删除分支：git branch -d]]></content>
+      
+      
+        <tags>
+            
+            <tag> vscode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>git拉取远程分支文件</title>
+      <link href="/2019/06/03/git%E6%8B%89%E5%8F%96%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E6%96%87%E4%BB%B6/"/>
+      <url>/2019/06/03/git%E6%8B%89%E5%8F%96%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E6%96%87%E4%BB%B6/</url>
+      
+        <content type="html"><![CDATA[<p>git拉取远程分支文件</p><ol><li><p>拉取远程分支 git fetch &lt;远程主机名&gt; &lt;分支名&gt;</p></li><li><p>取回更新并在本地创建新的分支 git checkout -b newBrach origin/master</p></li><li><p>切换回本地分支git checkout &lt;分支名&gt;</p></li><li><p>合并新创建的分支到当前分支上 git merge <name></name></p></li></ol><blockquote><p>ps：<br>查看分支：git branch<br>创建分支：git branch <name><br>切换分支：git checkout <name><br>创建+切换分支：git checkout -b <name><br>合并某分支到当前分支：git merge <name><br>删除分支：git branch -d <name></name></name></name></name></name></p></blockquote>]]></content>
+      
+      
       <categories>
-        <category>git</category>
+          
+          <category> git </category>
+          
       </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[本地分支提交到远程分支，并不同名]]></title>
-    <url>%2F2019%2F06%2F03%2F%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E6%8F%90%E4%BA%A4%E5%88%B0%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%EF%BC%8C%E5%B9%B6%E4%B8%8D%E5%90%8C%E5%90%8D%2F</url>
-    <content type="text"><![CDATA[本地分支提交到远程分支，并不同名 提交当前分支到指定分支$ git branch –set-upstream-to=origin/production]]></content>
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>本地分支提交到远程分支，并不同名</title>
+      <link href="/2019/06/03/%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E6%8F%90%E4%BA%A4%E5%88%B0%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%EF%BC%8C%E5%B9%B6%E4%B8%8D%E5%90%8C%E5%90%8D/"/>
+      <url>/2019/06/03/%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E6%8F%90%E4%BA%A4%E5%88%B0%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%EF%BC%8C%E5%B9%B6%E4%B8%8D%E5%90%8C%E5%90%8D/</url>
+      
+        <content type="html"><![CDATA[<p>本地分支提交到远程分支，并不同名</p><p>提交当前分支到指定分支<br>$ git branch –set-upstream-to=origin/production</p>]]></content>
+      
+      
       <categories>
-        <category>git</category>
+          
+          <category> git </category>
+          
       </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[git忽略文件]]></title>
-    <url>%2F2019%2F06%2F03%2Fgit%E5%BF%BD%E7%95%A5%E6%96%87%E4%BB%B6%2F</url>
-    <content type="text"><![CDATA[https://www.cnblogs.com/kevingrace/p/5690241.html .gitignore]]></content>
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>git忽略文件</title>
+      <link href="/2019/06/03/git%E5%BF%BD%E7%95%A5%E6%96%87%E4%BB%B6/"/>
+      <url>/2019/06/03/git%E5%BF%BD%E7%95%A5%E6%96%87%E4%BB%B6/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://www.cnblogs.com/kevingrace/p/5690241.html" target="_blank" rel="noopener">https://www.cnblogs.com/kevingrace/p/5690241.html</a></p><p>.gitignore</p>]]></content>
+      
+      
       <categories>
-        <category>git</category>
+          
+          <category> git </category>
+          
       </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[使用Git下载指定分支命令为]]></title>
-    <url>%2F2019%2F06%2F03%2F%E4%BD%BF%E7%94%A8Git%E4%B8%8B%E8%BD%BD%E6%8C%87%E5%AE%9A%E5%88%86%E6%94%AF%E5%91%BD%E4%BB%A4%E4%B8%BA%2F</url>
-    <content type="text"><![CDATA[使用Git下载指定分支命令为：git clone -b 分支名 仓库地址]]></content>
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>使用Git下载指定分支命令为</title>
+      <link href="/2019/06/03/%E4%BD%BF%E7%94%A8Git%E4%B8%8B%E8%BD%BD%E6%8C%87%E5%AE%9A%E5%88%86%E6%94%AF%E5%91%BD%E4%BB%A4%E4%B8%BA/"/>
+      <url>/2019/06/03/%E4%BD%BF%E7%94%A8Git%E4%B8%8B%E8%BD%BD%E6%8C%87%E5%AE%9A%E5%88%86%E6%94%AF%E5%91%BD%E4%BB%A4%E4%B8%BA/</url>
+      
+        <content type="html"><![CDATA[<p>使用Git下载指定分支命令为：git clone -b 分支名 仓库地址</p>]]></content>
+      
+      
       <categories>
-        <category>git</category>
+          
+          <category> git </category>
+          
       </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[将远程分支与本地分支进行关联]]></title>
-    <url>%2F2019%2F06%2F03%2F%E5%B0%86%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E4%B8%8E%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E8%BF%9B%E8%A1%8C%E5%85%B3%E8%81%94%2F</url>
-    <content type="text"><![CDATA[git pull origin master(如果你想拉到本地的dev分支上，首先git checkout -b dev，然后使用git pull origin dev，这样就将本地dev分支与远程origin/dev相绑定了） git branch -vv可以看到master后面蓝色部分origin/master，说明master分支已经与origin/master绑定在一起了]]></content>
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>将远程分支与本地分支进行关联</title>
+      <link href="/2019/06/03/%E5%B0%86%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E4%B8%8E%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E8%BF%9B%E8%A1%8C%E5%85%B3%E8%81%94/"/>
+      <url>/2019/06/03/%E5%B0%86%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E4%B8%8E%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E8%BF%9B%E8%A1%8C%E5%85%B3%E8%81%94/</url>
+      
+        <content type="html"><![CDATA[<p>git pull origin master<br>(如果你想拉到本地的dev分支上，首先git checkout -b dev，然后使用git pull origin dev，这样就将本地dev分支与远程origin/dev相绑定了）</p><p>git branch -vv<br>可以看到master后面蓝色部分origin/master，说明master分支已经与origin/master绑定在一起了</p>]]></content>
+      
+      
       <categories>
-        <category>git</category>
+          
+          <category> git </category>
+          
       </categories>
-      <tags>
-        <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[给hexo添加搜索功能]]></title>
-    <url>%2F2019%2F06%2F03%2F%E7%BB%99hexo%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD%2F</url>
-    <content type="text"><![CDATA[按网上配置https://www.jianshu.com/p/d388119a90ec发布后弹出警告 YAMLException: duplicated mapping key at line 863, column -677: local_search: 运行后就直接报错 有两份重复配置导致的 最后发现原因是next默认有seach 的配置，但设置为false。 保留其一即可]]></content>
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>给hexo添加搜索功能</title>
+      <link href="/2019/06/03/%E7%BB%99hexo%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/"/>
+      <url>/2019/06/03/%E7%BB%99hexo%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</url>
+      
+        <content type="html"><![CDATA[<p>按网上配置<a href="https://www.jianshu.com/p/d388119a90ec" target="_blank" rel="noopener">https://www.jianshu.com/p/d388119a90ec</a><br>发布后弹出警告 YAMLException: duplicated mapping key at line 863, column -677:<br>    local_search:</p><p>运行后就直接报错</p><p>有两份重复配置导致的</p><p>最后发现原因是next默认有seach 的配置，但设置为false。</p><p>保留其一即可</p>]]></content>
+      
+      
       <categories>
-        <category>博客建站</category>
+          
+          <category> 博客建站 </category>
+          
       </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[未找到相关的Issues进行评论，请联系XXX进行创建]]></title>
-    <url>%2F2019%2F05%2F31%2F%E6%9C%AA%E6%89%BE%E5%88%B0%E7%9B%B8%E5%85%B3%E7%9A%84Issues%E8%BF%9B%E8%A1%8C%E8%AF%84%E8%AE%BA%EF%BC%8C%E8%AF%B7%E8%81%94%E7%B3%BBXXX%E8%BF%9B%E8%A1%8C%E5%88%9B%E5%BB%BA%2F</url>
-    <content type="text"><![CDATA[设置个性化域名后回调地址要填写个性化域名地址！]]></content>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>未找到相关的Issues进行评论，请联系XXX进行创建</title>
+      <link href="/2019/05/31/%E6%9C%AA%E6%89%BE%E5%88%B0%E7%9B%B8%E5%85%B3%E7%9A%84Issues%E8%BF%9B%E8%A1%8C%E8%AF%84%E8%AE%BA%EF%BC%8C%E8%AF%B7%E8%81%94%E7%B3%BBXXX%E8%BF%9B%E8%A1%8C%E5%88%9B%E5%BB%BA/"/>
+      <url>/2019/05/31/%E6%9C%AA%E6%89%BE%E5%88%B0%E7%9B%B8%E5%85%B3%E7%9A%84Issues%E8%BF%9B%E8%A1%8C%E8%AF%84%E8%AE%BA%EF%BC%8C%E8%AF%B7%E8%81%94%E7%B3%BBXXX%E8%BF%9B%E8%A1%8C%E5%88%9B%E5%BB%BA/</url>
+      
+        <content type="html"><![CDATA[<p>设置个性化域名后回调地址要填写个性化域名地址！<br><img src="/images/gittalk%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8.png" alt="gittalk评论无法使用"></p>]]></content>
+      
+      
       <categories>
-        <category>博客建站</category>
+          
+          <category> 博客建站 </category>
+          
       </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>github</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[ie盒模型和google盒模型区别]]></title>
-    <url>%2F2019%2F05%2F31%2Fie%E7%9B%92%E6%A8%A1%E5%9E%8B%E5%92%8Cgoogle%E7%9B%92%E6%A8%A1%E5%9E%8B%E5%8C%BA%E5%88%AB%2F</url>
-    <content type="text"><![CDATA[IE 盒子模型的 content 部分包含了 border 和 padding。这意味着当宽高固定时增加border和padding会压缩内容的显示，而不会扩大盒子。好处是：当想要给固定好的布局中增加border和padding的面积不会改变原有布局可通过css3新属性box-sizing来设置box-sizing: content-box|border-box|inherit;简单来说就是border-box为ie盒模型，content-box为正常盒模型，inherit为继承父元素的box-sizing值]]></content>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ie盒模型和google盒模型区别</title>
+      <link href="/2019/05/31/ie%E7%9B%92%E6%A8%A1%E5%9E%8B%E5%92%8Cgoogle%E7%9B%92%E6%A8%A1%E5%9E%8B%E5%8C%BA%E5%88%AB/"/>
+      <url>/2019/05/31/ie%E7%9B%92%E6%A8%A1%E5%9E%8B%E5%92%8Cgoogle%E7%9B%92%E6%A8%A1%E5%9E%8B%E5%8C%BA%E5%88%AB/</url>
+      
+        <content type="html"><![CDATA[<p>IE 盒子模型的 content 部分包含了 border 和 padding。这意味着当宽高固定时增加border和padding会压缩内容的显示，而不会扩大盒子。<br>好处是：当想要给固定好的布局中增加border和padding的面积不会改变原有布局<br>可通过css3新属性box-sizing来设置<br>box-sizing: content-box|border-box|inherit;<br>简单来说就是border-box为ie盒模型，content-box为正常盒模型，inherit为继承父元素的box-sizing值</p>]]></content>
+      
+      
       <categories>
-        <category>前端</category>
+          
+          <category> 前端 </category>
+          
       </categories>
-      <tags>
-        <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[MAC空格键和回车键失效问题]]></title>
-    <url>%2F2019%2F05%2F31%2FMAC%E7%A9%BA%E6%A0%BC%E9%94%AE%E5%92%8C%E5%9B%9E%E8%BD%A6%E9%94%AE%E5%A4%B1%E6%95%88%E9%97%AE%E9%A2%98%2F</url>
-    <content type="text"><![CDATA[问题描述：空格键和回车键失效，选中输入法，选择显示虚拟键盘，按下空格以及回车后键盘不会变灰（变灰表示有反应），按下fn后再点击空格以及回车会有反应 解决方式1：按下电源键开机的同时，马上按住option + command + P + R 持续30秒 然后解决解决方式2：关机状态下，按下control + option + shift + 电源键 持续10秒ps: 需要接入电源再执行1,2 解决方式. 未接入电源情况下 1 方式失效. 百度资料OPTION+CMD+R+P+POWER：重置NVRAM 或 PRAMMac 会将某些设置储存在特殊内存区域中，而且即使关机这些设置也不会丢失（除非存在电池问题）。 在基于 Intel 的 Mac 上，存储位置是称为 NVRAM 的内存；而在基于 PowerPC 的 Mac 上，存储位置则是称为 PRAM 的内存。操作步骤为：关闭电脑。在键盘上找到以下按键：Command、Option、P 和 R。您需要在步骤 4 中同时按下这些键。启动电脑。按住 Command-Option-P-R 键。必须在出现灰屏前按下此组合键。按住上述键，直到电脑重新启动，您会再次听到启动声。松开这些键。]]></content>
+      
+      
+        <tags>
+            
+            <tag> CSS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MAC空格键和回车键失效问题</title>
+      <link href="/2019/05/31/MAC%E7%A9%BA%E6%A0%BC%E9%94%AE%E5%92%8C%E5%9B%9E%E8%BD%A6%E9%94%AE%E5%A4%B1%E6%95%88%E9%97%AE%E9%A2%98/"/>
+      <url>/2019/05/31/MAC%E7%A9%BA%E6%A0%BC%E9%94%AE%E5%92%8C%E5%9B%9E%E8%BD%A6%E9%94%AE%E5%A4%B1%E6%95%88%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<p>问题描述：空格键和回车键失效，选中输入法，选择显示虚拟键盘，按下空格以及回车后键盘不会变灰（变灰表示有反应），按下fn后再点击空格以及回车会有反应</p><blockquote><p>解决方式1：按下电源键开机的同时，马上按住option + command + P + R 持续30秒 然后解决<br>解决方式2：关机状态下，按下control  + option + shift + 电源键 持续10秒<br>ps: 需要接入电源再执行1,2 解决方式. 未接入电源情况下 1 方式失效.</p></blockquote><p>百度资料<br>OPTION+CMD+R+P+POWER：重置NVRAM 或 PRAM<br>Mac 会将某些设置储存在特殊内存区域中，而且即使关机这些设置也不会丢失（除非存在电池问题）。 在基于 Intel 的 Mac 上，存储位置是称为 NVRAM 的内存；而在基于 PowerPC 的 Mac 上，存储位置则是称为 PRAM 的内存。操作步骤为：<br>关闭电脑。<br>在键盘上找到以下按键：Command、Option、P 和 R。您需要在步骤 4 中同时按下这些键。<br>启动电脑。<br>按住 Command-Option-P-R 键。必须在出现灰屏前按下此组合键。<br>按住上述键，直到电脑重新启动，您会再次听到启动声。<br>松开这些键。 </p>]]></content>
+      
+      
       <categories>
-        <category>MAC</category>
+          
+          <category> MAC </category>
+          
       </categories>
-      <tags>
-        <tag>MAC-error</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Mac下使用终端查看某个端口号对应的进程和杀死进程]]></title>
-    <url>%2F2019%2F05%2F31%2FMac%E4%B8%8B%E4%BD%BF%E7%94%A8%E7%BB%88%E7%AB%AF%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AF%B9%E5%BA%94%E7%9A%84%E8%BF%9B%E7%A8%8B%E5%92%8C%E6%9D%80%E6%AD%BB%E8%BF%9B%E7%A8%8B%2F</url>
-    <content type="text"><![CDATA[lsof -i tcp:port，port即为端口号，如5037kill PID 进程id，PID就是上面我们查到的的PID。]]></content>
+      
+      
+        <tags>
+            
+            <tag> MAC-error </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Mac下使用终端查看某个端口号对应的进程和杀死进程</title>
+      <link href="/2019/05/31/Mac%E4%B8%8B%E4%BD%BF%E7%94%A8%E7%BB%88%E7%AB%AF%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AF%B9%E5%BA%94%E7%9A%84%E8%BF%9B%E7%A8%8B%E5%92%8C%E6%9D%80%E6%AD%BB%E8%BF%9B%E7%A8%8B/"/>
+      <url>/2019/05/31/Mac%E4%B8%8B%E4%BD%BF%E7%94%A8%E7%BB%88%E7%AB%AF%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AF%B9%E5%BA%94%E7%9A%84%E8%BF%9B%E7%A8%8B%E5%92%8C%E6%9D%80%E6%AD%BB%E8%BF%9B%E7%A8%8B/</url>
+      
+        <content type="html"><![CDATA[<p>lsof -i tcp:port，port即为端口号，如5037<br>kill PID 进程id，PID就是上面我们查到的的PID。</p>]]></content>
+      
+      
       <categories>
-        <category>MAC</category>
+          
+          <category> MAC </category>
+          
       </categories>
-      <tags>
-        <tag>linux命令</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[使用Hexo创建个人博客以及使用自定义域名(1)]]></title>
-    <url>%2F2019%2F05%2F31%2F%E4%BD%BF%E7%94%A8Hexo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%2F</url>
-    <content type="text"><![CDATA[本教程分为3部分，1.本地部署hexo博客。2.上传本地hexo博客到github并使用github.io访问。3.配置自定义域名到hexo博客 1.本地部署hexo博客 下载Node.js 使用npm安装Hexo npm install hexo-cli -g 在需要创建博客的文件夹下输入如下命令，初始化博客文件夹 hexo init blog 进入blog文件夹 cd blog 初始化所插件 npm install 在本地运行服务 hexo server默认地址为：localhost:4000]]></content>
+      
+      
+        <tags>
+            
+            <tag> linux命令 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>使用Hexo创建个人博客以及使用自定义域名(1)</title>
+      <link href="/2019/05/31/%E4%BD%BF%E7%94%A8Hexo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D/"/>
+      <url>/2019/05/31/%E4%BD%BF%E7%94%A8Hexo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>本教程分为3部分，1.本地部署hexo博客。2.上传本地hexo博客到github并使用github.io访问。3.配置自定义域名到hexo博客</p></blockquote><h3 id="1-本地部署hexo博客"><a href="#1-本地部署hexo博客" class="headerlink" title="1.本地部署hexo博客"></a>1.本地部署hexo博客</h3><ul><li><p>下载<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></p></li><li><p>使用npm安装Hexo</p><blockquote><p><code>npm install hexo-cli -g</code></p></blockquote></li><li><p>在需要创建博客的文件夹下输入如下命令，初始化博客文件夹</p><blockquote><p><code>hexo init blog</code></p></blockquote></li><li><p>进入blog文件夹</p><blockquote><p><code>cd blog</code></p></blockquote></li><li><p>初始化所插件</p><blockquote><p><code>npm install</code></p></blockquote></li><li><p>在本地运行服务</p><blockquote><p><code>hexo server</code><br>默认地址为：localhost:4000</p></blockquote><!-- ---### 2.上传本地hexo博客到github并使用github.io访问- 注册[github](https://github.com/)账号- 新建github工程 ![创建按钮](/images/github创建按钮.png) ![创建工程](/images/github创建工程.png)- 生成本地ssh-key> `ssh-keygen -t rsa -C "your_email@example.com"`> 例如：`ssh-keygen -t rsa -C "17791205330@163.com"`- 配置ssh-key到github - 找到生成的ssh --></li></ul>]]></content>
+      
+      
       <categories>
-        <category>博客建站</category>
+          
+          <category> 博客建站 </category>
+          
       </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Github</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F05%2F30%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2019/05/30/hello-world/"/>
+      <url>/2019/05/30/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
 </search>
