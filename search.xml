@@ -1,6 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[div水平垂直居中方式]]></title>
+    <url>%2F2019%2F06%2F03%2Fdiv%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E6%96%B9%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[1 div{ width: 200px; height: 200px; background: green; position:absolute; left:0; top: 0; bottom: 0; right: 0; margin: auto; } 2 div{ width:200px; height: 200px; background:green; position: absolute; left:50%; top:50%; margin-left:-100px; margin-top:-100px; } 3 div{ width: 200px; height: 200px; background: green; position:absolute; left:50%; /* 定位父级的50% / top:50%; transform: translate(-50%,-50%); /自己的50% */ }]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+        <tag>前端面试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[typeof返回值]]></title>
+    <url>%2F2019%2F06%2F03%2Ftypeof%E8%BF%94%E5%9B%9E%E5%80%BC%2F</url>
+    <content type="text"><![CDATA[// 基本数据类型// number类型var num = 1;console.log(typeof num);//返回的是number// string 类型var str = ‘jack’;console.log(typeof str);//返回的是string// boolean类型var boo =true;console.log(typeof boo);//返回的是boolean// undefined类型var und ;console.log(typeof und);//返回的是undefined// null类型var nul =null;console.log(nul); //返回的是null // 可以得出：基本数据类型返回的是自己对应的类型 // 复杂数据类型// Array类型var arr = new Array();console.log(typeof arr); //返回的是object// function类型var fn = function(){};console.log(typeof fn); //返回的是function// Object类型var obj = new Object();console.log(typeof obj); //返回的是object// 字面量的数组var arr2 = [1,32];console.log(typeof arr2);//返回的是object // 自定义对象function Person(name){ this.name =name;} var stu = new Person();console.log(typeof stu); //返回的是object]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>前端面试</tag>
+        <tag>js</tag>
+        <tag>前端基础</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[状态码整理]]></title>
+    <url>%2F2019%2F06%2F03%2F%E7%8A%B6%E6%80%81%E7%A0%81%E6%95%B4%E7%90%86%2F</url>
+    <content type="text"><![CDATA[200 OK 请求正常处理完毕204 No Content 请求成功处理，没有实体的主体返回206 Partial Content GET范围请求已成功处理301 Moved Permanently 永久重定向，资源已永久分配新URI302 Found 临时重定向，资源已临时分配新URI303 See Other 临时重定向，期望使用GET定向获取304 Not Modified 发送的附带条件请求未满足307 Temporary Redirect 临时重定向，POST不会变成GET400 Bad Request 请求报文语法错误或参数错误401 Unauthorized 需要通过HTTP认证，或认证失败403 Forbidden 请求资源被拒绝404 Not Found 无法找到请求资源（服务器无理由拒绝）500 Internal Server Error 服务器故障或Web应用故障503 Service Unavailable 服务器超负载或停机维护]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>JS</tag>
+        <tag>http</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ES6新增特性]]></title>
+    <url>%2F2019%2F06%2F03%2FES6%E6%96%B0%E5%A2%9E%E7%89%B9%E6%80%A7%2F</url>
+    <content type="text"><![CDATA[1.默认参数 var height || 502.模板表达式 ${name} 使用反引号3.拼接多行字符串 使用反引号包裹文字开头结尾即可，不必在每个换行使用+4.拆包表达式 var {username, password} = req.body 可以直接获取body中对应的属性值5.箭头函数 this在上下文和函数中的值应当是相同的， 而箭头函数可以帮我们确保这一点6.Promise 可以异步执行js代码，使用then形成链式调用7.块级作用于：let：声明块级变量 const 声明块级变量并且不可修改8.模块化 通过module.export导出，使用import导入9.引入了class和extends]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>ES6</tag>
+        <tag>JS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[apply,call,bind用法和区别]]></title>
+    <url>%2F2019%2F06%2F03%2Fapply-call-bind%E7%94%A8%E6%B3%95%E5%92%8C%E5%8C%BA%E5%88%AB%2F</url>
+    <content type="text"><![CDATA[apply和call的作用都是改变this的指向，并传入参数 区别在于接收参数方式不同，例如： var func = function(arg1, arg2) { }; func.call(this, arg1, arg2); func.apply(this, [arg1, arg2]) bind作用也是改变this的指向，区别在于改变this指向后并不会执行该方法，而是返回一个函数。]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>JS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[文本垂直居中]]></title>
+    <url>%2F2019%2F06%2F03%2F%E6%96%87%E6%9C%AC%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%2F</url>
+    <content type="text"><![CDATA[{ height: 40px; line-height: 40px; }]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[css隐藏元素]]></title>
+    <url>%2F2019%2F06%2F03%2Fcss%E9%9A%90%E8%97%8F%E5%85%83%E7%B4%A0%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>分类1</category>
+      </categories>
+      <tags>
+        <tag>标签1</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[清除浮动]]></title>
+    <url>%2F2019%2F06%2F03%2F%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%2F</url>
+    <content type="text"><![CDATA[1 设置父元素高度 2 在父元素标签结束前增加div并设置样式为 clear:both 3 在父元素中增加样式 overflow:hidden 新增伪类：before 也可以用于清除浮动（待更新）]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[vscode更改其他后缀文件识别为html文件方法]]></title>
     <url>%2F2019%2F06%2F03%2Fvscode%E6%9B%B4%E6%94%B9%E5%85%B6%E4%BB%96%E5%90%8E%E7%BC%80%E6%96%87%E4%BB%B6%E8%AF%86%E5%88%AB%E4%B8%BAhtml%E6%96%87%E4%BB%B6%E6%96%B9%E6%B3%95%2F</url>
     <content type="text"><![CDATA[File -&gt; Preferences -&gt; setting -&gt; Edit in setting.json增加属性 “files.associations”: { “*.tpl”: “html” }]]></content>
@@ -82,7 +175,7 @@
     <url>%2F2019%2F05%2F31%2F%E6%9C%AA%E6%89%BE%E5%88%B0%E7%9B%B8%E5%85%B3%E7%9A%84Issues%E8%BF%9B%E8%A1%8C%E8%AF%84%E8%AE%BA%EF%BC%8C%E8%AF%B7%E8%81%94%E7%B3%BBXXX%E8%BF%9B%E8%A1%8C%E5%88%9B%E5%BB%BA%2F</url>
     <content type="text"><![CDATA[设置个性化域名后回调地址要填写个性化域名地址！]]></content>
       <categories>
-        <category>博客</category>
+        <category>博客建站</category>
       </categories>
       <tags>
         <tag>hexo</tag>
