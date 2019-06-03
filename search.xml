@@ -1,174 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>给hexo添加搜索功能</title>
-      <link href="/2019/06/03/%E7%BB%99hexo%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/"/>
-      <url>/2019/06/03/%E7%BB%99hexo%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</url>
-      
-        <content type="html"><![CDATA[<p>按网上配置<a href="https://www.jianshu.com/p/d388119a90ec" target="_blank" rel="noopener">https://www.jianshu.com/p/d388119a90ec</a><br>发布后弹出警告 YAMLException: duplicated mapping key at line 863, column -677:<br>    local_search:</p><p>运行后就直接报错</p><p>有两份重复配置导致的</p><p>最后发现原因是next默认有seach 的配置，但设置为false。</p><p>保留其一即可</p>]]></content>
-      
-      
+<search>
+  <entry>
+    <title><![CDATA[给hexo添加搜索功能]]></title>
+    <url>%2F2019%2F06%2F03%2F%E7%BB%99hexo%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD%2F</url>
+    <content type="text"><![CDATA[按网上配置https://www.jianshu.com/p/d388119a90ec发布后弹出警告 YAMLException: duplicated mapping key at line 863, column -677: local_search: 运行后就直接报错 有两份重复配置导致的 最后发现原因是next默认有seach 的配置，但设置为false。 保留其一即可]]></content>
       <categories>
-          
-          <category> 博客建站 </category>
-          
+        <category>博客建站</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>未找到相关的Issues进行评论，请联系XXX进行创建</title>
-      <link href="/2019/05/31/%E6%9C%AA%E6%89%BE%E5%88%B0%E7%9B%B8%E5%85%B3%E7%9A%84Issues%E8%BF%9B%E8%A1%8C%E8%AF%84%E8%AE%BA%EF%BC%8C%E8%AF%B7%E8%81%94%E7%B3%BBXXX%E8%BF%9B%E8%A1%8C%E5%88%9B%E5%BB%BA/"/>
-      <url>/2019/05/31/%E6%9C%AA%E6%89%BE%E5%88%B0%E7%9B%B8%E5%85%B3%E7%9A%84Issues%E8%BF%9B%E8%A1%8C%E8%AF%84%E8%AE%BA%EF%BC%8C%E8%AF%B7%E8%81%94%E7%B3%BBXXX%E8%BF%9B%E8%A1%8C%E5%88%9B%E5%BB%BA/</url>
-      
-        <content type="html"><![CDATA[<p>设置个性化域名后回调地址要填写个性化域名地址！<br><img src="/images/gittalk%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8.png" alt="gittalk评论无法使用"></p>]]></content>
-      
-      
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[未找到相关的Issues进行评论，请联系XXX进行创建]]></title>
+    <url>%2F2019%2F05%2F31%2F%E6%9C%AA%E6%89%BE%E5%88%B0%E7%9B%B8%E5%85%B3%E7%9A%84Issues%E8%BF%9B%E8%A1%8C%E8%AF%84%E8%AE%BA%EF%BC%8C%E8%AF%B7%E8%81%94%E7%B3%BBXXX%E8%BF%9B%E8%A1%8C%E5%88%9B%E5%BB%BA%2F</url>
+    <content type="text"><![CDATA[设置个性化域名后回调地址要填写个性化域名地址！]]></content>
       <categories>
-          
-          <category> 博客 </category>
-          
+        <category>博客</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
-            
-            <tag> github </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>ie盒模型和google盒模型区别</title>
-      <link href="/2019/05/31/ie%E7%9B%92%E6%A8%A1%E5%9E%8B%E5%92%8Cgoogle%E7%9B%92%E6%A8%A1%E5%9E%8B%E5%8C%BA%E5%88%AB/"/>
-      <url>/2019/05/31/ie%E7%9B%92%E6%A8%A1%E5%9E%8B%E5%92%8Cgoogle%E7%9B%92%E6%A8%A1%E5%9E%8B%E5%8C%BA%E5%88%AB/</url>
-      
-        <content type="html"><![CDATA[<p>IE 盒子模型的 content 部分包含了 border 和 padding。这意味着当宽高固定时增加border和padding会压缩内容的显示，而不会扩大盒子。<br>好处是：当想要给固定好的布局中增加border和padding的面积不会改变原有布局<br>可通过css3新属性box-sizing来设置<br>box-sizing: content-box|border-box|inherit;<br>简单来说就是border-box为ie盒模型，content-box为正常盒模型，inherit为继承父元素的box-sizing值</p>]]></content>
-      
-      
+      <tags>
+        <tag>hexo</tag>
+        <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ie盒模型和google盒模型区别]]></title>
+    <url>%2F2019%2F05%2F31%2Fie%E7%9B%92%E6%A8%A1%E5%9E%8B%E5%92%8Cgoogle%E7%9B%92%E6%A8%A1%E5%9E%8B%E5%8C%BA%E5%88%AB%2F</url>
+    <content type="text"><![CDATA[IE 盒子模型的 content 部分包含了 border 和 padding。这意味着当宽高固定时增加border和padding会压缩内容的显示，而不会扩大盒子。好处是：当想要给固定好的布局中增加border和padding的面积不会改变原有布局可通过css3新属性box-sizing来设置box-sizing: content-box|border-box|inherit;简单来说就是border-box为ie盒模型，content-box为正常盒模型，inherit为继承父元素的box-sizing值]]></content>
       <categories>
-          
-          <category> 前端 </category>
-          
+        <category>前端</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> CSS </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>MAC空格键和回车键失效问题</title>
-      <link href="/2019/05/31/MAC%E7%A9%BA%E6%A0%BC%E9%94%AE%E5%92%8C%E5%9B%9E%E8%BD%A6%E9%94%AE%E5%A4%B1%E6%95%88%E9%97%AE%E9%A2%98/"/>
-      <url>/2019/05/31/MAC%E7%A9%BA%E6%A0%BC%E9%94%AE%E5%92%8C%E5%9B%9E%E8%BD%A6%E9%94%AE%E5%A4%B1%E6%95%88%E9%97%AE%E9%A2%98/</url>
-      
-        <content type="html"><![CDATA[<p>问题描述：空格键和回车键失效，选中输入法，选择显示虚拟键盘，按下空格以及回车后键盘不会变灰（变灰表示有反应），按下fn后再点击空格以及回车会有反应</p><blockquote><p>解决方式1：按下电源键开机的同时，马上按住option + command + P + R 持续30秒 然后解决<br>解决方式2：关机状态下，按下control  + option + shift + 电源键 持续10秒<br>ps: 需要接入电源再执行1,2 解决方式. 未接入电源情况下 1 方式失效.</p></blockquote><p>百度资料<br>OPTION+CMD+R+P+POWER：重置NVRAM 或 PRAM<br>Mac 会将某些设置储存在特殊内存区域中，而且即使关机这些设置也不会丢失（除非存在电池问题）。 在基于 Intel 的 Mac 上，存储位置是称为 NVRAM 的内存；而在基于 PowerPC 的 Mac 上，存储位置则是称为 PRAM 的内存。操作步骤为：<br>关闭电脑。<br>在键盘上找到以下按键：Command、Option、P 和 R。您需要在步骤 4 中同时按下这些键。<br>启动电脑。<br>按住 Command-Option-P-R 键。必须在出现灰屏前按下此组合键。<br>按住上述键，直到电脑重新启动，您会再次听到启动声。<br>松开这些键。 </p>]]></content>
-      
-      
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[MAC空格键和回车键失效问题]]></title>
+    <url>%2F2019%2F05%2F31%2FMAC%E7%A9%BA%E6%A0%BC%E9%94%AE%E5%92%8C%E5%9B%9E%E8%BD%A6%E9%94%AE%E5%A4%B1%E6%95%88%E9%97%AE%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[问题描述：空格键和回车键失效，选中输入法，选择显示虚拟键盘，按下空格以及回车后键盘不会变灰（变灰表示有反应），按下fn后再点击空格以及回车会有反应 解决方式1：按下电源键开机的同时，马上按住option + command + P + R 持续30秒 然后解决解决方式2：关机状态下，按下control + option + shift + 电源键 持续10秒ps: 需要接入电源再执行1,2 解决方式. 未接入电源情况下 1 方式失效. 百度资料OPTION+CMD+R+P+POWER：重置NVRAM 或 PRAMMac 会将某些设置储存在特殊内存区域中，而且即使关机这些设置也不会丢失（除非存在电池问题）。 在基于 Intel 的 Mac 上，存储位置是称为 NVRAM 的内存；而在基于 PowerPC 的 Mac 上，存储位置则是称为 PRAM 的内存。操作步骤为：关闭电脑。在键盘上找到以下按键：Command、Option、P 和 R。您需要在步骤 4 中同时按下这些键。启动电脑。按住 Command-Option-P-R 键。必须在出现灰屏前按下此组合键。按住上述键，直到电脑重新启动，您会再次听到启动声。松开这些键。]]></content>
       <categories>
-          
-          <category> 电脑使用问题 </category>
-          
+        <category>MAC</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> MAC </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Mac下使用终端查看某个端口号对应的进程和杀死进程</title>
-      <link href="/2019/05/31/Mac%E4%B8%8B%E4%BD%BF%E7%94%A8%E7%BB%88%E7%AB%AF%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AF%B9%E5%BA%94%E7%9A%84%E8%BF%9B%E7%A8%8B%E5%92%8C%E6%9D%80%E6%AD%BB%E8%BF%9B%E7%A8%8B/"/>
-      <url>/2019/05/31/Mac%E4%B8%8B%E4%BD%BF%E7%94%A8%E7%BB%88%E7%AB%AF%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AF%B9%E5%BA%94%E7%9A%84%E8%BF%9B%E7%A8%8B%E5%92%8C%E6%9D%80%E6%AD%BB%E8%BF%9B%E7%A8%8B/</url>
-      
-        <content type="html"><![CDATA[<p>lsof -i tcp:port，port即为端口号，如5037<br>kill PID 进程id，PID就是上面我们查到的的PID。</p>]]></content>
-      
-      
+      <tags>
+        <tag>MAC-error</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Mac下使用终端查看某个端口号对应的进程和杀死进程]]></title>
+    <url>%2F2019%2F05%2F31%2FMac%E4%B8%8B%E4%BD%BF%E7%94%A8%E7%BB%88%E7%AB%AF%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AF%B9%E5%BA%94%E7%9A%84%E8%BF%9B%E7%A8%8B%E5%92%8C%E6%9D%80%E6%AD%BB%E8%BF%9B%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[lsof -i tcp:port，port即为端口号，如5037kill PID 进程id，PID就是上面我们查到的的PID。]]></content>
       <categories>
-          
-          <category> MAC </category>
-          
+        <category>MAC</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> linux命令 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>使用Hexo创建个人博客以及使用自定义域名(1)</title>
-      <link href="/2019/05/31/%E4%BD%BF%E7%94%A8Hexo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D/"/>
-      <url>/2019/05/31/%E4%BD%BF%E7%94%A8Hexo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D/</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>本教程分为3部分，1.本地部署hexo博客。2.上传本地hexo博客到github并使用github.io访问。3.配置自定义域名到hexo博客</p></blockquote><h3 id="1-本地部署hexo博客"><a href="#1-本地部署hexo博客" class="headerlink" title="1.本地部署hexo博客"></a>1.本地部署hexo博客</h3><ul><li><p>下载<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></p></li><li><p>使用npm安装Hexo</p><blockquote><p><code>npm install hexo-cli -g</code></p></blockquote></li><li><p>在需要创建博客的文件夹下输入如下命令，初始化博客文件夹</p><blockquote><p><code>hexo init blog</code></p></blockquote></li><li><p>进入blog文件夹</p><blockquote><p><code>cd blog</code></p></blockquote></li><li><p>初始化所插件</p><blockquote><p><code>npm install</code></p></blockquote></li><li><p>在本地运行服务</p><blockquote><p><code>hexo server</code><br>默认地址为：localhost:4000</p></blockquote><!-- ---### 2.上传本地hexo博客到github并使用github.io访问- 注册[github](https://github.com/)账号- 新建github工程 ![创建按钮](/images/github创建按钮.png) ![创建工程](/images/github创建工程.png)- 生成本地ssh-key> `ssh-keygen -t rsa -C "your_email@example.com"`> 例如：`ssh-keygen -t rsa -C "17791205330@163.com"`- 配置ssh-key到github - 找到生成的ssh --></li></ul>]]></content>
-      
-      
+      <tags>
+        <tag>linux命令</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[使用Hexo创建个人博客以及使用自定义域名(1)]]></title>
+    <url>%2F2019%2F05%2F31%2F%E4%BD%BF%E7%94%A8Hexo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%2F</url>
+    <content type="text"><![CDATA[本教程分为3部分，1.本地部署hexo博客。2.上传本地hexo博客到github并使用github.io访问。3.配置自定义域名到hexo博客 1.本地部署hexo博客 下载Node.js 使用npm安装Hexo npm install hexo-cli -g 在需要创建博客的文件夹下输入如下命令，初始化博客文件夹 hexo init blog 进入blog文件夹 cd blog 初始化所插件 npm install 在本地运行服务 hexo server默认地址为：localhost:4000]]></content>
       <categories>
-          
-          <category> 博客建站 </category>
-          
+        <category>博客建站</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-            <tag> Github </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2019/05/30/hello-world/"/>
-      <url>/2019/05/30/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-  
-  
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2019%2F05%2F30%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
 </search>
