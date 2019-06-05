@@ -1,622 +1,285 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>安装@vue/cli报错</title>
-      <link href="/2019/06/05/%E5%AE%89%E8%A3%85-vue-cli%E6%8A%A5%E9%94%99/"/>
-      <url>/2019/06/05/%E5%AE%89%E8%A3%85-vue-cli%E6%8A%A5%E9%94%99/</url>
-      
-        <content type="html"><![CDATA[<ul><li><p>安装@vue/cli时提示如下错误，并提示无创建文件权限</p><blockquote><p>user “yanglei” does not have permission to access the dev dir</p></blockquote></li><li><p>解决方案<br><code>npm install 添加参数 --unsafe-perm</code></p></li></ul>]]></content>
-      
-      
+<search>
+  <entry>
+    <title><![CDATA[更新npm和nodejs]]></title>
+    <url>%2F2019%2F06%2F05%2F%E6%9B%B4%E6%96%B0npm%E5%92%8Cnodejs%2F</url>
+    <content type="text"><![CDATA[更新npm update -g```1234- 更新nodejs&gt; ```npm install -g n``` 安装n命令&gt; ```n latest]]></content>
       <categories>
-          
-          <category> 前端 </category>
-          
+        <category>前端</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> VUE </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>MAC快捷键</title>
-      <link href="/2019/06/04/MAC%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
-      <url>/2019/06/04/MAC%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
-      
-        <content type="html"><![CDATA[<ul><li>终端快捷键(在终端打开情况下)<blockquote><p>command+N 打开另一个终端窗口<br>command+T 打开终端窗口打开另一个标签</p></blockquote></li><li>剪切、拷贝、粘贴和其他常用快捷键<blockquote><p>快捷键 描述<br>Command-X 剪切所选项并拷贝到剪贴板。<br>Command-C 将所选项拷贝到剪贴板。这同样适用于“访达”中的文件。<br>Command-V 将剪贴板的内容粘贴到当前文稿或应用中。这同样适用于“访达”中的文件。<br>Command-Z 撤销前一个命令。随后您可以按 Command-Shift-Z 来重做，从而反向执行撤销命令。在某些应用中，您可以撤销和重做多个命令。<br>Command-A 全选各项。<br>Command-F 查找文稿中的项目或打开“查找”窗口。<br>Command-G 再次查找：查找之前所找到项目出现的下一个位置。要查找出现的上一个位置，请按 Command-Shift-G。<br>Command-H 隐藏最前面的应用的窗口。要查看最前面的应用但隐藏所有其他应用，请按 Command-Option-H。<br>Command-M 将最前面的窗口最小化至“程序坞”。要最小化最前面的应用的所有窗口，请按 Command-Option-M。<br>Command-N 新建：打开一个新文稿或窗口。<br>Command-O 打开所选项，或打开一个对话框以选择要打开的文件。<br>Command-P 打印当前文稿。<br>Command-S 存储当前文稿。<br>Command-W 关闭最前面的窗口。要关闭应用的所有窗口，请按下 Command-Option-W。<br>Command-Q 退出应用。<br>Option-Command-Esc 强制退出：选择要强制退出的应用。或者，按住 Command-Shift-Option-Esc 3 秒钟来仅强制最前面的应用退出。<br>Command–空格键 “聚焦”：显示或隐藏 “聚焦” 搜索栏。要从“访达”窗口执行“聚焦”搜索，请按 Command–Option–空格键。如果您使用多个输入源以便用不同的语言键入内容，这些快捷键会更改输入源而非显示“聚焦”。<br>空格键 快速查看：使用快速查看来预览所选项。<br>Command-Tab 切换应用：在打开的应用中切换到下一个最近使用的应用。<br>Shift-Command-波浪号 (~) 切换窗口：切换到最前端应用中下一个最近使用的窗口。<br>Shift-Command-3 屏幕快照：拍摄整个屏幕的屏幕快照。了解更多屏幕快照快捷键。<br>Command-逗号 (,) 偏好设置：打开最前面的应用的偏好设置。 </p></blockquote></li></ul><hr><ul><li>文稿快捷键<blockquote><p>快捷键 描述<br>Command-B 以粗体显示所选文本，或者打开或关闭粗体显示功能。<br>Command-I 以斜体显示所选文本，或者打开或关闭斜体显示功能。<br>Command-U 对所选文本加下划线，或者打开或关闭加下划线功能。<br>Command-T 显示或隐藏“字体”窗口。<br>Command-D 从“打开”对话框或“存储”对话框中选择“桌面”文件夹。<br>Control-Command-D 显示或隐藏所选字词的定义。<br>Shift-Command-冒号 (:) 显示“拼写和语法”窗口。<br>Command-分号 (;) 查找文稿中拼写错误的字词。<br>Option-Delete 删除插入点左边的字词。<br>Control-H 删除插入点左边的字符。也可以使用 Delete 键。<br>Control-D 删除插入点右边的字符。也可以使用 Fn-Delete。<br>Fn-Delete 在没有向前删除 键的键盘上向前删除。也可以使用 Control-D。<br>Control-K 删除插入点与行或段落末尾处之间的文本。<br>Command-Delete 在包含“删除”或“不存储”按钮的对话框中选择“删除”或“不存储”。<br>Fn–上箭头 Page Up：向上滚动一页。<br>Fn–下箭头 Page Down：向下滚动一页。<br>Fn–左箭头 Home：滚动到文稿开头。<br>Fn–右箭头 End：滚动到文稿末尾。<br>Command–上箭头 将插入点移至文稿开头。<br>Command–下箭头 将插入点移至文稿末尾。<br>Command–左箭头 将插入点移至当前行的行首。<br>Command–右箭头 将插入点移至当前行的行尾。<br>Option–左箭头 将插入点移至上一字词的词首。<br>Option–右箭头 将插入点移至下一字词的词尾。<br>Shift–Command–上箭头 选中插入点与文稿开头之间的文本。<br>Shift–Command–下箭头 选中插入点与文稿末尾之间的文本。<br>Shift–Command–左箭头 选中插入点与当前行行首之间的文本。<br>Shift–Command–右箭头 选中插入点与当前行行尾之间的文本。<br>Shift–上箭头 将文本选择范围扩展到上一行相同水平位置的最近字符处。<br>Shift–下箭头 将文本选择范围扩展到下一行相同水平位置的最近字符处。<br>Shift–左箭头 将文本选择范围向左扩展一个字符。<br>Shift–右箭头 将文本选择范围向右扩展一个字符。<br>Option–Shift–上箭头 将文本选择范围扩展到当前段落的段首，再按一次则扩展到下一段落的段首。<br>Option–Shift–下箭头 将文本选择范围扩展到当前段落的段尾，再按一次则扩展到下一段落的段尾。<br>Option–Shift–左箭头 将文本选择范围扩展到当前字词的词首，再按一次则扩展到后一字词的词首。<br>Option–Shift–右箭头 将文本选择范围扩展到当前字词的词尾，再按一次则扩展到后一字词的词尾。<br>Control-A 移至行或段落的开头。<br>Control-E 移至行或段落的末尾。<br>Control-F 向前移动一个字符。<br>Control-B 向后移动一个字符。<br>Control-L 将光标或所选内容置于可见区域中央。<br>Control-P 上移一行。<br>Control-N 下移一行。<br>Control-O 在插入点后插入一行。<br>Control-T 将插入点后面的字符与插入点前面的字符交换。<br>Command–左花括号 ({) 左对齐。<br>Command–右花括号 (}) 右对齐。<br>Shift–Command–竖线 (|) 居中对齐。<br>Option-Command-F 前往搜索栏。<br>Option-Command-T 显示或隐藏应用中的工具栏。<br>Option-Command-C 拷贝样式：将所选项的格式设置拷贝到剪贴板。<br>Option-Command-V 粘贴样式：将拷贝的样式应用到所选项。<br>Option-Shift-Command-V 粘贴并匹配样式：将周围内容的样式应用到粘贴在这个内容中的项目。<br>Option-Command-I 显示或隐藏检查器窗口。<br>Shift-Command-P 页面设置：显示用于选择文稿设置的窗口。<br>Shift-Command-S 显示“存储为”对话框或复制当前文稿。<br>Shift–Command–减号 (-) 缩小所选项。<br>Shift–Command–加号 (+) 放大所选项。Command–等号 (=) 可执行相同的功能。<br>Shift–Command–问号 (?) 打开“帮助”菜单。 </p></blockquote></li></ul><hr><ul><li>“访达”快捷键<blockquote><p>快捷键 描述<br>Command-D 复制所选文件。<br>Command-E 推出所选磁盘或宗卷。<br>Command-F 在“访达”窗口中开始“聚焦”搜索。<br>Command-I 显示所选文件的“显示简介”窗口。<br>Shift-Command-C 打开“电脑”窗口。<br>Shift-Command-D 打开“桌面”文件夹。<br>Shift-Command-F 打开“我的所有文件”窗口。<br>Shift-Command-G 打开“前往文件夹”窗口。<br>Shift-Command-H 打开当前 macOS 用户帐户的个人文件夹。<br>Shift-Command-I 打开 iCloud 云盘。<br>Shift-Command-K 打开“网络”窗口。<br>Option-Command-L 打开“下载”文件夹。<br>Shift-Command-O 打开“文稿”文件夹。<br>Shift-Command-R 打开“隔空投送”窗口。<br>Shift-Command-T 将所选的“访达”项目添加到“程序坞”（OS X Mountain Lion 或更低版本）<br>Control-Shift-Command-T 将所选的“访达”项目添加到“程序坞”（OS X Mavericks 或更高版本）<br>Shift-Command-U 打开“实用工具”文件夹。<br>Option-Command-D 显示或隐藏 “程序坞”。即使您未在“访达”窗口中，这个快捷键通常也有效。<br>Control-Command-T 将所选项添加到边栏（OS X Mavericks 或更高版本）。<br>Option-Command-P 隐藏或显示“访达”窗口中的路径栏。<br>Option-Command-S 隐藏或显示“访达”窗口中的边栏。<br>Command–斜线 (/) 隐藏或显示“访达”窗口中的状态栏。<br>Command-J 显示“显示”选项。<br>Command-K 打开“连接服务器”窗口。<br>Command-L 为所选项制作替身。<br>Command-N 打开一个新的“访达”窗口。<br>Shift-Command-N 新建文件夹。<br>Option-Command-N 新建智能文件夹。<br>Command-R 显示所选替身的原始文件。<br>Command-T 在当前“访达”窗口中有单个标签页开着的状态下显示或隐藏标签页栏。<br>Shift-Command-T 显示或隐藏“访达”标签页。<br>Option-Command-T 在当前“访达”窗口中有单个标签页开着的状态下显示或隐藏工具栏。<br>Option-Command-V 移动：将剪贴板中的文件从原始位置移动到当前位置。<br>Option-Command-Y 显示所选文件的快速查看幻灯片显示。<br>Command-Y 使用“快速查看”预览所选文件。<br>Command-1 以图标方式显示“访达”窗口中的项目。<br>Command-2 以列表方式显示“访达”窗口中的项目。<br>Command-3 以分栏方式显示“访达”窗口中的项目。<br>Command-4 以封面流方式显示“访达”窗口中的项目。<br>Command–左中括号 ([) 前往上一文件夹。<br>Command–右中括号 (]) 前往下一文件夹。<br>Command–上箭头 打开包含当前文件夹的文件夹。<br>Command–Control–上箭头 在新窗口中打开包含当前文件夹的文件夹。<br>Command–下箭头 打开所选项。<br>Command–“调度中心” 显示桌面。即使您未在“访达”窗口中，这个快捷键也有效。<br>Command–调高亮度 开启或关闭目标显示器模式。<br>Command–调低亮度 当 Mac 连接到多个显示器时打开或关闭显示器镜像功能。<br>右箭头 打开所选文件夹。这个快捷键仅在列表视图中有效。<br>左箭头 关闭所选文件夹。这个快捷键仅在列表视图中有效。<br>Option-连按 在单独的窗口中打开文件夹，并关闭当前窗口。<br>Command-连按 在单独的标签页或窗口中打开文件夹。<br>Command-Delete 将所选项移到废纸篓。<br>Shift-Command-Delete 清倒废纸篓。<br>Option-Shift-Command-Delete 清倒废纸篓而不显示确认对话框。<br>Command-Y 使用“快速查看”预览文件。<br>Option–调高亮度 打开“显示器”偏好设置。这个快捷键可与任一亮度键搭配使用。<br>Option–“调度中心” 打开“调度中心”偏好设置。<br>Option–调高音量 打开“声音”偏好设置。这个快捷键可与任一音量键搭配使用。<br>按住 Command 键拖移 将拖移的项目移到其他宗卷或位置。拖移项目时指针会随之变化。<br>按住 Option 键拖移 拷贝拖移的项目。拖移项目时指针会随之变化。<br>按住 Option-Command 键拖移 为拖移的项目制作替身。拖移项目时指针会随之变化。<br>按住 Option 键点按开合三角 打开所选文件夹内的所有文件夹。这个快捷键仅在列表视图中有效。<br>按住 Command 键点按窗口标题 查看包含当前文件夹的文件夹。</p></blockquote></li></ul>]]></content>
-      
-      
+      <tags>
+        <tag>nodejs</tag>
+        <tag>npm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[安装@vue/cli报错]]></title>
+    <url>%2F2019%2F06%2F05%2F%E5%AE%89%E8%A3%85-vue-cli%E6%8A%A5%E9%94%99%2F</url>
+    <content type="text"><![CDATA[安装@vue/cli时提示如下错误，并提示无创建文件权限 user “yanglei” does not have permission to access the dev dir 解决方案npm install 添加参数 --unsafe-perm]]></content>
       <categories>
-          
-          <category> MAC </category>
-          
+        <category>前端</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 快捷键 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>VUE-动态组件</title>
-      <link href="/2019/06/04/VUE-%E5%8A%A8%E6%80%81%E7%BB%84%E4%BB%B6&amp;%E5%BC%82%E6%AD%A5%E7%BB%84%E4%BB%B6/"/>
-      <url>/2019/06/04/VUE-%E5%8A%A8%E6%80%81%E7%BB%84%E4%BB%B6&amp;%E5%BC%82%E6%AD%A5%E7%BB%84%E4%BB%B6/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>前端技术栈图</title>
-      <link href="/2019/06/04/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%E6%A0%88%E5%9B%BE/"/>
-      <url>/2019/06/04/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%E6%A0%88%E5%9B%BE/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/images/%E5%85%A8%E6%A0%88.png" alt="阿里P7技术栈"></p>]]></content>
-      
-      
+      <tags>
+        <tag>VUE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[MAC快捷键]]></title>
+    <url>%2F2019%2F06%2F04%2FMAC%E5%BF%AB%E6%8D%B7%E9%94%AE%2F</url>
+    <content type="text"><![CDATA[终端快捷键(在终端打开情况下) command+N 打开另一个终端窗口command+T 打开终端窗口打开另一个标签 剪切、拷贝、粘贴和其他常用快捷键 快捷键 描述Command-X 剪切所选项并拷贝到剪贴板。Command-C 将所选项拷贝到剪贴板。这同样适用于“访达”中的文件。Command-V 将剪贴板的内容粘贴到当前文稿或应用中。这同样适用于“访达”中的文件。Command-Z 撤销前一个命令。随后您可以按 Command-Shift-Z 来重做，从而反向执行撤销命令。在某些应用中，您可以撤销和重做多个命令。Command-A 全选各项。Command-F 查找文稿中的项目或打开“查找”窗口。Command-G 再次查找：查找之前所找到项目出现的下一个位置。要查找出现的上一个位置，请按 Command-Shift-G。Command-H 隐藏最前面的应用的窗口。要查看最前面的应用但隐藏所有其他应用，请按 Command-Option-H。Command-M 将最前面的窗口最小化至“程序坞”。要最小化最前面的应用的所有窗口，请按 Command-Option-M。Command-N 新建：打开一个新文稿或窗口。Command-O 打开所选项，或打开一个对话框以选择要打开的文件。Command-P 打印当前文稿。Command-S 存储当前文稿。Command-W 关闭最前面的窗口。要关闭应用的所有窗口，请按下 Command-Option-W。Command-Q 退出应用。Option-Command-Esc 强制退出：选择要强制退出的应用。或者，按住 Command-Shift-Option-Esc 3 秒钟来仅强制最前面的应用退出。Command–空格键 “聚焦”：显示或隐藏 “聚焦” 搜索栏。要从“访达”窗口执行“聚焦”搜索，请按 Command–Option–空格键。如果您使用多个输入源以便用不同的语言键入内容，这些快捷键会更改输入源而非显示“聚焦”。空格键 快速查看：使用快速查看来预览所选项。Command-Tab 切换应用：在打开的应用中切换到下一个最近使用的应用。Shift-Command-波浪号 (~) 切换窗口：切换到最前端应用中下一个最近使用的窗口。Shift-Command-3 屏幕快照：拍摄整个屏幕的屏幕快照。了解更多屏幕快照快捷键。Command-逗号 (,) 偏好设置：打开最前面的应用的偏好设置。 文稿快捷键 快捷键 描述Command-B 以粗体显示所选文本，或者打开或关闭粗体显示功能。Command-I 以斜体显示所选文本，或者打开或关闭斜体显示功能。Command-U 对所选文本加下划线，或者打开或关闭加下划线功能。Command-T 显示或隐藏“字体”窗口。Command-D 从“打开”对话框或“存储”对话框中选择“桌面”文件夹。Control-Command-D 显示或隐藏所选字词的定义。Shift-Command-冒号 (:) 显示“拼写和语法”窗口。Command-分号 (;) 查找文稿中拼写错误的字词。Option-Delete 删除插入点左边的字词。Control-H 删除插入点左边的字符。也可以使用 Delete 键。Control-D 删除插入点右边的字符。也可以使用 Fn-Delete。Fn-Delete 在没有向前删除 键的键盘上向前删除。也可以使用 Control-D。Control-K 删除插入点与行或段落末尾处之间的文本。Command-Delete 在包含“删除”或“不存储”按钮的对话框中选择“删除”或“不存储”。Fn–上箭头 Page Up：向上滚动一页。Fn–下箭头 Page Down：向下滚动一页。Fn–左箭头 Home：滚动到文稿开头。Fn–右箭头 End：滚动到文稿末尾。Command–上箭头 将插入点移至文稿开头。Command–下箭头 将插入点移至文稿末尾。Command–左箭头 将插入点移至当前行的行首。Command–右箭头 将插入点移至当前行的行尾。Option–左箭头 将插入点移至上一字词的词首。Option–右箭头 将插入点移至下一字词的词尾。Shift–Command–上箭头 选中插入点与文稿开头之间的文本。Shift–Command–下箭头 选中插入点与文稿末尾之间的文本。Shift–Command–左箭头 选中插入点与当前行行首之间的文本。Shift–Command–右箭头 选中插入点与当前行行尾之间的文本。Shift–上箭头 将文本选择范围扩展到上一行相同水平位置的最近字符处。Shift–下箭头 将文本选择范围扩展到下一行相同水平位置的最近字符处。Shift–左箭头 将文本选择范围向左扩展一个字符。Shift–右箭头 将文本选择范围向右扩展一个字符。Option–Shift–上箭头 将文本选择范围扩展到当前段落的段首，再按一次则扩展到下一段落的段首。Option–Shift–下箭头 将文本选择范围扩展到当前段落的段尾，再按一次则扩展到下一段落的段尾。Option–Shift–左箭头 将文本选择范围扩展到当前字词的词首，再按一次则扩展到后一字词的词首。Option–Shift–右箭头 将文本选择范围扩展到当前字词的词尾，再按一次则扩展到后一字词的词尾。Control-A 移至行或段落的开头。Control-E 移至行或段落的末尾。Control-F 向前移动一个字符。Control-B 向后移动一个字符。Control-L 将光标或所选内容置于可见区域中央。Control-P 上移一行。Control-N 下移一行。Control-O 在插入点后插入一行。Control-T 将插入点后面的字符与插入点前面的字符交换。Command–左花括号 ({) 左对齐。Command–右花括号 (}) 右对齐。Shift–Command–竖线 (|) 居中对齐。Option-Command-F 前往搜索栏。Option-Command-T 显示或隐藏应用中的工具栏。Option-Command-C 拷贝样式：将所选项的格式设置拷贝到剪贴板。Option-Command-V 粘贴样式：将拷贝的样式应用到所选项。Option-Shift-Command-V 粘贴并匹配样式：将周围内容的样式应用到粘贴在这个内容中的项目。Option-Command-I 显示或隐藏检查器窗口。Shift-Command-P 页面设置：显示用于选择文稿设置的窗口。Shift-Command-S 显示“存储为”对话框或复制当前文稿。Shift–Command–减号 (-) 缩小所选项。Shift–Command–加号 (+) 放大所选项。Command–等号 (=) 可执行相同的功能。Shift–Command–问号 (?) 打开“帮助”菜单。 “访达”快捷键 快捷键 描述Command-D 复制所选文件。Command-E 推出所选磁盘或宗卷。Command-F 在“访达”窗口中开始“聚焦”搜索。Command-I 显示所选文件的“显示简介”窗口。Shift-Command-C 打开“电脑”窗口。Shift-Command-D 打开“桌面”文件夹。Shift-Command-F 打开“我的所有文件”窗口。Shift-Command-G 打开“前往文件夹”窗口。Shift-Command-H 打开当前 macOS 用户帐户的个人文件夹。Shift-Command-I 打开 iCloud 云盘。Shift-Command-K 打开“网络”窗口。Option-Command-L 打开“下载”文件夹。Shift-Command-O 打开“文稿”文件夹。Shift-Command-R 打开“隔空投送”窗口。Shift-Command-T 将所选的“访达”项目添加到“程序坞”（OS X Mountain Lion 或更低版本）Control-Shift-Command-T 将所选的“访达”项目添加到“程序坞”（OS X Mavericks 或更高版本）Shift-Command-U 打开“实用工具”文件夹。Option-Command-D 显示或隐藏 “程序坞”。即使您未在“访达”窗口中，这个快捷键通常也有效。Control-Command-T 将所选项添加到边栏（OS X Mavericks 或更高版本）。Option-Command-P 隐藏或显示“访达”窗口中的路径栏。Option-Command-S 隐藏或显示“访达”窗口中的边栏。Command–斜线 (/) 隐藏或显示“访达”窗口中的状态栏。Command-J 显示“显示”选项。Command-K 打开“连接服务器”窗口。Command-L 为所选项制作替身。Command-N 打开一个新的“访达”窗口。Shift-Command-N 新建文件夹。Option-Command-N 新建智能文件夹。Command-R 显示所选替身的原始文件。Command-T 在当前“访达”窗口中有单个标签页开着的状态下显示或隐藏标签页栏。Shift-Command-T 显示或隐藏“访达”标签页。Option-Command-T 在当前“访达”窗口中有单个标签页开着的状态下显示或隐藏工具栏。Option-Command-V 移动：将剪贴板中的文件从原始位置移动到当前位置。Option-Command-Y 显示所选文件的快速查看幻灯片显示。Command-Y 使用“快速查看”预览所选文件。Command-1 以图标方式显示“访达”窗口中的项目。Command-2 以列表方式显示“访达”窗口中的项目。Command-3 以分栏方式显示“访达”窗口中的项目。Command-4 以封面流方式显示“访达”窗口中的项目。Command–左中括号 ([) 前往上一文件夹。Command–右中括号 (]) 前往下一文件夹。Command–上箭头 打开包含当前文件夹的文件夹。Command–Control–上箭头 在新窗口中打开包含当前文件夹的文件夹。Command–下箭头 打开所选项。Command–“调度中心” 显示桌面。即使您未在“访达”窗口中，这个快捷键也有效。Command–调高亮度 开启或关闭目标显示器模式。Command–调低亮度 当 Mac 连接到多个显示器时打开或关闭显示器镜像功能。右箭头 打开所选文件夹。这个快捷键仅在列表视图中有效。左箭头 关闭所选文件夹。这个快捷键仅在列表视图中有效。Option-连按 在单独的窗口中打开文件夹，并关闭当前窗口。Command-连按 在单独的标签页或窗口中打开文件夹。Command-Delete 将所选项移到废纸篓。Shift-Command-Delete 清倒废纸篓。Option-Shift-Command-Delete 清倒废纸篓而不显示确认对话框。Command-Y 使用“快速查看”预览文件。Option–调高亮度 打开“显示器”偏好设置。这个快捷键可与任一亮度键搭配使用。Option–“调度中心” 打开“调度中心”偏好设置。Option–调高音量 打开“声音”偏好设置。这个快捷键可与任一音量键搭配使用。按住 Command 键拖移 将拖移的项目移到其他宗卷或位置。拖移项目时指针会随之变化。按住 Option 键拖移 拷贝拖移的项目。拖移项目时指针会随之变化。按住 Option-Command 键拖移 为拖移的项目制作替身。拖移项目时指针会随之变化。按住 Option 键点按开合三角 打开所选文件夹内的所有文件夹。这个快捷键仅在列表视图中有效。按住 Command 键点按窗口标题 查看包含当前文件夹的文件夹。]]></content>
       <categories>
-          
-          <category> 前端 </category>
-          
+        <category>MAC</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 技术栈 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>div水平垂直居中方式</title>
-      <link href="/2019/06/03/div%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E6%96%B9%E5%BC%8F/"/>
-      <url>/2019/06/03/div%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E6%96%B9%E5%BC%8F/</url>
-      
-        <content type="html"><![CDATA[<p>1        div{<br>            width: 200px;<br>            height: 200px;<br>            background: green;<br>            position:absolute;<br>            left:0;<br>            top: 0;<br>            bottom: 0;<br>            right: 0;<br>            margin: auto;<br>            }<br>    2<br>        div{<br>            width:200px;<br>            height: 200px;<br>            background:green;<br>            position: absolute;<br>            left:50%;<br>            top:50%;<br>            margin-left:-100px;<br>            margin-top:-100px;<br>        }<br>    3<br>        div{<br>            width: 200px;<br>            height: 200px;<br>            background: green;<br>            position:absolute;<br>            left:50%;    /* 定位父级的50% <em>/            top:50%;<br>            transform: translate(-50%,-50%); /</em>自己的50% */<br>        }</p>]]></content>
-      
-      
+      <tags>
+        <tag>快捷键</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[VUE-动态组件]]></title>
+    <url>%2F2019%2F06%2F04%2FVUE-%E5%8A%A8%E6%80%81%E7%BB%84%E4%BB%B6%26%E5%BC%82%E6%AD%A5%E7%BB%84%E4%BB%B6%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[前端技术栈图]]></title>
+    <url>%2F2019%2F06%2F04%2F%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%E6%A0%88%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[]]></content>
       <categories>
-          
-          <category> 前端 </category>
-          
+        <category>前端</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> CSS </tag>
-            
-            <tag> 前端面试 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>typeof返回值</title>
-      <link href="/2019/06/03/typeof%E8%BF%94%E5%9B%9E%E5%80%BC/"/>
-      <url>/2019/06/03/typeof%E8%BF%94%E5%9B%9E%E5%80%BC/</url>
-      
-        <content type="html"><![CDATA[<p>// 基本数据类型<br>// number类型<br>var num = 1;<br>console.log(typeof num);//返回的是number<br>// string 类型<br>var str = ‘jack’;<br>console.log(typeof str);//返回的是string<br>// boolean类型<br>var boo =true;<br>console.log(typeof boo);//返回的是boolean<br>// undefined类型<br>var und ;<br>console.log(typeof und);//返回的是undefined<br>// null类型<br>var nul =null;<br>console.log(nul); //返回的是null</p><p>// 可以得出：基本数据类型返回的是自己对应的类型</p><p>// 复杂数据类型<br>// Array类型<br>var arr = new Array();<br>console.log(typeof arr); //返回的是object<br>// function类型<br>var fn = function(){};<br>console.log(typeof fn); //返回的是function<br>// Object类型<br>var  obj = new Object();<br>console.log(typeof obj); //返回的是object<br>// 字面量的数组<br>var arr2 = [1,32];<br>console.log(typeof arr2);//返回的是object</p><p>// 自定义对象<br>function Person(name){<br>    this.name =name;<br>}</p><p>var stu = new Person();<br>console.log(typeof stu); //返回的是object</p>]]></content>
-      
-      
+      <tags>
+        <tag>技术栈</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[div水平垂直居中方式]]></title>
+    <url>%2F2019%2F06%2F03%2Fdiv%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E6%96%B9%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[1 div{ width: 200px; height: 200px; background: green; position:absolute; left:0; top: 0; bottom: 0; right: 0; margin: auto; } 2 div{ width:200px; height: 200px; background:green; position: absolute; left:50%; top:50%; margin-left:-100px; margin-top:-100px; } 3 div{ width: 200px; height: 200px; background: green; position:absolute; left:50%; /* 定位父级的50% / top:50%; transform: translate(-50%,-50%); /自己的50% */ }]]></content>
       <categories>
-          
-          <category> 前端 </category>
-          
+        <category>前端</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 前端面试 </tag>
-            
-            <tag> js </tag>
-            
-            <tag> 前端基础 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>状态码整理</title>
-      <link href="/2019/06/03/%E7%8A%B6%E6%80%81%E7%A0%81%E6%95%B4%E7%90%86/"/>
-      <url>/2019/06/03/%E7%8A%B6%E6%80%81%E7%A0%81%E6%95%B4%E7%90%86/</url>
-      
-        <content type="html"><![CDATA[<p>200 OK 请求正常处理完毕<br>204 No Content 请求成功处理，没有实体的主体返回<br>206 Partial Content GET范围请求已成功处理<br>301 Moved Permanently 永久重定向，资源已永久分配新URI<br>302 Found 临时重定向，资源已临时分配新URI<br>303 See Other 临时重定向，期望使用GET定向获取<br>304 Not Modified 发送的附带条件请求未满足<br>307 Temporary Redirect 临时重定向，POST不会变成GET<br>400 Bad Request 请求报文语法错误或参数错误<br>401 Unauthorized 需要通过HTTP认证，或认证失败<br>403 Forbidden 请求资源被拒绝<br>404 Not Found 无法找到请求资源（服务器无理由拒绝）<br>500 Internal Server Error 服务器故障或Web应用故障<br>503 Service Unavailable 服务器超负载或停机维护</p>]]></content>
-      
-      
+      <tags>
+        <tag>CSS</tag>
+        <tag>前端面试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[typeof返回值]]></title>
+    <url>%2F2019%2F06%2F03%2Ftypeof%E8%BF%94%E5%9B%9E%E5%80%BC%2F</url>
+    <content type="text"><![CDATA[// 基本数据类型// number类型var num = 1;console.log(typeof num);//返回的是number// string 类型var str = ‘jack’;console.log(typeof str);//返回的是string// boolean类型var boo =true;console.log(typeof boo);//返回的是boolean// undefined类型var und ;console.log(typeof und);//返回的是undefined// null类型var nul =null;console.log(nul); //返回的是null // 可以得出：基本数据类型返回的是自己对应的类型 // 复杂数据类型// Array类型var arr = new Array();console.log(typeof arr); //返回的是object// function类型var fn = function(){};console.log(typeof fn); //返回的是function// Object类型var obj = new Object();console.log(typeof obj); //返回的是object// 字面量的数组var arr2 = [1,32];console.log(typeof arr2);//返回的是object // 自定义对象function Person(name){ this.name =name;} var stu = new Person();console.log(typeof stu); //返回的是object]]></content>
       <categories>
-          
-          <category> 前端 </category>
-          
+        <category>前端</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> JS </tag>
-            
-            <tag> http </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>ES6新增特性</title>
-      <link href="/2019/06/03/ES6%E6%96%B0%E5%A2%9E%E7%89%B9%E6%80%A7/"/>
-      <url>/2019/06/03/ES6%E6%96%B0%E5%A2%9E%E7%89%B9%E6%80%A7/</url>
-      
-        <content type="html"><![CDATA[<p>1.默认参数    var height || 50<br>2.模板表达式 <code>${name}</code>    使用反引号<br>3.拼接多行字符串    使用反引号包裹文字开头结尾即可，不必在每个换行使用+<br>4.拆包表达式 var {username, password} = req.body 可以直接获取body中对应的属性值<br>5.箭头函数 this在上下文和函数中的值应当是相同的， 而箭头函数可以帮我们确保这一点<br>6.Promise    可以异步执行js代码，使用then形成链式调用<br>7.块级作用于：let：声明块级变量  const 声明块级变量并且不可修改<br>8.模块化 通过module.export导出，使用import导入<br>9.引入了class和extends</p>]]></content>
-      
-      
+      <tags>
+        <tag>前端面试</tag>
+        <tag>js</tag>
+        <tag>前端基础</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[状态码整理]]></title>
+    <url>%2F2019%2F06%2F03%2F%E7%8A%B6%E6%80%81%E7%A0%81%E6%95%B4%E7%90%86%2F</url>
+    <content type="text"><![CDATA[200 OK 请求正常处理完毕204 No Content 请求成功处理，没有实体的主体返回206 Partial Content GET范围请求已成功处理301 Moved Permanently 永久重定向，资源已永久分配新URI302 Found 临时重定向，资源已临时分配新URI303 See Other 临时重定向，期望使用GET定向获取304 Not Modified 发送的附带条件请求未满足307 Temporary Redirect 临时重定向，POST不会变成GET400 Bad Request 请求报文语法错误或参数错误401 Unauthorized 需要通过HTTP认证，或认证失败403 Forbidden 请求资源被拒绝404 Not Found 无法找到请求资源（服务器无理由拒绝）500 Internal Server Error 服务器故障或Web应用故障503 Service Unavailable 服务器超负载或停机维护]]></content>
       <categories>
-          
-          <category> 前端 </category>
-          
+        <category>前端</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> ES6 </tag>
-            
-            <tag> JS </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>apply,call,bind用法和区别</title>
-      <link href="/2019/06/03/apply-call-bind%E7%94%A8%E6%B3%95%E5%92%8C%E5%8C%BA%E5%88%AB/"/>
-      <url>/2019/06/03/apply-call-bind%E7%94%A8%E6%B3%95%E5%92%8C%E5%8C%BA%E5%88%AB/</url>
-      
-        <content type="html"><![CDATA[<p>apply和call的作用都是改变this的指向，并传入参数<br>    区别在于接收参数方式不同，例如：<br>        var func = function(arg1, arg2) {<br>        };<br>        func.call(this, arg1, arg2);<br>        func.apply(this, [arg1, arg2])<br>    bind作用也是改变this的指向，区别在于改变this指向后并不会执行该方法，而是返回一个函数。</p>]]></content>
-      
-      
+      <tags>
+        <tag>JS</tag>
+        <tag>http</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ES6新增特性]]></title>
+    <url>%2F2019%2F06%2F03%2FES6%E6%96%B0%E5%A2%9E%E7%89%B9%E6%80%A7%2F</url>
+    <content type="text"><![CDATA[1.默认参数 var height || 502.模板表达式 ${name} 使用反引号3.拼接多行字符串 使用反引号包裹文字开头结尾即可，不必在每个换行使用+4.拆包表达式 var {username, password} = req.body 可以直接获取body中对应的属性值5.箭头函数 this在上下文和函数中的值应当是相同的， 而箭头函数可以帮我们确保这一点6.Promise 可以异步执行js代码，使用then形成链式调用7.块级作用于：let：声明块级变量 const 声明块级变量并且不可修改8.模块化 通过module.export导出，使用import导入9.引入了class和extends]]></content>
       <categories>
-          
-          <category> 前端 </category>
-          
+        <category>前端</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> JS </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>文本垂直居中</title>
-      <link href="/2019/06/03/%E6%96%87%E6%9C%AC%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/"/>
-      <url>/2019/06/03/%E6%96%87%E6%9C%AC%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/</url>
-      
-        <content type="html"><![CDATA[<pre><code>{    height: 40px;        line-height: 40px;}</code></pre>]]></content>
-      
-      
+      <tags>
+        <tag>JS</tag>
+        <tag>ES6</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[apply,call,bind用法和区别]]></title>
+    <url>%2F2019%2F06%2F03%2Fapply-call-bind%E7%94%A8%E6%B3%95%E5%92%8C%E5%8C%BA%E5%88%AB%2F</url>
+    <content type="text"><![CDATA[apply和call的作用都是改变this的指向，并传入参数 区别在于接收参数方式不同，例如： var func = function(arg1, arg2) { }; func.call(this, arg1, arg2); func.apply(this, [arg1, arg2]) bind作用也是改变this的指向，区别在于改变this指向后并不会执行该方法，而是返回一个函数。]]></content>
       <categories>
-          
-          <category> 前端 </category>
-          
+        <category>前端</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> CSS </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>css隐藏元素</title>
-      <link href="/2019/06/03/css%E9%9A%90%E8%97%8F%E5%85%83%E7%B4%A0/"/>
-      <url>/2019/06/03/css%E9%9A%90%E8%97%8F%E5%85%83%E7%B4%A0/</url>
-      
-        <content type="html"><![CDATA[<pre><code>visibility: hidden    显示设置为隐藏    还占据元素本身位置display: none;                                        不占据元素本身位置opacity: 0;    透明度设置为0                            还占据元素本身位置position 设为 absolute 然后将位置设到不可见区域</code></pre>]]></content>
-      
-      
+      <tags>
+        <tag>JS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[文本垂直居中]]></title>
+    <url>%2F2019%2F06%2F03%2F%E6%96%87%E6%9C%AC%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%2F</url>
+    <content type="text"><![CDATA[{ height: 40px; line-height: 40px; }]]></content>
       <categories>
-          
-          <category> 前端 </category>
-          
+        <category>前端</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> CSS </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>清除浮动</title>
-      <link href="/2019/06/03/%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8/"/>
-      <url>/2019/06/03/%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8/</url>
-      
-        <content type="html"><![CDATA[<pre><code>1 设置父元素高度2 在父元素标签结束前增加div并设置样式为 clear:both3 在父元素中增加样式 overflow:hidden</code></pre><blockquote><p>新增伪类：before 也可以用于清除浮动（待更新）</p></blockquote>]]></content>
-      
-      
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[css隐藏元素]]></title>
+    <url>%2F2019%2F06%2F03%2Fcss%E9%9A%90%E8%97%8F%E5%85%83%E7%B4%A0%2F</url>
+    <content type="text"><![CDATA[visibility: hidden 显示设置为隐藏 还占据元素本身位置 display: none; 不占据元素本身位置 opacity: 0; 透明度设置为0 还占据元素本身位置 position 设为 absolute 然后将位置设到不可见区域]]></content>
       <categories>
-          
-          <category> 前端 </category>
-          
+        <category>前端</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> CSS </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>vscode更改其他后缀文件识别为html文件方法</title>
-      <link href="/2019/06/03/vscode%E6%9B%B4%E6%94%B9%E5%85%B6%E4%BB%96%E5%90%8E%E7%BC%80%E6%96%87%E4%BB%B6%E8%AF%86%E5%88%AB%E4%B8%BAhtml%E6%96%87%E4%BB%B6%E6%96%B9%E6%B3%95/"/>
-      <url>/2019/06/03/vscode%E6%9B%B4%E6%94%B9%E5%85%B6%E4%BB%96%E5%90%8E%E7%BC%80%E6%96%87%E4%BB%B6%E8%AF%86%E5%88%AB%E4%B8%BAhtml%E6%96%87%E4%BB%B6%E6%96%B9%E6%B3%95/</url>
-      
-        <content type="html"><![CDATA[<p>File -&gt;    Preferences -&gt; setting -&gt; Edit in setting.json<br>增加属性<br>    “files.associations”: {<br>            “*.tpl”: “html”<br>    }</p>]]></content>
-      
-      
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[清除浮动]]></title>
+    <url>%2F2019%2F06%2F03%2F%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%2F</url>
+    <content type="text"><![CDATA[1 设置父元素高度 2 在父元素标签结束前增加div并设置样式为 clear:both 3 在父元素中增加样式 overflow:hidden 新增伪类：before 也可以用于清除浮动（待更新）]]></content>
       <categories>
-          
-          <category> 开发工具 </category>
-          
+        <category>前端</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> vscode </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>git拉取远程分支文件</title>
-      <link href="/2019/06/03/git%E6%8B%89%E5%8F%96%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E6%96%87%E4%BB%B6/"/>
-      <url>/2019/06/03/git%E6%8B%89%E5%8F%96%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E6%96%87%E4%BB%B6/</url>
-      
-        <content type="html"><![CDATA[<p>git拉取远程分支文件</p><ol><li><p>拉取远程分支 git fetch &lt;远程主机名&gt; &lt;分支名&gt;</p></li><li><p>取回更新并在本地创建新的分支 git checkout -b newBrach origin/master</p></li><li><p>切换回本地分支git checkout &lt;分支名&gt;</p></li><li><p>合并新创建的分支到当前分支上 git merge <name></name></p></li></ol><blockquote><p>ps：<br>查看分支：git branch<br>创建分支：git branch <name><br>切换分支：git checkout <name><br>创建+切换分支：git checkout -b <name><br>合并某分支到当前分支：git merge <name><br>删除分支：git branch -d <name></name></name></name></name></name></p></blockquote>]]></content>
-      
-      
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[vscode更改其他后缀文件识别为html文件方法]]></title>
+    <url>%2F2019%2F06%2F03%2Fvscode%E6%9B%B4%E6%94%B9%E5%85%B6%E4%BB%96%E5%90%8E%E7%BC%80%E6%96%87%E4%BB%B6%E8%AF%86%E5%88%AB%E4%B8%BAhtml%E6%96%87%E4%BB%B6%E6%96%B9%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[File -&gt; Preferences -&gt; setting -&gt; Edit in setting.json增加属性 “files.associations”: { “*.tpl”: “html” }]]></content>
       <categories>
-          
-          <category> git </category>
-          
+        <category>开发工具</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> git </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>本地分支提交到远程分支，并不同名</title>
-      <link href="/2019/06/03/%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E6%8F%90%E4%BA%A4%E5%88%B0%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%EF%BC%8C%E5%B9%B6%E4%B8%8D%E5%90%8C%E5%90%8D/"/>
-      <url>/2019/06/03/%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E6%8F%90%E4%BA%A4%E5%88%B0%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%EF%BC%8C%E5%B9%B6%E4%B8%8D%E5%90%8C%E5%90%8D/</url>
-      
-        <content type="html"><![CDATA[<p>本地分支提交到远程分支，并不同名</p><p>提交当前分支到指定分支<br>$ git branch –set-upstream-to=origin/production</p>]]></content>
-      
-      
+      <tags>
+        <tag>vscode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[git拉取远程分支文件]]></title>
+    <url>%2F2019%2F06%2F03%2Fgit%E6%8B%89%E5%8F%96%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E6%96%87%E4%BB%B6%2F</url>
+    <content type="text"><![CDATA[git拉取远程分支文件 拉取远程分支 git fetch &lt;远程主机名&gt; &lt;分支名&gt; 取回更新并在本地创建新的分支 git checkout -b newBrach origin/master 切换回本地分支git checkout &lt;分支名&gt; 合并新创建的分支到当前分支上 git merge ps：查看分支：git branch创建分支：git branch 切换分支：git checkout 创建+切换分支：git checkout -b 合并某分支到当前分支：git merge 删除分支：git branch -d]]></content>
       <categories>
-          
-          <category> git </category>
-          
+        <category>git</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> git </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>git忽略文件</title>
-      <link href="/2019/06/03/git%E5%BF%BD%E7%95%A5%E6%96%87%E4%BB%B6/"/>
-      <url>/2019/06/03/git%E5%BF%BD%E7%95%A5%E6%96%87%E4%BB%B6/</url>
-      
-        <content type="html"><![CDATA[<p><a href="https://www.cnblogs.com/kevingrace/p/5690241.html" target="_blank" rel="noopener">https://www.cnblogs.com/kevingrace/p/5690241.html</a></p><p>.gitignore</p>]]></content>
-      
-      
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[本地分支提交到远程分支，并不同名]]></title>
+    <url>%2F2019%2F06%2F03%2F%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E6%8F%90%E4%BA%A4%E5%88%B0%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%EF%BC%8C%E5%B9%B6%E4%B8%8D%E5%90%8C%E5%90%8D%2F</url>
+    <content type="text"><![CDATA[本地分支提交到远程分支，并不同名 提交当前分支到指定分支$ git branch –set-upstream-to=origin/production]]></content>
       <categories>
-          
-          <category> git </category>
-          
+        <category>git</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> git </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>使用Git下载指定分支命令为</title>
-      <link href="/2019/06/03/%E4%BD%BF%E7%94%A8Git%E4%B8%8B%E8%BD%BD%E6%8C%87%E5%AE%9A%E5%88%86%E6%94%AF%E5%91%BD%E4%BB%A4%E4%B8%BA/"/>
-      <url>/2019/06/03/%E4%BD%BF%E7%94%A8Git%E4%B8%8B%E8%BD%BD%E6%8C%87%E5%AE%9A%E5%88%86%E6%94%AF%E5%91%BD%E4%BB%A4%E4%B8%BA/</url>
-      
-        <content type="html"><![CDATA[<p>使用Git下载指定分支命令为：git clone -b 分支名 仓库地址</p>]]></content>
-      
-      
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[git忽略文件]]></title>
+    <url>%2F2019%2F06%2F03%2Fgit%E5%BF%BD%E7%95%A5%E6%96%87%E4%BB%B6%2F</url>
+    <content type="text"><![CDATA[https://www.cnblogs.com/kevingrace/p/5690241.html .gitignore]]></content>
       <categories>
-          
-          <category> git </category>
-          
+        <category>git</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> git </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>将远程分支与本地分支进行关联</title>
-      <link href="/2019/06/03/%E5%B0%86%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E4%B8%8E%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E8%BF%9B%E8%A1%8C%E5%85%B3%E8%81%94/"/>
-      <url>/2019/06/03/%E5%B0%86%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E4%B8%8E%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E8%BF%9B%E8%A1%8C%E5%85%B3%E8%81%94/</url>
-      
-        <content type="html"><![CDATA[<p>git pull origin master<br>(如果你想拉到本地的dev分支上，首先git checkout -b dev，然后使用git pull origin dev，这样就将本地dev分支与远程origin/dev相绑定了）</p><p>git branch -vv<br>可以看到master后面蓝色部分origin/master，说明master分支已经与origin/master绑定在一起了</p>]]></content>
-      
-      
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[使用Git下载指定分支命令为]]></title>
+    <url>%2F2019%2F06%2F03%2F%E4%BD%BF%E7%94%A8Git%E4%B8%8B%E8%BD%BD%E6%8C%87%E5%AE%9A%E5%88%86%E6%94%AF%E5%91%BD%E4%BB%A4%E4%B8%BA%2F</url>
+    <content type="text"><![CDATA[使用Git下载指定分支命令为：git clone -b 分支名 仓库地址]]></content>
       <categories>
-          
-          <category> git </category>
-          
+        <category>git</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> git </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>给hexo添加搜索功能</title>
-      <link href="/2019/06/03/%E7%BB%99hexo%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/"/>
-      <url>/2019/06/03/%E7%BB%99hexo%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</url>
-      
-        <content type="html"><![CDATA[<p>按网上配置<a href="https://www.jianshu.com/p/d388119a90ec" target="_blank" rel="noopener">https://www.jianshu.com/p/d388119a90ec</a><br>发布后弹出警告 YAMLException: duplicated mapping key at line 863, column -677:<br>    local_search:</p><p>运行后就直接报错</p><p>有两份重复配置导致的</p><p>最后发现原因是next默认有seach 的配置，但设置为false。</p><p>保留其一即可</p>]]></content>
-      
-      
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[将远程分支与本地分支进行关联]]></title>
+    <url>%2F2019%2F06%2F03%2F%E5%B0%86%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E4%B8%8E%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E8%BF%9B%E8%A1%8C%E5%85%B3%E8%81%94%2F</url>
+    <content type="text"><![CDATA[git pull origin master(如果你想拉到本地的dev分支上，首先git checkout -b dev，然后使用git pull origin dev，这样就将本地dev分支与远程origin/dev相绑定了） git branch -vv可以看到master后面蓝色部分origin/master，说明master分支已经与origin/master绑定在一起了]]></content>
       <categories>
-          
-          <category> 博客建站 </category>
-          
+        <category>git</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>未找到相关的Issues进行评论，请联系XXX进行创建</title>
-      <link href="/2019/05/31/%E6%9C%AA%E6%89%BE%E5%88%B0%E7%9B%B8%E5%85%B3%E7%9A%84Issues%E8%BF%9B%E8%A1%8C%E8%AF%84%E8%AE%BA%EF%BC%8C%E8%AF%B7%E8%81%94%E7%B3%BBXXX%E8%BF%9B%E8%A1%8C%E5%88%9B%E5%BB%BA/"/>
-      <url>/2019/05/31/%E6%9C%AA%E6%89%BE%E5%88%B0%E7%9B%B8%E5%85%B3%E7%9A%84Issues%E8%BF%9B%E8%A1%8C%E8%AF%84%E8%AE%BA%EF%BC%8C%E8%AF%B7%E8%81%94%E7%B3%BBXXX%E8%BF%9B%E8%A1%8C%E5%88%9B%E5%BB%BA/</url>
-      
-        <content type="html"><![CDATA[<p>设置个性化域名后回调地址要填写个性化域名地址！<br><img src="/images/gittalk%E8%AF%84%E8%AE%BA%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8.png" alt="gittalk评论无法使用"></p>]]></content>
-      
-      
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[给hexo添加搜索功能]]></title>
+    <url>%2F2019%2F06%2F03%2F%E7%BB%99hexo%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD%2F</url>
+    <content type="text"><![CDATA[按网上配置https://www.jianshu.com/p/d388119a90ec发布后弹出警告 YAMLException: duplicated mapping key at line 863, column -677: local_search: 运行后就直接报错 有两份重复配置导致的 最后发现原因是next默认有seach 的配置，但设置为false。 保留其一即可]]></content>
       <categories>
-          
-          <category> 博客建站 </category>
-          
+        <category>博客建站</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-            <tag> github </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>ie盒模型和google盒模型区别</title>
-      <link href="/2019/05/31/ie%E7%9B%92%E6%A8%A1%E5%9E%8B%E5%92%8Cgoogle%E7%9B%92%E6%A8%A1%E5%9E%8B%E5%8C%BA%E5%88%AB/"/>
-      <url>/2019/05/31/ie%E7%9B%92%E6%A8%A1%E5%9E%8B%E5%92%8Cgoogle%E7%9B%92%E6%A8%A1%E5%9E%8B%E5%8C%BA%E5%88%AB/</url>
-      
-        <content type="html"><![CDATA[<p>IE 盒子模型的 content 部分包含了 border 和 padding。这意味着当宽高固定时增加border和padding会压缩内容的显示，而不会扩大盒子。<br>好处是：当想要给固定好的布局中增加border和padding的面积不会改变原有布局<br>可通过css3新属性box-sizing来设置<br>box-sizing: content-box|border-box|inherit;<br>简单来说就是border-box为ie盒模型，content-box为正常盒模型，inherit为继承父元素的box-sizing值</p>]]></content>
-      
-      
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[未找到相关的Issues进行评论，请联系XXX进行创建]]></title>
+    <url>%2F2019%2F05%2F31%2F%E6%9C%AA%E6%89%BE%E5%88%B0%E7%9B%B8%E5%85%B3%E7%9A%84Issues%E8%BF%9B%E8%A1%8C%E8%AF%84%E8%AE%BA%EF%BC%8C%E8%AF%B7%E8%81%94%E7%B3%BBXXX%E8%BF%9B%E8%A1%8C%E5%88%9B%E5%BB%BA%2F</url>
+    <content type="text"><![CDATA[设置个性化域名后回调地址要填写个性化域名地址！]]></content>
       <categories>
-          
-          <category> 前端 </category>
-          
+        <category>博客建站</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> CSS </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>MAC空格键和回车键失效问题</title>
-      <link href="/2019/05/31/MAC%E7%A9%BA%E6%A0%BC%E9%94%AE%E5%92%8C%E5%9B%9E%E8%BD%A6%E9%94%AE%E5%A4%B1%E6%95%88%E9%97%AE%E9%A2%98/"/>
-      <url>/2019/05/31/MAC%E7%A9%BA%E6%A0%BC%E9%94%AE%E5%92%8C%E5%9B%9E%E8%BD%A6%E9%94%AE%E5%A4%B1%E6%95%88%E9%97%AE%E9%A2%98/</url>
-      
-        <content type="html"><![CDATA[<p>问题描述：空格键和回车键失效，选中输入法，选择显示虚拟键盘，按下空格以及回车后键盘不会变灰（变灰表示有反应），按下fn后再点击空格以及回车会有反应</p><blockquote><p>解决方式1：按下电源键开机的同时，马上按住option + command + P + R 持续30秒 然后解决<br>解决方式2：关机状态下，按下control  + option + shift + 电源键 持续10秒<br>ps: 需要接入电源再执行1,2 解决方式. 未接入电源情况下 1 方式失效.</p></blockquote><p>百度资料<br>OPTION+CMD+R+P+POWER：重置NVRAM 或 PRAM<br>Mac 会将某些设置储存在特殊内存区域中，而且即使关机这些设置也不会丢失（除非存在电池问题）。 在基于 Intel 的 Mac 上，存储位置是称为 NVRAM 的内存；而在基于 PowerPC 的 Mac 上，存储位置则是称为 PRAM 的内存。操作步骤为：<br>关闭电脑。<br>在键盘上找到以下按键：Command、Option、P 和 R。您需要在步骤 4 中同时按下这些键。<br>启动电脑。<br>按住 Command-Option-P-R 键。必须在出现灰屏前按下此组合键。<br>按住上述键，直到电脑重新启动，您会再次听到启动声。<br>松开这些键。 </p>]]></content>
-      
-      
+      <tags>
+        <tag>Hexo</tag>
+        <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ie盒模型和google盒模型区别]]></title>
+    <url>%2F2019%2F05%2F31%2Fie%E7%9B%92%E6%A8%A1%E5%9E%8B%E5%92%8Cgoogle%E7%9B%92%E6%A8%A1%E5%9E%8B%E5%8C%BA%E5%88%AB%2F</url>
+    <content type="text"><![CDATA[IE 盒子模型的 content 部分包含了 border 和 padding。这意味着当宽高固定时增加border和padding会压缩内容的显示，而不会扩大盒子。好处是：当想要给固定好的布局中增加border和padding的面积不会改变原有布局可通过css3新属性box-sizing来设置box-sizing: content-box|border-box|inherit;简单来说就是border-box为ie盒模型，content-box为正常盒模型，inherit为继承父元素的box-sizing值]]></content>
       <categories>
-          
-          <category> MAC </category>
-          
+        <category>前端</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> MAC-error </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Mac下使用终端查看某个端口号对应的进程和杀死进程</title>
-      <link href="/2019/05/31/Mac%E4%B8%8B%E4%BD%BF%E7%94%A8%E7%BB%88%E7%AB%AF%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AF%B9%E5%BA%94%E7%9A%84%E8%BF%9B%E7%A8%8B%E5%92%8C%E6%9D%80%E6%AD%BB%E8%BF%9B%E7%A8%8B/"/>
-      <url>/2019/05/31/Mac%E4%B8%8B%E4%BD%BF%E7%94%A8%E7%BB%88%E7%AB%AF%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AF%B9%E5%BA%94%E7%9A%84%E8%BF%9B%E7%A8%8B%E5%92%8C%E6%9D%80%E6%AD%BB%E8%BF%9B%E7%A8%8B/</url>
-      
-        <content type="html"><![CDATA[<p>lsof -i tcp:port，port即为端口号，如5037<br>kill PID 进程id，PID就是上面我们查到的的PID。</p>]]></content>
-      
-      
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[MAC空格键和回车键失效问题]]></title>
+    <url>%2F2019%2F05%2F31%2FMAC%E7%A9%BA%E6%A0%BC%E9%94%AE%E5%92%8C%E5%9B%9E%E8%BD%A6%E9%94%AE%E5%A4%B1%E6%95%88%E9%97%AE%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[问题描述：空格键和回车键失效，选中输入法，选择显示虚拟键盘，按下空格以及回车后键盘不会变灰（变灰表示有反应），按下fn后再点击空格以及回车会有反应 解决方式1：按下电源键开机的同时，马上按住option + command + P + R 持续30秒 然后解决解决方式2：关机状态下，按下control + option + shift + 电源键 持续10秒ps: 需要接入电源再执行1,2 解决方式. 未接入电源情况下 1 方式失效. 百度资料OPTION+CMD+R+P+POWER：重置NVRAM 或 PRAMMac 会将某些设置储存在特殊内存区域中，而且即使关机这些设置也不会丢失（除非存在电池问题）。 在基于 Intel 的 Mac 上，存储位置是称为 NVRAM 的内存；而在基于 PowerPC 的 Mac 上，存储位置则是称为 PRAM 的内存。操作步骤为：关闭电脑。在键盘上找到以下按键：Command、Option、P 和 R。您需要在步骤 4 中同时按下这些键。启动电脑。按住 Command-Option-P-R 键。必须在出现灰屏前按下此组合键。按住上述键，直到电脑重新启动，您会再次听到启动声。松开这些键。]]></content>
       <categories>
-          
-          <category> MAC </category>
-          
+        <category>MAC</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> linux命令 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>使用Hexo创建个人博客以及使用自定义域名(1)</title>
-      <link href="/2019/05/31/%E4%BD%BF%E7%94%A8Hexo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D/"/>
-      <url>/2019/05/31/%E4%BD%BF%E7%94%A8Hexo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D/</url>
-      
-        <content type="html"><![CDATA[<blockquote><p>本教程分为3部分，1.本地部署hexo博客。2.上传本地hexo博客到github并使用github.io访问。3.配置自定义域名到hexo博客</p></blockquote><h3 id="1-本地部署hexo博客"><a href="#1-本地部署hexo博客" class="headerlink" title="1.本地部署hexo博客"></a>1.本地部署hexo博客</h3><ul><li><p>下载<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></p></li><li><p>使用npm安装Hexo</p><blockquote><p><code>npm install hexo-cli -g</code></p></blockquote></li><li><p>在需要创建博客的文件夹下输入如下命令，初始化博客文件夹</p><blockquote><p><code>hexo init blog</code></p></blockquote></li><li><p>进入blog文件夹</p><blockquote><p><code>cd blog</code></p></blockquote></li><li><p>初始化所插件</p><blockquote><p><code>npm install</code></p></blockquote></li><li><p>在本地运行服务</p><blockquote><p><code>hexo server</code><br>默认地址为：localhost:4000</p></blockquote><!-- ---### 2.上传本地hexo博客到github并使用github.io访问- 注册[github](https://github.com/)账号- 新建github工程 ![创建按钮](/images/github创建按钮.png) ![创建工程](/images/github创建工程.png)- 生成本地ssh-key> `ssh-keygen -t rsa -C "your_email@example.com"`> 例如：`ssh-keygen -t rsa -C "17791205330@163.com"`- 配置ssh-key到github - 找到生成的ssh --></li></ul>]]></content>
-      
-      
+      <tags>
+        <tag>MAC-error</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Mac下使用终端查看某个端口号对应的进程和杀死进程]]></title>
+    <url>%2F2019%2F05%2F31%2FMac%E4%B8%8B%E4%BD%BF%E7%94%A8%E7%BB%88%E7%AB%AF%E6%9F%A5%E7%9C%8B%E6%9F%90%E4%B8%AA%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%AF%B9%E5%BA%94%E7%9A%84%E8%BF%9B%E7%A8%8B%E5%92%8C%E6%9D%80%E6%AD%BB%E8%BF%9B%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[lsof -i tcp:port，port即为端口号，如5037kill PID 进程id，PID就是上面我们查到的的PID。]]></content>
       <categories>
-          
-          <category> 博客建站 </category>
-          
+        <category>MAC</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-            <tag> Github </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2019/05/30/hello-world/"/>
-      <url>/2019/05/30/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-  
-  
+      <tags>
+        <tag>linux命令</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[使用Hexo创建个人博客以及使用自定义域名(1)]]></title>
+    <url>%2F2019%2F05%2F31%2F%E4%BD%BF%E7%94%A8Hexo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%2F</url>
+    <content type="text"><![CDATA[本教程分为3部分，1.本地部署hexo博客。2.上传本地hexo博客到github并使用github.io访问。3.配置自定义域名到hexo博客 1.本地部署hexo博客 下载Node.js 使用npm安装Hexo npm install hexo-cli -g 在需要创建博客的文件夹下输入如下命令，初始化博客文件夹 hexo init blog 进入blog文件夹 cd blog 初始化所插件 npm install 在本地运行服务 hexo server默认地址为：localhost:4000]]></content>
+      <categories>
+        <category>博客建站</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2019%2F05%2F30%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
 </search>
