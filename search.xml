@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[更新npm和nodejs]]></title>
     <url>%2F2019%2F06%2F05%2F%E6%9B%B4%E6%96%B0npm%E5%92%8Cnodejs%2F</url>
-    <content type="text"><![CDATA[更新npm update -g```1234- 更新nodejs&gt; ```npm install -g n``` 安装n命令&gt; ```n latest]]></content>
+    <content type="text"><![CDATA[更新npmupdate -g```1234- 更新nodejs ```npm install -g n``` 安装n命令 ```n latest]]></content>
       <categories>
         <category>前端</category>
       </categories>
@@ -35,9 +35,15 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[VUE-动态组件]]></title>
+    <title><![CDATA[VUE-动态组件&异步组件]]></title>
     <url>%2F2019%2F06%2F04%2FVUE-%E5%8A%A8%E6%80%81%E7%BB%84%E4%BB%B6%26%E5%BC%82%E6%AD%A5%E7%BB%84%E4%BB%B6%2F</url>
     <content type="text"></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>VUE</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[前端技术栈图]]></title>
