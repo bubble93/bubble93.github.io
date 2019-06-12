@@ -1,9 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Electorn快速入门]]></title>
+    <url>%2F2019%2F06%2F12%2FElectorn%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%2F</url>
+    <content type="text"><![CDATA[克隆这仓库 git clone https://github.com/electron/electron-quick-start 进入仓库 cd electron-quick-start 安装依赖库 npm install 运行应用 npm start 打包命令-mac npx electron-packager . electron-quick-start –darwin –out ../electron-quick-start –arch=x64]]></content>
+      <categories>
+        <category>客户端</category>
+      </categories>
+      <tags>
+        <tag>electorn</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[jest报错]]></title>
+    <url>%2F2019%2F06%2F05%2Fjest%E6%8A%A5%E9%94%99%2F</url>
+    <content type="text"><![CDATA[Jest SecurityError: localStorage is not available for opaque origins 解决方案 在jest.config.js文件中增加verbose: true,testURL: &#39;http://localhost/&#39;,]]></content>
+      <categories>
+        <category>单元测试</category>
+      </categories>
+      <tags>
+        <tag>jest</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ESlint报错整理]]></title>
+    <url>%2F2019%2F06%2F05%2FESlint%E6%8A%A5%E9%94%99%E6%95%B4%E7%90%86%2F</url>
+    <content type="text"><![CDATA[Use path.join() or path.resolve() instead of + to create paths 错误写法: var fullPath = dirname + “/foo.js”;正确写法: var fullPath = path.join(dirname, “foo.js”);或 var fullPath = path.resolve(__dirname, “foo.js”); require or disallow an empty line after variable declarations (newline-after-var) var,let,const 之后需要加入一个空行 Missing trailing comma]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>ESlint</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[更新npm和nodejs]]></title>
     <url>%2F2019%2F06%2F05%2F%E6%9B%B4%E6%96%B0npm%E5%92%8Cnodejs%2F</url>
-    <content type="text"><![CDATA[更新npmupdate -g```1234- 更新nodejs ```npm install -g n``` 安装n命令 ```n latest]]></content>
+    <content type="text"><![CDATA[更新npm npm update -g 更新nodejs npm install -g n 安装n命令n latest]]></content>
       <categories>
         <category>前端</category>
       </categories>
@@ -101,8 +134,8 @@
         <category>前端</category>
       </categories>
       <tags>
-        <tag>JS</tag>
         <tag>ES6</tag>
+        <tag>JS</tag>
       </tags>
   </entry>
   <entry>
