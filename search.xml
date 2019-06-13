@@ -34,9 +34,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[更新npm和nodejs]]></title>
+    <title><![CDATA[更新npm，nodejs，切换node版本]]></title>
     <url>%2F2019%2F06%2F05%2F%E6%9B%B4%E6%96%B0npm%E5%92%8Cnodejs%2F</url>
-    <content type="text"><![CDATA[更新npm npm update -g 更新nodejs npm install -g n 安装n命令n latest]]></content>
+    <content type="text"><![CDATA[更新npm npm update -g 更新nodejs npm install -g n 安装n命令n latest 切换node版本 n +Enter]]></content>
       <categories>
         <category>前端</category>
       </categories>
