@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[commit message 格式]]></title>
+    <url>%2F2019%2F06%2F14%2Fcommit-message-%E6%A0%BC%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[commit message 格式12345&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt; // 必须 &lt;body&gt; // 可省略 &lt;footer&gt; // 可省略 type: 提交类别（下面基本会覆盖提交代码所需，建议只出现下面7种类别，多了会更乱）feat：新功能（feature）fix：修补bugdocs：文档（documentation）style： 格式（不影响代码运行的变动）refactor：重构（即不是新增功能，也不是修改bug的代码变动）test：增加测试chore：构建过程或辅助工具的变动scope：影响范围（可不写）subject：对改变的正常描述，最好以动词开头语（尽量详细，必填）body：详细描述（个人认为没必要，可不写）footer：修改不兼容变动以及关闭 Issue时（个人认为没必要，可不写） 作者：A_little_lion链接：https://www.jianshu.com/p/b9d5a0711528来源：简书简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。]]></content>
+      <categories>
+        <category>规范</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[如何成为 Apache 项目的 Committer]]></title>
     <url>%2F2019%2F06%2F13%2F%E5%A6%82%E4%BD%95%E6%88%90%E4%B8%BA-Apache-%E9%A1%B9%E7%9B%AE%E7%9A%84-Committer%2F</url>
     <content type="text"><![CDATA[对于很多在公司维护开源项目的工程师来说，成为 Apache 项目的 committer 应该是很多人的一个小梦想，那么怎么才能成为一位 committer，对于一些比较成熟的项目，现在想成为 committer 是有一定的难度，但也不是不可能。How can I become an Apache committer? 这个问题在 Quora 上也引起了一些讨论，本文也是看了哪些点赞比较多的答案之后的一些简单总结，也督促自己能够按照别人的建议去践行，实现自己的一个小 dream。What does Committer mean : 如果你成为了一个项目的 committer，那么意味着你对这个工程已经有了非常深入的理解，你所提交的代码你能清楚地知道它不会对工程的其他地方带来不好的影响、能够兼容之前的功能；Who decides on committer status : 每一个 Apache 项目是由一个项目管理委员会（Project Management Committee， PMC）来负责的。当一个 PMC 提名一位 committer 时，会由 PMC 的成员们来投票决定这个 contributor 是否达到 committer 的要求； 上面是对 committer 简单的说明，那么如何才能成为一位 committer 呢？ Motivation : 你应该对这个项目中别人提出的问题保持一个积极的态度，如果你认为这个问题是需要解决的，那你自然而然就会去解决这个问题了； Attention to detail : Apache 的项目都有一个非常高的代码质量要求，在提交一个 pr 时，你应该确保改动的代码是不会由潜在的 bug 的，并且需要写适当的测试对代码变更部分。先从小处着手，关注代码的每一个细节：代码中使用的数据结构、测试是否有异常情况及边界情况的测试等。如果你能够按照这个标准要求自己，那么 committer 在 view 你的代码时，就不会花费太长的时间，久而久之，就会对你慢慢有了一直信任感； Activity in the community: 你应该积极地关注社区，把自己的邮箱加入到 mailing list，review 其他 contributor 的代码，提出一些建议。如果有新的 feature 或设计的变动在讨论，尽量加入到这些讨论中，即使你的建议不是很出色，也没有关系。这样做的好处是你开始密切关注社区的讨论、跟着项目的最新进展； Volunteer : Apache 项目有很多与其相关的项目需要 volunteer，如：季度报告、代码发版文档、说明文档等，你应该积极参与其中。 当然不同的项目成为 committer 的要求是不同的，但是上面这四条是比较通用，任何一个项目的 committer 都有上面这几个基本要求。近段时间听了大沙的一次直播，关于如何成为 Committer，大沙有以下几点建议（与上面的类似，内容上更具体一些）： 关注社区的问题、讨论，读源码，看看自己能不能解决这个问题，如果不能解决，关注这个 issue，看别人怎么解决这个问题，看别人怎么 review code、怎么解决问题； 当你能够 review 大量的 code，对一个功能比较熟悉，相当于一个 master，那么你离 committer 就非常近了； 这需要耐心和时间。 作者：柳年思水链接：https://www.jianshu.com/p/fb7c5a44b91b来源：简书简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。]]></content>
@@ -19,8 +30,8 @@
         <category>提升生产力</category>
       </categories>
       <tags>
-        <tag>vscode</tag>
         <tag>快捷键</tag>
+        <tag>vscode</tag>
       </tags>
   </entry>
   <entry>
