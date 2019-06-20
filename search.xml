@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[生成ssh密钥]]></title>
+    <url>%2F2019%2F06%2F20%2F%E7%94%9F%E6%88%90ssh%E5%AF%86%E9%92%A5%2F</url>
+    <content type="text"><![CDATA[生成ssh密钥$ ssh-keygen]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[HTML-table相关css设置]]></title>
+    <url>%2F2019%2F06%2F20%2FHTML-table%E7%9B%B8%E5%85%B3css%E8%AE%BE%E7%BD%AE%2F</url>
+    <content type="text"><![CDATA[移除单元格边框间距123table&#123; border-collapse: collapse;&#125; 单元格隔行显示不同颜色123table tr:nth-child(even)&#123; background: #ccc;&#125; 单元格选中一行]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+        <tag>html</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[切换git远程仓库]]></title>
     <url>%2F2019%2F06%2F20%2F%E5%88%87%E6%8D%A2git%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%2F</url>
     <content type="text"><![CDATA[查看所有远程仓库名称git remote 查看远程仓库 git 地址git get-url [远程仓库名称] 设置远程仓库 git 地址git set-url [远程仓库名称] [远程仓库地址]]]></content>
