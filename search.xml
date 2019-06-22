@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[js中的闭包]]></title>
+    <url>%2F2019%2F06%2F22%2Fjs%E4%B8%AD%E7%9A%84%E9%97%AD%E5%8C%85%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>分类1</category>
+      </categories>
+      <tags>
+        <tag>标签1</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[js实参和形参不匹配问题]]></title>
+    <url>%2F2019%2F06%2F22%2Fjs%E5%AE%9E%E5%8F%82%E5%92%8C%E5%BD%A2%E5%8F%82%E4%B8%8D%E5%8C%B9%E9%85%8D%E9%97%AE%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[js函数中，不论 传入/定义 多少个参数都会被当做一个数组来对待，存放在arguments数组中，可通过索引访问。]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[map无法用return跳出循环]]></title>
+    <url>%2F2019%2F06%2F22%2Fmap%E6%97%A0%E6%B3%95%E7%94%A8return%E8%B7%B3%E5%87%BA%E5%BE%AA%E7%8E%AF%2F</url>
+    <content type="text"><![CDATA[比较字符串（蛤蟆可以吃队友，也可以吃对手）如果数组第一个字符串元素包含了第二个字符串元素的所有字符，函数返回true。举例，[“hello”, “Hello”]应该返回true，因为在忽略大小写的情况下，第二个字符串的所有字符都可以在第一个字符串找到。 更改前12345678910111213function mutation(arr) &#123; // 请把你的代码写在这里 var new_arr0 = arr[0].toLowerCase(); var new_arr1 = arr[1].toLowerCase(); var values = new_arr1.split(&quot;&quot;); values.map(function(a)&#123; if(new_arr0.indexOf(a) == -1)&#123; console.log(&quot;retrun false&quot;); return false; &#125; &#125;); return true;&#125; 更改后1234567891011121314 function mutation(arr) &#123; // 请把你的代码写在这里 var new_arr0 = arr[0].toLowerCase(); var new_arr1 = arr[1].toLowerCase(); var values = new_arr1.split(&quot;&quot;); var return_value = true; values.map(function(a)&#123; if(new_arr0.indexOf(a) == -1)&#123; console.log(&quot;retrun false&quot;); return_value = false; &#125; &#125;); return return_value;&#125; 原因分析 由于闭包原因导致无法return，return只是终止了传进map里面的那一次方法，后续还能继续调用。]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[git:当未完成任务遇到线上bug]]></title>
     <url>%2F2019%2F06%2F22%2Fgit-%E5%BD%93%E6%9C%AA%E5%AE%8C%E6%88%90%E4%BB%BB%E5%8A%A1%E9%81%87%E5%88%B0%E7%BA%BF%E4%B8%8Abug%2F</url>
     <content type="text"><![CDATA[用git碰到了一个有意思的问题公司git的分支结构是 marster - develop - bubble_dev我在bubble_dev分支上开发。然后由我领导把我的分支合进 develop 和 master今天后端突然更新了之前正式系统上的一个接口地址要合进主分支但我本地 又进行了一些新功能的开发如果要把本次修改提交，意味着我现在刚做了一半的新功能也会上去 解决方案: 1 退回到未开发新功能前的版本 修改接口地址后再次提交并合并 然后我再切回当前版本继续开发,并更新远端分支为当前版本 2 在bubble_dev下再创建bubble_dev_dev分支 bubble_dev作为合并分支使用 在bubble_dev_dev上进行开发 3 切换到master分支 新建bug分支，修改后，合并回master]]></content>
