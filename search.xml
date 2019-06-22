@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[git暂存stash]]></title>
+    <url>%2F2019%2F06%2F22%2Fgit%E6%9A%82%E5%AD%98stash%2F</url>
+    <content type="text"><![CDATA[暂存 git stash save ‘本次暂存的标识名字’ 查看暂存列表 git stash list 恢复暂存 (暂存记录保存在list内,需要通过list索引index取出恢复) 恢复指定的暂存工作（删除暂存） git stash pop stash@{index} 恢复指定的暂存工作（不删除暂存） git stash apply stash@{index} 删除暂存 删除某个暂存, 暂存记录保存在list内,需要通过list索引index取出恢复git stash drop stash@{index} 删除全部暂存git stash clear]]></content>
+      <categories>
+        <category>版本管理工具</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[css:max/min-width/height]]></title>
+    <url>%2F2019%2F06%2F21%2Fcss-max-min-width-height%2F</url>
+    <content type="text"><![CDATA[max 设置元素最大宽度 min 设置元素最小宽度]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[生成ssh密钥]]></title>
     <url>%2F2019%2F06%2F20%2F%E7%94%9F%E6%88%90ssh%E5%AF%86%E9%92%A5%2F</url>
     <content type="text"><![CDATA[生成ssh密钥$ ssh-keygen]]></content>
