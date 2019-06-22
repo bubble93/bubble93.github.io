@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[git:当未完成任务遇到线上bug]]></title>
+    <url>%2F2019%2F06%2F22%2Fgit-%E5%BD%93%E6%9C%AA%E5%AE%8C%E6%88%90%E4%BB%BB%E5%8A%A1%E9%81%87%E5%88%B0%E7%BA%BF%E4%B8%8Abug%2F</url>
+    <content type="text"><![CDATA[用git碰到了一个有意思的问题公司git的分支结构是 marster - develop - bubble_dev我在bubble_dev分支上开发。然后由我领导把我的分支合进 develop 和 master今天后端突然更新了之前正式系统上的一个接口地址要合进主分支但我本地 又进行了一些新功能的开发如果要把本次修改提交，意味着我现在刚做了一半的新功能也会上去 解决方案: 1 退回到未开发新功能前的版本 修改接口地址后再次提交并合并 然后我再切回当前版本继续开发,并更新远端分支为当前版本 2 在bubble_dev下再创建bubble_dev_dev分支 bubble_dev作为合并分支使用 在bubble_dev_dev上进行开发 3 切换到master分支 新建bug分支，修改后，合并回master]]></content>
+      <categories>
+        <category>版本管理工具</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[git暂存stash]]></title>
     <url>%2F2019%2F06%2F22%2Fgit%E6%9A%82%E5%AD%98stash%2F</url>
-    <content type="text"><![CDATA[暂存 git stash save ‘本次暂存的标识名字’ 查看暂存列表 git stash list 恢复暂存 (暂存记录保存在list内,需要通过list索引index取出恢复) 恢复指定的暂存工作（删除暂存） git stash pop stash@{index} 恢复指定的暂存工作（不删除暂存） git stash apply stash@{index} 删除暂存 删除某个暂存, 暂存记录保存在list内,需要通过list索引index取出恢复git stash drop stash@{index} 删除全部暂存git stash clear]]></content>
+    <content type="text"><![CDATA[暂存 git stash save ‘本次暂存的标识名字’ 查看暂存列表 git stash list 恢复暂存 (暂存记录保存在list内,需要通过list索引index取出恢复) 恢复指定的暂存工作（删除暂存） git stash pop stash@{index} 恢复指定的暂存工作（不删除暂存） git stash apply stash@{index} 删除暂存 删除某个暂存, 暂存记录保存在list内,需要通过list索引index取出恢复 git stash drop stash@{index} 删除全部暂存 git stash clear]]></content>
       <categories>
         <category>版本管理工具</category>
       </categories>
