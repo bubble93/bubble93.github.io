@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[git合并报错]]></title>
+    <url>%2F2019%2F06%2F25%2Fgit%E5%90%88%E5%B9%B6%E6%8A%A5%E9%94%99%2F</url>
+    <content type="text"><![CDATA[Already up to date 由于当前合并分支不是最新的导致该错误切换到合并分支，执行git pull后重新合并]]></content>
+      <categories>
+        <category>版本管理工具</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[js算法:凯撒密码ROT13]]></title>
     <url>%2F2019%2F06%2F22%2Fjs%E7%AE%97%E6%B3%95-%E5%87%AF%E6%92%92%E5%AF%86%E7%A0%81ROT13%2F</url>
     <content type="text"><![CDATA[1234567891011121314151617181920function rot13(str) &#123; var top = &quot;ABCDEFGHIJKLM&quot;; var bottom = &quot;NOPQRSTUVWXYZ&quot;; var values = str.split(&quot;&quot;); var new_str = []; for(var i = 0; i &lt; values.length; i++)&#123; var topIndex = top.indexOf(values[i]); var bottomIndex = bottom.indexOf(values[i]); if(topIndex == -1 &amp;&amp; bottomIndex == -1)&#123; new_str.push(values[i]); &#125; if(topIndex != -1)&#123; new_str.push(bottom[topIndex]); &#125; if(bottomIndex != -1)&#123; new_str.push(top[bottomIndex]); &#125; &#125; return new_str.join(&quot;&quot;);&#125;]]></content>
@@ -164,8 +175,8 @@
         <category>提升生产力</category>
       </categories>
       <tags>
-        <tag>vscode</tag>
         <tag>快捷键</tag>
+        <tag>vscode</tag>
       </tags>
   </entry>
   <entry>
