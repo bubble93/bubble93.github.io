@@ -250,7 +250,7 @@
   <entry>
     <title><![CDATA[vscode快捷键]]></title>
     <url>%2F2019%2F06%2F13%2Fvscode%E5%BF%AB%E6%8D%B7%E9%94%AE%2F</url>
-    <content type="text"><![CDATA[多光标操作选中所有与当前字符串相同的字符串 command + shift + L 所有选中行末尾出现光标 option + shift + 拖动鼠标 选中文字末尾出现光标 option + shift + i 在指定位置出现光标 option + 鼠标点击 撤销光标操作 commond + U其他快捷操作移动当前行 option + ↑/↓ 快速移动光标 option + ←/→ 根据文件名搜索文件 按快捷键ctrl+p可以弹出一个小窗，在上面的输入框输入文件名，下拉框点击一个文件 复制当前行到下/上一行 option/alt + shift + ↑/↓ 折叠展开全部代码快捷键 12折叠：Ctrl/Command + k + 0展开：Ctrl/Command + k + j]]></content>
+    <content type="text"><![CDATA[多光标操作选中所有与当前字符串相同的字符串 command + shift + L 所有选中行末尾出现光标 option + shift + 拖动鼠标 选中文字末尾出现光标 option + shift + i 在指定位置出现光标 option + 鼠标点击 撤销光标操作 commond + U其他快捷操作移动当前行 option + ↑/↓ 快速移动光标 option + ←/→ 根据文件名搜索文件 按快捷键ctrl+p可以弹出一个小窗，在上面的输入框输入文件名，下拉框点击一个文件 复制当前行到下/上一行 option/alt + shift + ↑/↓ 折叠展开全部代码快捷键 12折叠：Ctrl/Command + k + 0展开：Ctrl/Command + k + j 显示相关全屏：F11 zoomIn/zoomOut：Ctrl +/- 侧边栏显/隐：Ctrl+B 显示资源管理器Ctrl+Shift+E 显示搜索Ctrl+Shift+F 显示 GitCtrl+Shift+G 显示 DebugCtrl+Shift+D 显示 OutputCtrl+Shift+U 主命令框 F1 或 Ctrl+Shift+P: 打开命令面板。在打开的输入框内，可以输入任何命令，例如：按一下 Backspace 会进入到 Ctrl+P 模式在 Ctrl+P 下输入 &gt; 可以进入 Ctrl+Shift+P 模式在 Ctrl+P 窗口下还可以:直接输入文件名，跳转到文件? 列出当前可执行的动作! 显示 Errors或 Warnings，也可以 Ctrl+Shift+M: 跳转到行数，也可以 Ctrl+G 直接进入@ 跳转到 symbol（搜索变量或者函数），也可以 Ctrl+Shift+O 直接进入@ 根据分类跳转 symbol，查找属性或函数，也可以 Ctrl+Shift+O 后输入:进入# 根据名字查找 symbol，也可以 Ctrl+T]]></content>
       <categories>
         <category>提升生产力</category>
       </categories>
