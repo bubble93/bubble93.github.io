@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[css清除浮动]]></title>
     <url>%2F2019%2F06%2F27%2Fcss%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%2F</url>
-    <content type="text"><![CDATA[通过增加div标签清除浮动12345&lt;div class=&quot;divcss5&quot;&gt; &lt;div class=&quot;divcss5-left&quot;&gt;left浮动&lt;/div&gt; &lt;div class=&quot;divcss5-right&quot;&gt;right浮动&lt;/div&gt; &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt; &lt;/div&gt; ##通过伪类after清除浮动 1234567.divcss5&#123; content:&quot;.&quot;; display:&quot;block&quot;; height: 0; clear: both; visibility: hidden;&#125;]]></content>
+    <content type="text"><![CDATA[通过增加div标签清除浮动12345&lt;div class=&quot;divcss5&quot;&gt; &lt;div class=&quot;divcss5-left&quot;&gt;left浮动&lt;/div&gt; &lt;div class=&quot;divcss5-right&quot;&gt;right浮动&lt;/div&gt; &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt; &lt;/div&gt; 通过伪类after清除浮动1234567.divcss5&#123; content:&quot;.&quot;; display:&quot;block&quot;; height: 0; clear: both; visibility: hidden;&#125;]]></content>
       <categories>
         <category>前端</category>
       </categories>
