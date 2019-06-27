@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[css技巧]]></title>
+    <url>%2F2019%2F06%2F26%2Fcss%E6%8A%80%E5%B7%A7%2F</url>
+    <content type="text"><![CDATA[外边距折叠 两个元素外边距重叠时，不会叠加，而是会保留较大的那一个 使用flex布局重置css样式 第三方库，例如normalize.css、minireset和ress, 或者 12345* &#123; margin: 0; padding: 0; box-sizing: border-box;&#125; 设置元素为border-box用background引入文件而不是img短横线命名 当class或者ID包含多个单词时，应使用连字符（-），CSS不区分大小写，因此不能使用驼峰式命名。同样，CSS中也不建议使用下划线连接的命名方式。当涉及到命名时，您还可以考虑BEM，它遵循一组原则，提供基于组件并增加一致性的开发方法。 保持选择器的低权重不要使用!importantEm, Rem与px em - 设置元素为1em，其大小与父元素的font-size属性有关。这个单位用于媒体查询中，特别适用于响应式开发，但是由于em单位在每一级中都是相对于父元素进行计算的，所以要得出某个子元素em单位对应的px值，有时候是很麻烦的。 rem - 相对于元素的font-size大小计算，rem使得统一改变页面上的所有标题和段落文本大小变得非常容易。 px - 像素单位是最精确的，但是不适用于自适应的设计。px单位是可靠的，并且易于理解，我们可以精细的控制元素的大小和移动到1px。 对于大型项目使用预处理器使用AutoPrefixer达到更好的兼容性压缩CSS文件Caniuse验证 验证CSS可能不像验证HTML或JavaScript代码那么重要，但是通过工具运行一下你的代码仍然非常有用。它会告诉你是否犯了任何错误，警告错误的用法，并为您提供改进代码的提示。就像压缩和Autoprefixer一样，有免费的工具可以利用： 在线工具：W3 Validator, CSS Lint 文本编辑器插件：Sublime Text, Atom 代码库：stylelint (Node.js, PostCSS), css-validator (Node.js)]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[实现一个公用的是否确定按钮]]></title>
+    <url>%2F2019%2F06%2F26%2F%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E5%85%AC%E7%94%A8%E7%9A%84%E6%98%AF%E5%90%A6%E7%A1%AE%E5%AE%9A%E6%8C%89%E9%92%AE%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>分类1</category>
+      </categories>
+      <tags>
+        <tag>标签1</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[jquery:html和val]]></title>
     <url>%2F2019%2F06%2F26%2Fjquery-html%E5%92%8Cval%2F</url>
     <content type="text"></content>
@@ -192,7 +214,7 @@
   <entry>
     <title><![CDATA[vscode快捷键]]></title>
     <url>%2F2019%2F06%2F13%2Fvscode%E5%BF%AB%E6%8D%B7%E9%94%AE%2F</url>
-    <content type="text"><![CDATA[多光标操作选中所有与当前字符串相同的字符串 command + shift + L 所有选中行末尾出现光标 option + shift + 拖动鼠标 选中文字末尾出现光标 option + shift + i 在指定位置出现光标 option + 鼠标点击 撤销光标操作 commond + U其他快捷操作移动当前行 option + ↑/↓ 快速移动光标 option + ←/→ 根据文件名搜索文件 按快捷键ctrl+p可以弹出一个小窗，在上面的输入框输入文件名，下拉框点击一个文件 复制当前行到下/上一行 option/alt + shift + ↑/↓]]></content>
+    <content type="text"><![CDATA[多光标操作选中所有与当前字符串相同的字符串 command + shift + L 所有选中行末尾出现光标 option + shift + 拖动鼠标 选中文字末尾出现光标 option + shift + i 在指定位置出现光标 option + 鼠标点击 撤销光标操作 commond + U其他快捷操作移动当前行 option + ↑/↓ 快速移动光标 option + ←/→ 根据文件名搜索文件 按快捷键ctrl+p可以弹出一个小窗，在上面的输入框输入文件名，下拉框点击一个文件 复制当前行到下/上一行 option/alt + shift + ↑/↓ 折叠展开全部代码快捷键 12折叠：Ctrl/Command + k + 0展开：Ctrl/Command + k + j]]></content>
       <categories>
         <category>提升生产力</category>
       </categories>
