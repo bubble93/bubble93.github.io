@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[js技巧]]></title>
+    <url>%2F2019%2F06%2F27%2Fjs%E6%8A%80%E5%B7%A7%2F</url>
+    <content type="text"><![CDATA[判断对象的数据类型12345const isType = type =&gt; target =&gt; &apos;[object $&#123;type&#125;]&apos; === Object.prototype.toString.call(target)const isArray = isType(&apos;Array&apos;);console.log(isArray([]));&gt; true 循环实现数组map方法123456789const selfMap = function(fn, context)&#123; let arr = Array.prototype.slice.call(this); let mappedArr = Array(arr.length -1); for(let i = 0; i &lt; arr.length; i++&gt;)&#123; if(!arr.hasOwnProperty(i)) continue; mappedArr[i] = fn.call(context, arr[i], i, this); &#125; return mappedArr;&#125; 原文地址：https://juejin.im/post/5cef46226fb9a07eaf2b7516项目地址：https://github.com/yeyan1996/JavaScript]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[css技巧]]></title>
     <url>%2F2019%2F06%2F26%2Fcss%E6%8A%80%E5%B7%A7%2F</url>
-    <content type="text"><![CDATA[外边距折叠 两个元素外边距重叠时，不会叠加，而是会保留较大的那一个 使用flex布局重置css样式 第三方库，例如normalize.css、minireset和ress, 或者 12345* &#123; margin: 0; padding: 0; box-sizing: border-box;&#125; 设置元素为border-box用background引入文件而不是img短横线命名 当class或者ID包含多个单词时，应使用连字符（-），CSS不区分大小写，因此不能使用驼峰式命名。同样，CSS中也不建议使用下划线连接的命名方式。当涉及到命名时，您还可以考虑BEM，它遵循一组原则，提供基于组件并增加一致性的开发方法。 保持选择器的低权重不要使用!importantEm, Rem与px em - 设置元素为1em，其大小与父元素的font-size属性有关。这个单位用于媒体查询中，特别适用于响应式开发，但是由于em单位在每一级中都是相对于父元素进行计算的，所以要得出某个子元素em单位对应的px值，有时候是很麻烦的。 rem - 相对于元素的font-size大小计算，rem使得统一改变页面上的所有标题和段落文本大小变得非常容易。 px - 像素单位是最精确的，但是不适用于自适应的设计。px单位是可靠的，并且易于理解，我们可以精细的控制元素的大小和移动到1px。 对于大型项目使用预处理器使用AutoPrefixer达到更好的兼容性压缩CSS文件Caniuse验证 验证CSS可能不像验证HTML或JavaScript代码那么重要，但是通过工具运行一下你的代码仍然非常有用。它会告诉你是否犯了任何错误，警告错误的用法，并为您提供改进代码的提示。就像压缩和Autoprefixer一样，有免费的工具可以利用： 在线工具：W3 Validator, CSS Lint 文本编辑器插件：Sublime Text, Atom 代码库：stylelint (Node.js, PostCSS), css-validator (Node.js)]]></content>
+    <content type="text"><![CDATA[外边距折叠 两个元素外边距重叠时，不会叠加，而是会保留较大的那一个 使用flex布局重置css样式 第三方库，例如normalize.css、minireset和ress, 或者 12345* &#123; margin: 0; padding: 0; box-sizing: border-box;&#125; 设置元素为border-box用background引入文件而不是img短横线命名 当class或者ID包含多个单词时，应使用连字符（-），CSS不区分大小写，因此不能使用驼峰式命名。同样，CSS中也不建议使用下划线连接的命名方式。当涉及到命名时，您还可以考虑BEM，它遵循一组原则，提供基于组件并增加一致性的开发方法。 保持选择器的低权重不要使用!importantEm, Rem与px em - 设置元素为1em，其大小与父元素的font-size属性有关。这个单位用于媒体查询中，特别适用于响应式开发，但是由于em单位在每一级中都是相对于父元素进行计算的，所以要得出某个子元素em单位对应的px值，有时候是很麻烦的。 rem - 相对于元素的font-size大小计算，rem使得统一改变页面上的所有标题和段落文本大小变得非常容易。 px - 像素单位是最精确的，但是不适用于自适应的设计。px单位是可靠的，并且易于理解，我们可以精细的控制元素的大小和移动到1px。 对于大型项目使用预处理器使用AutoPrefixer达到更好的兼容性压缩CSS文件Caniuse验证 验证CSS可能不像验证HTML或JavaScript代码那么重要，但是通过工具运行一下你的代码仍然非常有用。它会告诉你是否犯了任何错误，警告错误的用法，并为您提供改进代码的提示。就像压缩和Autoprefixer一样，有免费的工具可以利用： 在线工具：W3 Validator, CSS Lint 文本编辑器插件：Sublime Text, Atom 代码库：stylelint (Node.js, PostCSS), css-validator (Node.js) 原文地址： https://segmentfault.com/a/1190000019542534]]></content>
       <categories>
         <category>前端</category>
       </categories>
@@ -14,7 +25,7 @@
   <entry>
     <title><![CDATA[实现一个公用的是否确定按钮]]></title>
     <url>%2F2019%2F06%2F26%2F%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E5%85%AC%E7%94%A8%E7%9A%84%E6%98%AF%E5%90%A6%E7%A1%AE%E5%AE%9A%E6%8C%89%E9%92%AE%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[目前公司项目上的实现方式是，在主页面文件中加入一个隐藏的删除div。]]></content>
       <categories>
         <category>分类1</category>
       </categories>
