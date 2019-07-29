@@ -315,6 +315,205 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.bubbleo.club/2019/05/31/标准盒子模型和IE盒子模型/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bubble">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="bubble">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/05/31/标准盒子模型和IE盒子模型/" class="post-title-link" itemprop="url">标准盒子模型和IE盒子模型</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-05-31 17:36:16" itemprop="dateCreated datePublished" datetime="2019-05-31T17:36:16+08:00">2019-05-31</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-07-24 22:15:44" itemprop="dateModified" datetime="2019-07-24T22:15:44+08:00">2019-07-24</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/2019/05/31/标准盒子模型和IE盒子模型/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/31/标准盒子模型和IE盒子模型/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="盒模型区别"><a href="#盒模型区别" class="headerlink" title="盒模型区别"></a>盒模型区别</h2><p>盒模型由外边距，边框，内边距，内容区，4部分组成，除内容区外，其他部分均有4个方向。<br>在标准盒模型中，宽度和高度单指内容区的高和宽<br>在IE和模型中，宽度和高度额外囊括了边框和内边距</p>
+<hr>
+<h2 id="通过CSS设置盒模型"><a href="#通过CSS设置盒模型" class="headerlink" title="通过CSS设置盒模型"></a>通过CSS设置盒模型</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">box-sizing:content-box  //普通盒模型</span><br><span class="line">box-sizing:border-box //IE盒模型</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="js获取宽高"><a href="#js获取宽高" class="headerlink" title="js获取宽高"></a>js获取宽高</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">//只能获取行内样式，不能获取内嵌以及外链样式</span><br><span class="line">element.style.width/height;</span><br><span class="line">//通用方式</span><br><span class="line">window.getComputedStyle(element).width/height;</span><br><span class="line">//IE独有</span><br><span class="line">element.currentStyle.width/height;</span><br><span class="line">//getBoundingClientRect 获取元素相对于窗口的位置来计算出宽高</span><br><span class="line">rectObject = object.getBoundingClientRect();</span><br><span class="line">rectObject.top;     //元素上边到视窗上边的距离;</span><br><span class="line"></span><br><span class="line">rectObject.right;   //元素右边到视窗左边的距离;</span><br><span class="line"></span><br><span class="line">rectObject.bottom;  //元素下边到视窗上边的距离;</span><br><span class="line"></span><br><span class="line">rectObject.left;    //元素左边到视窗左边的距离;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p>IE 盒子模型的 content 部分包含了 border 和 padding。这意味着当宽高固定时增加border和padding会压缩内容的显示，而不会扩大盒子。<br>好处是：当想要给固定好的布局中增加border和padding的面积不会改变原有布局<br>可通过css3新属性box-sizing来设置<br>box-sizing: content-box|border-box|inherit;</p>
+</blockquote>
+<h2 id="简单来说就是border-box为ie盒模型，content-box为正常盒模型，inherit为继承父元素的box-sizing值"><a href="#简单来说就是border-box为ie盒模型，content-box为正常盒模型，inherit为继承父元素的box-sizing值" class="headerlink" title="简单来说就是border-box为ie盒模型，content-box为正常盒模型，inherit为继承父元素的box-sizing值"></a>简单来说就是border-box为ie盒模型，content-box为正常盒模型，inherit为继承父元素的box-sizing值</h2><blockquote>
+<p><a href="https://github.com/qianguyihao/Web/blob/master/14-%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95/02-CSS%E7%9B%92%E6%A8%A1%E5%9E%8B%E5%8F%8ABFC.md" target="_blank" rel="noopener">传送门-前端学习</a></p>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://www.bubbleo.club/2019/05/31/MAC空格键和回车键失效问题/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1118,7 +1317,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">64</span>
+                    <span class="site-state-item-count">65</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
