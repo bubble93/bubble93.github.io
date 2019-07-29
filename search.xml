@@ -47,23 +47,23 @@
   <entry>
     <title><![CDATA[css居中]]></title>
     <url>%2F2019%2F07%2F10%2Fcss%E5%B1%85%E4%B8%AD%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[让绝对定位的元素在父元素中居中 left:50%; margin-left:负的宽度的一半]]></content>
       <categories>
-        <category>分类1</category>
+        <category>前端</category>
       </categories>
       <tags>
-        <tag>标签1</tag>
+        <tag>css</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[css神奇现象]]></title>
     <url>%2F2019%2F07%2F10%2Fcss%E7%A5%9E%E5%A5%87%E7%8E%B0%E8%B1%A1%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[对子元素设置margin-top时，会将父元素一起挤下来，父元素设置border则恢复正常 margin一般用于表达兄弟之间的距离，padding一般用于表达父子间的距离]]></content>
       <categories>
-        <category>分类1</category>
+        <category>前端</category>
       </categories>
       <tags>
-        <tag>标签1</tag>
+        <tag>css</tag>
       </tags>
   </entry>
   <entry>
