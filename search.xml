@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[js防抖与节流]]></title>
+    <url>%2F2019%2F08%2F06%2Fjs%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81%2F</url>
+    <content type="text"><![CDATA[防抖 函数防抖（debounce）:就是让某个函数在上一次执行之后，满足等待某个时间内不再触发此函数后再执行，而在这个等待时间内再次触发函数，等待时间可以重新计算，知道该函数在一定间隔内没有被调用时，才开始执行被调用方法（所谓防抖，就是指触发事件后在 n 秒内函数只能执行一次，如果在 n 秒内又触发了事件，则会重新计算函数执行时间。） 节流 函数节流（throttle）:是让一个函数无法在很短的时间间隔内连续调用，当上一次执行完之后过了规定的时间间隔，才能进行下一次的函数调用。（所谓节流，就是指连续触发事件但是在N秒中只执行一次函数）节流会稀释函数的执行频率。]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[vue计算属性与定义函数的区别]]></title>
+    <url>%2F2019%2F08%2F06%2Fvue%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7%E4%B8%8E%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0%E7%9A%84%E5%8C%BA%E5%88%AB%2F</url>
+    <content type="text"><![CDATA[计算属性 1234&lt;div id=&quot;example&quot;&gt; &lt;p&gt;Original message: &quot;&#123;&#123; message &#125;&#125;&quot;&lt;/p&gt; &lt;p&gt;Computed reversed message: &quot;&#123;&#123; reversedMessage &#125;&#125;&quot;&lt;/p&gt;&lt;/div&gt; 12345678910111213var vm = new Vue(&#123; el: &apos;#example&apos;, data: &#123; message: &apos;Hello&apos; &#125;, computed: &#123; // 计算属性的 getter reversedMessage: function () &#123; // `this` 指向 vm 实例 return this.message.split(&apos;&apos;).reverse().join(&apos;&apos;) &#125; &#125;&#125;) 另一种实现方式 1&lt;p&gt;Reversed message: &quot;&#123;&#123; reversedMessage() &#125;&#125;&quot;&lt;/p&gt; 123456// 在组件中methods: &#123; reversedMessage: function () &#123; return this.message.split(&apos;&apos;).reverse().join(&apos;&apos;) &#125;&#125; 两者间的区别在于: 计算属性是基于它们的响应式依赖进行缓存的。只在相关响应式依赖发生改变时它们才会重新求值。这就意味着只要 message 还没有发生改变，多次访问 reversedMessage 计算属性会立即返回之前的计算结果，而不必再次执行函数 这也同样意味着下面的计算属性将不再更新，因为 Date.now() 不是响应式依赖： 12345computed: &#123; now: function () &#123; return Date.now() &#125;&#125;]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+        <tag>vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[跨域以及前后端通信]]></title>
+    <url>%2F2019%2F07%2F31%2F%E8%B7%A8%E5%9F%9F%E4%BB%A5%E5%8F%8A%E5%89%8D%E5%90%8E%E7%AB%AF%E9%80%9A%E4%BF%A1%2F</url>
+    <content type="text"><![CDATA[同源策略概念和具体限制 同源策略：限制从一个源加载的文档或脚本如何与来自另一个源的资源进行交互。这是一个用于隔离潜在恶意文件的关键的安全机制。 源包括三个部分：协议、域名、端口（http协议的默认端口是80）。如果有任何一个部分不同，则源不同，那就是跨域了。 限制：这个源的文档没有权利去操作另一个源的文档。这个限制体现在：Cookie、LocalStorage和IndexDB无法获取。无法获取和操作DOM。不能发送Ajax请求。我们要注意，Ajax只适合同源的通信。 前后端如何通信 主要有以下几种方式： Ajax：不支持跨域。 WebSocket：不受同源策略的限制，支持跨域。 CORS：不受同源策略的限制，支持跨域。一种新的通信协议标准。可以理解成是：同时支持同源和跨域的Ajax。]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+        <tag>跨域</tag>
+        <tag>通信</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[类的定义和继承的几种方式]]></title>
+    <url>%2F2019%2F07%2F29%2F%E7%B1%BB%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E7%BB%A7%E6%89%BF%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[类的定义/类的声明 方式一：用构造函数模拟类（传统写法） 123function Animal1() &#123; this.name = &apos;smyhvae&apos;; //通过this，表明这是一个构造函数&#125; 方式二：用 class 声明（ES6的写法） 12345class Animal2 &#123; constructor() &#123; //可以在构造函数里写属性 this.name = name; &#125;&#125; 实例化 类的实例化很简单，直接 new 出来即可。1console.log(new Animal1(),new Animal2()); //实例化。如果括号里没有参数，则括号可以省略 ES5继承的几种方式 继承的本质就是原型链。继承的方式有几种？每种形式的优缺点是？这些问题必问的。其实就是考察你对原型链的掌握程度。 方式一：借助构造函数 12345678910function Parent1() &#123; this.name = &apos;parent1 的属性&apos;;&#125;function Child1() &#123; Parent1.call(this); //【重要】此处用 call 或 apply 都行：改变 this 的指向 this.type = &apos;child1 的属性&apos;;&#125;console.log(new Child1); 上方代码中，最重要的那行代码：在子类的构造函数里写了Parent1.call(this);，意思是：让Parent的构造函数在child的构造函数中执行。发生的变化是：改变this的指向，parent的实例 –&gt; 改为指向child的实例。导致 parent的实例的属性挂在到了child的实例上，这就实现了继承。 分析：这种方式，虽然改变了 this 的指向，但是，Child1 无法继承 Parent1 的原型。也就是说，如果我给 Parent1 的原型增加一个方法，这个方法是无法被 Child1 继承的 方法二：通过原型链实现继承1234567891011121314/*通过原型链实现继承 */function Parent() &#123; this.name = &apos;Parent 的属性&apos;;&#125;function Child() &#123; this.type = &apos;Child 的属性&apos;;&#125;Child.prototype = new Parent(); //【重要】console.log(new Child()); 上方代码中，最重要的那行：每个函数都有prototype属性，于是，构造函数也有这个属性，这个属性是一个对象。现在，我们把Parent的实例赋值给了Child的prototye，从而实现继承。此时，Child构造函数、Parent的实例、Child的实例构成一个三角关系。于是：new Child.__proto__ === new Parent()的结果为true 分析：这种继承方式，Child 可以继承 Parent 的原型，但有个缺点：缺点是：如果修改 child1实例的name属性，child2实例中的name属性也会跟着改变。 方式三：组合的方式：构造函数 + 原型链12345678910111213141516/*组合方式实现继承：构造函数、原型链Child3 和 Parent3 中的属性以及方法分别出现在了child3和child3的原型上，所以不会造成原属性修改 */function Parent3() &#123; this.name = &apos;Parent 的属性&apos;; this.arr = [1, 2, 3];&#125;function Child3() &#123; Parent3.call(this); //【重要1】执行 parent方法 this.type = &apos;Child 的属性&apos;;&#125;Child3.prototype = new Parent3(); //【重要2】第二次执行parent方法var child = new Child3(); 这种方式，能解决之前两种方式的问题：既可以继承父类原型的内容，也不会造成原型里属性的修改。这种方式的缺点是：让父亲Parent的构造方法执行了两次。 方式四：寄生组合式继承 让一个函数去指向SuperType.prototype，然后让SubType.prototype指向这个函数产生的对象 12345678910111213141516171819202122function inherit(Target,Origin) &#123;//实现寄生组合式继承的核心函数 function F() &#123;&#125;; F.prototype = Origin.prototype; //F()的原型指向的是Origin Target.prototype = new F(); //Target的原型指向的是F() Target.prototype.constructor = Target; SubType.prototype.__proto__ == SuperType.prototype&#125;function SuperType(name) &#123; this.name = name; this.colors = [&apos;red&apos;,&apos;blue&apos;,&apos;pink&apos;];&#125;SuperType.prototype.sayName = function() &#123; console.log(this.name);&#125;function SubType(name,age) &#123; //继承属性 SuperType.call(this,name);//在创建实例时第二次调用SuperType this.age = age;&#125;inherit(SubType,SuperType);//实现寄生组合式继承 实现寄生组合式继承的核心函数。F函数其实是通用的，我们没必要每次进入inherit函数时都声明一遍。所以我们可以用闭包的形式来写 12345678910var inherit = (function () &#123; var F = function () &#123;&#125;; return function (Target , Origin) &#123; F.prototype = Origin.prototype;//F()的原型指向的是Origin Target.prototype = new F();//Target的原型指向的是F() Target.prototype.constructor = Target; Target.prototype.uber = Origin.prototype; SubType.prototype.__proto__ == SuperType.prototype &#125; &#125;)() ES6中的类继承 12345678class Child extends Parent &#123; constructor(sex) &#123; super(); this.sex = sex; &#125;&#125;var child = new Child(&apos;xiaoyu&apos;,12,&apos;man&apos;); constructor方法是类的默认方法，通过new命令生成对象实例时，自动调用该方法。一个类必须有constructor方法，如果没有显式定义，一个空的constructor方法会被默认添加。在子类的构造函数中，如果显示声明了constructor，则必须要显示的调用super函数。只有调用super之后，才可以使用this关键字，否则会报错。]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[创建对象和原型链]]></title>
     <url>%2F2019%2F07%2F29%2F%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE%2F</url>
     <content type="text"><![CDATA[原型，构造函数，实例三者之间关系 原型中的constructor属性指向了构造函数构造函数中的prototype和实例中的_proto_属性指向了原型 原型链 原型链的基本原理：任何一个实例，通过原型链，找到它上面的原型，该原型对象中的方法和属性，可以被所有的原型实例共享。 Object是原型链的顶端。 原型可以起到继承的作用。原型里的方法都可以被不同的实例共享： 1234//给Foo的原型添加 say 函数Foo.prototype.say = function () &#123; console.log(&apos;&apos;);&#125; 原型链的关键：在访问一个实例的时候，如果实例本身没找到此方法或属性，就往原型上找。如果还是找不到，继续往上一级的原型上找。 instanceof的原理 instanceof的原理：判断实例对象的__proto__属性，和构造函数的prototype属性，是否为同一个引用（是否指向同一个地址）。注意1：虽然说，实例是由构造函数 new 出来的，但是实例的__proto__属性引用的是构造函数的prototype。也就是说，实例的__proto__属性与构造函数本身无关。注意2：在原型链上，原型的上面可能还会有原型，以此类推往上走，继续找__proto__属性。这条链上如果能找到， instanceof 的返回结果也是 true。 比如说：foo instance of Foo的结果为true，因为foo.__proto__===Foo.prototype为true。foo instance of Objecet的结果也为true，因为Foo.prototype.__proto__ === Object.prototype为true。 但我们不能轻易的说：foo 一定是 由Object创建的实例。这句话是错误的。我们来看下一个问题就明白了。 分析一个问题问题：已知A继承了B，B继承了C。怎么判断 a 是由A直接生成的实例，还是B直接生成的实例呢？还是C直接生成的实例呢？ 分析：这就要用到原型的constructor属性了。 foo.__proto__.constructor === Foo的结果为true，但是 foo.__proto__.constructor === Object的结果为false。所以，用 consturctor判断就比用 instanceof判断，更为严谨。 new 运算符 当new Foo()时发生了什么： （1）创建一个新的空对象实例。 （2）将此空对象的隐式原型指向其构造函数的显示原型。 （3）执行构造函数（传入相应的参数，如果没有参数就不用传），同时 this 指向这个新实例。 （4）如果返回值是一个新对象，那么直接返回该对象；如果无返回值或者返回一个非对象值，那么就将步骤（1）创建的对象返回。]]></content>
