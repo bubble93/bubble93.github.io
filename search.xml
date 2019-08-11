@@ -36,7 +36,7 @@
   <entry>
     <title><![CDATA[git忽略文件夹中除了指定的文件外的其他所有文件]]></title>
     <url>%2F2019%2F08%2F09%2Fgit%E5%BF%BD%E7%95%A5%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%AD%E9%99%A4%E4%BA%86%E6%8C%87%E5%AE%9A%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%96%E7%9A%84%E5%85%B6%E4%BB%96%E6%89%80%E6%9C%89%E6%96%87%E4%BB%B6%2F</url>
-    <content type="text"><![CDATA[/dist/* !/dist/index.html]]></content>
+    <content type="text"><![CDATA[12**/dist/*!**/dist/index.html]]></content>
       <categories>
         <category>版本管理工具</category>
       </categories>
