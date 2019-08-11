@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[git把tag推送到远程仓库]]></title>
+    <url>%2F2019%2F08%2F11%2Fgit%E6%8A%8Atag%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%2F</url>
+    <content type="text"><![CDATA[一、列出标签 $ git tag # 在控制台打印出当前仓库的所有标签 二、搜索标签 $ git tag -l ‘v0.1.*’ # 搜索符合模式的标签 三、推送标签到远程仓库 git push并不会把tag标签传送到远端服务器上，只有通过显式命令才能分享标签到远端仓库。1.push单个tag，命令格式为：git push origin [tagname]例如：git push origin v1.0 #将本地v1.0的tag推送到远端服务器2.push所有tag，命令格式为：git push [origin] –tags例如：git push –tags或 git push origin –tags版权声明：本文为CSDN博主「elena_w」的原创文章，遵循CC 4.0 by-sa版权协议，转载请附上原文出处链接及本声明。原文链接：https://blog.csdn.net/github_27263697/article/details/79563949]]></content>
+      <categories>
+        <category>版本管理工具</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[webpack学习笔记(2)]]></title>
     <url>%2F2019%2F08%2F11%2Fwebpack%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(2)%2F</url>
     <content type="text"><![CDATA[tree shaking]]></content>
