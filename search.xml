@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[搭建aws服务器环境]]></title>
+    <url>%2F2019%2F08%2F15%2F%E6%90%AD%E5%BB%BAaws%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%8E%AF%E5%A2%83%2F</url>
+    <content type="text"><![CDATA[安装git，nodejs，npm 安装git sudo apt-get install git 安装node sudo git clone https://github.com/nodejs/node.git 赋予权限 sudo chmod -R 755 node 执行安装 cd nodesudo ./configure 报错 1./configure: 4: exec: python: not found 安装python sudo apt-get install python 执行安装 sudo ./configure 报错 123WARNING: failed to autodetect C++ compiler version (CXX=g++)WARNING: failed to autodetect C compiler version (CC=gcc)ERROR: No acceptable C compiler found! 安装gcc sudo apt-get install build-essential 执行安装 sudo ./configuresudo make //在该步骤安装许久未结束。安装失败sudo make install 查看版本 node --version apt安装方式123sudo apt-get updatesudo apt-get install nodejssudo apt-get install npm 克隆github仓库代码到服务器配置服务器ssh-key到github才能执行git clone npm run start报错服务器端没有浏览器，opn()方法会导致启动失败]]></content>
+      <categories>
+        <category>服务器环境</category>
+      </categories>
+      <tags>
+        <tag>aws</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[运行gulp项目报错：AssertionError: Task function must be specified。]]></title>
     <url>%2F2019%2F08%2F12%2F%E8%BF%90%E8%A1%8Cgulp%E9%A1%B9%E7%9B%AE%E6%8A%A5%E9%94%99%EF%BC%9AAssertionError-Task-function-must-be-specified%2F</url>
     <content type="text"><![CDATA[gulp 3 和 gulp 4运行方式是不一样的，所以会出现错误。具体细节，可以看这里 gup3 VS gulp4 区别 Gulp 4最大的变化就是你不能像以前那样传递一个依赖任务列表。 Gulp3，如果有一个任务A，B和C的列表，你想在一个序列中运行（确保A在B开始之前完成，而B在C开始之前完成），代码如下： 123456789gulp.task(&apos;a&apos;, function () &#123; // Do something.&#125;);gulp.task(&apos;b&apos;, [&apos;a&apos;], function () &#123; // Do some stuff.&#125;);gulp.task(&apos;c&apos;, [&apos;b&apos;], function () &#123; // Do some more stuff.&#125;); 在Gulp 4中，你不能再这样做了。你会得到以下错误： 1234567891011121314assert.js:85 throw new assert.AssertionError(&#123; ^AssertionError: Task function must be specified at Gulp.set [as _setTask] (/home/hope/web/node_modules/undertaker/lib/set-task.js:10:3) at Gulp.task (/home/hope/web/node_modules/undertaker/lib/task.js:13:8) at Object.&lt;anonymous&gt; (/home/hope/web/gulpfile.js:31:6) at Module._compile (module.js:570:32) at Object.Module._extensions..js (module.js:579:10) at Module.load (module.js:487:32) at tryModuleLoad (module.js:446:12) at Function.Module._load (module.js:438:3) at Module.require (module.js:497:17) at require (internal/module.js:20:19) 不要用Gulp3的方式指定依赖任务，你需要使用gulp.series和gulp.parallel，因为gulp任务现在只有两个参数。 gulp.series：按照顺序执行gulp.paralle：可以并行计算 12345678gulp.task(&apos;my-tasks&apos;, gulp.series(&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, function() &#123; // Do something after a, b, and c are finished.&#125;));gulp.task(&apos;build&apos;, gulp.parallel(&apos;styles&apos;, &apos;scripts&apos;, &apos;images&apos;, function () &#123; // Build the website.&#125;)); 或者这样 123gulp.task(&apos;my-tasks&apos;, gulp.series(&apos;a&apos;, gulp.parallel(&apos;styles&apos;,&apos;scripts&apos;, &apos;images&apos;), &apos;b&apos;, &apos;c&apos;, function() &#123; // Do something after a, b, and c are finished.&#125;)); s相关任务必须在被调用之前发生。 链接：https://www.jianshu.com/p/c30ff8592421]]></content>
@@ -36,7 +47,7 @@
   <entry>
     <title><![CDATA[gulp学习笔记]]></title>
     <url>%2F2019%2F08%2F11%2Fgulp%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%2F</url>
-    <content type="text"><![CDATA[gulp 入门指南 gulp 是基于 node 实现 Web 前端自动化开发的工具，利用它能够极大的提高开发效率。在 Web 前端开发工作中有很多“重复工作”，比如压缩CSS/JS文件。而这些工作都是有规律的。找到这些规律，并编写 gulp 配置代码,让 gulp 自动执行这些“重复工作”。]]></content>
+    <content type="text"><![CDATA[gulp 入门指南 gulp 是基于 node 实现 Web 前端自动化开发的工具，利用它能够极大的提高开发效率。在 Web 前端开发工作中有很多“重复工作”，比如压缩CSS/JS文件。而这些工作都是有规律的。找到这些规律，并编写 gulp 配置代码,让 gulp 自动执行这些“重复工作”。 安装 Node 和 gulp npm install -g gulp 使用 gulp 压缩 JS]]></content>
       <categories>
         <category>前端</category>
       </categories>

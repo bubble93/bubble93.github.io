@@ -315,6 +315,219 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.bubbleo.club/2019/06/26/css技巧/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bubble">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="bubble">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/06/26/css技巧/" class="post-title-link" itemprop="url">css技巧</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-06-26 22:44:59" itemprop="dateCreated datePublished" datetime="2019-06-26T22:44:59+08:00">2019-06-26</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-06-27 14:10:01" itemprop="dateModified" datetime="2019-06-27T14:10:01+08:00">2019-06-27</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/2019/06/26/css技巧/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/06/26/css技巧/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="外边距折叠"><a href="#外边距折叠" class="headerlink" title="外边距折叠"></a>外边距折叠</h2><blockquote>
+<p>两个元素外边距重叠时，不会叠加，而是会保留较大的那一个</p>
+</blockquote>
+<h2 id="使用flex布局"><a href="#使用flex布局" class="headerlink" title="使用flex布局"></a>使用flex布局</h2><h2 id="重置css样式"><a href="#重置css样式" class="headerlink" title="重置css样式"></a>重置css样式</h2><blockquote>
+<p>第三方库，例如normalize.css、minireset和ress, 或者</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">    margin: 0;</span><br><span class="line">    padding: 0;</span><br><span class="line">    box-sizing: border-box;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="设置元素为border-box"><a href="#设置元素为border-box" class="headerlink" title="设置元素为border-box"></a>设置元素为border-box</h2><h2 id="用background引入文件而不是img"><a href="#用background引入文件而不是img" class="headerlink" title="用background引入文件而不是img"></a>用background引入文件而不是img</h2><h2 id="短横线命名"><a href="#短横线命名" class="headerlink" title="短横线命名"></a>短横线命名</h2><blockquote>
+<p>当class或者ID包含多个单词时，应使用连字符（-），CSS不区分大小写，因此不能使用驼峰式命名。同样，CSS中也不建议使用下划线连接的命名方式。<br>当涉及到命名时，您还可以考虑BEM，它遵循一组原则，提供基于组件并增加一致性的开发方法。</p>
+</blockquote>
+<h2 id="保持选择器的低权重"><a href="#保持选择器的低权重" class="headerlink" title="保持选择器的低权重"></a>保持选择器的低权重</h2><h2 id="不要使用-important"><a href="#不要使用-important" class="headerlink" title="不要使用!important"></a>不要使用!important</h2><h2 id="Em-Rem与px"><a href="#Em-Rem与px" class="headerlink" title="Em, Rem与px"></a>Em, Rem与px</h2><ul>
+<li>em - 设置元素为1em，其大小与父元素的font-size属性有关。这个单位用于媒体查询中，特别适用于响应式开发，但是由于em单位在每一级中都是相对于父元素进行计算的，所以要得出某个子元素em单位对应的px值，有时候是很麻烦的。</li>
+<li>rem - 相对于<html>元素的font-size大小计算，rem使得统一改变页面上的所有标题和段落文本大小变得非常容易。</html></li>
+<li>px - 像素单位是最精确的，但是不适用于自适应的设计。px单位是可靠的，并且易于理解，我们可以精细的控制元素的大小和移动到1px。</li>
+</ul>
+<h2 id="对于大型项目使用预处理器"><a href="#对于大型项目使用预处理器" class="headerlink" title="对于大型项目使用预处理器"></a>对于大型项目使用预处理器</h2><h2 id="使用AutoPrefixer达到更好的兼容性"><a href="#使用AutoPrefixer达到更好的兼容性" class="headerlink" title="使用AutoPrefixer达到更好的兼容性"></a>使用AutoPrefixer达到更好的兼容性</h2><h2 id="压缩CSS文件"><a href="#压缩CSS文件" class="headerlink" title="压缩CSS文件"></a>压缩CSS文件</h2><h2 id="Caniuse"><a href="#Caniuse" class="headerlink" title="Caniuse"></a>Caniuse</h2><h2 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h2><blockquote>
+<p>验证CSS可能不像验证HTML或JavaScript代码那么重要，但是通过工具运行一下你的代码仍然非常有用。它会告诉你是否犯了任何错误，警告错误的用法，并为您提供改进代码的提示。<br>就像压缩和Autoprefixer一样，有免费的工具可以利用：</p>
+<ul>
+<li>在线工具：W3 Validator, CSS Lint</li>
+<li>文本编辑器插件：Sublime Text, Atom</li>
+<li>代码库：stylelint (Node.js, PostCSS), css-validator (Node.js)</li>
+</ul>
+</blockquote>
+<hr>
+<blockquote>
+<p>原文地址： <a href="https://segmentfault.com/a/1190000019542534" target="_blank" rel="noopener">https://segmentfault.com/a/1190000019542534</a></p>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://www.bubbleo.club/2019/06/26/实现一个公用的是否确定按钮/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1973,205 +2186,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.bubbleo.club/2019/06/22/git暂存stash/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="bubble">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="bubble">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/06/22/git暂存stash/" class="post-title-link" itemprop="url">git暂存stash</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-06-22 10:40:30 / Modified: 11:29:54" itemprop="dateCreated datePublished" datetime="2019-06-22T10:40:30+08:00">2019-06-22</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/版本管理工具/" itemprop="url" rel="index"><span itemprop="name">版本管理工具</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">Comments: </span>
-                <a href="/2019/06/22/git暂存stash/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/06/22/git暂存stash/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="暂存"><a href="#暂存" class="headerlink" title="暂存"></a>暂存</h2><blockquote>
-<p>git stash save ‘本次暂存的标识名字’</p>
-</blockquote>
-<h2 id="查看暂存列表"><a href="#查看暂存列表" class="headerlink" title="查看暂存列表"></a>查看暂存列表</h2><blockquote>
-<p>git stash list</p>
-</blockquote>
-<h2 id="恢复暂存-暂存记录保存在list内-需要通过list索引index取出恢复"><a href="#恢复暂存-暂存记录保存在list内-需要通过list索引index取出恢复" class="headerlink" title="恢复暂存 (暂存记录保存在list内,需要通过list索引index取出恢复)"></a>恢复暂存 (暂存记录保存在list内,需要通过list索引index取出恢复)</h2><ul>
-<li>恢复指定的暂存工作（删除暂存）<blockquote>
-<p>git stash pop stash@{index}</p>
-</blockquote>
-</li>
-<li>恢复指定的暂存工作（不删除暂存）<blockquote>
-<p>git stash apply stash@{index}</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="删除暂存"><a href="#删除暂存" class="headerlink" title="删除暂存"></a>删除暂存</h2><ul>
-<li>删除某个暂存, 暂存记录保存在list内,需要通过list索引index取出恢复<blockquote>
-<p>git stash drop stash@{index}</p>
-</blockquote>
-</li>
-<li>删除全部暂存<blockquote>
-<p>git stash clear</p>
-</blockquote>
-</li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2218,7 +2232,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">78</span>
+                    <span class="site-state-item-count">79</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -2269,7 +2283,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">17</span>
+                      
+                    
+                    <span class="site-state-item-count">18</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -2362,7 +2378,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">38</span>
+                      
+                    
+                    <span class="site-state-item-count">39</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
