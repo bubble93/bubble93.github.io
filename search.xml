@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[vscode效率插件]]></title>
+    <url>%2F2019%2F08%2F19%2Fvscode%E6%95%88%E7%8E%87%E6%8F%92%E4%BB%B6%2F</url>
+    <content type="text"><![CDATA[https://www.cnblogs.com/parry/p/vscode_top_ten_plugins.html]]></content>
+      <categories>
+        <category>ide</category>
+      </categories>
+      <tags>
+        <tag>vscode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[搭建aws服务器环境]]></title>
     <url>%2F2019%2F08%2F15%2F%E6%90%AD%E5%BB%BAaws%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%8E%AF%E5%A2%83%2F</url>
     <content type="text"><![CDATA[安装git，nodejs，npm 安装git sudo apt-get install git 安装node sudo git clone https://github.com/nodejs/node.git 赋予权限 sudo chmod -R 755 node 执行安装 cd nodesudo ./configure 报错 1./configure: 4: exec: python: not found 安装python sudo apt-get install python 执行安装 sudo ./configure 报错 123WARNING: failed to autodetect C++ compiler version (CXX=g++)WARNING: failed to autodetect C compiler version (CC=gcc)ERROR: No acceptable C compiler found! 安装gcc sudo apt-get install build-essential 执行安装 sudo ./configuresudo make //在该步骤安装许久未结束。安装失败sudo make install 查看版本 node --version apt安装方式123sudo apt-get updatesudo apt-get install nodejssudo apt-get install npm 克隆github仓库代码到服务器配置服务器ssh-key到github才能执行git clone npm run start报错服务器端没有浏览器，opn()方法会导致启动失败]]></content>

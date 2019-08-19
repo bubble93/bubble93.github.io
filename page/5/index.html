@@ -315,6 +315,225 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.bubbleo.club/2019/06/22/git-当未完成任务遇到线上bug/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bubble">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="bubble">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/06/22/git-当未完成任务遇到线上bug/" class="post-title-link" itemprop="url">git:当未完成任务遇到线上bug</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-06-22 21:20:35 / Modified: 21:26:54" itemprop="dateCreated datePublished" datetime="2019-06-22T21:20:35+08:00">2019-06-22</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/版本管理工具/" itemprop="url" rel="index"><span itemprop="name">版本管理工具</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/2019/06/22/git-当未完成任务遇到线上bug/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/06/22/git-当未完成任务遇到线上bug/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<p>用git碰到了一个有意思的问题<br>公司git的分支结构是 marster - develop - bubble_dev<br>我在bubble_dev分支上开发。然后由我领导把我的分支合进 develop 和 master<br>今天后端突然更新了之前正式系统上的一个接口地址<br>要合进主分支<br>但我本地 又进行了一些新功能的开发<br>如果要把本次修改提交，意味着我现在刚做了一半的新功能也会上去</p>
+</blockquote>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案:"></a>解决方案:</h2><ul>
+<li>1<ul>
+<li><ol>
+<li>退回到未开发新功能前的版本</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>修改接口地址后再次提交并合并</li>
+</ol>
+</li>
+<li><ol start="3">
+<li>然后我再切回当前版本继续开发,并更新远端分支为当前版本</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>2<ul>
+<li><ol>
+<li>在bubble_dev下再创建bubble_dev_dev分支</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>bubble_dev作为合并分支使用</li>
+</ol>
+</li>
+<li><ol start="3">
+<li>在bubble_dev_dev上进行开发</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>3<ul>
+<li><ol>
+<li>切换到master分支</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>新建bug分支，修改后，合并回master </li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://www.bubbleo.club/2019/06/22/git暂存stash/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1960,213 +2179,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.bubbleo.club/2019/06/13/vscode快捷键/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="bubble">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="bubble">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/06/13/vscode快捷键/" class="post-title-link" itemprop="url">vscode快捷键</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-06-13 11:02:21" itemprop="dateCreated datePublished" datetime="2019-06-13T11:02:21+08:00">2019-06-13</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-06-28 21:20:19" itemprop="dateModified" datetime="2019-06-28T21:20:19+08:00">2019-06-28</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/快捷键/" itemprop="url" rel="index"><span itemprop="name">快捷键</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">Comments: </span>
-                <a href="/2019/06/13/vscode快捷键/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/06/13/vscode快捷键/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="多光标操作"><a href="#多光标操作" class="headerlink" title="多光标操作"></a>多光标操作</h1><h2 id="选中所有与当前字符串相同的字符串"><a href="#选中所有与当前字符串相同的字符串" class="headerlink" title="选中所有与当前字符串相同的字符串"></a>选中所有与当前字符串相同的字符串</h2><p>  <code>command + shift + L</code></p>
-<h2 id="所有选中行末尾出现光标"><a href="#所有选中行末尾出现光标" class="headerlink" title="所有选中行末尾出现光标"></a>所有选中行末尾出现光标</h2><p>  <code>option + shift + 拖动鼠标</code></p>
-<h2 id="选中文字末尾出现光标"><a href="#选中文字末尾出现光标" class="headerlink" title="选中文字末尾出现光标"></a>选中文字末尾出现光标</h2><p>  <code>option + shift + i</code></p>
-<h2 id="在指定位置出现光标"><a href="#在指定位置出现光标" class="headerlink" title="在指定位置出现光标"></a>在指定位置出现光标</h2><p>  <code>option + 鼠标点击</code></p>
-<h2 id="撤销光标操作"><a href="#撤销光标操作" class="headerlink" title="撤销光标操作"></a>撤销光标操作</h2><h2 id="commond-U"><a href="#commond-U" class="headerlink" title="  commond + U"></a>  <code>commond + U</code></h2><h1 id="其他快捷操作"><a href="#其他快捷操作" class="headerlink" title="其他快捷操作"></a>其他快捷操作</h1><h2 id="移动当前行"><a href="#移动当前行" class="headerlink" title="移动当前行"></a>移动当前行</h2><p>  <code>option + ↑/↓</code></p>
-<h2 id="快速移动光标"><a href="#快速移动光标" class="headerlink" title="快速移动光标"></a>快速移动光标</h2><p>  <code>option + ←/→</code></p>
-<h2 id="根据文件名搜索文件"><a href="#根据文件名搜索文件" class="headerlink" title="根据文件名搜索文件"></a>根据文件名搜索文件</h2><p>  <code>按快捷键ctrl+p可以弹出一个小窗，在上面的输入框输入文件名，下拉框点击一个文件</code></p>
-<h2 id="复制当前行到下-上一行"><a href="#复制当前行到下-上一行" class="headerlink" title="复制当前行到下/上一行"></a>复制当前行到下/上一行</h2><p>  <code>option/alt + shift + ↑/↓</code></p>
-<h2 id="折叠展开全部代码快捷键"><a href="#折叠展开全部代码快捷键" class="headerlink" title="折叠展开全部代码快捷键"></a>折叠展开全部代码快捷键</h2>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">折叠：Ctrl/Command + k + 0</span><br><span class="line">展开：Ctrl/Command + k + j</span><br></pre></td></tr></table></figure>
-
-<h2 id="删除整行"><a href="#删除整行" class="headerlink" title="删除整行"></a>删除整行</h2><p>  <code>Ctrl/Command + shift + k</code></p>
-<h1 id="显示相关"><a href="#显示相关" class="headerlink" title="显示相关"></a>显示相关</h1><h2 id="全屏："><a href="#全屏：" class="headerlink" title="全屏："></a>全屏：</h2><p><code>F11</code></p>
-<h2 id="zoomIn-zoomOut："><a href="#zoomIn-zoomOut：" class="headerlink" title="zoomIn/zoomOut："></a>zoomIn/zoomOut：</h2><p><code>Ctrl +/-</code></p>
-<h2 id="侧边栏显-隐："><a href="#侧边栏显-隐：" class="headerlink" title="侧边栏显/隐："></a>侧边栏显/隐：</h2><p><code>Ctrl+B</code></p>
-<h2 id="显示资源管理器"><a href="#显示资源管理器" class="headerlink" title="显示资源管理器"></a>显示资源管理器</h2><p><code>Ctrl+Shift+E</code></p>
-<h2 id="显示搜索"><a href="#显示搜索" class="headerlink" title="显示搜索"></a>显示搜索</h2><p><code>Ctrl+Shift+F</code></p>
-<h2 id="显示-Git"><a href="#显示-Git" class="headerlink" title="显示 Git"></a>显示 Git</h2><p><code>Ctrl+Shift+G</code></p>
-<h2 id="显示-Debug"><a href="#显示-Debug" class="headerlink" title="显示 Debug"></a>显示 Debug</h2><p><code>Ctrl+Shift+D</code></p>
-<h2 id="显示-Output"><a href="#显示-Output" class="headerlink" title="显示 Output"></a>显示 Output</h2><p><code>Ctrl+Shift+U</code></p>
-<h1 id="主命令框"><a href="#主命令框" class="headerlink" title="主命令框"></a>主命令框</h1><blockquote>
-<p>F1 或 Ctrl+Shift+P: 打开命令面板。在打开的输入框内，可以输入任何命令，例如：<br>按一下 Backspace 会进入到 Ctrl+P 模式<br>在 Ctrl+P 下输入 &gt; 可以进入 Ctrl+Shift+P 模式<br>在 Ctrl+P 窗口下还可以:<br>直接输入文件名，跳转到文件<br><code>?</code> 列出当前可执行的动作<br><code>!</code> 显示 Errors或 Warnings，也可以 Ctrl+Shift+M<br><code>:</code> 跳转到行数，也可以 Ctrl+G 直接进入<br><code>@</code> 跳转到 symbol（搜索变量或者函数），也可以 Ctrl+Shift+O 直接进入<br><code>@</code> 根据分类跳转 symbol，查找属性或函数，也可以 Ctrl+Shift+O 后输入:进入<br><code>#</code> 根据名字查找 symbol，也可以 Ctrl+T</p>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2213,7 +2225,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">79</span>
+                    <span class="site-state-item-count">80</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
