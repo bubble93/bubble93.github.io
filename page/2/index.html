@@ -315,6 +315,196 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.bubbleo.club/2019/08/09/webpack坑/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bubble">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="bubble">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/08/09/webpack坑/" class="post-title-link" itemprop="url">CleanWebpackPlugin is not a constructor</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-08-09 17:33:20 / Modified: 17:35:05" itemprop="dateCreated datePublished" datetime="2019-08-09T17:33:20+08:00">2019-08-09</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/2019/08/09/webpack坑/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/08/09/webpack坑/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>// webpack版本：4.32.2</p>
+<p>// 抛错原写法<br>const CleanWebpackPlugin = require(“clean-webpack-plugin”);</p>
+<p>…</p>
+<p>plugins: [<br>    new CleanWebpackPlugin([‘dist’])<br>]</p>
+<p>…</p>
+<p>// 另一种错误写法</p>
+<p>const CleanWebpackPlugin = require(“clean-webpack-plugin”);</p>
+<p>…</p>
+<p>plugins: [<br>    new CleanWebpackPlugin([‘dist’], {<br>        root: path.resolve(__dirname, ‘../‘),   //根目录<br>    })<br>]</p>
+<p>…</p>
+<p>// =============================分割线==============================</p>
+<p>// 正确写法</p>
+<p>const { CleanWebpackPlugin } = require(“clean-webpack-plugin”);</p>
+<p>…</p>
+<p>plugins: [<br>    new CleanWebpackPlugin()<br>]</p>
+<hr>
+<p>版权声明：本文为CSDN博主「西风XF」的原创文章，遵循CC 4.0 by-sa版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a href="https://blog.csdn.net/qq_36242361/article/details/90709258" target="_blank" rel="noopener">https://blog.csdn.net/qq_36242361/article/details/90709258</a></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://www.bubbleo.club/2019/08/09/git忽略文件夹中除了指定的文件外的其他所有文件/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2292,201 +2482,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.bubbleo.club/2019/07/24/BFC-块级格式化上下文/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="bubble">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="bubble">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/07/24/BFC-块级格式化上下文/" class="post-title-link" itemprop="url">BFC-块级格式化上下文</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-07-24 22:11:51 / Modified: 22:12:36" itemprop="dateCreated datePublished" datetime="2019-07-24T22:11:51+08:00">2019-07-24</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">Comments: </span>
-                <a href="/2019/07/24/BFC-块级格式化上下文/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/07/24/BFC-块级格式化上下文/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="BFC-Block-formatting-context-块级格式化上下文"><a href="#BFC-Block-formatting-context-块级格式化上下文" class="headerlink" title="BFC(Block formatting context)块级格式化上下文"></a>BFC(Block formatting context)块级格式化上下文</h2><ul>
-<li>是w3c css2.1中的概念</li>
-<li>独立渲染区域，与外部区域不相干</li>
-<li>css2.1中只有BFC和IFC</li>
-<li>css3中增加了GFC和FFC</li>
-</ul>
-<h2 id="BFC的原理-BFC的布局规则"><a href="#BFC的原理-BFC的布局规则" class="headerlink" title="BFC的原理/BFC的布局规则"></a>BFC的原理/BFC的布局规则</h2><ul>
-<li>BFC内部的子元素，在垂直方向，边距会发生重叠</li>
-<li>在页面中是独立容器，外面的元素不会影响里面的元素，反之亦然</li>
-<li>BFC区域不与旁边的float box区域重叠（可用来清除浮动）</li>
-<li>BFC计算高度时，浮动的子元素也参与计算</li>
-</ul>
-<h2 id="如何生成BFC"><a href="#如何生成BFC" class="headerlink" title="如何生成BFC"></a>如何生成BFC</h2><ul>
-<li>overflow不为visible</li>
-<li>浮动中：float不为none</li>
-<li>定位中：position值不为static或者relative</li>
-<li>display为inline-block，table-cell，table-caption，flex，inline-flex</li>
-</ul>
-<hr>
-<blockquote>
-<p><a href="https://github.com/qianguyihao/Web/blob/master/14-%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95/02-CSS%E7%9B%92%E6%A8%A1%E5%9E%8B%E5%8F%8ABFC.md" target="_blank" rel="noopener">传送门-前端学习</a></p>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2533,7 +2528,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">81</span>
+                    <span class="site-state-item-count">82</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -2685,7 +2680,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">40</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">42</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
