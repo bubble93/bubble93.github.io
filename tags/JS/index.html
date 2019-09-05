@@ -449,7 +449,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">83</span>
+                    <span class="site-state-item-count">85</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -1194,7 +1194,9 @@
 
 </body>
 </html>
-on (sliceLeft, sliceRight) {
+ts' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
                     if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
                       return sliceRight.searchTextCount - sliceLeft.searchTextCount;
                     } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
