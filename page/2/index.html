@@ -315,6 +315,188 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.bubbleo.club/2019/08/11/gulp-Did-you-forget-to-signal-async-completion/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bubble">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="bubble">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/08/11/gulp-Did-you-forget-to-signal-async-completion/" class="post-title-link" itemprop="url">gulp: Did you forget to signal async completion?</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-08-11 23:23:14 / Modified: 23:25:37" itemprop="dateCreated datePublished" datetime="2019-08-11T23:23:14+08:00">2019-08-11</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/2019/08/11/gulp-Did-you-forget-to-signal-async-completion/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/08/11/gulp-Did-you-forget-to-signal-async-completion/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>学习gulp的前端自动化构建，按照示例代码，跑了一个简单的task，控制台打出如下提示： </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">The following tasks did not complete: script </span><br><span class="line">Did you forget to signal async completion?</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>原因不明！！！</p>
+</blockquote>
+<blockquote>
+<p>解决方案1</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">const gulp = require(&apos;gulp&apos;);</span><br><span class="line">gulp.task(&apos;testGulp&apos;, async() =&gt; &#123;</span><br><span class="line">   await console.log(&apos;Hello World!&apos;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://www.bubbleo.club/2019/08/11/gulp学习笔记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1554,12 +1736,24 @@
                 
               
 
-              <time title="Created: 2019-08-06 17:10:31 / Modified: 17:12:06" itemprop="dateCreated datePublished" datetime="2019-08-06T17:10:31+08:00">2019-08-06</time>
+              <time title="Created: 2019-08-06 17:10:31" itemprop="dateCreated datePublished" datetime="2019-08-06T17:10:31+08:00">2019-08-06</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-09-05 19:30:59" itemprop="dateModified" datetime="2019-09-05T19:30:59+08:00">2019-09-05</time>
               
             
           </span>
@@ -1632,6 +1826,10 @@
 <h2 id="节流"><a href="#节流" class="headerlink" title="节流"></a>节流</h2><blockquote>
 <p>函数节流（throttle）:是让一个函数无法在很短的时间间隔内连续调用，当上一次执行完之后过了规定的时间间隔，才能进行下一次的函数调用。（所谓节流，就是指连续触发事件但是在N秒中只执行一次函数）节流会稀释函数的执行频率。</p>
 </blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">const debounce = (fn, time) =&gt; &#123;</span><br><span class="line">    let timeout;</span><br><span class="line">    return function () &#123;</span><br><span class="line">      const functionCall = () =&gt; fn.apply(this, arguments);</span><br><span class="line">      clearTimeout(timeout);</span><br><span class="line">      timeout = setTimeout(functionCall, time);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">let debounce = function( fn,delay) &#123;</span><br><span class="line">    let timerId;</span><br><span class="line">    return function (...args) &#123;</span><br><span class="line">        if (timerId) &#123;</span><br><span class="line">            clearTimeout(timerId);</span><br><span class="line">        &#125;</span><br><span class="line">        timerId = setTimeout(() =&gt; &#123;</span><br><span class="line">            fn(...args);</span><br><span class="line">            timerId = null;</span><br><span class="line">        &#125;, delay);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 
           
         
@@ -2065,244 +2263,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.bubbleo.club/2019/07/29/类的定义和继承的几种方式/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="bubble">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="bubble">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/07/29/类的定义和继承的几种方式/" class="post-title-link" itemprop="url">类的定义和继承的几种方式</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-07-29 20:32:16" itemprop="dateCreated datePublished" datetime="2019-07-29T20:32:16+08:00">2019-07-29</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-07-31 12:37:41" itemprop="dateModified" datetime="2019-07-31T12:37:41+08:00">2019-07-31</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">Comments: </span>
-                <a href="/2019/07/29/类的定义和继承的几种方式/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/07/29/类的定义和继承的几种方式/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="类的定义-类的声明"><a href="#类的定义-类的声明" class="headerlink" title="类的定义/类的声明"></a>类的定义/类的声明</h2><ul>
-<li><p>方式一：用构造函数模拟类（传统写法）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function Animal1() &#123;</span><br><span class="line">    this.name = &apos;smyhvae&apos;; //通过this，表明这是一个构造函数</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>方式二：用 class 声明（ES6的写法）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">class Animal2 &#123;</span><br><span class="line">    constructor() &#123;  //可以在构造函数里写属性</span><br><span class="line">        this.name = name;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h2 id="实例化"><a href="#实例化" class="headerlink" title="实例化"></a>实例化</h2><ul>
-<li>类的实例化很简单，直接 new 出来即可。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(new Animal1(),new Animal2()); //实例化。如果括号里没有参数，则括号可以省略</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h2 id="ES5继承的几种方式"><a href="#ES5继承的几种方式" class="headerlink" title="ES5继承的几种方式"></a>ES5继承的几种方式</h2><blockquote>
-<p>继承的本质就是原型链。<br>继承的方式有几种？每种形式的优缺点是？这些问题必问的。其实就是考察你对原型链的掌握程度。</p>
-</blockquote>
-<h3 id="方式一：借助构造函数"><a href="#方式一：借助构造函数" class="headerlink" title="方式一：借助构造函数"></a>方式一：借助构造函数</h3><blockquote>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">function Parent1() &#123;</span><br><span class="line">    this.name = &apos;parent1 的属性&apos;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function Child1() &#123;</span><br><span class="line">    Parent1.call(this);         //【重要】此处用 call 或 apply 都行：改变 this 的指向</span><br><span class="line">    this.type = &apos;child1 的属性&apos;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">console.log(new Child1);</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>上方代码中，最重要的那行代码：在子类的构造函数里写了Parent1.call(this);，意思是：让Parent的构造函数在child的构造函数中执行。发生的变化是：改变this的指向，parent的实例 –&gt; 改为指向child的实例。导致 parent的实例的属性挂在到了child的实例上，这就实现了继承。</p>
-<blockquote>
-<p>分析：<br>这种方式，虽然改变了 this 的指向，但是，Child1 无法继承 Parent1 的原型。也就是说，如果我给 Parent1 的原型增加一个方法，这个方法是无法被 Child1 继承的</p>
-</blockquote>
-</blockquote>
-<h3 id="方法二：通过原型链实现继承"><a href="#方法二：通过原型链实现继承" class="headerlink" title="方法二：通过原型链实现继承"></a>方法二：通过原型链实现继承</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">/*</span><br><span class="line">通过原型链实现继承</span><br><span class="line"> */</span><br><span class="line">function Parent() &#123;</span><br><span class="line">    this.name = &apos;Parent 的属性&apos;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function Child() &#123;</span><br><span class="line">    this.type = &apos;Child 的属性&apos;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Child.prototype = new Parent(); //【重要】</span><br><span class="line"></span><br><span class="line">console.log(new Child());</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>上方代码中，最重要的那行：每个函数都有prototype属性，于是，构造函数也有这个属性，这个属性是一个对象。现在，我们把Parent的实例赋值给了Child的prototye，从而实现继承。此时，Child构造函数、Parent的实例、Child的实例构成一个三角关系。于是：<br><code>new Child.__proto__ === new Parent()</code>的结果为true</p>
-<blockquote>
-<p>分析：<br>这种继承方式，Child 可以继承 Parent 的原型，但有个缺点：<br>缺点是：如果修改 child1实例的name属性，child2实例中的name属性也会跟着改变。</p>
-</blockquote>
-</blockquote>
-<h3 id="方式三：组合的方式：构造函数-原型链"><a href="#方式三：组合的方式：构造函数-原型链" class="headerlink" title="方式三：组合的方式：构造函数 + 原型链"></a>方式三：组合的方式：构造函数 + 原型链</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">/*</span><br><span class="line">组合方式实现继承：构造函数、原型链</span><br><span class="line">Child3 和 Parent3 中的属性以及方法分别出现在了child3和child3的原型上，所以不会造成原属性修改</span><br><span class="line"> */</span><br><span class="line">function Parent3() &#123;</span><br><span class="line">    this.name = &apos;Parent 的属性&apos;;</span><br><span class="line">    this.arr = [1, 2, 3];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function Child3() &#123;</span><br><span class="line">    Parent3.call(this); //【重要1】执行 parent方法</span><br><span class="line">    this.type = &apos;Child 的属性&apos;;</span><br><span class="line">&#125;</span><br><span class="line">Child3.prototype = new Parent3(); //【重要2】第二次执行parent方法</span><br><span class="line"></span><br><span class="line">var child = new Child3();</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>这种方式，能解决之前两种方式的问题：既可以继承父类原型的内容，也不会造成原型里属性的修改。<br>这种方式的缺点是：让父亲Parent的构造方法执行了两次。</p>
-</blockquote>
-<h3 id="方式四：寄生组合式继承"><a href="#方式四：寄生组合式继承" class="headerlink" title="方式四：寄生组合式继承"></a>方式四：寄生组合式继承</h3><blockquote>
-<p>让一个函数去指向SuperType.prototype，然后让SubType.prototype指向这个函数产生的对象</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">function inherit(Target,Origin) &#123;//实现寄生组合式继承的核心函数</span><br><span class="line">    function F() &#123;&#125;;</span><br><span class="line">    F.prototype = Origin.prototype; //F()的原型指向的是Origin</span><br><span class="line">    Target.prototype = new F(); //Target的原型指向的是F()</span><br><span class="line">    Target.prototype.constructor = Target; </span><br><span class="line">    SubType.prototype.__proto__ == SuperType.prototype</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function SuperType(name) &#123;</span><br><span class="line">    this.name = name;</span><br><span class="line">    this.colors = [&apos;red&apos;,&apos;blue&apos;,&apos;pink&apos;];</span><br><span class="line">&#125;</span><br><span class="line">SuperType.prototype.sayName = function() &#123;</span><br><span class="line">    console.log(this.name);</span><br><span class="line">&#125;</span><br><span class="line">function SubType(name,age) &#123;</span><br><span class="line">    //继承属性</span><br><span class="line">    SuperType.call(this,name);//在创建实例时第二次调用SuperType</span><br><span class="line">    this.age = age;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">inherit(SubType,SuperType);//实现寄生组合式继承</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p>实现寄生组合式继承的核心函数。F函数其实是通用的，我们没必要每次进入inherit函数时都声明一遍。所以我们可以用闭包的形式来写</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var inherit = (function () &#123;</span><br><span class="line">       var F = function () &#123;&#125;;</span><br><span class="line">       return function (Target , Origin) &#123;</span><br><span class="line">           F.prototype = Origin.prototype;//F()的原型指向的是Origin</span><br><span class="line">           Target.prototype = new F();//Target的原型指向的是F()</span><br><span class="line">           Target.prototype.constructor = Target;</span><br><span class="line">           Target.prototype.uber = Origin.prototype;</span><br><span class="line">           SubType.prototype.__proto__ == SuperType.prototype</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;)()</span><br></pre></td></tr></table></figure>
-</blockquote>
-<h2 id="ES6中的类继承"><a href="#ES6中的类继承" class="headerlink" title="ES6中的类继承"></a>ES6中的类继承</h2> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">class Child extends Parent &#123;</span><br><span class="line">    constructor(sex) &#123;</span><br><span class="line">        super();</span><br><span class="line">        this.sex = sex;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">var child = new Child(&apos;xiaoyu&apos;,12,&apos;man&apos;);</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>constructor方法是类的默认方法，通过new命令生成对象实例时，自动调用该方法。一个类必须有constructor方法，<br>如果没有显式定义，一个空的constructor方法会被默认添加。<br>在子类的构造函数中，如果显示声明了constructor，则必须要显示的调用super函数。<br>只有调用super之后，才可以使用this关键字，否则会报错。</p>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2349,7 +2309,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">85</span>
+                    <span class="site-state-item-count">86</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>

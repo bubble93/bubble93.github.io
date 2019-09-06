@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="bubble">
 <meta property="og:description" content="防抖 函数防抖（debounce）:就是让某个函数在上一次执行之后，满足等待某个时间内不再触发此函数后再执行，而在这个等待时间内再次触发函数，等待时间可以重新计算，知道该函数在一定间隔内没有被调用时，才开始执行被调用方法（所谓防抖，就是指触发事件后在 n 秒内函数只能执行一次，如果在 n 秒内又触发了事件，则会重新计算函数执行时间。）  节流 函数节流（throttle）:是让一个函数无法在很短的">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-08-06T09:12:06.407Z">
+<meta property="og:updated_time" content="2019-09-05T11:30:59.338Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js防抖与节流">
 <meta name="twitter:description" content="防抖 函数防抖（debounce）:就是让某个函数在上一次执行之后，满足等待某个时间内不再触发此函数后再执行，而在这个等待时间内再次触发函数，等待时间可以重新计算，知道该函数在一定间隔内没有被调用时，才开始执行被调用方法（所谓防抖，就是指触发事件后在 n 秒内函数只能执行一次，如果在 n 秒内又触发了事件，则会重新计算函数执行时间。）  节流 函数节流（throttle）:是让一个函数无法在很短的">
@@ -362,12 +362,24 @@
                 
               
 
-              <time title="Created: 2019-08-06 17:10:31 / Modified: 17:12:06" itemprop="dateCreated datePublished" datetime="2019-08-06T17:10:31+08:00">2019-08-06</time>
+              <time title="Created: 2019-08-06 17:10:31" itemprop="dateCreated datePublished" datetime="2019-08-06T17:10:31+08:00">2019-08-06</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-09-05 19:30:59" itemprop="dateModified" datetime="2019-09-05T19:30:59+08:00">2019-09-05</time>
               
             
           </span>
@@ -445,6 +457,10 @@
 <h2 id="节流"><a href="#节流" class="headerlink" title="节流"></a>节流</h2><blockquote>
 <p>函数节流（throttle）:是让一个函数无法在很短的时间间隔内连续调用，当上一次执行完之后过了规定的时间间隔，才能进行下一次的函数调用。（所谓节流，就是指连续触发事件但是在N秒中只执行一次函数）节流会稀释函数的执行频率。</p>
 </blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">const debounce = (fn, time) =&gt; &#123;</span><br><span class="line">    let timeout;</span><br><span class="line">    return function () &#123;</span><br><span class="line">      const functionCall = () =&gt; fn.apply(this, arguments);</span><br><span class="line">      clearTimeout(timeout);</span><br><span class="line">      timeout = setTimeout(functionCall, time);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">let debounce = function( fn,delay) &#123;</span><br><span class="line">    let timerId;</span><br><span class="line">    return function (...args) &#123;</span><br><span class="line">        if (timerId) &#123;</span><br><span class="line">            clearTimeout(timerId);</span><br><span class="line">        &#125;</span><br><span class="line">        timerId = setTimeout(() =&gt; &#123;</span><br><span class="line">            fn(...args);</span><br><span class="line">            timerId = null;</span><br><span class="line">        &#125;, delay);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 
       
     </div>
@@ -566,7 +582,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">85</span>
+                    <span class="site-state-item-count">86</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
