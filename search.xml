@@ -1,6 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[commit is not possible because you have unmerged files]]></title>
+    <url>%2F2019%2F09%2F14%2Fcommit-is-not-possible-because-you-have-unmerged-files%2F</url>
+    <content type="text"><![CDATA[解决完冲突以后提交代码 提示 commit is not possible because you have unmerged files 需要add解决冲突后的文件到暂存区后再提交 链接]]></content>
+      <categories>
+        <category>版本管理工具</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>commit</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[history.replace is not a function]]></title>
+    <url>%2F2019%2F09%2F09%2Fhistory-replace-is-not-a-function%2F</url>
+    <content type="text"><![CDATA[原因：taro/cli 版本和其他依赖版本不一致 思路：更新taro依赖和cli版本一直 解决方案：taro update project]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>taro</tag>
+        <tag>error</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[npm安装报错]]></title>
+    <url>%2F2019%2F09%2F09%2Fnpm%E5%AE%89%E8%A3%85%E6%8A%A5%E9%94%99%2F</url>
+    <content type="text"><![CDATA[报错1 12345678910111213141516171819202122sudo npm install -g @tarojs/cli@1.2.2gyp ERR! configure error gyp ERR! stack Error: EACCES: permission denied, mkdir &apos;/usr/local/lib/node_modules/@tarojs/cli/node_modules/fsevents/build&apos;gyp ERR! System Darwin 18.7.0gyp ERR! command &quot;/usr/local/bin/node&quot; &quot;/usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js&quot; &quot;configure&quot; &quot;--fallback-to-build&quot; &quot;--module=/usr/local/lib/node_modules/@tarojs/cli/node_modules/fsevents/lib/binding/Release/node-v64-darwin-x64/fse.node&quot; &quot;--module_name=fse&quot; &quot;--module_path=/usr/local/lib/node_modules/@tarojs/cli/node_modules/fsevents/lib/binding/Release/node-v64-darwin-x64&quot; &quot;--napi_version=4&quot; &quot;--node_abi_napi=napi&quot; &quot;--napi_build_version=0&quot; &quot;--node_napi_label=node-v64&quot;gyp ERR! cwd /usr/local/lib/node_modules/@tarojs/cli/node_modules/fseventsgyp ERR! node -v v10.16.3gyp ERR! node-gyp -v v3.8.0gyp ERR! not ok node-pre-gyp ERR! build error node-pre-gyp ERR! stack Error: Failed to execute &apos;/usr/local/bin/node /usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js configure --fallback-to-build --module=/usr/local/lib/node_modules/@tarojs/cli/node_modules/fsevents/lib/binding/Release/node-v64-darwin-x64/fse.node --module_name=fse --module_path=/usr/local/lib/node_modules/@tarojs/cli/node_modules/fsevents/lib/binding/Release/node-v64-darwin-x64 --napi_version=4 --node_abi_napi=napi --napi_build_version=0 --node_napi_label=node-v64&apos; (1)node-pre-gyp ERR! stack at ChildProcess.&lt;anonymous&gt; (/usr/local/lib/node_modules/@tarojs/cli/node_modules/fsevents/node_modules/node-pre-gyp/lib/util/compile.js:83:29)node-pre-gyp ERR! stack at ChildProcess.emit (events.js:198:13)node-pre-gyp ERR! stack at maybeClose (internal/child_process.js:982:16)node-pre-gyp ERR! stack at Process.ChildProcess._handle.onexit (internal/child_process.js:259:5)node-pre-gyp ERR! System Darwin 18.7.0node-pre-gyp ERR! command &quot;/usr/local/bin/node&quot; &quot;/usr/local/lib/node_modules/@tarojs/cli/node_modules/fsevents/node_modules/node-pre-gyp/bin/node-pre-gyp&quot; &quot;install&quot; &quot;--fallback-to-build&quot;node-pre-gyp ERR! cwd /usr/local/lib/node_modules/@tarojs/cli/node_modules/fseventsnode-pre-gyp ERR! node -v v10.16.3node-pre-gyp ERR! node-pre-gyp -v v0.12.0node-pre-gyp ERR! not ok 报错2 12345678910111213141516171819202122232425npm install -g @tarojs/cli@1.2.2 --unsafe-perm=true --allow-rootnpm ERR! path /usr/local/lib/node_modules/@tarojs/cli/node_modules/electron-to-chromiumnpm ERR! code EACCESnpm ERR! errno -13npm ERR! syscall accessnpm ERR! Error: EACCES: permission denied, access &apos;/usr/local/lib/node_modules/@tarojs/cli/node_modules/electron-to-chromium&apos;npm ERR! &#123; [Error: EACCES: permission denied, access &apos;/usr/local/lib/node_modules/@tarojs/cli/node_modules/electron-to-chromium&apos;]npm ERR! stack:npm ERR! &apos;Error: EACCES: permission denied, access \&apos;/usr/local/lib/node_modules/@tarojs/cli/node_modules/electron-to-chromium\&apos;&apos;,npm ERR! errno: -13,npm ERR! code: &apos;EACCES&apos;,npm ERR! syscall: &apos;access&apos;,npm ERR! path:npm ERR! &apos;/usr/local/lib/node_modules/@tarojs/cli/node_modules/electron-to-chromium&apos; &#125;npm ERR! npm ERR! The operation was rejected by your operating system.npm ERR! It is likely you do not have the permissions to access this file as the current usernpm ERR! npm ERR! If you believe this might be a permissions issue, please double-check thenpm ERR! permissions of the file and its containing directories, or try runningnpm ERR! the command again as root/Administrator (though this is not recommended).npm ERR! A complete log of this run can be found in:npm ERR! /Users/yanglei/.npm/_logs/2019-09-09T01_08_17_666Z-debug.log 解决方案 1sudo npm install -g @tarojs/cli@1.2.2 --unsafe-perm=true --allow-root]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>error</tag>
+        <tag>npm</tag>
+        <tag>install</tag>
+        <tag>allow-root</tag>
+        <tag>unsafe-perm=true</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Cannot read property 'uglify' of undefined]]></title>
+    <url>%2F2019%2F09%2F08%2FTypeError-Cannot-read-property-uglify-of-undefined%2F</url>
+    <content type="text"><![CDATA[原因：依赖安装缺失 taro info 检查安装信息 正常情况如下 12345678910111213141516171819202122232425Taro CLI 1.3.12 environment info: System: OS: macOS 10.14.6 Shell: 5.3 Binaries: Node: 12.8.0 Yarn: 1.17.3 npm: 6.10.3 npmPackages: @tarojs/async-await: 1.3.12 =&gt; 1.3.12 @tarojs/cli: 1.3.12 =&gt; 1.3.12 @tarojs/components: 1.3.12 =&gt; 1.3.12 @tarojs/mobx: 1.3.12 =&gt; 1.3.12 @tarojs/plugin-babel: 1.3.12 =&gt; 1.3.12 @tarojs/plugin-csso: 1.3.12 =&gt; 1.3.12 @tarojs/plugin-sass: 1.3.12 =&gt; 1.3.12 @tarojs/plugin-uglifyjs: 1.3.12 =&gt; 1.3.12 @tarojs/router: 1.3.12 =&gt; 1.3.12 @tarojs/taro: 1.3.12 =&gt; 1.3.12 @tarojs/taro-weapp: 1.3.12 =&gt; 1.3.12 @tarojs/webpack-runner: 1.3.12 =&gt; 1.3.12 eslint-config-taro: 1.3.12 =&gt; 1.3.12 eslint-plugin-taro: 1.3.12 =&gt; 1.3.12 nerv-devtools: ^1.4.3 =&gt; 1.4.3 nervjs: ^1.4.3 =&gt; 1.4.3 https://github.com/NervJS/taro/issues/4103]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>taro</tag>
+        <tag>uglify</tag>
+        <tag>error</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[scss伪类嵌套使用]]></title>
+    <url>%2F2019%2F09%2F08%2Fcss%E4%BC%AA%E7%B1%BB%E5%B5%8C%E5%A5%97%E4%BD%BF%E7%94%A8%2F</url>
+    <content type="text"><![CDATA[scss 12345678910111213141516171819202122232425262728.at-radio__option&#123; &amp;:first-child&#123; .at-radio__title::before&#123; display: inline-block; background-size: cover; width: 1rem; height: 0.6rem; content: &apos;&apos;; background-image: url(../../../assets/images/pay-wx.png); background-position:50% 50%; margin-left: -1.5rem; margin-right: 1rem; &#125; &#125; &amp;:last-child&#123; .at-radio__title::before&#123; display: inline-block; background-size: cover; width: 1rem; height: 0.6rem; content: &apos;&apos;; background-image: url(../../../assets/images/pay-zfb.png); background-position:50% 50%; margin-left: -1.5rem; margin-right: 1rem; &#125; &#125;&#125; html 123456789101112131415161718192021222324&lt;div class=&quot;recharge-type-radio&quot;&gt; &lt;div class=&quot;at-radio&quot; style=&quot;&quot;&gt; &lt;div class=&quot;at-radio__option&quot;&gt; &lt;div class=&quot;at-radio__option-wrap&quot;&gt; &lt;div class=&quot;at-radio__option-container&quot;&gt; &lt;div class=&quot;at-radio__title&quot;&gt;微信支付&lt;/div&gt; &lt;div class=&quot;at-radio__icon at-radio__icon--checked&quot;&gt; &lt;span class=&quot;taro-text at-icon at-icon-check&quot;&gt;&lt;/span&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;at-radio__option&quot;&gt; &lt;div class=&quot;at-radio__option-wrap&quot;&gt; &lt;div class=&quot;at-radio__option-container&quot;&gt; &lt;div class=&quot;at-radio__title&quot;&gt;支付宝支付&lt;/div&gt; &lt;div class=&quot;at-radio__icon&quot;&gt; &lt;span class=&quot;taro-text at-icon at-icon-check&quot;&gt;&lt;/span&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;&lt;/div&gt; 效果]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+        <tag>scss</tag>
+        <tag>类选择器</tag>
+        <tag>伪类选择器</tag>
+        <tag>:first-child</tag>
+        <tag>:last-child</tag>
+        <tag>::before</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[react元素添加多个事件]]></title>
     <url>%2F2019%2F09%2F06%2Freact%E5%85%83%E7%B4%A0%E6%B7%BB%E5%8A%A0%E5%A4%9A%E4%B8%AA%E4%BA%8B%E4%BB%B6%2F</url>
     <content type="text"><![CDATA[1234567891011121314//1var Test = React.createClass(&#123; onClick: function(event)&#123; func1(); func2(); &#125;, render: function()&#123; return ( &lt;a href=&quot;#&quot; onClick=&#123;this.onClick&#125;&gt;Test Link&lt;/a&gt; ); &#125;&#125;);//2&lt;a href=&quot;#&quot; onClick=&#123;function(event)&#123; func1(); func2()&#125;&#125;&gt;Test Link&lt;/a&gt;//3&lt;a href=&quot;#&quot; onClick=&#123;(event) =&gt; &#123; func1(); func2();&#125;&#125;&gt;Test Link&lt;/a&gt;]]></content>
@@ -377,7 +446,7 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[VSCode单击文件会替换已经打开文件]]></title>
+    <title><![CDATA[VSCode单击文件会关闭已经打开文件]]></title>
     <url>%2F2019%2F06%2F28%2FVSCode%E5%8D%95%E5%87%BB%E6%96%87%E4%BB%B6%E4%BC%9A%E6%9B%BF%E6%8D%A2%E5%B7%B2%E7%BB%8F%E6%89%93%E5%BC%80%E6%96%87%E4%BB%B6%2F</url>
     <content type="text"><![CDATA[首选项 -&gt; 设置 -&gt; 输入preview -&gt; 搜索结果取消勾选]]></content>
       <categories>
@@ -385,6 +454,7 @@
       </categories>
       <tags>
         <tag>vscode</tag>
+        <tag>首选项</tag>
       </tags>
   </entry>
   <entry>
@@ -536,7 +606,7 @@
   <entry>
     <title><![CDATA[git暂存stash]]></title>
     <url>%2F2019%2F06%2F22%2Fgit%E6%9A%82%E5%AD%98stash%2F</url>
-    <content type="text"><![CDATA[暂存 git stash save ‘本次暂存的标识名字’ 查看暂存列表 git stash list 恢复暂存 (暂存记录保存在list内,需要通过list索引index取出恢复) 恢复指定的暂存工作（删除暂存） git stash pop stash@{index} 恢复指定的暂存工作（不删除暂存） git stash apply stash@{index} 删除暂存 删除某个暂存, 暂存记录保存在list内,需要通过list索引index取出恢复 git stash drop stash@{index} 删除全部暂存 git stash clear]]></content>
+    <content type="text"><![CDATA[暂存 git stash save ‘本次暂存的标识名字’git stash save -u ‘本次暂存的标识名字’-u 参数可以暂存未提交文件 查看暂存列表 git stash list 恢复暂存 (暂存记录保存在list内,需要通过list索引index取出恢复) 恢复指定的暂存工作（删除暂存） git stash pop stash@{index} 恢复指定的暂存工作（不删除暂存） git stash apply stash@{index} 删除暂存 删除某个暂存, 暂存记录保存在list内,需要通过list索引index取出恢复 git stash drop stash@{index} 删除全部暂存 git stash clear]]></content>
       <categories>
         <category>版本管理工具</category>
       </categories>
@@ -686,8 +756,8 @@
         <category>前端</category>
       </categories>
       <tags>
-        <tag>nodejs</tag>
         <tag>npm</tag>
+        <tag>nodejs</tag>
       </tags>
   </entry>
   <entry>
