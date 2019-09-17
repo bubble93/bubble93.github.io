@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[dispatch is not a function]]></title>
+    <url>%2F2019%2F09%2F17%2Fdispatch-is-not-a-function%2F</url>
+    <content type="text"><![CDATA[使用Taro打包小程序。报出错误dispatch is not a function 解决方案： 1234//传入propsconstructor(props)&#123; super(props);&#125;]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>Taro</tag>
+        <tag>dva</tag>
+        <tag>redux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[访问对象中的属性为null报错解决方案]]></title>
+    <url>%2F2019%2F09%2F15%2F%E8%AE%BF%E9%97%AE%E5%AF%B9%E8%B1%A1%E4%B8%AD%E7%9A%84%E5%B1%9E%E6%80%A7%E4%B8%BAnull%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%2F</url>
+    <content type="text"><![CDATA[data.list.data.hits.hits 这里面每一层数据都可能是 null。 然后就报错了。 有没有什么写法能避免爆炸 lodash get 1234function deepGet(object, path, defaultValue) &#123; return (!Array.isArray(path) ? path.replace(/\[/g, &apos;.&apos;).replace(/\]/g, &apos;&apos;).split(&apos;.&apos;) : path) .reduce((o, k) =&gt; (o || &#123;&#125;)[k], object) || defaultValue;&#125; lodash get 或者&amp;&amp; 基于proxy封装一下，拦截 解构，给赋默认值]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[commit is not possible because you have unmerged files]]></title>
     <url>%2F2019%2F09%2F14%2Fcommit-is-not-possible-because-you-have-unmerged-files%2F</url>
     <content type="text"><![CDATA[解决完冲突以后提交代码 提示 commit is not possible because you have unmerged files 需要add解决冲突后的文件到暂存区后再提交 链接]]></content>
