@@ -98,7 +98,7 @@
 
   <meta property="og:type" content="website">
 <meta property="og:title" content="bubble">
-<meta property="og:url" content="http://www.bubbleo.club/tags/taro/index.html">
+<meta property="og:url" content="http://www.bubbleo.club/tags/Taro/index.html">
 <meta property="og:site_name" content="bubble">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
@@ -110,7 +110,7 @@
 
   
   
-  <link rel="canonical" href="http://www.bubbleo.club/tags/taro/">
+  <link rel="canonical" href="http://www.bubbleo.club/tags/Taro/">
 
 
 
@@ -120,7 +120,7 @@
   };
 </script>
 
-  <title>Tag: taro | bubble</title>
+  <title>Tag: Taro | bubble</title>
   
 
 
@@ -318,7 +318,7 @@
 
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h1>taro<small>Tag</small>
+        <h1>Taro<small>Tag</small>
         </h1>
       </div>
 
@@ -330,69 +330,17 @@
 
       <h2 class="post-title">
         
-          <a class="post-title-link" href="/2019/09/09/history-replace-is-not-a-function/" itemprop="url">
+          <a class="post-title-link" href="/2019/09/17/dispatch-is-not-a-function/" itemprop="url">
             
-              <span itemprop="name">history.replace is not a function</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-09-09T10:32:31+08:00" content="2019-09-09">
-          09-09
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/09/08/TypeError-Cannot-read-property-uglify-of-undefined/" itemprop="url">
-            
-              <span itemprop="name">Cannot read property 'uglify' of undefined</span>
+              <span itemprop="name">dispatch is not a function</span>
             
           </a>
         
       </h2>
 
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-09-08T17:25:55+08:00" content="2019-09-08">
-          09-08
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/09/04/Taro修改state中的对象属性清空了对象/" itemprop="url">
-            
-              <span itemprop="name">Taro修改state中的对象属性清空了对象</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-09-04T19:18:24+08:00" content="2019-09-04">
-          09-04
+        <time class="post-time" itemprop="dateCreated" datetime="2019-09-17T19:16:20+08:00" content="2019-09-17">
+          09-17
         </time>
       </div>
 
@@ -449,7 +397,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">93</span>
+                    <span class="site-state-item-count">94</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -641,7 +589,13 @@
                     
                       
                     
-                    <span class="site-state-item-count">60</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">63</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -1145,6 +1099,88 @@
                 searchResultList += result.item;
               })
               searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
+List += "</ul>";
               resultContent.innerHTML = searchResultList;
             }
           }
