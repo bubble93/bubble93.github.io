@@ -315,6 +315,375 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.bubbleo.club/2019/09/09/npm安装报错/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bubble">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="bubble">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/09/09/npm安装报错/" class="post-title-link" itemprop="url">npm安装报错</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-09-09 09:10:46 / Modified: 09:14:10" itemprop="dateCreated datePublished" datetime="2019-09-09T09:10:46+08:00">2019-09-09</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/2019/09/09/npm安装报错/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/09/09/npm安装报错/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<p>报错1</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install -g @tarojs/cli@1.2.2</span><br><span class="line"></span><br><span class="line">gyp ERR! configure error </span><br><span class="line">gyp ERR! stack Error: EACCES: permission denied, mkdir &apos;/usr/local/lib/node_modules/@tarojs/cli/node_modules/fsevents/build&apos;</span><br><span class="line">gyp ERR! System Darwin 18.7.0</span><br><span class="line">gyp ERR! command &quot;/usr/local/bin/node&quot; &quot;/usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js&quot; &quot;configure&quot; &quot;--fallback-to-build&quot; &quot;--module=/usr/local/lib/node_modules/@tarojs/cli/node_modules/fsevents/lib/binding/Release/node-v64-darwin-x64/fse.node&quot; &quot;--module_name=fse&quot; &quot;--module_path=/usr/local/lib/node_modules/@tarojs/cli/node_modules/fsevents/lib/binding/Release/node-v64-darwin-x64&quot; &quot;--napi_version=4&quot; &quot;--node_abi_napi=napi&quot; &quot;--napi_build_version=0&quot; &quot;--node_napi_label=node-v64&quot;</span><br><span class="line">gyp ERR! cwd /usr/local/lib/node_modules/@tarojs/cli/node_modules/fsevents</span><br><span class="line">gyp ERR! node -v v10.16.3</span><br><span class="line">gyp ERR! node-gyp -v v3.8.0</span><br><span class="line">gyp ERR! not ok </span><br><span class="line">node-pre-gyp ERR! build error </span><br><span class="line">node-pre-gyp ERR! stack Error: Failed to execute &apos;/usr/local/bin/node /usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js configure --fallback-to-build --module=/usr/local/lib/node_modules/@tarojs/cli/node_modules/fsevents/lib/binding/Release/node-v64-darwin-x64/fse.node --module_name=fse --module_path=/usr/local/lib/node_modules/@tarojs/cli/node_modules/fsevents/lib/binding/Release/node-v64-darwin-x64 --napi_version=4 --node_abi_napi=napi --napi_build_version=0 --node_napi_label=node-v64&apos; (1)</span><br><span class="line">node-pre-gyp ERR! stack     at ChildProcess.&lt;anonymous&gt; (/usr/local/lib/node_modules/@tarojs/cli/node_modules/fsevents/node_modules/node-pre-gyp/lib/util/compile.js:83:29)</span><br><span class="line">node-pre-gyp ERR! stack     at ChildProcess.emit (events.js:198:13)</span><br><span class="line">node-pre-gyp ERR! stack     at maybeClose (internal/child_process.js:982:16)</span><br><span class="line">node-pre-gyp ERR! stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:259:5)</span><br><span class="line">node-pre-gyp ERR! System Darwin 18.7.0</span><br><span class="line">node-pre-gyp ERR! command &quot;/usr/local/bin/node&quot; &quot;/usr/local/lib/node_modules/@tarojs/cli/node_modules/fsevents/node_modules/node-pre-gyp/bin/node-pre-gyp&quot; &quot;install&quot; &quot;--fallback-to-build&quot;</span><br><span class="line">node-pre-gyp ERR! cwd /usr/local/lib/node_modules/@tarojs/cli/node_modules/fsevents</span><br><span class="line">node-pre-gyp ERR! node -v v10.16.3</span><br><span class="line">node-pre-gyp ERR! node-pre-gyp -v v0.12.0</span><br><span class="line">node-pre-gyp ERR! not ok</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>报错2</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">npm install -g @tarojs/cli@1.2.2 --unsafe-perm=true --allow-root</span><br><span class="line"></span><br><span class="line">npm ERR! path /usr/local/lib/node_modules/@tarojs/cli/node_modules/electron-to-chromium</span><br><span class="line">npm ERR! code EACCES</span><br><span class="line">npm ERR! errno -13</span><br><span class="line">npm ERR! syscall access</span><br><span class="line">npm ERR! Error: EACCES: permission denied, access &apos;/usr/local/lib/node_modules/@tarojs/cli/node_modules/electron-to-chromium&apos;</span><br><span class="line">npm ERR!  &#123; [Error: EACCES: permission denied, access &apos;/usr/local/lib/node_modules/@tarojs/cli/node_modules/electron-to-chromium&apos;]</span><br><span class="line">npm ERR!   stack:</span><br><span class="line">npm ERR!    &apos;Error: EACCES: permission denied, access \&apos;/usr/local/lib/node_modules/@tarojs/cli/node_modules/electron-to-chromium\&apos;&apos;,</span><br><span class="line">npm ERR!   errno: -13,</span><br><span class="line">npm ERR!   code: &apos;EACCES&apos;,</span><br><span class="line">npm ERR!   syscall: &apos;access&apos;,</span><br><span class="line">npm ERR!   path:</span><br><span class="line">npm ERR!    &apos;/usr/local/lib/node_modules/@tarojs/cli/node_modules/electron-to-chromium&apos; &#125;</span><br><span class="line">npm ERR! </span><br><span class="line">npm ERR! The operation was rejected by your operating system.</span><br><span class="line">npm ERR! It is likely you do not have the permissions to access this file as the current user</span><br><span class="line">npm ERR! </span><br><span class="line">npm ERR! If you believe this might be a permissions issue, please double-check the</span><br><span class="line">npm ERR! permissions of the file and its containing directories, or try running</span><br><span class="line">npm ERR! the command again as root/Administrator (though this is not recommended).</span><br><span class="line"></span><br><span class="line">npm ERR! A complete log of this run can be found in:</span><br><span class="line">npm ERR!     /Users/yanglei/.npm/_logs/2019-09-09T01_08_17_666Z-debug.log</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>解决方案</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install -g @tarojs/cli@1.2.2 --unsafe-perm=true --allow-root</span><br></pre></td></tr></table></figure>
+
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.bubbleo.club/2019/09/08/TypeError-Cannot-read-property-uglify-of-undefined/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bubble">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="bubble">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/09/08/TypeError-Cannot-read-property-uglify-of-undefined/" class="post-title-link" itemprop="url">Cannot read property 'uglify' of undefined</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-09-08 17:25:55 / Modified: 17:29:30" itemprop="dateCreated datePublished" datetime="2019-09-08T17:25:55+08:00">2019-09-08</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/2019/09/08/TypeError-Cannot-read-property-uglify-of-undefined/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/09/08/TypeError-Cannot-read-property-uglify-of-undefined/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>原因：依赖安装缺失</p>
+<p><code>taro info</code> 检查安装信息</p>
+<blockquote>
+<p>正常情况如下</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">Taro CLI 1.3.12 environment info:</span><br><span class="line">  System:</span><br><span class="line">    OS: macOS 10.14.6</span><br><span class="line">    Shell: 5.3</span><br><span class="line">  Binaries:</span><br><span class="line">    Node: 12.8.0</span><br><span class="line">    Yarn: 1.17.3</span><br><span class="line">    npm: 6.10.3</span><br><span class="line">  npmPackages:</span><br><span class="line">    @tarojs/async-await: 1.3.12 =&gt; 1.3.12 </span><br><span class="line">    @tarojs/cli: 1.3.12 =&gt; 1.3.12 </span><br><span class="line">    @tarojs/components: 1.3.12 =&gt; 1.3.12 </span><br><span class="line">    @tarojs/mobx: 1.3.12 =&gt; 1.3.12 </span><br><span class="line">    @tarojs/plugin-babel: 1.3.12 =&gt; 1.3.12 </span><br><span class="line">    @tarojs/plugin-csso: 1.3.12 =&gt; 1.3.12 </span><br><span class="line">    @tarojs/plugin-sass: 1.3.12 =&gt; 1.3.12 </span><br><span class="line">    @tarojs/plugin-uglifyjs: 1.3.12 =&gt; 1.3.12 </span><br><span class="line">    @tarojs/router: 1.3.12 =&gt; 1.3.12 </span><br><span class="line">    @tarojs/taro: 1.3.12 =&gt; 1.3.12 </span><br><span class="line">    @tarojs/taro-weapp: 1.3.12 =&gt; 1.3.12 </span><br><span class="line">    @tarojs/webpack-runner: 1.3.12 =&gt; 1.3.12 </span><br><span class="line">    eslint-config-taro: 1.3.12 =&gt; 1.3.12 </span><br><span class="line">    eslint-plugin-taro: 1.3.12 =&gt; 1.3.12 </span><br><span class="line">    nerv-devtools: ^1.4.3 =&gt; 1.4.3 </span><br><span class="line">    nervjs: ^1.4.3 =&gt; 1.4.3</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://github.com/NervJS/taro/issues/4103" target="_blank" rel="noopener">https://github.com/NervJS/taro/issues/4103</a></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://www.bubbleo.club/2019/09/08/css伪类嵌套使用/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1743,440 +2112,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.bubbleo.club/2019/08/15/搭建aws服务器环境/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="bubble">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="bubble">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/08/15/搭建aws服务器环境/" class="post-title-link" itemprop="url">搭建aws服务器环境</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-08-15 16:35:27 / Modified: 18:43:13" itemprop="dateCreated datePublished" datetime="2019-08-15T16:35:27+08:00">2019-08-15</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/服务器环境/" itemprop="url" rel="index"><span itemprop="name">服务器环境</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">Comments: </span>
-                <a href="/2019/08/15/搭建aws服务器环境/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/08/15/搭建aws服务器环境/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="安装git，nodejs，npm"><a href="#安装git，nodejs，npm" class="headerlink" title="安装git，nodejs，npm"></a>安装git，nodejs，npm</h2><ul>
-<li><p>安装git</p>
-<blockquote>
-<p><code>sudo apt-get install git</code></p>
-</blockquote>
-</li>
-<li><p>安装node</p>
-<blockquote>
-<p><code>sudo git clone https://github.com/nodejs/node.git</code></p>
-</blockquote>
-</li>
-<li><p>赋予权限</p>
-<blockquote>
-<p><code>sudo chmod -R 755 node</code></p>
-</blockquote>
-</li>
-<li><p>执行安装</p>
-<blockquote>
-<p>cd node<br>sudo ./configure</p>
-</blockquote>
-</li>
-<li><p>报错</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./configure: 4: exec: python: not found</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装python</p>
-<blockquote>
-<p><code>sudo apt-get install python</code></p>
-</blockquote>
-</li>
-<li><p>执行安装</p>
-<blockquote>
-<p><code>sudo ./configure</code></p>
-</blockquote>
-</li>
-<li><p>报错</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">WARNING: failed to autodetect C++ compiler version (CXX=g++)</span><br><span class="line">WARNING: failed to autodetect C compiler version (CC=gcc)</span><br><span class="line">ERROR: No acceptable C compiler found!</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装gcc</p>
-<blockquote>
-<p><code>sudo apt-get  install  build-essential</code></p>
-</blockquote>
-</li>
-<li><p>执行安装</p>
-<blockquote>
-<p><code>sudo ./configure</code><br><code>sudo make //在该步骤安装许久未结束。安装失败</code><br><code>sudo make install</code></p>
-</blockquote>
-</li>
-<li><p>查看版本</p>
-<blockquote>
-<p><code>node --version</code></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="apt安装方式"><a href="#apt安装方式" class="headerlink" title="apt安装方式"></a>apt安装方式</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install nodejs</span><br><span class="line">sudo apt-get install npm</span><br></pre></td></tr></table></figure>
-
-<h2 id="克隆github仓库代码到服务器"><a href="#克隆github仓库代码到服务器" class="headerlink" title="克隆github仓库代码到服务器"></a>克隆github仓库代码到服务器</h2><p>配置服务器ssh-key到github才能执行git clone</p>
-<h2 id="npm-run-start报错"><a href="#npm-run-start报错" class="headerlink" title="npm run start报错"></a>npm run start报错</h2><p>服务器端没有浏览器，opn()方法会导致启动失败</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.bubbleo.club/2019/08/12/运行gulp项目报错：AssertionError-Task-function-must-be-specified/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="bubble">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="bubble">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/08/12/运行gulp项目报错：AssertionError-Task-function-must-be-specified/" class="post-title-link" itemprop="url">运行gulp项目报错：AssertionError: Task function must be specified。</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-08-12 09:49:22 / Modified: 09:54:44" itemprop="dateCreated datePublished" datetime="2019-08-12T09:49:22+08:00">2019-08-12</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">Comments: </span>
-                <a href="/2019/08/12/运行gulp项目报错：AssertionError-Task-function-must-be-specified/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/08/12/运行gulp项目报错：AssertionError-Task-function-must-be-specified/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <blockquote>
-<p>gulp 3  和 gulp 4运行方式是不一样的，所以会出现错误。具体细节，可以看这里</p>
-</blockquote>
-<h2 id="gup3-VS-gulp4-区别"><a href="#gup3-VS-gulp4-区别" class="headerlink" title="gup3 VS gulp4 区别"></a>gup3 VS gulp4 区别</h2><blockquote>
-<p>Gulp 4最大的变化就是你不能像以前那样传递一个依赖任务列表。</p>
-</blockquote>
-<blockquote>
-<p>Gulp3，如果有一个任务A，B和C的列表，你想在一个序列中运行（确保A在B开始之前完成，而B在C开始之前完成），代码如下：</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">gulp.task(&apos;a&apos;, function () &#123;</span><br><span class="line">  // Do something.</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(&apos;b&apos;, [&apos;a&apos;], function () &#123;</span><br><span class="line">  // Do some stuff.</span><br><span class="line">&#125;);</span><br><span class="line">gulp.task(&apos;c&apos;, [&apos;b&apos;], function () &#123;</span><br><span class="line">    // Do some more stuff.</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>在Gulp 4中，你不能再这样做了。你会得到以下错误：</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">assert.js:85</span><br><span class="line">  throw new assert.AssertionError(&#123;</span><br><span class="line">  ^</span><br><span class="line">AssertionError: Task function must be specified</span><br><span class="line">    at Gulp.set [as _setTask] (/home/hope/web/node_modules/undertaker/lib/set-task.js:10:3)</span><br><span class="line">    at Gulp.task (/home/hope/web/node_modules/undertaker/lib/task.js:13:8)</span><br><span class="line">    at Object.&lt;anonymous&gt; (/home/hope/web/gulpfile.js:31:6)</span><br><span class="line">    at Module._compile (module.js:570:32)</span><br><span class="line">    at Object.Module._extensions..js (module.js:579:10)</span><br><span class="line">    at Module.load (module.js:487:32)</span><br><span class="line">    at tryModuleLoad (module.js:446:12)</span><br><span class="line">    at Function.Module._load (module.js:438:3)</span><br><span class="line">    at Module.require (module.js:497:17)</span><br><span class="line">    at require (internal/module.js:20:19)</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>不要用Gulp3的方式指定依赖任务，你需要使用gulp.series和gulp.parallel，因为gulp任务现在只有两个参数。</p>
-</blockquote>
-<blockquote>
-<p>gulp.series：按照顺序执行<br>gulp.paralle：可以并行计算</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">gulp.task(&apos;my-tasks&apos;, gulp.series(&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, function() &#123;</span><br><span class="line">  // Do something after a, b, and c are finished.</span><br><span class="line">&#125;));</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">gulp.task(&apos;build&apos;, gulp.parallel(&apos;styles&apos;, &apos;scripts&apos;, &apos;images&apos;, function () &#123;</span><br><span class="line">  // Build the website.</span><br><span class="line">&#125;));</span><br></pre></td></tr></table></figure>
-
-<p>或者这样</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">gulp.task(&apos;my-tasks&apos;, gulp.series(&apos;a&apos;, gulp.parallel(&apos;styles&apos;,&apos;scripts&apos;, &apos;images&apos;), &apos;b&apos;, &apos;c&apos;, function() &#123;</span><br><span class="line">  // Do something after a, b, and c are finished.</span><br><span class="line">&#125;));</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>s相关任务必须在被调用之前发生。</p>
-</blockquote>
-<p>链接：<a href="https://www.jianshu.com/p/c30ff8592421" target="_blank" rel="noopener">https://www.jianshu.com/p/c30ff8592421</a></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2223,7 +2158,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">97</span>
+                    <span class="site-state-item-count">99</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -2278,7 +2213,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">19</span>
+                      
+                    
+                    <span class="site-state-item-count">20</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>

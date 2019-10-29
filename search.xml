@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[用递归算法实现，数组长度为5且元素的随机数在2-32间不重复的值]]></title>
+    <url>%2F2019%2F10%2F29%2F%E7%94%A8%E9%80%92%E5%BD%92%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B0%EF%BC%8C%E6%95%B0%E7%BB%84%E9%95%BF%E5%BA%A6%E4%B8%BA5%E4%B8%94%E5%85%83%E7%B4%A0%E7%9A%84%E9%9A%8F%E6%9C%BA%E6%95%B0%E5%9C%A82-32%E9%97%B4%E4%B8%8D%E9%87%8D%E5%A4%8D%E7%9A%84%E5%80%BC%2F</url>
+    <content type="text"><![CDATA[用递归算法实现，数组长度为5且元素的随机数在2-32间不重复的值 12345678function buildArray(arr, length, mix, max) &#123; var num = Math.floor(Math.random() * (max - min + 1) + min); if(!arr.includes(num)) arr.push(num); return arr.length == length ? arr : buildArray(arr, length, min, max); &#125;var result = buildArray([], 5, 2, 32);console.table(result);]]></content>
+      <categories>
+        <category>面试</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[vscode保存后自动格式化]]></title>
+    <url>%2F2019%2F09%2F23%2Fvscode%E4%BF%9D%E5%AD%98%E5%90%8E%E8%87%AA%E5%8A%A8%E6%A0%BC%E5%BC%8F%E5%8C%96%2F</url>
+    <content type="text"><![CDATA[12&quot;editor.formatOnType&quot;: true,&quot;editor.formatOnSave&quot;: true 打开设置-&gt; 搜索emmet.include -&gt; 找到上方代码拷贝 -&gt; 粘贴到右侧工作区]]></content>
+      <categories>
+        <category>ide</category>
+      </categories>
+      <tags>
+        <tag>vscode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[react/no-typos]]></title>
     <url>%2F2019%2F09%2F20%2Freact-no-typos%2F</url>
     <content type="text"><![CDATA[XiaojiejieItem.PropTypes改为XiaojiejieItem.propTypes 12345678910XiaojiejieItem.PropTypes = &#123; content: PropTypes.string, index: PropTypes.number, deleteItem: PropTypes.func,&#125;./src/XiaojiejieItem.js Line 22: Typo in static class property declaration react/no-typosSearch for the keywords to learn more about each error.]]></content>
