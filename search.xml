@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[在页面上隐藏元素的方法有哪些?]]></title>
+    <url>%2F2019%2F10%2F29%2F%E5%9C%A8%E9%A1%B5%E9%9D%A2%E4%B8%8A%E9%9A%90%E8%97%8F%E5%85%83%E7%B4%A0%E7%9A%84%E6%96%B9%E6%B3%95%E6%9C%89%E5%93%AA%E4%BA%9B%2F</url>
+    <content type="text"><![CDATA[站位 visibility: hidden; margin-left: -100%; opacity: 0; transform: scale(0); 不占位 display: none; width: 0; height: 0; overflow: hidden; 仅对块内文本元素 text-indent: -9999px; font-size: 0;]]></content>
+      <categories>
+        <category>面试</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[用递归算法实现，数组长度为5且元素的随机数在2-32间不重复的值]]></title>
     <url>%2F2019%2F10%2F29%2F%E7%94%A8%E9%80%92%E5%BD%92%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B0%EF%BC%8C%E6%95%B0%E7%BB%84%E9%95%BF%E5%BA%A6%E4%B8%BA5%E4%B8%94%E5%85%83%E7%B4%A0%E7%9A%84%E9%9A%8F%E6%9C%BA%E6%95%B0%E5%9C%A82-32%E9%97%B4%E4%B8%8D%E9%87%8D%E5%A4%8D%E7%9A%84%E5%80%BC%2F</url>
     <content type="text"><![CDATA[用递归算法实现，数组长度为5且元素的随机数在2-32间不重复的值 12345678function buildArray(arr, length, mix, max) &#123; var num = Math.floor(Math.random() * (max - min + 1) + min); if(!arr.includes(num)) arr.push(num); return arr.length == length ? arr : buildArray(arr, length, min, max); &#125;var result = buildArray([], 5, 2, 32);console.table(result);]]></content>
