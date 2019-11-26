@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[mysql更换密码加密方式]]></title>
+    <url>%2F2019%2F11%2F26%2Fmysql%E6%9B%B4%E6%8D%A2%E5%AF%86%E7%A0%81%E5%8A%A0%E5%AF%86%E6%96%B9%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[mysql -u root -p ALTER USER ‘root’@’localhost’ IDENTIFIED BY ‘password’ PASSWORD EXPIRE NEVER; ALTER USER ‘root’@’localhost’ IDENTIFIED WITH mysql_native_password BY ‘password’; mysql命令报错 mysql: command not foundalias mysql=/usr/local/mysql/bin/mysql]]></content>
+      <categories>
+        <category>数据库</category>
+      </categories>
+      <tags>
+        <tag>mysql</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[在页面上隐藏元素的方法有哪些?]]></title>
     <url>%2F2019%2F10%2F29%2F%E5%9C%A8%E9%A1%B5%E9%9D%A2%E4%B8%8A%E9%9A%90%E8%97%8F%E5%85%83%E7%B4%A0%E7%9A%84%E6%96%B9%E6%B3%95%E6%9C%89%E5%93%AA%E4%BA%9B%2F</url>
     <content type="text"><![CDATA[站位 visibility: hidden; margin-left: -100%; opacity: 0; transform: scale(0); 不占位 display: none; width: 0; height: 0; overflow: hidden; 仅对块内文本元素 text-indent: -9999px; font-size: 0;]]></content>
@@ -217,8 +228,8 @@
       </categories>
       <tags>
         <tag>js</tag>
-        <tag>react</tag>
         <tag>taro</tag>
+        <tag>react</tag>
       </tags>
   </entry>
   <entry>
