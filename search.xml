@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[配置vscode-sftp连接centos服务器]]></title>
     <url>%2F2021%2F01%2F09%2F%E9%85%8D%E7%BD%AEvscode-sftp%E8%BF%9E%E6%8E%A5centos%E6%9C%8D%E5%8A%A1%E5%99%A8%2F</url>
-    <content type="text"><![CDATA[服务器端配置这里使用了在阿里云创建服务器时使用的root用户，且centos中sftp服务是默认开启的具体的分配用户方式需要参考linux相关书籍来操作 客户端配置在工程目录下新建.vscode/sftp.json sftp.json文件内容如下 1234567891011&#123; &quot;name&quot;: &quot;My Server&quot;, &quot;host&quot;: &quot;***.***.***.***&quot;, // 此处配置服务器ip地址 &quot;protocol&quot;: &quot;sftp&quot;, &quot;port&quot;: 22, // sftp默认端口号为22 &quot;username&quot;: &quot;root&quot;, // 登录用户名称 &quot;password&quot;: &quot;Yl1993410&quot;, // 登录用户密码 &quot;remotePath&quot;: &quot;/root/bubble/code/profile_picture&quot;, // 文件上传路径 &quot;privateKeyPath&quot;: &quot;/Users/USERNAME/.ssh/id_rsa&quot;, // 此处配置ssh-key公钥文件路径 &quot;uploadOnSave&quot;: true&#125;]]></content>
+    <content type="text"><![CDATA[服务器端配置这里使用了在阿里云创建服务器时使用的root用户，且centos中sftp服务是默认开启的具体的分配用户方式需要参考linux相关书籍来操作 客户端配置在工程目录下新建.vscode/sftp.json sftp.json文件内容如下 1234567891011&#123; &quot;name&quot;: &quot;My Server&quot;, &quot;host&quot;: &quot;***.***.***.***&quot;, // 此处配置服务器ip地址 &quot;protocol&quot;: &quot;sftp&quot;, &quot;port&quot;: 22, // sftp默认端口号为22 &quot;username&quot;: &quot;root&quot;, // 登录用户名称 &quot;password&quot;: &quot;*******&quot;, // 登录用户密码 &quot;remotePath&quot;: &quot;/root/bubble/code/profile_picture&quot;, // 文件上传路径 &quot;privateKeyPath&quot;: &quot;/Users/USERNAME/.ssh/id_rsa&quot;, // 此处配置ssh-key公钥文件路径 &quot;uploadOnSave&quot;: true&#125;]]></content>
       <categories>
         <category>分类1</category>
       </categories>
