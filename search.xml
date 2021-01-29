@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[css之vertical-align]]></title>
     <url>%2F2021%2F01%2F28%2Fcss%E4%B9%8Bvertical-align%2F</url>
-    <content type="text"><![CDATA[CSS属性之vertical-align生效条件元素display属性为inline, inline-block, inline-table, table-cellps: table-cell 表现为内部元素产生效果 可设置属性字面量属性 字面量属性存在兼容性问题一般不推荐使用 数字属性 数字属性默认以基线相对位置进行偏移 如果使用%单位，则依据字体大小*百分比的计算值进行偏移]]></content>
+    <content type="text"><![CDATA[CSS属性之vertical-align生效条件元素display属性为inline, inline-block, inline-table, table-cellps: table-cell 表现为内部元素产生效果 可设置属性字面量属性 字面量属性存在兼容性问题一般不推荐使用 数字属性 数字属性默认以基线相对位置进行偏移 如果使用%单位，则依据字体大小*百分比的计算值进行偏移 相关问题记录 inline-block元素设置overflow：hidden时，后续inline以及inline-block元素会以前一个元素的底线作为基线进行对齐 解决方案1使用vertical-align可以设置数值属性的特点设置px或者%进行相对基线的偏移来解决 解决方案2前一个元素overflow设置为非hidden 解决方案 3后续元素设置为inline-block，over-flow：hidden 子元素vertical-align生效条件为父元素必须设置line-height且高度大于子元素 父元素设置为table-cell，并且设置vertical-align可直接作用于子元素，父元素不需要line-height]]></content>
       <tags>
         <tag>CSS世界</tag>
       </tags>

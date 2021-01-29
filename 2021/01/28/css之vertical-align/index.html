@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="CSS属性之vertical-align生效条件元素display属性为inline, inline-block, inline-table, table-cellps: table-cell 表现为内部元素产生效果 可设置属性字面量属性 字面量属性存在兼容性问题一般不推荐使用  数字属性 数字属性默认以基线相对位置进行偏移  如果使用%单位，则依据字体大小*百分比的计算值进行偏移">
+  <meta name="description" content="CSS属性之vertical-align生效条件元素display属性为inline, inline-block, inline-table, table-cellps: table-cell 表现为内部元素产生效果 可设置属性字面量属性 字面量属性存在兼容性问题一般不推荐使用  数字属性 数字属性默认以基线相对位置进行偏移  如果使用%单位，则依据字体大小*百分比的计算值进行偏移    相关问题">
 <meta name="keywords" content="CSS世界">
 <meta property="og:type" content="article">
 <meta property="og:title" content="css之vertical-align">
 <meta property="og:url" content="http://yoursite.com/2021/01/28/css之vertical-align/index.html">
 <meta property="og:site_name" content="bubble">
-<meta property="og:description" content="CSS属性之vertical-align生效条件元素display属性为inline, inline-block, inline-table, table-cellps: table-cell 表现为内部元素产生效果 可设置属性字面量属性 字面量属性存在兼容性问题一般不推荐使用  数字属性 数字属性默认以基线相对位置进行偏移  如果使用%单位，则依据字体大小*百分比的计算值进行偏移">
+<meta property="og:description" content="CSS属性之vertical-align生效条件元素display属性为inline, inline-block, inline-table, table-cellps: table-cell 表现为内部元素产生效果 可设置属性字面量属性 字面量属性存在兼容性问题一般不推荐使用  数字属性 数字属性默认以基线相对位置进行偏移  如果使用%单位，则依据字体大小*百分比的计算值进行偏移    相关问题">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2021-01-28T14:16:48.481Z">
+<meta property="og:updated_time" content="2021-01-29T14:27:27.801Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css之vertical-align">
-<meta name="twitter:description" content="CSS属性之vertical-align生效条件元素display属性为inline, inline-block, inline-table, table-cellps: table-cell 表现为内部元素产生效果 可设置属性字面量属性 字面量属性存在兼容性问题一般不推荐使用  数字属性 数字属性默认以基线相对位置进行偏移  如果使用%单位，则依据字体大小*百分比的计算值进行偏移">
+<meta name="twitter:description" content="CSS属性之vertical-align生效条件元素display属性为inline, inline-block, inline-table, table-cellps: table-cell 表现为内部元素产生效果 可设置属性字面量属性 字面量属性存在兼容性问题一般不推荐使用  数字属性 数字属性默认以基线相对位置进行偏移  如果使用%单位，则依据字体大小*百分比的计算值进行偏移    相关问题">
 
 
 
@@ -362,12 +362,24 @@
                 
               
 
-              <time title="Created: 2021-01-28 22:05:10 / Modified: 22:16:48" itemprop="dateCreated datePublished" datetime="2021-01-28T22:05:10+08:00">2021-01-28</time>
+              <time title="Created: 2021-01-28 22:05:10" itemprop="dateCreated datePublished" datetime="2021-01-28T22:05:10+08:00">2021-01-28</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2021-01-29 22:27:27" itemprop="dateModified" datetime="2021-01-29T22:27:27+08:00">2021-01-29</time>
               
             
           </span>
@@ -431,6 +443,15 @@
 <li><p>如果使用%单位，则依据字体大小*百分比的计算值进行偏移</p>
 </li>
 </ul>
+<hr>
+<h2 id="相关问题记录"><a href="#相关问题记录" class="headerlink" title="相关问题记录"></a>相关问题记录</h2><ul>
+<li>inline-block元素设置overflow：hidden时，后续inline以及inline-block元素会以前一个元素的底线作为基线进行对齐</li>
+</ul>
+<h3 id="解决方案1"><a href="#解决方案1" class="headerlink" title="解决方案1"></a>解决方案1</h3><p>使用vertical-align可以设置数值属性的特点设置px或者%进行相对基线的偏移来解决</p>
+<h3 id="解决方案2"><a href="#解决方案2" class="headerlink" title="解决方案2"></a>解决方案2</h3><p>前一个元素overflow设置为非hidden</p>
+<h3 id="解决方案-3"><a href="#解决方案-3" class="headerlink" title="解决方案 3"></a>解决方案 3</h3><p>后续元素设置为inline-block，over-flow：hidden</p>
+<p>子元素vertical-align生效条件为父元素必须设置line-height且高度大于子元素</p>
+<p>父元素设置为table-cell，并且设置vertical-align可直接作用于子元素，父元素不需要line-height</p>
 
       
     </div>
@@ -792,7 +813,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS属性之vertical-align"><span class="nav-number">1.</span> <span class="nav-text">CSS属性之vertical-align</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#生效条件"><span class="nav-number">1.1.</span> <span class="nav-text">生效条件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可设置属性"><span class="nav-number">1.2.</span> <span class="nav-text">可设置属性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#字面量属性"><span class="nav-number">1.2.1.</span> <span class="nav-text">字面量属性</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数字属性"><span class="nav-number">1.3.</span> <span class="nav-text">数字属性</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS属性之vertical-align"><span class="nav-number">1.</span> <span class="nav-text">CSS属性之vertical-align</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#生效条件"><span class="nav-number">1.1.</span> <span class="nav-text">生效条件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可设置属性"><span class="nav-number">1.2.</span> <span class="nav-text">可设置属性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#字面量属性"><span class="nav-number">1.2.1.</span> <span class="nav-text">字面量属性</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数字属性"><span class="nav-number">1.3.</span> <span class="nav-text">数字属性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#相关问题记录"><span class="nav-number">2.</span> <span class="nav-text">相关问题记录</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#解决方案1"><span class="nav-number">2.1.</span> <span class="nav-text">解决方案1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决方案2"><span class="nav-number">2.2.</span> <span class="nav-text">解决方案2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决方案-3"><span class="nav-number">2.3.</span> <span class="nav-text">解决方案 3</span></a></li></ol></li></ol></div>
             
 
           </div>

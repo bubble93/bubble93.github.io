@@ -360,12 +360,24 @@
                 
               
 
-              <time title="Created: 2021-01-28 22:05:10 / Modified: 22:16:48" itemprop="dateCreated datePublished" datetime="2021-01-28T22:05:10+08:00">2021-01-28</time>
+              <time title="Created: 2021-01-28 22:05:10" itemprop="dateCreated datePublished" datetime="2021-01-28T22:05:10+08:00">2021-01-28</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2021-01-29 22:27:27" itemprop="dateModified" datetime="2021-01-29T22:27:27+08:00">2021-01-29</time>
               
             
           </span>
@@ -424,6 +436,15 @@
 <li><p>如果使用%单位，则依据字体大小*百分比的计算值进行偏移</p>
 </li>
 </ul>
+<hr>
+<h2 id="相关问题记录"><a href="#相关问题记录" class="headerlink" title="相关问题记录"></a>相关问题记录</h2><ul>
+<li>inline-block元素设置overflow：hidden时，后续inline以及inline-block元素会以前一个元素的底线作为基线进行对齐</li>
+</ul>
+<h3 id="解决方案1"><a href="#解决方案1" class="headerlink" title="解决方案1"></a>解决方案1</h3><p>使用vertical-align可以设置数值属性的特点设置px或者%进行相对基线的偏移来解决</p>
+<h3 id="解决方案2"><a href="#解决方案2" class="headerlink" title="解决方案2"></a>解决方案2</h3><p>前一个元素overflow设置为非hidden</p>
+<h3 id="解决方案-3"><a href="#解决方案-3" class="headerlink" title="解决方案 3"></a>解决方案 3</h3><p>后续元素设置为inline-block，over-flow：hidden</p>
+<p>子元素vertical-align生效条件为父元素必须设置line-height且高度大于子元素</p>
+<p>父元素设置为table-cell，并且设置vertical-align可直接作用于子元素，父元素不需要line-height</p>
 
           
         
