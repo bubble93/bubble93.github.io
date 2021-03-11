@@ -315,6 +315,204 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/08/css伪类嵌套使用/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bubble">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="bubble">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/09/08/css伪类嵌套使用/" class="post-title-link" itemprop="url">scss伪类嵌套使用</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-09-08 11:44:54" itemprop="dateCreated datePublished" datetime="2019-09-08T11:44:54+08:00">2019-09-08</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-09-11 18:08:41" itemprop="dateModified" datetime="2019-09-11T18:08:41+08:00">2019-09-11</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/2019/09/08/css伪类嵌套使用/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/09/08/css伪类嵌套使用/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<p>scss</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">.at-radio__option&#123;</span><br><span class="line">  &amp;:first-child&#123;</span><br><span class="line">    .at-radio__title::before&#123;</span><br><span class="line">      display: inline-block;</span><br><span class="line">      background-size: cover;</span><br><span class="line">      width: 1rem;</span><br><span class="line">      height: 0.6rem;</span><br><span class="line">      content: &apos;&apos;;</span><br><span class="line">      background-image: url(../../../assets/images/pay-wx.png);</span><br><span class="line">      background-position:50% 50%;</span><br><span class="line">      margin-left: -1.5rem;</span><br><span class="line">      margin-right: 1rem;  </span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  &amp;:last-child&#123;</span><br><span class="line">    .at-radio__title::before&#123;</span><br><span class="line">      display: inline-block;</span><br><span class="line">      background-size: cover;</span><br><span class="line">      width: 1rem;</span><br><span class="line">      height: 0.6rem;</span><br><span class="line">      content: &apos;&apos;;</span><br><span class="line">      background-image: url(../../../assets/images/pay-zfb.png);</span><br><span class="line">      background-position:50% 50%;</span><br><span class="line">      margin-left: -1.5rem;</span><br><span class="line">      margin-right: 1rem;  </span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>html</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;recharge-type-radio&quot;&gt;</span><br><span class="line">  &lt;div class=&quot;at-radio&quot; style=&quot;&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;at-radio__option&quot;&gt;</span><br><span class="line">      &lt;div class=&quot;at-radio__option-wrap&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;at-radio__option-container&quot;&gt;</span><br><span class="line">          &lt;div class=&quot;at-radio__title&quot;&gt;微信支付&lt;/div&gt;</span><br><span class="line">          &lt;div class=&quot;at-radio__icon at-radio__icon--checked&quot;&gt;</span><br><span class="line">            &lt;span class=&quot;taro-text at-icon at-icon-check&quot;&gt;&lt;/span&gt;</span><br><span class="line">          &lt;/div&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;at-radio__option&quot;&gt;</span><br><span class="line">      &lt;div class=&quot;at-radio__option-wrap&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;at-radio__option-container&quot;&gt;</span><br><span class="line">          &lt;div class=&quot;at-radio__title&quot;&gt;支付宝支付&lt;/div&gt;</span><br><span class="line">          &lt;div class=&quot;at-radio__icon&quot;&gt;</span><br><span class="line">            &lt;span class=&quot;taro-text at-icon at-icon-check&quot;&gt;&lt;/span&gt;</span><br><span class="line">          &lt;/div&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>效果<br><img src="../images/zf.png" alt="支付"></p>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/06/react元素添加多个事件/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1979,193 +2177,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/11/watch-task-has-to-be-a-function/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="bubble">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="bubble">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/08/11/watch-task-has-to-be-a-function/" class="post-title-link" itemprop="url">watch task has to be a function</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-08-11 23:43:00 / Modified: 23:47:36" itemprop="dateCreated datePublished" datetime="2019-08-11T23:43:00+08:00">2019-08-11</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">Comments: </span>
-                <a href="/2019/08/11/watch-task-has-to-be-a-function/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/08/11/watch-task-has-to-be-a-function/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">gulp.task(&apos;script&apos;, async() =&gt; &#123;</span><br><span class="line">  gulp.src(&apos;js/*.js&apos;)</span><br><span class="line">      .pipe(uglify())</span><br><span class="line">      .pipe(gulp.dest(&apos;dist/js&apos;));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">// 在命令行使用 gulp auto 启动此任务</span><br><span class="line">gulp.task(&apos;auto&apos;, async() =&gt; &#123;</span><br><span class="line">  // 监听文件修改，当文件被修改则执行 script 任务</span><br><span class="line">  var watcher = gulp.watch(&apos;js/*.js&apos;, [&apos;script&apos;]);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>报错</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[23:41:34] Error: watching js/*.js: watch task has to be a function (optionally generated by using gulp.parallel or gulp.series)</span><br><span class="line">    at Gulp.watch (/Users/yanglei/Documents/gulp-demo/node_modules/gulp/index.js:31:11)</span><br><span class="line">    at gulp.task (/Users/yanglei/Documents/gulp-demo/chapter2/gulpfile.js:13:22)</span><br><span class="line">    at taskWrapper (/Users/yanglei/Documents/gulp-demo/node_modules/undertaker/lib/set-task.js:13:15)</span><br><span class="line">    at bound (domain.js:396:14)</span><br><span class="line">    at runBound (domain.js:409:12)</span><br><span class="line">    at asyncRunner (/Users/yanglei/Documents/gulp-demo/node_modules/async-done/index.js:55:18)</span><br><span class="line">    at process._tickCallback (internal/process/next_tick.js:61:11)</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>这个是由于require引入的包的版本问题导致的。在不同的版本里，接口参数发生了变化。在gulp4.0之后已经只能接受watch第二个参数必须为函数。详情请看官网</p>
-</blockquote>
-<p>解决方案</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">gulp.task(&apos;watch&apos;,()=&gt;&#123;</span><br><span class="line">    gulp.watch(&apos;js/*.js&apos;, gulp.series(&apos;script&apos;));</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<p>参考链接: <a href="https://juejin.im/post/5c5f2eb7e51d457ffa36e18b" target="_blank" rel="noopener">https://juejin.im/post/5c5f2eb7e51d457ffa36e18b</a></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2212,7 +2223,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">106</span>
+                    <span class="site-state-item-count">107</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>

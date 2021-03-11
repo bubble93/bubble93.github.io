@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[前端打印页面]]></title>
+    <url>%2F2021%2F03%2F11%2F%E5%89%8D%E7%AB%AF%E6%89%93%E5%8D%B0%E9%A1%B5%E9%9D%A2%2F</url>
+    <content type="text"><![CDATA[前端打印网页主要依靠window.print()方法触发打印 设置打印方向&amp;打印纸张大小主要靠css中@page的size属性来实现 12345678&lt;div&gt; &lt;style&gt; @page &#123; size: landscape; &#125; &lt;/style&gt; &lt;button onclick='window.print()'&gt;横向打印&lt;/button&gt;&lt;/div&gt; 12345678&lt;div&gt; &lt;style&gt; @page &#123; size: portrait; &#125; &lt;/style&gt; &lt;button onclick='window.print()'&gt;竖向打印&lt;/button&gt;&lt;/div&gt;]]></content>
+      <tags>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[移动端适配方案]]></title>
     <url>%2F2021%2F03%2F11%2F%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D%E6%96%B9%E6%A1%88%2F</url>
     <content type="text"><![CDATA[1.rem方案（此方案产生背景源于之前的浏览器vw的兼容性不好，目前的浏览器对vw支持良好所以该方案基本废弃）rem的解决方案主要是依据1rem代表的长度与html根元素的字体大小来实现移动端适配将如下代码加入到工程中，则会依据窗口大小动态设置font-size从而达到适配效果 123456789101112(function(doc, win) &#123; var docEl = doc.documentElement, resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize', recalc = function() &#123; var clientWidth = docEl.clientWidth; if (!clientWidth) return; docEl.style.fontSize = 20 * (clientWidth / 320) + 'px'; &#125;; if (!doc.addEventListener) return; win.addEventListener(resizeEvt, recalc, false); doc.addEventListener('DOMContentLoaded', recalc, false);&#125;)(document, window); 2.vw方案vw的解决方案主要依据1vw代表当前窗口宽度的1%来实现移动端适配效果less（7.2表示设计图尺寸为720px） 123456.pv(@px) &#123; @r: round( @px / 7.2vw, 5 )&#125;div &#123; width: .pv(10)[@r]&#125; sass（7.2表示设计图尺寸为720px） 123456@function pv($px) &#123; @return $px / 7.2 * 1vw;&#125;div &#123; width: pv(10)&#125; 3.vw+rem方案参考地址该方案与rem方案逻辑一致，主要区别是不再使用js来动态设置font-size而是使用vw来控制 1234567891011121314$rootSize: 16px!default;$designWidth: 750px!default;$designRatio: 2!default;/* 实际尺寸 = 设计尺寸 / 设计比例 实际rem = 实际尺寸 / 根级字体大小 实际rem = 设计尺寸 / 设计比例 / 根级字体大小*/@function rem($px) &#123; @return $px / $rootSize / $designRatio * 1rem;&#125;@function rootVw() &#123; @return $rootSize / $designWidth * $designRatio * 100vmin;&#125; 123456html&#123; font-size: rootVw();&#125;body&#123; padding: rem(15px);&#125;]]></content>
