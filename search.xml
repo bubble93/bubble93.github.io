@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[docker安装nginx]]></title>
+    <url>%2F2021%2F06%2F18%2Fdocker%E5%AE%89%E8%A3%85nginx%2F</url>
+    <content type="text"><![CDATA[菜鸟教程 安装docker参考docker安装笔记 查询docker nginx镜像docker search nginx 拉取docker nginx镜像docker pull nginx:latest 查看已拉取镜像docker images 运行容器docker run –name nginx-test -p 8080:80 -d nginx –name nginx-test：容器名称。-p 8080:80： 端口进行映射，将本地 8080 端口映射到容器内部的 80 端口。-d nginx： 设置容器在在后台一直运行。]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[docker中使用mongodb]]></title>
+    <url>%2F2021%2F06%2F18%2Fdocker%E4%B8%AD%E4%BD%BF%E7%94%A8mongodb%2F</url>
+    <content type="text"><![CDATA[菜鸟教程 安装docker参考docker安装笔记 查询docker mongo镜像docker search mongo 拉取docker mongo镜像docker pull mongo:latest 查看已拉取镜像docker images 创建容器docker run -itd –name mongo -p 27017:27017 mongo –auth -p 27017:27017 ：映射容器服务的 27017 端口到宿主机的 27017 端口。外部可以直接通过 宿主机 ip:27017 访问到 mongo 的服务。–auth：需要密码才能访问容器服务。 运行容器docker start 容器id 容器id可通过 docker ps -a 查询 连接12345docker exec -it mongo mongo admin// 创建一个名为 admin，密码为 123456 的用户。db.createUser(&#123; user:&apos;admin&apos;,pwd:&apos;123456&apos;,roles:[ &#123; role:&apos;userAdminAnyDatabase&apos;, db: &apos;admin&apos;&#125;,&quot;readWriteAnyDatabase&quot;]&#125;);// 尝试使用上面创建的用户信息进行连接。db.auth(&apos;admin&apos;, &apos;123456&apos;)]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[opencv4 历险记]]></title>
+    <url>%2F2021%2F06%2F10%2Fopencv4-%E5%8E%86%E9%99%A9%E8%AE%B0%2F</url>
+    <content type="text"><![CDATA[环境为 ubuntu 18.04 1.E: Could not get lock /var/lib/dpkg/lock - open (11: Resource temporarily unavailable)E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using it? 描述：执行sudo apt-get update命令后执行sudo apt-get upgrade报错 解决方案：该问题是由于apt-get命令未执行完毕导致进程被占用，可以使用如下两种方式解决1.ps -A | grep apt查询出apt命令占用进程，执行sudo kill -9 processnumber杀掉该进程 等待apt命令执行完毕]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[npm私有组件库]]></title>
+    <url>%2F2021%2F06%2F03%2Fnpm%E7%A7%81%E6%9C%89%E7%BB%84%E4%BB%B6%E5%BA%93%2F</url>
+    <content type="text"><![CDATA[npm install bubble-ui后再工程中 import BubbleUI from ‘bubble-ui’提示 These dependencies were not found: bubble-ui原因是由于打包时未正确设置导出文件名称，与package.json中的main字段不一致导致引入失败 npm publish 发布时提示403有以下三种可能 npm源并非官方 未执行npm login 发布版本号与当前发布版本号相同]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[linux学习笔记]]></title>
+    <url>%2F2021%2F05%2F30%2Flinux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%2F</url>
+    <content type="text"><![CDATA[cal命令报错执行cal命令提示command not found，检查发现未安装bsdmainutils。使用apt-get安装bsdmainutils，提示未找到安装包。执行apt-get update更新apt-get后再次执行apt-get install bsdmainutilscal命令执行成功 bc命令报错执行apt-get install bc安装后可以正常执行]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[docker常用命令]]></title>
+    <url>%2F2021%2F05%2F30%2Fdocker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[查看所有docker容器信息docker ps -a 启动docker容器docker start 容器id 进入docker容器docker attach 容器iddocker exec 容器id]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[docker学习历险记]]></title>
+    <url>%2F2021%2F05%2F27%2Fdocker%E5%AE%89%E8%A3%85%E7%AC%94%E8%AE%B0%2F</url>
+    <content type="text"><![CDATA[下载docker一键安装包 官方安装脚本curl -fsSL https://get.docker.com | bash -s docker –mirror aliyun 国内安装脚本curl -sSL https://get.daocloud.io/docker | sh 运行docker容器sudo docker run -i -t ubuntu /bin/bash 查看主机名称hostname 检查容器hosts文件cat /etc/hosts 检查容器接口ip a 此处报错：bash: ip: command not found。因为未安装 iproute2 安装 iproute2apt-get install -y iproute2 此处报错：未找到该工具 更新 apt-getapt-get update 再次安装 iproute2apt-get install -y iproute2 再次检查容器接口ip a]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[前端打印页面]]></title>
     <url>%2F2021%2F03%2F11%2F%E5%89%8D%E7%AB%AF%E6%89%93%E5%8D%B0%E9%A1%B5%E9%9D%A2%2F</url>
     <content type="text"><![CDATA[前端打印网页主要依靠window.print()方法触发打印 设置打印方向&amp;打印纸张大小主要靠css中@page的size属性来实现 12345678&lt;div&gt; &lt;style&gt; @page &#123; size: landscape; &#125; &lt;/style&gt; &lt;button onclick='window.print()'&gt;横向打印&lt;/button&gt;&lt;/div&gt; 12345678&lt;div&gt; &lt;style&gt; @page &#123; size: portrait; &#125; &lt;/style&gt; &lt;button onclick='window.print()'&gt;竖向打印&lt;/button&gt;&lt;/div&gt;]]></content>
@@ -456,7 +491,7 @@
   <entry>
     <title><![CDATA[跨域以及前后端通信]]></title>
     <url>%2F2019%2F07%2F31%2F%E8%B7%A8%E5%9F%9F%E4%BB%A5%E5%8F%8A%E5%89%8D%E5%90%8E%E7%AB%AF%E9%80%9A%E4%BF%A1%2F</url>
-    <content type="text"><![CDATA[同源策略概念和具体限制 同源策略：限制从一个源加载的文档或脚本如何与来自另一个源的资源进行交互。这是一个用于隔离潜在恶意文件的关键的安全机制。 源包括三个部分：协议、域名、端口（http协议的默认端口是80）。如果有任何一个部分不同，则源不同，那就是跨域了。 限制：这个源的文档没有权利去操作另一个源的文档。这个限制体现在：Cookie、LocalStorage和IndexDB无法获取。无法获取和操作DOM。不能发送Ajax请求。我们要注意，Ajax只适合同源的通信。 前后端如何通信 主要有以下几种方式： Ajax：不支持跨域。 WebSocket：不受同源策略的限制，支持跨域。 CORS：不受同源策略的限制，支持跨域。一种新的通信协议标准。可以理解成是：同时支持同源和跨域的Ajax。 如何创建Ajax]]></content>
+    <content type="text"><![CDATA[同源策略概念和具体限制 同源策略：限制从一个源加载的文档或脚本如何与来自另一个源的资源进行交互。这是一个用于隔离潜在恶意文件的关键的安全机制。 源包括三个部分：协议、域名、端口（http协议的默认端口是80）。如果有任何一个部分不同，则源不同，那就是跨域了。 限制：这个源的文档没有权利去操作另一个源的文档。这个限制体现在：Cookie、LocalStorage和IndexDB无法获取。无法获取和操作DOM。不能发送Ajax请求。我们要注意，Ajax只适合同源的通信。 前后端如何通信 主要有以下几种方式： Ajax：不支持跨域。 WebSocket：不受同源策略的限制，支持跨域。 CORS：不受同源策略的限制，支持跨域。一种新的通信协议标准。可以理解成是：同时支持同源和跨域的Ajax。 如何创建Ajax后端跨域配置说明Access-Control-Allow-Origin允许访问该应用的来源地址；demo：res.header(&quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;); Access-Control-Allow-Headers允许发送的头部字段；demo：res.header(&quot;Access-Control-Allow-Headers&quot;, &quot;X-Requested-With&quot;); Access-Control-Allow-Methods允许访问的方式；demo：res.header(&quot;Access-Control-Allow-Methods&quot;,&quot;PUT,POST,GET,DELETE,OPTIONS&quot;); 跨域问题 跨域错误信息中一般存放着完整的错误原因 Response to preflight request doesn’t pass access control check: It does not have HTTP ok status.Request header field content-type is not allowed by Access-Control-Allow-Headers in preflight response.Response to preflight request doesn’t pass access control check: No ‘Access-Control-Allow-Origin’ header is present on the requested resource.]]></content>
       <categories>
         <category>前端</category>
       </categories>
@@ -1003,8 +1038,8 @@
         <category>前端</category>
       </categories>
       <tags>
-        <tag>JS</tag>
         <tag>http</tag>
+        <tag>JS</tag>
       </tags>
   </entry>
   <entry>

@@ -15,7 +15,7 @@
 
 
 <html class="theme-next pisces use-motion" lang>
-<head><meta name="generator" content="Hexo 3.8.0">
+<head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="bubble">
 <meta property="og:description" content="同源策略概念和具体限制 同源策略：限制从一个源加载的文档或脚本如何与来自另一个源的资源进行交互。这是一个用于隔离潜在恶意文件的关键的安全机制。  源包括三个部分：协议、域名、端口（http协议的默认端口是80）。如果有任何一个部分不同，则源不同，那就是跨域了。 限制：这个源的文档没有权利去操作另一个源的文档。这个限制体现在：Cookie、LocalStorage和IndexDB无法获取。无法获取和">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-08-08T02:24:12.832Z">
+<meta property="og:updated_time" content="2021-06-30T13:55:00.166Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="跨域以及前后端通信">
 <meta name="twitter:description" content="同源策略概念和具体限制 同源策略：限制从一个源加载的文档或脚本如何与来自另一个源的资源进行交互。这是一个用于隔离潜在恶意文件的关键的安全机制。  源包括三个部分：协议、域名、端口（http协议的默认端口是80）。如果有任何一个部分不同，则源不同，那就是跨域了。 限制：这个源的文档没有权利去操作另一个源的文档。这个限制体现在：Cookie、LocalStorage和IndexDB无法获取。无法获取和">
@@ -379,7 +379,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-08-08 10:24:12" itemprop="dateModified" datetime="2019-08-08T10:24:12+08:00">2019-08-08</time>
+                <time title="Modified: 2021-06-30 21:55:00" itemprop="dateModified" datetime="2021-06-30T21:55:00+08:00">2021-06-30</time>
               
             
           </span>
@@ -469,7 +469,13 @@
 <li><p>CORS：不受同源策略的限制，支持跨域。一种新的通信协议标准。可以理解成是：同时支持同源和跨域的Ajax。</p>
 </li>
 </ul>
-<h2 id="如何创建Ajax"><a href="#如何创建Ajax" class="headerlink" title="如何创建Ajax"></a>如何创建Ajax</h2>
+<h2 id="如何创建Ajax"><a href="#如何创建Ajax" class="headerlink" title="如何创建Ajax"></a>如何创建Ajax</h2><h2 id="后端跨域配置说明"><a href="#后端跨域配置说明" class="headerlink" title="后端跨域配置说明"></a>后端跨域配置说明</h2><h3 id="Access-Control-Allow-Origin"><a href="#Access-Control-Allow-Origin" class="headerlink" title="Access-Control-Allow-Origin"></a>Access-Control-Allow-Origin</h3><p>允许访问该应用的来源地址；demo：<code>res.header(&quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;);</code></p>
+<h3 id="Access-Control-Allow-Headers"><a href="#Access-Control-Allow-Headers" class="headerlink" title="Access-Control-Allow-Headers"></a>Access-Control-Allow-Headers</h3><p>允许发送的头部字段；demo：<code>res.header(&quot;Access-Control-Allow-Headers&quot;, &quot;X-Requested-With&quot;);</code></p>
+<h3 id="Access-Control-Allow-Methods"><a href="#Access-Control-Allow-Methods" class="headerlink" title="Access-Control-Allow-Methods"></a>Access-Control-Allow-Methods</h3><p>允许访问的方式；demo：<code>res.header(&quot;Access-Control-Allow-Methods&quot;,&quot;PUT,POST,GET,DELETE,OPTIONS&quot;);</code></p>
+<h2 id="跨域问题"><a href="#跨域问题" class="headerlink" title="跨域问题"></a>跨域问题</h2><blockquote>
+<p>跨域错误信息中一般存放着完整的错误原因</p>
+</blockquote>
+<h3 id="Response-to-preflight-request-doesn’t-pass-access-control-check-It-does-not-have-HTTP-ok-status"><a href="#Response-to-preflight-request-doesn’t-pass-access-control-check-It-does-not-have-HTTP-ok-status" class="headerlink" title="Response to preflight request doesn’t pass access control check: It does not have HTTP ok status."></a>Response to preflight request doesn’t pass access control check: It does not have HTTP ok status.</h3><h3 id="Request-header-field-content-type-is-not-allowed-by-Access-Control-Allow-Headers-in-preflight-response"><a href="#Request-header-field-content-type-is-not-allowed-by-Access-Control-Allow-Headers-in-preflight-response" class="headerlink" title="Request header field content-type is not allowed by Access-Control-Allow-Headers in preflight response."></a>Request header field content-type is not allowed by Access-Control-Allow-Headers in preflight response.</h3><h3 id="Response-to-preflight-request-doesn’t-pass-access-control-check-No-‘Access-Control-Allow-Origin’-header-is-present-on-the-requested-resource"><a href="#Response-to-preflight-request-doesn’t-pass-access-control-check-No-‘Access-Control-Allow-Origin’-header-is-present-on-the-requested-resource" class="headerlink" title="Response to preflight request doesn’t pass access control check: No ‘Access-Control-Allow-Origin’ header is present on the requested resource."></a>Response to preflight request doesn’t pass access control check: No ‘Access-Control-Allow-Origin’ header is present on the requested resource.</h3>
       
     </div>
 
@@ -594,7 +600,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">107</span>
+                    <span class="site-state-item-count">114</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -840,7 +846,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#同源策略概念和具体限制"><span class="nav-number">1.</span> <span class="nav-text">同源策略概念和具体限制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#前后端如何通信"><span class="nav-number">2.</span> <span class="nav-text">前后端如何通信</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何创建Ajax"><span class="nav-number">3.</span> <span class="nav-text">如何创建Ajax</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#同源策略概念和具体限制"><span class="nav-number">1.</span> <span class="nav-text">同源策略概念和具体限制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#前后端如何通信"><span class="nav-number">2.</span> <span class="nav-text">前后端如何通信</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何创建Ajax"><span class="nav-number">3.</span> <span class="nav-text">如何创建Ajax</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#后端跨域配置说明"><span class="nav-number">4.</span> <span class="nav-text">后端跨域配置说明</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Access-Control-Allow-Origin"><span class="nav-number">4.1.</span> <span class="nav-text">Access-Control-Allow-Origin</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Access-Control-Allow-Headers"><span class="nav-number">4.2.</span> <span class="nav-text">Access-Control-Allow-Headers</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Access-Control-Allow-Methods"><span class="nav-number">4.3.</span> <span class="nav-text">Access-Control-Allow-Methods</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#跨域问题"><span class="nav-number">5.</span> <span class="nav-text">跨域问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Response-to-preflight-request-doesn’t-pass-access-control-check-It-does-not-have-HTTP-ok-status"><span class="nav-number">5.1.</span> <span class="nav-text">Response to preflight request doesn’t pass access control check: It does not have HTTP ok status.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Request-header-field-content-type-is-not-allowed-by-Access-Control-Allow-Headers-in-preflight-response"><span class="nav-number">5.2.</span> <span class="nav-text">Request header field content-type is not allowed by Access-Control-Allow-Headers in preflight response.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Response-to-preflight-request-doesn’t-pass-access-control-check-No-‘Access-Control-Allow-Origin’-header-is-present-on-the-requested-resource"><span class="nav-number">5.3.</span> <span class="nav-text">Response to preflight request doesn’t pass access control check: No ‘Access-Control-Allow-Origin’ header is present on the requested resource.</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -873,7 +879,7 @@
 </div>
 
 
-  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
 
 
 

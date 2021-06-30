@@ -15,7 +15,7 @@
 
 
 <html class="theme-next pisces use-motion" lang>
-<head><meta name="generator" content="Hexo 3.8.0">
+<head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -299,6 +299,1519 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/29/HTTP协议/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bubble">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="bubble">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/07/29/HTTP协议/" class="post-title-link" itemprop="url">HTTP协议</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-07-29 15:47:08 / Modified: 16:54:18" itemprop="dateCreated datePublished" datetime="2019-07-29T15:47:08+08:00">2019-07-29</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/2019/07/29/HTTP协议/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/07/29/HTTP协议/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="HTTP协议特点"><a href="#HTTP协议特点" class="headerlink" title="HTTP协议特点"></a>HTTP协议特点</h2><ul>
+<li><p>简单快速</p>
+</li>
+<li><p>灵活</p>
+</li>
+<li><p>无连接</p>
+</li>
+<li><p>无状态</p>
+<h3 id="简单快速"><a href="#简单快速" class="headerlink" title="简单快速"></a>简单快速</h3><blockquote>
+<p> 每个资源（比如图片、页面）都通过 url 来定位。这都是固定的，在http协议中，处理起来也比较简单，想访问什么资源，直接输入url即可。</p>
+</blockquote>
+<h3 id="灵活"><a href="#灵活" class="headerlink" title="灵活"></a>灵活</h3><blockquote>
+<p>http协议的头部有一个数据类型，通过http协议，就可以完成不同数据类型的传输。</p>
+</blockquote>
+<h3 id="无连接"><a href="#无连接" class="headerlink" title="无连接"></a>无连接</h3><blockquote>
+<p>连接一次，就会断开，不会继续保持连接。</p>
+</blockquote>
+<h3 id="无状态"><a href="#无状态" class="headerlink" title="无状态"></a>无状态</h3><blockquote>
+<p>客户端和服务器端是两种身份。第一次请求结束后，就断开了，第二次请求时，服务器端并没有记住之前的状态，也就是说，服务器端无法区分客户端是否为同一个人、同一个身份。<br>有的时候，我们访问网站时，网站能记住我们的账号，这个是通过其他的手段（比如 session）做到的，并不是http协议能做到的。</p>
+</blockquote>
+<h2 id="HTTP报文组成"><a href="#HTTP报文组成" class="headerlink" title="HTTP报文组成"></a>HTTP报文组成</h2></li>
+<li><p>请求报文</p>
+<ul>
+<li>请求方法</li>
+<li>请求url</li>
+<li>http协议及版本</li>
+<li>报文头</li>
+<li>报文体<br><img src="../images/%E8%AF%B7%E6%B1%82%E6%8A%A5%E6%96%87.jpg" alt="请求报文"><blockquote>
+<p>请求行：包括请求方法、请求的url、http协议及版本。<br>请求头：一大堆的键值对。<br>空行指的是：当服务器在解析请求头的时候，如果遇到了空行，则表明，后面的内容是请求体。<br>请求体：数据部分。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>响应报文 </p>
+<ul>
+<li>报文协议及版本</li>
+<li>状态码及状态描述</li>
+<li>响应头</li>
+<li>响应体<br><img src="../images/%E5%93%8D%E5%BA%94%E6%8A%A5%E6%96%87.jpg" alt="响应报文"><blockquote>
+<p>状态行：http协议及版本、状态码及状态描述。<br>响应头<br>空行<br>响应体</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="HTTP方法"><a href="#HTTP方法" class="headerlink" title="HTTP方法"></a>HTTP方法</h2><ul>
+<li>GET</li>
+<li>POST</li>
+<li>put</li>
+<li>DELETE</li>
+<li>HEAD</li>
+</ul>
+<h2 id="get和post区别"><a href="#get和post区别" class="headerlink" title="get和post区别"></a>get和post区别</h2><blockquote>
+<p>get在浏览器退回时是无害的，post会再次提交请求 [重要]<br>get产生的url地址可以被收藏，post不可以<br>get请求会被浏览器主动缓存，post不会，除非手动设置 [重要]<br>get请求只能进行url编码，post支持多种编码方式<br>get请求参数会被完整保留在历史记录里，post的参数不会保留，为了防止CSRF攻击，很多公司把get统一改成了post [重要]<br>get请求在url中传送的参数长度有限制(基本是2kb)，post无限制 [重要]<br>对参数的数据类型，get只能接受ASCII字符，post无限制<br>get比post更不安全，因为参数暴露在url上，所以不能用来传递敏感信息 [重要]<br>get参数通过url传递，post放在request body中</p>
+</blockquote>
+<h2 id="HTTP状态码"><a href="#HTTP状态码" class="headerlink" title="HTTP状态码"></a>HTTP状态码</h2><h3 id="状态码分类"><a href="#状态码分类" class="headerlink" title="状态码分类"></a>状态码分类</h3><blockquote>
+<p>1xx: 指示信息-表示请求已接收，继续处理<br>    2xx: 成功-表示请求已被成功接收<br>    3xx: 重定向-要完成请求必须进行更进一步的操作<br>    4xx: 客户端错误-请求有语法错误或请求无法实现<br>    5xx: 服务器错误-服务器未能实现合法的请求</p>
+</blockquote>
+<h3 id="常见HTTP状态码"><a href="#常见HTTP状态码" class="headerlink" title="常见HTTP状态码"></a>常见HTTP状态码</h3><blockquote>
+<p>200 OK:客户端请求成功<br>    206 Partial Content:客户发送了一个带有Range头的GET请求，服务器完成了它<br>    301 Moved Permanently: 所请求的页面已经转移至新的url<br>    302 Found: 所请求的页面已经临时转移至新的url<br>    304 Not Modified: 客户端有缓冲的文档并发出了一个条件性的请求，服务器告诉客户，原来的缓冲的文档还可以继续使用<br>    400 Bad Request: 客户端请求有语法错误，不能被服务器理解<br>    401 Unauthorized: 请求未经授权，这个状态码必须和WWW-Authenticate报头域一起使用<br>    403 Forbidden: 对被请求页面的访问被禁止<br>    404 Not Found: 请求的资源不存在<br>    500 Internal Server Error: 服务器发生不可预期的错误，原来的缓冲文档还可以继续使用<br>    503 Server Unavailable: 请求未完成，服务器临时过载或宕机</p>
+</blockquote>
+<h2 id="持久链接-http长连接"><a href="#持久链接-http长连接" class="headerlink" title="持久链接/http长连接"></a>持久链接/http长连接</h2><ul>
+<li>轮询：http1.0中，客户端每隔很短的时间，都会对服务器发出请求，查看是否有新的消息，只要轮询速度足够快，例如1秒，就能给人造成交互是实时进行的印象。这种做法是无奈之举，实际上对服务器、客户端双方都造成了大量的性能浪费。</li>
+<li>长连接：HTTP1.1中，通过使用Connection:keep-alive进行长连接，。客户端只请求一次，但是服务器会将继续保持连接，当再次请求时，避免了重新建立连接。<blockquote>
+<p>HTTP 1.1默认进行持久连接。在一次 TCP 连接中可以完成多个 HTTP 请求，但是对每个请求仍然要单独发 header，Keep-Alive不会永久保持连接，它有一个保持时间，可以在不同的服务器软件（如Apache）中设定这个时间。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="长连接中的管线化"><a href="#长连接中的管线化" class="headerlink" title="长连接中的管线化"></a>长连接中的管线化</h2><ul>
+<li>长连接时，默认的请求这样的：<blockquote>
+<p>请求1 –&gt; 响应1 –&gt;请求2 –&gt; 响应2 –&gt; 请求3 –&gt; 响应3</p>
+</blockquote>
+</li>
+<li>长连接中的管线化，请求是这样的：<blockquote>
+<p>请求1 –&gt; 请求2 –&gt; 请求3 –&gt; 响应1 –&gt; 响应2 –&gt; 响应3</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<blockquote>
+<p>管线化就是，我把现在的请求打包，一次性发过去，你也给我一次响应回来。</p>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/29/DOM事件总结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bubble">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="bubble">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/07/29/DOM事件总结/" class="post-title-link" itemprop="url">DOM事件总结</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-07-29 12:17:57 / Modified: 14:02:29" itemprop="dateCreated datePublished" datetime="2019-07-29T12:17:57+08:00">2019-07-29</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/2019/07/29/DOM事件总结/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/07/29/DOM事件总结/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="DOM事件的级别"><a href="#DOM事件的级别" class="headerlink" title="DOM事件的级别"></a>DOM事件的级别</h3><h4 id="DOM0"><a href="#DOM0" class="headerlink" title="DOM0"></a>DOM0</h4>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">element.onclick = function()&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="DOM2"><a href="#DOM2" class="headerlink" title="DOM2"></a>DOM2</h4>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">element.addEventListener(&apos;click&apos;, function()&#123;</span><br><span class="line"></span><br><span class="line">&#125;, false);</span><br></pre></td></tr></table></figure>
+
+<h4 id="DOM3"><a href="#DOM3" class="headerlink" title="DOM3"></a>DOM3</h4>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">element.addEventListener(&apos;keyup&apos;, function()&#123;</span><br><span class="line"></span><br><span class="line">&#125;, false);</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>上面的第三参数中，true表示事件在捕获阶段触发，false表示事件在冒泡阶段触发（默认）。如果不写，则默认为false。</p>
+</blockquote>
+<h3 id="DOM事件模型-DOM事件流"><a href="#DOM事件模型-DOM事件流" class="headerlink" title="DOM事件模型,DOM事件流"></a>DOM事件模型,DOM事件流</h3><h4 id="DOM事件模型"><a href="#DOM事件模型" class="headerlink" title="DOM事件模型"></a>DOM事件模型</h4><ul>
+<li>捕获：从上往下</li>
+<li>冒泡：从下（目标元素）往上</li>
+</ul>
+<h4 id="DOM事件流"><a href="#DOM事件流" class="headerlink" title="DOM事件流"></a>DOM事件流</h4><ul>
+<li>1.捕获：从window对象传到目标元素</li>
+<li>2.目标阶段：事件通过捕获，到达目标元素，这个阶段为目标阶段</li>
+<li>3.冒泡：从目标元素传到window对象<blockquote>
+<p><img src="../images/js%E4%BA%8B%E4%BB%B6%E6%8D%95%E8%8E%B7%E4%B8%8E%E5%86%92%E6%B3%A1.jpg" alt="捕获与冒泡"></p>
+</blockquote>
+</li>
+</ul>
+<h3 id="DOM事件捕获的具体流程"><a href="#DOM事件捕获的具体流程" class="headerlink" title="DOM事件捕获的具体流程"></a>DOM事件捕获的具体流程</h3><h4 id="捕获的流程"><a href="#捕获的流程" class="headerlink" title="捕获的流程"></a>捕获的流程</h4><ul>
+<li><p>传递的顺序是：window –&gt; document –&gt; html–&gt; body –&gt; 父元素、子元素、目标元素</p>
+<blockquote>
+<p>测试：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">window.addEventListener(&quot;click&quot;, function () &#123;</span><br><span class="line">     alert(&quot;捕获 window&quot;);</span><br><span class="line"> &#125;, true);</span><br><span class="line"></span><br><span class="line"> document.addEventListener(&quot;click&quot;, function () &#123;</span><br><span class="line">     alert(&quot;捕获 document&quot;);</span><br><span class="line"> &#125;, true);</span><br><span class="line"></span><br><span class="line"> document.documentElement.addEventListener(&quot;click&quot;, function()) &#123;</span><br><span class="line">     alert(&quot;捕获 html&quot;);</span><br><span class="line"> &#125;, true);</span><br><span class="line"></span><br><span class="line"> document.body.addEventListener(&quot;click&quot;, function () &#123;</span><br><span class="line">     alert(&quot;捕获 body&quot;);</span><br><span class="line"> &#125;, true);</span><br><span class="line"></span><br><span class="line"> fatherBox.addEventListener(&quot;click&quot;, function () &#123;</span><br><span class="line">     alert(&quot;捕获 father&quot;);</span><br><span class="line"> &#125;, true);</span><br><span class="line"></span><br><span class="line"> childBox.addEventListener(&quot;click&quot;, function () &#123;</span><br><span class="line">     alert(&quot;捕获 child&quot;);</span><br><span class="line"> &#125;, true);</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>获取 body 节点，方法是: document.body;<br>   获取 html 节点，方法是: document.documentElement;</p>
+</blockquote>
+<h4 id="冒泡的流程"><a href="#冒泡的流程" class="headerlink" title="冒泡的流程"></a>冒泡的流程</h4></li>
+<li><p>与捕获的流程相反</p>
+<h3 id="Event对象常用api方法"><a href="#Event对象常用api方法" class="headerlink" title="Event对象常用api方法"></a>Event对象常用api方法</h3><h4 id="阻止默认事件"><a href="#阻止默认事件" class="headerlink" title="阻止默认事件"></a>阻止默认事件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">event.preventDefault();</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h4 id="阻止冒泡"><a href="#阻止冒泡" class="headerlink" title="阻止冒泡"></a>阻止冒泡</h4><ul>
+<li><p>w3c方法（火狐，谷歌，IE11）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">event.stopPropagation();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>IE10</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">event.cancelBubble = true;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>兼容写法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">box3.onclick = function (event) &#123;</span><br><span class="line"></span><br><span class="line">     alert(&quot;child&quot;);</span><br><span class="line"></span><br><span class="line">     //阻止冒泡</span><br><span class="line">     event = event || window.event;</span><br><span class="line"></span><br><span class="line">     if (event &amp;&amp; event.stopPropagation) &#123;</span><br><span class="line">         event.stopPropagation();</span><br><span class="line">     &#125; else &#123;</span><br><span class="line">         event.cancelBubble = true;</span><br><span class="line">     &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h4 id="设置事件优先级"><a href="#设置事件优先级" class="headerlink" title="设置事件优先级"></a>设置事件优先级</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">event.stopImmediatePropagation();</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>同时注册了事件A、事件B<br>要求：单击按钮时，只执行事件A，不执行事件B<br>在事件A的响应函数中加入这句话</p>
+</blockquote>
+<h4 id="属性4，属性5-事件委托中用到"><a href="#属性4，属性5-事件委托中用到" class="headerlink" title="属性4，属性5(事件委托中用到)"></a>属性4，属性5(事件委托中用到)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">event.currentTarget   //当前所绑定的事件对象。在事件委托中，指的是【父元素】。</span><br><span class="line"></span><br><span class="line">event.target  //当前被点击的元素。在事件委托中，指的是【子元素】。</span><br></pre></td></tr></table></figure>
+
+<h3 id="自定义事件"><a href="#自定义事件" class="headerlink" title="自定义事件"></a>自定义事件</h3><p>自定义事件的代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">   var myEvent = new Event(&apos;clickTest&apos;);</span><br><span class="line">   element.addEventListener(&apos;clickTest&apos;, function () &#123;</span><br><span class="line">       console.log(&apos;smyhvae&apos;);</span><br><span class="line">   &#125;);</span><br><span class="line"></span><br><span class="line">//元素注册事件</span><br><span class="line">   element.dispatchEvent(myEvent); //注意，参数是写事件对象 myEvent，不是写 事件名 clickTest</span><br></pre></td></tr></table></figure>
+
+<p>上面这个事件是定义完了之后，就直接自动触发了。在正常的业务中，这个事件一般是和别的事件结合用的。比如延时器设置按钮的动作：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var myEvent = new Event(&apos;clickTest&apos;);</span><br><span class="line"></span><br><span class="line">element.addEventListener(&apos;clickTest&apos;, function () &#123;</span><br><span class="line">    console.log(&apos;smyhvae&apos;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">setTimeout(function () &#123;</span><br><span class="line">    element.dispatchEvent(myEvent); //注意，参数是写事件对象 myEvent，不是写 事件名 clickTest</span><br><span class="line">&#125;, 1000);</span><br></pre></td></tr></table></figure>
+
+<h3 id="事件委托"><a href="#事件委托" class="headerlink" title="事件委托"></a>事件委托</h3><h4 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h4><ul>
+<li>支持为同一个DOM元素注册多个同类型事件</li>
+<li>可将事件分成事件捕获和事件冒泡机制</li>
+</ul>
+<h4 id="实现方式"><a href="#实现方式" class="headerlink" title="实现方式"></a>实现方式</h4><ul>
+<li>addEventListener(type,listener,useCapture)<blockquote>
+<p>type: 必须,String类型,事件类型<br>listener: 必须,函数体或者JS方法<br>useCapture: 可选,boolean类型。指定事件是否发生在捕获阶段。默认为false,事件发生在冒泡阶段</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h4><ul>
+<li>提高性能:每一个函数都会占用内存空间，只需添加一个事件处理程序代理所有事件,所占用的内存空间更少。</li>
+<li>动态监听:使用事件委托可以自动绑定动态添加的元素,即新增的节点不需要主动添加也可以一样具有和其他元素一样的事件。</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/24/BFC-块级格式化上下文/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bubble">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="bubble">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/07/24/BFC-块级格式化上下文/" class="post-title-link" itemprop="url">BFC-块级格式化上下文</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-07-24 22:11:51 / Modified: 22:12:36" itemprop="dateCreated datePublished" datetime="2019-07-24T22:11:51+08:00">2019-07-24</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/2019/07/24/BFC-块级格式化上下文/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/07/24/BFC-块级格式化上下文/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="BFC-Block-formatting-context-块级格式化上下文"><a href="#BFC-Block-formatting-context-块级格式化上下文" class="headerlink" title="BFC(Block formatting context)块级格式化上下文"></a>BFC(Block formatting context)块级格式化上下文</h2><ul>
+<li>是w3c css2.1中的概念</li>
+<li>独立渲染区域，与外部区域不相干</li>
+<li>css2.1中只有BFC和IFC</li>
+<li>css3中增加了GFC和FFC</li>
+</ul>
+<h2 id="BFC的原理-BFC的布局规则"><a href="#BFC的原理-BFC的布局规则" class="headerlink" title="BFC的原理/BFC的布局规则"></a>BFC的原理/BFC的布局规则</h2><ul>
+<li>BFC内部的子元素，在垂直方向，边距会发生重叠</li>
+<li>在页面中是独立容器，外面的元素不会影响里面的元素，反之亦然</li>
+<li>BFC区域不与旁边的float box区域重叠（可用来清除浮动）</li>
+<li>BFC计算高度时，浮动的子元素也参与计算</li>
+</ul>
+<h2 id="如何生成BFC"><a href="#如何生成BFC" class="headerlink" title="如何生成BFC"></a>如何生成BFC</h2><ul>
+<li>overflow不为visible</li>
+<li>浮动中：float不为none</li>
+<li>定位中：position值不为static或者relative</li>
+<li>display为inline-block，table-cell，table-caption，flex，inline-flex</li>
+</ul>
+<hr>
+<blockquote>
+<p><a href="https://github.com/qianguyihao/Web/blob/master/14-%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95/02-CSS%E7%9B%92%E6%A8%A1%E5%9E%8B%E5%8F%8ABFC.md" target="_blank" rel="noopener">传送门-前端学习</a></p>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/12/原型-原型链-继承/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bubble">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="bubble">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/07/12/原型-原型链-继承/" class="post-title-link" itemprop="url">原型,原型链,继承</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-07-12 11:29:59" itemprop="dateCreated datePublished" datetime="2019-07-12T11:29:59+08:00">2019-07-12</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-08-08 10:40:58" itemprop="dateModified" datetime="2019-08-08T10:40:58+08:00">2019-08-08</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/分类1/" itemprop="url" rel="index"><span itemprop="name">分类1</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/2019/07/12/原型-原型链-继承/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/07/12/原型-原型链-继承/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/12/js事件代理和事件委托/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bubble">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="bubble">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/07/12/js事件代理和事件委托/" class="post-title-link" itemprop="url">js事件代理和事件委托</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-07-12 10:54:26" itemprop="dateCreated datePublished" datetime="2019-07-12T10:54:26+08:00">2019-07-12</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-08-08 10:40:58" itemprop="dateModified" datetime="2019-08-08T10:40:58+08:00">2019-08-08</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/分类1/" itemprop="url" rel="index"><span itemprop="name">分类1</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/2019/07/12/js事件代理和事件委托/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/07/12/js事件代理和事件委托/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/11/js数组遍历/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bubble">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="bubble">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/07/11/js数组遍历/" class="post-title-link" itemprop="url">js数组遍历</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-07-11 15:29:16" itemprop="dateCreated datePublished" datetime="2019-07-11T15:29:16+08:00">2019-07-11</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-07-29 12:17:08" itemprop="dateModified" datetime="2019-07-29T12:17:08+08:00">2019-07-29</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/2019/07/11/js数组遍历/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/07/11/js数组遍历/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="数组的四个基本方法"><a href="#数组的四个基本方法" class="headerlink" title="数组的四个基本方法"></a>数组的四个基本方法</h3><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>描述</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>push()</td>
+<td>向数组的最后面插入一个或多个元素，返回结果为该数组新的长度</td>
+<td>会改变原数组</td>
+</tr>
+<tr>
+<td>pop()</td>
+<td>删除数组中的最后一个元素，返回结果为被删除的元素</td>
+<td>会改变原数组</td>
+</tr>
+<tr>
+<td>unshift()</td>
+<td>在数组最前面插入一个或多个元素，返回结果为该数组新的长度</td>
+<td>会改变原数组</td>
+</tr>
+<tr>
+<td>shift()</td>
+<td>删除数组中的第一个元素，返回结果为被删除的元素</td>
+<td>会改变原数组</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="遍历数组的方法"><a href="#遍历数组的方法" class="headerlink" title="遍历数组的方法"></a>遍历数组的方法</h3><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>描述</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>for循环</td>
+<td>这个大家都懂</td>
+<td></td>
+</tr>
+<tr>
+<td>forEach()</td>
+<td>和 for循环类似，但需要兼容IE8以上    forEach()</td>
+<td>没有返回值。也就是说，它的返回值是 undefined</td>
+</tr>
+<tr>
+<td>filter()</td>
+<td>返回结果是true的项，将组成新的数组。可以起到过滤的作用</td>
+<td>不会改变原数组</td>
+</tr>
+<tr>
+<td>map()</td>
+<td>对原数组中的每一项进行加工</td>
+<td></td>
+</tr>
+<tr>
+<td>every()</td>
+<td>如果有一项返回false，则停止遍历    意思是，要求每一项都返回true，最终的结果才返回true</td>
+<td></td>
+</tr>
+<tr>
+<td>some()</td>
+<td>只要有一项返回true，则停止遍历</td>
+<td></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>来源：<a href="https://github.com/qianguyihao/Web/blob/master/03-JavaScript%E5%9F%BA%E7%A1%80/15-%E6%95%B0%E7%BB%84%E7%9A%84%E5%9B%9B%E4%B8%AA%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95%26%E6%95%B0%E7%BB%84%E7%9A%84%E9%81%8D%E5%8E%86.md" target="_blank" rel="noopener">前端进阶</a></p>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/10/css居中/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bubble">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="bubble">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/07/10/css居中/" class="post-title-link" itemprop="url">css居中</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-07-10 13:52:33" itemprop="dateCreated datePublished" datetime="2019-07-10T13:52:33+08:00">2019-07-10</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-07-29 12:17:08" itemprop="dateModified" datetime="2019-07-29T12:17:08+08:00">2019-07-29</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/2019/07/10/css居中/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/07/10/css居中/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="让绝对定位的元素在父元素中居中"><a href="#让绝对定位的元素在父元素中居中" class="headerlink" title="让绝对定位的元素在父元素中居中"></a>让绝对定位的元素在父元素中居中</h2><blockquote>
+<p>left:50%; margin-left:负的宽度的一半</p>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -863,1315 +2376,11 @@ appearance:none;<br>-moz-appearance:none;<br>-webkit-appearance:none;</p>
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/28/markdown基本语法/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="bubble">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="bubble">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/06/28/markdown基本语法/" class="post-title-link" itemprop="url">markdown基本语法</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-06-28 21:28:27 / Modified: 21:32:52" itemprop="dateCreated datePublished" datetime="2019-06-28T21:28:27+08:00">2019-06-28</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/markdown/" itemprop="url" rel="index"><span itemprop="name">markdown</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">Comments: </span>
-                <a href="/2019/06/28/markdown基本语法/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/06/28/markdown基本语法/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p style="text-align:center"><a href="https://www.jianshu.com/p/191d1e21f7ed" target="_blank" rel="noopener">markdown基本语法</a></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/28/VSCode单击文件会替换已经打开文件/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="bubble">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="bubble">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/06/28/VSCode单击文件会替换已经打开文件/" class="post-title-link" itemprop="url">VSCode单击文件会关闭已经打开文件</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-06-28 21:19:48" itemprop="dateCreated datePublished" datetime="2019-06-28T21:19:48+08:00">2019-06-28</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-09-09 13:47:38" itemprop="dateModified" datetime="2019-09-09T13:47:38+08:00">2019-09-09</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ide/" itemprop="url" rel="index"><span itemprop="name">ide</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">Comments: </span>
-                <a href="/2019/06/28/VSCode单击文件会替换已经打开文件/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/06/28/VSCode单击文件会替换已经打开文件/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <blockquote>
-<p>首选项 -&gt; 设置 -&gt; 输入preview -&gt; 搜索结果取消勾选</p>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/27/css清除浮动/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="bubble">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="bubble">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/06/27/css清除浮动/" class="post-title-link" itemprop="url">css清除浮动</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-06-27 16:10:29 / Modified: 16:19:09" itemprop="dateCreated datePublished" datetime="2019-06-27T16:10:29+08:00">2019-06-27</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">Comments: </span>
-                <a href="/2019/06/27/css清除浮动/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/06/27/css清除浮动/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="通过增加div标签清除浮动"><a href="#通过增加div标签清除浮动" class="headerlink" title="通过增加div标签清除浮动"></a>通过增加div标签清除浮动</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;divcss5&quot;&gt; </span><br><span class="line">    &lt;div class=&quot;divcss5-left&quot;&gt;left浮动&lt;/div&gt; </span><br><span class="line">    &lt;div class=&quot;divcss5-right&quot;&gt;right浮动&lt;/div&gt; </span><br><span class="line">    &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt; </span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="通过伪类after清除浮动"><a href="#通过伪类after清除浮动" class="headerlink" title="通过伪类after清除浮动"></a>通过伪类after清除浮动</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.divcss5&#123;</span><br><span class="line">  content:&quot;.&quot;;</span><br><span class="line">  display:&quot;block&quot;;</span><br><span class="line">  height: 0;</span><br><span class="line">  clear: both;</span><br><span class="line">  visibility: hidden;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/27/表单验证bootstrapValidator/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="bubble">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="bubble">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/06/27/表单验证bootstrapValidator/" class="post-title-link" itemprop="url">表单验证bootstrapValidator</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-06-27 14:13:28 / Modified: 15:39:30" itemprop="dateCreated datePublished" datetime="2019-06-27T14:13:28+08:00">2019-06-27</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">Comments: </span>
-                <a href="/2019/06/27/表单验证bootstrapValidator/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/06/27/表单验证bootstrapValidator/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="bootstrapValidator文档"><a href="#bootstrapValidator文档" class="headerlink" title="bootstrapValidator文档"></a><a href="http://bootstrapvalidator.votintsev.ru/" target="_blank" rel="noopener">bootstrapValidator文档</a></h1><p>使用bootstrapValidator前提：</p>
-<blockquote>
-<p>需要<code>&lt;div class=&quot;form-group&quot;&gt;&lt;/div&gt;</code>包裹，input标签必须有name值，此值为验证匹配的字段</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">function getValidatorConfigConfig() &#123;</span><br><span class="line">        var config = &#123;</span><br><span class="line">            // 默认的提示消息</span><br><span class="line">            message: &apos;This value is not valid&apos;,</span><br><span class="line">            // 表单框里右侧的icon</span><br><span class="line">            feedbackIcons: &#123;</span><br><span class="line">                valid: &apos;glyphicon glyphicon-ok&apos;,</span><br><span class="line">                invalid: &apos;glyphicon glyphicon-remove&apos;,</span><br><span class="line">                validating: &apos;glyphicon glyphicon-refresh&apos;</span><br><span class="line">            &#125;,</span><br><span class="line">            submitHandler: function (validator, form, submitButton) &#123;</span><br><span class="line">                // 表单提交成功时会调用此方法</span><br><span class="line">                // validator: 表单验证实例对象</span><br><span class="line">                // form  jq对象  指定表单对象</span><br><span class="line">                // submitButton  jq对象  指定提交按钮的对象</span><br><span class="line">            &#125;,</span><br><span class="line">            fields: &#123;</span><br><span class="line">                name: &#123;</span><br><span class="line">                    validators: &#123;</span><br><span class="line">                        notEmpty: &#123;</span><br><span class="line">                            message: &apos;名称不能为空&apos;</span><br><span class="line">                        &#125;,</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;,</span><br><span class="line">                contents: &#123;</span><br><span class="line">                    validators: &#123;</span><br><span class="line">                        notEmpty: &#123;</span><br><span class="line">                            message: &apos;排序不能为空&apos;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;,</span><br><span class="line">                videoDeviceNum: &#123;</span><br><span class="line">                    validators: &#123;</span><br><span class="line">                        notEmpty: &#123;</span><br><span class="line">                            message: &apos;设备序号不能为空&apos;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;,</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">        return config;</span><br><span class="line">    &#125;</span><br><span class="line">    $(&apos;.addVideoGroup&apos;).bootstrapValidator(new getValidatorConfig());</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="bug1：表单会提交两次"><a href="#bug1：表单会提交两次" class="headerlink" title="bug1：表单会提交两次"></a>bug1：表单会提交两次</h2><blockquote>
-<p><a href="https://blog.csdn.net/qing_gee/article/details/49152229" target="_blank" rel="noopener">解决方案+思路</a></p>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/27/js技巧/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="bubble">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="bubble">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/06/27/js技巧/" class="post-title-link" itemprop="url">js技巧</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-06-27 13:02:06 / Modified: 14:08:53" itemprop="dateCreated datePublished" datetime="2019-06-27T13:02:06+08:00">2019-06-27</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">Comments: </span>
-                <a href="/2019/06/27/js技巧/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/06/27/js技巧/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="判断对象的数据类型"><a href="#判断对象的数据类型" class="headerlink" title="判断对象的数据类型"></a>判断对象的数据类型</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const isType = type =&gt; target =&gt; &apos;[object $&#123;type&#125;]&apos; === Object.prototype.toString.call(target)</span><br><span class="line">const isArray = isType(&apos;Array&apos;);</span><br><span class="line">console.log(isArray([]));</span><br><span class="line"></span><br><span class="line">&gt; true</span><br></pre></td></tr></table></figure>
-
-<h2 id="循环实现数组map方法"><a href="#循环实现数组map方法" class="headerlink" title="循环实现数组map方法"></a>循环实现数组map方法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">const selfMap = function(fn, context)&#123;</span><br><span class="line">  let arr = Array.prototype.slice.call(this);</span><br><span class="line">  let mappedArr = Array(arr.length -1);</span><br><span class="line">  for(let i = 0; i &lt; arr.length; i++&gt;)&#123;</span><br><span class="line">    if(!arr.hasOwnProperty(i)) continue;</span><br><span class="line">    mappedArr[i] = fn.call(context, arr[i], i, this);</span><br><span class="line">  &#125;</span><br><span class="line">  return mappedArr;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<blockquote>
-<p>原文地址：<a href="https://juejin.im/post/5cef46226fb9a07eaf2b7516" target="_blank" rel="noopener">https://juejin.im/post/5cef46226fb9a07eaf2b7516</a><br>项目地址：<a href="https://github.com/yeyan1996/JavaScript" target="_blank" rel="noopener">https://github.com/yeyan1996/JavaScript</a></p>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/26/css技巧/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="bubble">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="bubble">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/06/26/css技巧/" class="post-title-link" itemprop="url">css技巧</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-06-26 22:44:59" itemprop="dateCreated datePublished" datetime="2019-06-26T22:44:59+08:00">2019-06-26</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-06-27 14:10:01" itemprop="dateModified" datetime="2019-06-27T14:10:01+08:00">2019-06-27</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">Comments: </span>
-                <a href="/2019/06/26/css技巧/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/06/26/css技巧/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="外边距折叠"><a href="#外边距折叠" class="headerlink" title="外边距折叠"></a>外边距折叠</h2><blockquote>
-<p>两个元素外边距重叠时，不会叠加，而是会保留较大的那一个</p>
-</blockquote>
-<h2 id="使用flex布局"><a href="#使用flex布局" class="headerlink" title="使用flex布局"></a>使用flex布局</h2><h2 id="重置css样式"><a href="#重置css样式" class="headerlink" title="重置css样式"></a>重置css样式</h2><blockquote>
-<p>第三方库，例如normalize.css、minireset和ress, 或者</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">    margin: 0;</span><br><span class="line">    padding: 0;</span><br><span class="line">    box-sizing: border-box;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="设置元素为border-box"><a href="#设置元素为border-box" class="headerlink" title="设置元素为border-box"></a>设置元素为border-box</h2><h2 id="用background引入文件而不是img"><a href="#用background引入文件而不是img" class="headerlink" title="用background引入文件而不是img"></a>用background引入文件而不是img</h2><h2 id="短横线命名"><a href="#短横线命名" class="headerlink" title="短横线命名"></a>短横线命名</h2><blockquote>
-<p>当class或者ID包含多个单词时，应使用连字符（-），CSS不区分大小写，因此不能使用驼峰式命名。同样，CSS中也不建议使用下划线连接的命名方式。<br>当涉及到命名时，您还可以考虑BEM，它遵循一组原则，提供基于组件并增加一致性的开发方法。</p>
-</blockquote>
-<h2 id="保持选择器的低权重"><a href="#保持选择器的低权重" class="headerlink" title="保持选择器的低权重"></a>保持选择器的低权重</h2><h2 id="不要使用-important"><a href="#不要使用-important" class="headerlink" title="不要使用!important"></a>不要使用!important</h2><h2 id="Em-Rem与px"><a href="#Em-Rem与px" class="headerlink" title="Em, Rem与px"></a>Em, Rem与px</h2><ul>
-<li>em - 设置元素为1em，其大小与父元素的font-size属性有关。这个单位用于媒体查询中，特别适用于响应式开发，但是由于em单位在每一级中都是相对于父元素进行计算的，所以要得出某个子元素em单位对应的px值，有时候是很麻烦的。</li>
-<li>rem - 相对于<html>元素的font-size大小计算，rem使得统一改变页面上的所有标题和段落文本大小变得非常容易。</html></li>
-<li>px - 像素单位是最精确的，但是不适用于自适应的设计。px单位是可靠的，并且易于理解，我们可以精细的控制元素的大小和移动到1px。</li>
-</ul>
-<h2 id="对于大型项目使用预处理器"><a href="#对于大型项目使用预处理器" class="headerlink" title="对于大型项目使用预处理器"></a>对于大型项目使用预处理器</h2><h2 id="使用AutoPrefixer达到更好的兼容性"><a href="#使用AutoPrefixer达到更好的兼容性" class="headerlink" title="使用AutoPrefixer达到更好的兼容性"></a>使用AutoPrefixer达到更好的兼容性</h2><h2 id="压缩CSS文件"><a href="#压缩CSS文件" class="headerlink" title="压缩CSS文件"></a>压缩CSS文件</h2><h2 id="Caniuse"><a href="#Caniuse" class="headerlink" title="Caniuse"></a>Caniuse</h2><h2 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h2><blockquote>
-<p>验证CSS可能不像验证HTML或JavaScript代码那么重要，但是通过工具运行一下你的代码仍然非常有用。它会告诉你是否犯了任何错误，警告错误的用法，并为您提供改进代码的提示。<br>就像压缩和Autoprefixer一样，有免费的工具可以利用：</p>
-<ul>
-<li>在线工具：W3 Validator, CSS Lint</li>
-<li>文本编辑器插件：Sublime Text, Atom</li>
-<li>代码库：stylelint (Node.js, PostCSS), css-validator (Node.js)</li>
-</ul>
-</blockquote>
-<hr>
-<blockquote>
-<p>原文地址： <a href="https://segmentfault.com/a/1190000019542534" target="_blank" rel="noopener">https://segmentfault.com/a/1190000019542534</a></p>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/26/实现一个公用的是否确定按钮/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="bubble">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="bubble">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/06/26/实现一个公用的是否确定按钮/" class="post-title-link" itemprop="url">实现一个公用的是否确定按钮</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-06-26 15:40:45" itemprop="dateCreated datePublished" datetime="2019-06-26T15:40:45+08:00">2019-06-26</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-08-08 10:40:58" itemprop="dateModified" datetime="2019-08-08T10:40:58+08:00">2019-08-08</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/分类1/" itemprop="url" rel="index"><span itemprop="name">分类1</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">Comments: </span>
-                <a href="/2019/06/26/实现一个公用的是否确定按钮/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/06/26/实现一个公用的是否确定按钮/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <blockquote>
-<p>目前公司项目上的实现方式是，在主页面文件中加入一个隐藏的删除div。</p>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/5/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/7/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/5/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/7/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -2213,7 +2422,7 @@ appearance:none;<br>-moz-appearance:none;<br>-webkit-appearance:none;</p>
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">107</span>
+                    <span class="site-state-item-count">114</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -2475,7 +2684,7 @@ appearance:none;<br>-moz-appearance:none;<br>-webkit-appearance:none;</p>
 </div>
 
 
-  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.9.0</div>
 
 
 
