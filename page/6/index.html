@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>bubble-blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="bubble-blog">
+<meta property="og:url" content="https://bubble93.github.io/page/6/index.html">
+<meta property="og:site_name" content="bubble-blog">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="bubble">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="bubble-blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">bubble-blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://bubble93.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-git把tag推送到远程仓库" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/11/git%E6%8A%8Atag%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/" class="article-date">
+  <time datetime="2019-08-11T14:29:26.000Z" itemprop="datePublished">2019-08-11</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/">版本管理工具</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/11/git%E6%8A%8Atag%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/">git把tag推送到远程仓库</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>一、列出标签</p>
+<p>$ git tag # 在控制台打印出当前仓库的所有标签</p>
+<p>二、搜索标签</p>
+<p>$ git tag -l ‘v0.1.*’ # 搜索符合模式的标签</p>
+<p>三、推送标签到远程仓库</p>
+<p>git push并不会把tag标签传送到远端服务器上，只有通过显式命令才能分享标签到远端仓库。<br>1.push单个tag，命令格式为：git push origin [tagname]<br>例如：<br>git push origin v1.0 #将本地v1.0的tag推送到远端服务器<br>2.push所有tag，命令格式为：git push [origin] –tags<br>例如：<br>git push –tags<br>或<br>git push origin –tags</p>
+<hr>
+<p>版权声明：本文为CSDN博主「elena_w」的原创文章，遵循CC 4.0 by-sa版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/github_27263697/article/details/79563949">https://blog.csdn.net/github_27263697/article/details/79563949</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://bubble93.github.io/2019/08/11/git%E6%8A%8Atag%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/" data-id="clbem5z2x003ntb0330l55iaa" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-webpack学习笔记(2)" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/11/webpack%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(2)/" class="article-date">
+  <time datetime="2019-08-11T08:40:13.000Z" itemprop="datePublished">2019-08-11</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/11/webpack%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(2)/">webpack学习笔记(2)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="tree-shaking"><a href="#tree-shaking" class="headerlink" title="tree shaking"></a>tree shaking</h2>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://bubble93.github.io/2019/08/11/webpack%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(2)/" data-id="clbem5z45007jtb0384qshq77" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/webpack/" rel="tag">webpack</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-webpack坑" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/09/webpack%E5%9D%91/" class="article-date">
+  <time datetime="2019-08-09T09:33:20.000Z" itemprop="datePublished">2019-08-09</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/09/webpack%E5%9D%91/">CleanWebpackPlugin is not a constructor</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>// webpack版本：4.32.2</p>
+<p>// 抛错原写法<br>const CleanWebpackPlugin = require(“clean-webpack-plugin”);</p>
+<p>…</p>
+<p>plugins: [<br>    new CleanWebpackPlugin([‘dist’])<br>]</p>
+<p>…</p>
+<p>// 另一种错误写法</p>
+<p>const CleanWebpackPlugin = require(“clean-webpack-plugin”);</p>
+<p>…</p>
+<p>plugins: [<br>    new CleanWebpackPlugin([‘dist’], {<br>        root: path.resolve(__dirname, ‘../‘),   //根目录<br>    })<br>]</p>
+<p>…</p>
+<p>// =============================分割线==============================</p>
+<p>// 正确写法</p>
+<p>const { CleanWebpackPlugin } = require(“clean-webpack-plugin”);</p>
+<p>…</p>
+<p>plugins: [<br>    new CleanWebpackPlugin()<br>]</p>
+<hr>
+<p>版权声明：本文为CSDN博主「西风XF」的原创文章，遵循CC 4.0 by-sa版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_36242361/article/details/90709258">https://blog.csdn.net/qq_36242361/article/details/90709258</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://bubble93.github.io/2019/08/09/webpack%E5%9D%91/" data-id="clbem5z43007dtb0372wu3xn7" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/webpack/" rel="tag">webpack</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-git忽略文件夹中除了指定的文件外的其他所有文件" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/09/git%E5%BF%BD%E7%95%A5%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%AD%E9%99%A4%E4%BA%86%E6%8C%87%E5%AE%9A%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%96%E7%9A%84%E5%85%B6%E4%BB%96%E6%89%80%E6%9C%89%E6%96%87%E4%BB%B6/" class="article-date">
+  <time datetime="2019-08-09T07:45:37.000Z" itemprop="datePublished">2019-08-09</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/">版本管理工具</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/09/git%E5%BF%BD%E7%95%A5%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%AD%E9%99%A4%E4%BA%86%E6%8C%87%E5%AE%9A%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%96%E7%9A%84%E5%85%B6%E4%BB%96%E6%89%80%E6%9C%89%E6%96%87%E4%BB%B6/">git忽略文件夹中除了指定的文件外的其他所有文件</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">**/dist/*</span><br><span class="line">!**/dist/index.html</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://bubble93.github.io/2019/08/09/git%E5%BF%BD%E7%95%A5%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%AD%E9%99%A4%E4%BA%86%E6%8C%87%E5%AE%9A%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%96%E7%9A%84%E5%85%B6%E4%BB%96%E6%89%80%E6%9C%89%E6%96%87%E4%BB%B6/" data-id="clbem5z2w003itb03236q1dhh" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-webpack学习笔记(1)" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/09/webpack%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(1)/" class="article-date">
+  <time datetime="2019-08-09T03:49:42.000Z" itemprop="datePublished">2019-08-09</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/09/webpack%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(1)/">webpack学习笔记(1)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="起步"><a href="#起步" class="headerlink" title="起步"></a>起步</h2><h2 id="资源管理"><a href="#资源管理" class="headerlink" title="资源管理"></a>资源管理</h2><ul>
+<li><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3></li>
+<li><h3 id="加载css"><a href="#加载css" class="headerlink" title="加载css"></a>加载css</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"> test: /\.css$/,</span><br><span class="line"> use: [</span><br><span class="line">   &#x27;style-loader&#x27;,</span><br><span class="line">   &#x27;css-loader&#x27;</span><br><span class="line"> ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><h3 id="加载图片"><a href="#加载图片" class="headerlink" title="加载图片"></a>加载图片</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  test: /\.(png|svg|jpg|gif)$/,</span><br><span class="line">  use: [</span><br><span class="line">    &#x27;file-loader&#x27;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><h3 id="加载字体（打包压缩成功，字体应用失败）"><a href="#加载字体（打包压缩成功，字体应用失败）" class="headerlink" title="加载字体（打包压缩成功，字体应用失败）"></a>加载字体（打包压缩成功，字体应用失败）</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  test: /\.(woff|woff2|eot|ttf|otf)$/,</span><br><span class="line">  use: [</span><br><span class="line">    &#x27;file-loader&#x27;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><h3 id="加载数据"><a href="#加载数据" class="headerlink" title="加载数据"></a>加载数据</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  test: /\.(csv|tsv)$/,</span><br><span class="line">  use: [</span><br><span class="line">    &#x27;csv-loader&#x27;</span><br><span class="line">  ]</span><br><span class="line">&#125;,</span><br><span class="line">&#123;</span><br><span class="line">  test: /\.xml$/,</span><br><span class="line">  use: [</span><br><span class="line">    &#x27;xml-loader&#x27;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><h3 id="全局资源"><a href="#全局资源" class="headerlink" title="全局资源"></a>全局资源</h3><blockquote>
+<p>使用webpack可以使用如下结构来进行开发,这样做的好处在于，当需要复用my-component组件时，将该文件夹放到新的工程下即可使用。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">- |- /assets</span><br><span class="line">+ |– /components</span><br><span class="line">+ |  |– /my-component</span><br><span class="line">+ |  |  |– index.jsx</span><br><span class="line">+ |  |  |– index.css</span><br><span class="line">+ |  |  |– icon.svg</span><br><span class="line">+ |  |  |– img.png</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="管理输出"><a href="#管理输出" class="headerlink" title="管理输出"></a>管理输出</h2><ul>
+<li>HtmlWebpackPlugin</li>
+<li>清理 <code>/dist</code> 文件夹<blockquote>
+<p>clean-webpack-plugin</p>
+</blockquote>
+</li>
+<li>Manifest（不甚理解） </li>
+</ul>
+<h2 id="开发"><a href="#开发" class="headerlink" title="开发"></a>开发</h2><ul>
+<li>使用 source map<blockquote>
+<p><code>devtool: &#39;inline-source-map&#39;</code>  定位错误到源文件上，而不是编译后的文件</p>
+</blockquote>
+</li>
+<li>选择一个开发工具<blockquote>
+<p>为了方便在代码修改后能够实时产生效果，而不是运行npm run build。<br>webpack’s Watch Mode<br>webpack-dev-server<br>webpack-dev-middleware</p>
+</blockquote>
+</li>
+<li>使用观察者模式<blockquote>
+<p>使用webpack的watch，更改完代码以后需要刷新浏览器</p>
+</blockquote>
+</li>
+<li>使用 webpack-dev-server<blockquote>
+<p>生成后的文件直接通过<code>localhost:8080</code>访问，并且修改代码保存后，自动更新</p>
+</blockquote>
+</li>
+<li>使用 webpack-dev-middleware（作用尚不明确，大概是将生成后的代码直接放到一个指定位置，而非生成在dist目录下）</li>
+</ul>
+<h2 id="模块热替换"><a href="#模块热替换" class="headerlink" title="模块热替换"></a>模块热替换</h2><ul>
+<li>启用hmr<blockquote>
+<p>webpack.config.js</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">  const path = require(&#x27;path&#x27;);</span><br><span class="line">  const HtmlWebpackPlugin = require(&#x27;html-webpack-plugin&#x27;);</span><br><span class="line">  const CleanWebpackPlugin = require(&#x27;clean-webpack-plugin&#x27;);</span><br><span class="line">+ const webpack = require(&#x27;webpack&#x27;);</span><br><span class="line"></span><br><span class="line">  module.exports = &#123;</span><br><span class="line">    entry: &#123;</span><br><span class="line">-      app: &#x27;./src/index.js&#x27;,</span><br><span class="line">-      print: &#x27;./src/print.js&#x27;</span><br><span class="line">+      app: &#x27;./src/index.js&#x27;</span><br><span class="line">    &#125;,</span><br><span class="line">    devtool: &#x27;inline-source-map&#x27;,</span><br><span class="line">    devServer: &#123;</span><br><span class="line">      contentBase: &#x27;./dist&#x27;,</span><br><span class="line">+     hot: true</span><br><span class="line">    &#125;,</span><br><span class="line">    plugins: [</span><br><span class="line">      new CleanWebpackPlugin([&#x27;dist&#x27;]),</span><br><span class="line">      new HtmlWebpackPlugin(&#123;</span><br><span class="line">        title: &#x27;Hot Module Replacement&#x27;</span><br><span class="line">      &#125;),</span><br><span class="line">+     new webpack.NamedModulesPlugin(),</span><br><span class="line">+     new webpack.HotModuleReplacementPlugin()</span><br><span class="line">    ],</span><br><span class="line">    output: &#123;</span><br><span class="line">      filename: &#x27;[name].bundle.js&#x27;,</span><br><span class="line">      path: path.resolve(__dirname, &#x27;dist&#x27;)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<blockquote>
+<p>index.js<br>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">  import _ from &#x27;lodash&#x27;;</span><br><span class="line">  import printMe from &#x27;./print.js&#x27;;</span><br><span class="line"></span><br><span class="line">  function component() &#123;</span><br><span class="line">    var element = document.createElement(&#x27;div&#x27;);</span><br><span class="line">    var btn = document.createElement(&#x27;button&#x27;);</span><br><span class="line"></span><br><span class="line">    element.innerHTML = _.join([&#x27;Hello&#x27;, &#x27;webpack&#x27;], &#x27; &#x27;);</span><br><span class="line"></span><br><span class="line">    btn.innerHTML = &#x27;Click me and check the console!&#x27;;</span><br><span class="line">    btn.onclick = printMe;</span><br><span class="line"></span><br><span class="line">    element.appendChild(btn);</span><br><span class="line"></span><br><span class="line">    return element;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  document.body.appendChild(component());</span><br><span class="line">+</span><br><span class="line">+ if (module.hot) &#123;</span><br><span class="line">+   module.hot.accept(&#x27;./print.js&#x27;, function() &#123;</span><br><span class="line">+     console.log(&#x27;Accepting the updated printMe module!&#x27;);</span><br><span class="line">+     printMe();</span><br><span class="line">+   &#125;)</span><br><span class="line">+ &#125;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<ul>
+<li><p>通过 Node.js API</p>
+<blockquote>
+<p>通过js文件来启动hrm。使用该方式时要将hrm的配置信息作为参数传入api方法中<br>dev-server.js</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">const webpackDevServer = require(&#x27;webpack-dev-server&#x27;);</span><br><span class="line">const webpack = require(&#x27;webpack&#x27;);</span><br><span class="line"></span><br><span class="line">const config = require(&#x27;./webpack.config.js&#x27;);</span><br><span class="line">const options = &#123;</span><br><span class="line">  contentBase: &#x27;./dist&#x27;,</span><br><span class="line">  hot: true,</span><br><span class="line">  host: &#x27;localhost&#x27;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">webpackDevServer.addDevServerEntrypoints(config, options);</span><br><span class="line">const compiler = webpack(config);</span><br><span class="line">const server = new webpackDevServer(compiler, options);</span><br><span class="line"></span><br><span class="line">server.listen(5000, &#x27;localhost&#x27;, () =&gt; &#123;</span><br><span class="line">  console.log(&#x27;dev server listening on port 5000&#x27;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></li>
+<li><p>问题</p>
+<blockquote>
+<p>用如上方式配置hrm，当文件更新后，点击按钮，发现输出内容是未修改前的<br>因为js文件虽然更新了，但按钮上绑定的事件却为更新。解决方案如下：<br>index.js</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">  import _ from &#x27;lodash&#x27;;</span><br><span class="line">  import printMe from &#x27;./print.js&#x27;;</span><br><span class="line"></span><br><span class="line">  function component() &#123;</span><br><span class="line">    var element = document.createElement(&#x27;div&#x27;);</span><br><span class="line">    var btn = document.createElement(&#x27;button&#x27;);</span><br><span class="line"></span><br><span class="line">    element.innerHTML = _.join([&#x27;Hello&#x27;, &#x27;webpack&#x27;], &#x27; &#x27;);</span><br><span class="line"></span><br><span class="line">    btn.innerHTML = &#x27;Click me and check the console!&#x27;;</span><br><span class="line">    btn.onclick = printMe;  // onclick 事件绑定原始的 printMe 函数上</span><br><span class="line"></span><br><span class="line">    element.appendChild(btn);</span><br><span class="line"></span><br><span class="line">    return element;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">- document.body.appendChild(component());</span><br><span class="line">+ let element = component(); // 当 print.js 改变导致页面重新渲染时，重新获取渲染的元素</span><br><span class="line">+ document.body.appendChild(element);</span><br><span class="line"></span><br><span class="line">  if (module.hot) &#123;</span><br><span class="line">    module.hot.accept(&#x27;./print.js&#x27;, function() &#123;</span><br><span class="line">      console.log(&#x27;Accepting the updated printMe module!&#x27;);</span><br><span class="line">-     printMe();</span><br><span class="line">+     document.body.removeChild(element);</span><br><span class="line">+     element = component(); // 重新渲染页面后，component 更新 click 事件处理</span><br><span class="line">+     document.body.appendChild(element);</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>HMR 修改样式表</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save-dev style-loader css-loader</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>webpack.config.js</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">+   module: &#123;</span><br><span class="line">+     rules: [</span><br><span class="line">+       &#123;</span><br><span class="line">+         test: /\.css$/,</span><br><span class="line">+         use: [&#x27;style-loader&#x27;, &#x27;css-loader&#x27;]</span><br><span class="line">+       &#125;</span><br><span class="line">+     ]</span><br><span class="line">+   &#125;,</span><br></pre></td></tr></table></figure></li>
+<li><p>其他代码和框架</p>
+</li>
+<li><p>React Hot Loader：实时调整 react 组件。</p>
+</li>
+<li><p>Vue Loader：此 loader 支持用于 vue 组件的 HMR，提供开箱即用体验。</p>
+</li>
+<li><p>Elm Hot Loader：支持用于 Elm 程序语言的 HMR。</p>
+</li>
+<li><p>Redux HMR：无需 loader 或插件！只需对 main store 文件进行简单的修改。</p>
+</li>
+<li><p>Angular HMR：No loader necessary! A simple change to your main NgModule file is all that’s required to have full control over the HMR APIs.没有必要使用 loader！只需对主要的 NgModule 文件进行简单的修改，由 HMR API 完全控制。</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://bubble93.github.io/2019/08/09/webpack%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(1)/" data-id="clbem5z44007gtb031fvfbo3g" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/webpack/" rel="tag">webpack</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-js防抖与节流" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/06/js%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81/" class="article-date">
+  <time datetime="2019-08-06T09:10:31.000Z" itemprop="datePublished">2019-08-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/06/js%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81/">js防抖与节流</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="防抖"><a href="#防抖" class="headerlink" title="防抖"></a>防抖</h2><blockquote>
+<p>函数防抖（debounce）:就是让某个函数在上一次执行之后，满足等待某个时间内不再触发此函数后再执行，而在这个等待时间内再次触发函数，等待时间可以重新计算，知道该函数在一定间隔内没有被调用时，才开始执行被调用方法（所谓防抖，就是指触发事件后在 n 秒内函数只能执行一次，如果在 n 秒内又触发了事件，则会重新计算函数执行时间。）</p>
+</blockquote>
+<h2 id="节流"><a href="#节流" class="headerlink" title="节流"></a>节流</h2><blockquote>
+<p>函数节流（throttle）:是让一个函数无法在很短的时间间隔内连续调用，当上一次执行完之后过了规定的时间间隔，才能进行下一次的函数调用。（所谓节流，就是指连续触发事件但是在N秒中只执行一次函数）节流会稀释函数的执行频率。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">const debounce = (fn, time) =&gt; &#123;</span><br><span class="line">    let timeout;</span><br><span class="line">    return function () &#123;</span><br><span class="line">      const functionCall = () =&gt; fn.apply(this, arguments);</span><br><span class="line">      clearTimeout(timeout);</span><br><span class="line">      timeout = setTimeout(functionCall, time);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">let debounce = function( fn,delay) &#123;</span><br><span class="line">    let timerId;</span><br><span class="line">    return function (...args) &#123;</span><br><span class="line">        if (timerId) &#123;</span><br><span class="line">            clearTimeout(timerId);</span><br><span class="line">        &#125;</span><br><span class="line">        timerId = setTimeout(() =&gt; &#123;</span><br><span class="line">            fn(...args);</span><br><span class="line">            timerId = null;</span><br><span class="line">        &#125;, delay);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://bubble93.github.io/2019/08/06/js%E9%98%B2%E6%8A%96%E4%B8%8E%E8%8A%82%E6%B5%81/" data-id="clbem5z3h0055tb03flvj9ivs" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/" rel="tag">js</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-vue计算属性与定义函数的区别" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/06/vue%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7%E4%B8%8E%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0%E7%9A%84%E5%8C%BA%E5%88%AB/" class="article-date">
+  <time datetime="2019-08-06T08:20:13.000Z" itemprop="datePublished">2019-08-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/06/vue%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7%E4%B8%8E%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0%E7%9A%84%E5%8C%BA%E5%88%AB/">vue计算属性与定义函数的区别</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>计算属性</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;example&quot;&gt;</span><br><span class="line">  &lt;p&gt;Original message: &quot;&#123;&#123; message &#125;&#125;&quot;&lt;/p&gt;</span><br><span class="line">  &lt;p&gt;Computed reversed message: &quot;&#123;&#123; reversedMessage &#125;&#125;&quot;&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">var vm = new Vue(&#123;</span><br><span class="line">  el: &#x27;#example&#x27;,</span><br><span class="line">  data: &#123;</span><br><span class="line">    message: &#x27;Hello&#x27;</span><br><span class="line">  &#125;,</span><br><span class="line">  computed: &#123;</span><br><span class="line">    // 计算属性的 getter</span><br><span class="line">    reversedMessage: function () &#123;</span><br><span class="line">      // `this` 指向 vm 实例</span><br><span class="line">      return this.message.split(&#x27;&#x27;).reverse().join(&#x27;&#x27;)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>另一种实现方式</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Reversed message: &quot;&#123;&#123; reversedMessage() &#125;&#125;&quot;&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// 在组件中</span><br><span class="line">methods: &#123;</span><br><span class="line">  reversedMessage: function () &#123;</span><br><span class="line">    return this.message.split(&#x27;&#x27;).reverse().join(&#x27;&#x27;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>两者间的区别在于: 计算属性是基于它们的响应式依赖进行缓存的。只在相关响应式依赖发生改变时它们才会重新求值。这就意味着只要 message 还没有发生改变，多次访问 reversedMessage 计算属性会立即返回之前的计算结果，而不必再次执行函数</p>
+</blockquote>
+<blockquote>
+<p>这也同样意味着下面的计算属性将不再更新，因为 Date.now() 不是响应式依赖：</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">computed: &#123;</span><br><span class="line">  now: function () &#123;</span><br><span class="line">    return Date.now()</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://bubble93.github.io/2019/08/06/vue%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7%E4%B8%8E%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0%E7%9A%84%E5%8C%BA%E5%88%AB/" data-id="clbem5z420076tb0388fhap7v" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/" rel="tag">js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/" rel="tag">vue</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-跨域以及前后端通信" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/07/31/%E8%B7%A8%E5%9F%9F%E4%BB%A5%E5%8F%8A%E5%89%8D%E5%90%8E%E7%AB%AF%E9%80%9A%E4%BF%A1/" class="article-date">
+  <time datetime="2019-07-31T05:29:22.000Z" itemprop="datePublished">2019-07-31</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/07/31/%E8%B7%A8%E5%9F%9F%E4%BB%A5%E5%8F%8A%E5%89%8D%E5%90%8E%E7%AB%AF%E9%80%9A%E4%BF%A1/">跨域以及前后端通信</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="同源策略概念和具体限制"><a href="#同源策略概念和具体限制" class="headerlink" title="同源策略概念和具体限制"></a>同源策略概念和具体限制</h2><blockquote>
+<p><strong>同源策略</strong>：限制从一个源加载的文档或脚本如何与来自另一个源的资源进行交互。这是一个用于隔离潜在恶意文件的关键的安全机制。</p>
+<ul>
+<li>源包括三个部分：协议、域名、端口（http协议的默认端口是80）。如果有任何一个部分不同，则源不同，那就是跨域了。</li>
+<li>限制：这个源的文档没有权利去操作另一个源的文档。这个限制体现在：<br>Cookie、LocalStorage和IndexDB无法获取。<br>无法获取和操作DOM。<br>不能发送Ajax请求。我们要注意，Ajax只适合同源的通信。</li>
+</ul>
+</blockquote>
+<h2 id="前后端如何通信"><a href="#前后端如何通信" class="headerlink" title="前后端如何通信"></a>前后端如何通信</h2><blockquote>
+<p>主要有以下几种方式：</p>
+</blockquote>
+<ul>
+<li><p>Ajax：不支持跨域。</p>
+</li>
+<li><p>WebSocket：不受同源策略的限制，支持跨域。</p>
+</li>
+<li><p>CORS：不受同源策略的限制，支持跨域。一种新的通信协议标准。可以理解成是：同时支持同源和跨域的Ajax。</p>
+</li>
+</ul>
+<h2 id="如何创建Ajax"><a href="#如何创建Ajax" class="headerlink" title="如何创建Ajax"></a>如何创建Ajax</h2><h2 id="后端跨域配置说明"><a href="#后端跨域配置说明" class="headerlink" title="后端跨域配置说明"></a>后端跨域配置说明</h2><h3 id="Access-Control-Allow-Origin"><a href="#Access-Control-Allow-Origin" class="headerlink" title="Access-Control-Allow-Origin"></a>Access-Control-Allow-Origin</h3><p>允许访问该应用的来源地址；demo：<code>res.header(&quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;);</code></p>
+<h3 id="Access-Control-Allow-Headers"><a href="#Access-Control-Allow-Headers" class="headerlink" title="Access-Control-Allow-Headers"></a>Access-Control-Allow-Headers</h3><p>允许发送的头部字段；demo：<code>res.header(&quot;Access-Control-Allow-Headers&quot;, &quot;X-Requested-With&quot;);</code></p>
+<h3 id="Access-Control-Allow-Methods"><a href="#Access-Control-Allow-Methods" class="headerlink" title="Access-Control-Allow-Methods"></a>Access-Control-Allow-Methods</h3><p>允许访问的方式；demo：<code>res.header(&quot;Access-Control-Allow-Methods&quot;,&quot;PUT,POST,GET,DELETE,OPTIONS&quot;);</code></p>
+<h2 id="跨域问题"><a href="#跨域问题" class="headerlink" title="跨域问题"></a>跨域问题</h2><blockquote>
+<p>跨域错误信息中一般存放着完整的错误原因</p>
+</blockquote>
+<h3 id="Response-to-preflight-request-doesn’t-pass-access-control-check-It-does-not-have-HTTP-ok-status"><a href="#Response-to-preflight-request-doesn’t-pass-access-control-check-It-does-not-have-HTTP-ok-status" class="headerlink" title="Response to preflight request doesn’t pass access control check: It does not have HTTP ok status."></a>Response to preflight request doesn’t pass access control check: It does not have HTTP ok status.</h3><h3 id="Request-header-field-content-type-is-not-allowed-by-Access-Control-Allow-Headers-in-preflight-response"><a href="#Request-header-field-content-type-is-not-allowed-by-Access-Control-Allow-Headers-in-preflight-response" class="headerlink" title="Request header field content-type is not allowed by Access-Control-Allow-Headers in preflight response."></a>Request header field content-type is not allowed by Access-Control-Allow-Headers in preflight response.</h3><h3 id="Response-to-preflight-request-doesn’t-pass-access-control-check-No-‘Access-Control-Allow-Origin’-header-is-present-on-the-requested-resource"><a href="#Response-to-preflight-request-doesn’t-pass-access-control-check-No-‘Access-Control-Allow-Origin’-header-is-present-on-the-requested-resource" class="headerlink" title="Response to preflight request doesn’t pass access control check: No ‘Access-Control-Allow-Origin’ header is present on the requested resource."></a>Response to preflight request doesn’t pass access control check: No ‘Access-Control-Allow-Origin’ header is present on the requested resource.</h3>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://bubble93.github.io/2019/07/31/%E8%B7%A8%E5%9F%9F%E4%BB%A5%E5%8F%8A%E5%89%8D%E5%90%8E%E7%AB%AF%E9%80%9A%E4%BF%A1/" data-id="clbem5z5100artb03grjr4gbi" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/" rel="tag">js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%B7%A8%E5%9F%9F/" rel="tag">跨域</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%80%9A%E4%BF%A1/" rel="tag">通信</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-类的定义和继承的几种方式" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/07/29/%E7%B1%BB%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E7%BB%A7%E6%89%BF%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/" class="article-date">
+  <time datetime="2019-07-29T12:32:16.000Z" itemprop="datePublished">2019-07-29</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/07/29/%E7%B1%BB%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E7%BB%A7%E6%89%BF%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/">类的定义和继承的几种方式</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="类的定义-类的声明"><a href="#类的定义-类的声明" class="headerlink" title="类的定义/类的声明"></a>类的定义/类的声明</h2><ul>
+<li>方式一：用构造函数模拟类（传统写法）<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function Animal1() &#123;</span><br><span class="line">    this.name = &#x27;smyhvae&#x27;; //通过this，表明这是一个构造函数</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>方式二：用 class 声明（ES6的写法）<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">class Animal2 &#123;</span><br><span class="line">    constructor() &#123;  //可以在构造函数里写属性</span><br><span class="line">        this.name = name;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="实例化"><a href="#实例化" class="headerlink" title="实例化"></a>实例化</h2></li>
+<li>类的实例化很简单，直接 new 出来即可。<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(new Animal1(),new Animal2()); //实例化。如果括号里没有参数，则括号可以省略</span><br></pre></td></tr></table></figure>
+<h2 id="ES5继承的几种方式"><a href="#ES5继承的几种方式" class="headerlink" title="ES5继承的几种方式"></a>ES5继承的几种方式</h2><blockquote>
+<p>继承的本质就是原型链。<br>继承的方式有几种？每种形式的优缺点是？这些问题必问的。其实就是考察你对原型链的掌握程度。</p>
+</blockquote>
+<h3 id="方式一：借助构造函数"><a href="#方式一：借助构造函数" class="headerlink" title="方式一：借助构造函数"></a>方式一：借助构造函数</h3><blockquote>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">function Parent1() &#123;</span><br><span class="line">    this.name = &#x27;parent1 的属性&#x27;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function Child1() &#123;</span><br><span class="line">    Parent1.call(this);         //【重要】此处用 call 或 apply 都行：改变 this 的指向</span><br><span class="line">    this.type = &#x27;child1 的属性&#x27;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">console.log(new Child1);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>上方代码中，最重要的那行代码：在子类的构造函数里写了Parent1.call(this);，意思是：让Parent的构造函数在child的构造函数中执行。发生的变化是：改变this的指向，parent的实例 –&gt; 改为指向child的实例。导致 parent的实例的属性挂在到了child的实例上，这就实现了继承。</p>
+<blockquote>
+<p>分析：<br>这种方式，虽然改变了 this 的指向，但是，Child1 无法继承 Parent1 的原型。也就是说，如果我给 Parent1 的原型增加一个方法，这个方法是无法被 Child1 继承的</p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+<h3 id="方法二：通过原型链实现继承"><a href="#方法二：通过原型链实现继承" class="headerlink" title="方法二：通过原型链实现继承"></a>方法二：通过原型链实现继承</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">/*</span><br><span class="line">通过原型链实现继承</span><br><span class="line"> */</span><br><span class="line">function Parent() &#123;</span><br><span class="line">    this.name = &#x27;Parent 的属性&#x27;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function Child() &#123;</span><br><span class="line">    this.type = &#x27;Child 的属性&#x27;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Child.prototype = new Parent(); //【重要】</span><br><span class="line"></span><br><span class="line">console.log(new Child());</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>上方代码中，最重要的那行：每个函数都有prototype属性，于是，构造函数也有这个属性，这个属性是一个对象。现在，我们把Parent的实例赋值给了Child的prototye，从而实现继承。此时，Child构造函数、Parent的实例、Child的实例构成一个三角关系。于是：<br><code>new Child.__proto__ === new Parent()</code>的结果为true</p>
+<blockquote>
+<p>分析：<br>这种继承方式，Child 可以继承 Parent 的原型，但有个缺点：<br>缺点是：如果修改 child1实例的name属性，child2实例中的name属性也会跟着改变。</p>
+</blockquote>
+</blockquote>
+<h3 id="方式三：组合的方式：构造函数-原型链"><a href="#方式三：组合的方式：构造函数-原型链" class="headerlink" title="方式三：组合的方式：构造函数 + 原型链"></a>方式三：组合的方式：构造函数 + 原型链</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">/*</span><br><span class="line">组合方式实现继承：构造函数、原型链</span><br><span class="line">Child3 和 Parent3 中的属性以及方法分别出现在了child3和child3的原型上，所以不会造成原属性修改</span><br><span class="line"> */</span><br><span class="line">function Parent3() &#123;</span><br><span class="line">    this.name = &#x27;Parent 的属性&#x27;;</span><br><span class="line">    this.arr = [1, 2, 3];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function Child3() &#123;</span><br><span class="line">    Parent3.call(this); //【重要1】执行 parent方法</span><br><span class="line">    this.type = &#x27;Child 的属性&#x27;;</span><br><span class="line">&#125;</span><br><span class="line">Child3.prototype = new Parent3(); //【重要2】第二次执行parent方法</span><br><span class="line"></span><br><span class="line">var child = new Child3();</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>这种方式，能解决之前两种方式的问题：既可以继承父类原型的内容，也不会造成原型里属性的修改。<br>这种方式的缺点是：让父亲Parent的构造方法执行了两次。</p>
+</blockquote>
+<h3 id="方式四：寄生组合式继承"><a href="#方式四：寄生组合式继承" class="headerlink" title="方式四：寄生组合式继承"></a>方式四：寄生组合式继承</h3><blockquote>
+<p>让一个函数去指向SuperType.prototype，然后让SubType.prototype指向这个函数产生的对象</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">function inherit(Target,Origin) &#123;//实现寄生组合式继承的核心函数</span><br><span class="line">   function F() &#123;&#125;;</span><br><span class="line">   F.prototype = Origin.prototype; //F()的原型指向的是Origin</span><br><span class="line">   Target.prototype = new F(); //Target的原型指向的是F()</span><br><span class="line">   Target.prototype.constructor = Target; </span><br><span class="line">   SubType.prototype.__proto__ == SuperType.prototype</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function SuperType(name) &#123;</span><br><span class="line">   this.name = name;</span><br><span class="line">   this.colors = [&#x27;red&#x27;,&#x27;blue&#x27;,&#x27;pink&#x27;];</span><br><span class="line">&#125;</span><br><span class="line">SuperType.prototype.sayName = function() &#123;</span><br><span class="line">   console.log(this.name);</span><br><span class="line">&#125;</span><br><span class="line">function SubType(name,age) &#123;</span><br><span class="line">   //继承属性</span><br><span class="line">   SuperType.call(this,name);//在创建实例时第二次调用SuperType</span><br><span class="line">   this.age = age;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">inherit(SubType,SuperType);//实现寄生组合式继承</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>实现寄生组合式继承的核心函数。F函数其实是通用的，我们没必要每次进入inherit函数时都声明一遍。所以我们可以用闭包的形式来写</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var inherit = (function () &#123;</span><br><span class="line">       var F = function () &#123;&#125;;</span><br><span class="line">       return function (Target , Origin) &#123;</span><br><span class="line">           F.prototype = Origin.prototype;//F()的原型指向的是Origin</span><br><span class="line">           Target.prototype = new F();//Target的原型指向的是F()</span><br><span class="line">           Target.prototype.constructor = Target;</span><br><span class="line">           Target.prototype.uber = Origin.prototype;</span><br><span class="line">           SubType.prototype.__proto__ == SuperType.prototype</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;)()</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h2 id="ES6中的类继承"><a href="#ES6中的类继承" class="headerlink" title="ES6中的类继承"></a>ES6中的类继承</h2> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">class Child extends Parent &#123;</span><br><span class="line">    constructor(sex) &#123;</span><br><span class="line">        super();</span><br><span class="line">        this.sex = sex;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">var child = new Child(&#x27;xiaoyu&#x27;,12,&#x27;man&#x27;);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>constructor方法是类的默认方法，通过new命令生成对象实例时，自动调用该方法。一个类必须有constructor方法，<br>如果没有显式定义，一个空的constructor方法会被默认添加。<br>在子类的构造函数中，如果显示声明了constructor，则必须要显示的调用super函数。<br>只有调用super之后，才可以使用this关键字，否则会报错。</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://bubble93.github.io/2019/07/29/%E7%B1%BB%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E7%BB%A7%E6%89%BF%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/" data-id="clbem5z4y00adtb03392q51s2" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/" rel="tag">js</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-创建对象和原型链" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/07/29/%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE/" class="article-date">
+  <time datetime="2019-07-29T11:26:01.000Z" itemprop="datePublished">2019-07-29</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/07/29/%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE/">创建对象和原型链</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="原型，构造函数，实例三者之间关系"><a href="#原型，构造函数，实例三者之间关系" class="headerlink" title="原型，构造函数，实例三者之间关系"></a>原型，构造函数，实例三者之间关系</h2><p><img src="../images/%E5%8E%9F%E5%9E%8B%E5%AE%9E%E4%BE%8B%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0.png" alt="原型，构造函数，实例三者之间关系"></p>
+<blockquote>
+<p>原型中的constructor属性指向了构造函数<br>构造函数中的prototype和实例中的_proto_属性指向了原型</p>
+</blockquote>
+<h2 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h2><blockquote>
+<p><strong>原型链的基本原理</strong>：任何一个实例，通过原型链，找到它上面的原型，该原型对象中的方法和属性，可以被所有的原型实例共享。</p>
+</blockquote>
+<blockquote>
+<p>Object是原型链的顶端。</p>
+</blockquote>
+<blockquote>
+<p>原型可以起到继承的作用。原型里的方法都可以被不同的实例共享：</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//给Foo的原型添加 say 函数</span><br><span class="line">Foo.prototype.say = function () &#123;</span><br><span class="line">    console.log(&#x27;&#x27;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>原型链的关键</strong>：在访问一个实例的时候，如果实例本身没找到此方法或属性，就往原型上找。如果还是找不到，继续往上一级的原型上找。</p>
+</blockquote>
+<h2 id="instanceof的原理"><a href="#instanceof的原理" class="headerlink" title="instanceof的原理"></a><code>instanceof</code>的原理</h2><blockquote>
+<p><code>instanceof</code>的原理：判断实例对象的<code>__proto__</code>属性，和构造函数的prototype属性，是否为同一个引用（是否指向同一个地址）。<br><strong>注意1</strong>：虽然说，实例是由构造函数 new 出来的，但是实例的<code>__proto__</code>属性引用的是构造函数的prototype。也就是说，实例的<code>__proto__</code>属性与构造函数本身无关。<br><strong>注意2</strong>：在原型链上，原型的上面可能还会有原型，以此类推往上走，继续找<code>__proto__</code>属性。这条链上如果能找到， <code>instanceof</code> 的返回结果也是 true。</p>
+</blockquote>
+<blockquote>
+<p>比如说：<br><code>foo instance of Foo</code>的结果为true，因为<code>foo.__proto__===Foo.prototype</code>为true。<br><code>foo instance of Objecet</code>的结果也为true，因为<code>Foo.prototype.__proto__ === Object.prototype</code>为true。</p>
+</blockquote>
+<ul>
+<li>但我们不能轻易的说：foo 一定是 由Object创建的实例。这句话是错误的。我们来看下一个问题就明白了。</li>
+</ul>
+<blockquote>
+<p>分析一个问题<br>问题：已知A继承了B，B继承了C。怎么判断 a 是由A直接生成的实例，还是B直接生成的实例呢？还是C直接生成的实例呢？</p>
+<blockquote>
+<ul>
+<li>分析：这就要用到原型的constructor属性了。</li>
+<li><code>foo.__proto__.constructor === Foo</code>的结果为true，但是 <code>foo.__proto__.constructor === Object</code>的结果为false。<br>所以，用 consturctor判断就比用 instanceof判断，更为严谨。</li>
+</ul>
+</blockquote>
+</blockquote>
+<h2 id="new-运算符"><a href="#new-运算符" class="headerlink" title="new 运算符"></a>new 运算符</h2><blockquote>
+<p>当new Foo()时发生了什么：</p>
+</blockquote>
+<ul>
+<li><p>（1）创建一个新的空对象实例。</p>
+</li>
+<li><p>（2）将此空对象的隐式原型指向其构造函数的显示原型。</p>
+</li>
+<li><p>（3）执行构造函数（传入相应的参数，如果没有参数就不用传），同时 this 指向这个新实例。</p>
+</li>
+<li><p>（4）如果返回值是一个新对象，那么直接返回该对象；如果无返回值或者返回一个非对象值，那么就将步骤（1）创建的对象返回。</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://bubble93.github.io/2019/07/29/%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE/" data-id="clbem5z49007ytb034ehaeel6" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/" rel="tag">js</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/page/5/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/7/">Next &amp;raquo;</a>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/MAC/">MAC</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/git/">git</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/ide/">ide</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/markdown/">markdown</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/react/">react</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%88%86%E7%B1%BB1/">分类1</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/">单元测试</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%99/">博客建站</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AE%A2%E6%88%B7%E7%AB%AF/">客户端</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B0%8F%E7%9B%AE%E6%A0%87/">小目标</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/">开发工具</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BF%AB%E6%8D%B7%E9%94%AE/">快捷键</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%8E%AF%E5%A2%83/">服务器环境</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/">版本管理工具</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%94%9F%E4%BA%A7%E5%8A%9B%E6%8F%90%E5%8D%87/">生产力提升</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%84%E8%8C%83/">规范</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9D%A2%E8%AF%95/">面试</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/before/" rel="tag">::before</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/first-child/" rel="tag">:first-child</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/last-child/" rel="tag">:last-child</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS%E4%B8%96%E7%95%8C/" rel="tag">CSS世界</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ES6/" rel="tag">ES6</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ESlint/" rel="tag">ESlint</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github/" rel="tag">Github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JS/" rel="tag">JS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux%E5%91%BD%E4%BB%A4/" rel="tag">Linux命令</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MAC-error/" rel="tag">MAC-error</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Taro/" rel="tag">Taro</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VUE/" rel="tag">VUE</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/allow-root/" rel="tag">allow-root</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/aws/" rel="tag">aws</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bootstrap/" rel="tag">bootstrap</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/chrome/" rel="tag">chrome</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/commit/" rel="tag">commit</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dva/" rel="tag">dva</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/electorn/" rel="tag">electorn</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/error/" rel="tag">error</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/es6/" rel="tag">es6</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/" rel="tag">github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gulp/" rel="tag">gulp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/height/" rel="tag">height</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/" rel="tag">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/http/" rel="tag">http</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ie6/" rel="tag">ie6</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/install/" rel="tag">install</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jest/" rel="tag">jest</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/" rel="tag">js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux%E5%91%BD%E4%BB%A4/" rel="tag">linux命令</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/" rel="tag">markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/" rel="tag">nodejs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/npm/" rel="tag">npm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/react/" rel="tag">react</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/redux/" rel="tag">redux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/save/" rel="tag">save</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/scss/" rel="tag">scss</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/stash/" rel="tag">stash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/taro/" rel="tag">taro</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/this/" rel="tag">this</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/uglify/" rel="tag">uglify</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unsafe-perm-true/" rel="tag">unsafe-perm=true</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vscode/" rel="tag">vscode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/" rel="tag">vue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/webpack/" rel="tag">webpack</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/width/" rel="tag">width</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8/" rel="tag">伪类选择器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%85%BC%E5%AE%B9%E6%80%A7/" rel="tag">兼容性</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/" rel="tag">前端基础</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95/" rel="tag">前端面试</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" rel="tag">微信小程序</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/" rel="tag">快捷键</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%89%93%E5%8C%85%E5%B7%A5%E5%85%B7/" rel="tag">打包工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8A%80%E5%B7%A7/" rel="tag">技巧</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF%E6%A0%88/" rel="tag">技术栈</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E6%A0%A1%E9%AA%8C/" rel="tag">数据校验</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8/" rel="tag">类选择器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B7%A8%E5%9F%9F/" rel="tag">跨域</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BF%9B%E9%98%B6/" rel="tag">进阶</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%80%9A%E4%BF%A1/" rel="tag">通信</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%A6%96%E9%80%89%E9%A1%B9/" rel="tag">首选项</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/before/" style="font-size: 10px;">::before</a> <a href="/tags/first-child/" style="font-size: 10px;">:first-child</a> <a href="/tags/last-child/" style="font-size: 10px;">:last-child</a> <a href="/tags/CSS%E4%B8%96%E7%95%8C/" style="font-size: 10px;">CSS世界</a> <a href="/tags/ES6/" style="font-size: 10px;">ES6</a> <a href="/tags/ESlint/" style="font-size: 10px;">ESlint</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/Hexo/" style="font-size: 12.86px;">Hexo</a> <a href="/tags/JS/" style="font-size: 12.86px;">JS</a> <a href="/tags/Linux%E5%91%BD%E4%BB%A4/" style="font-size: 10px;">Linux命令</a> <a href="/tags/MAC-error/" style="font-size: 10px;">MAC-error</a> <a href="/tags/Taro/" style="font-size: 11.43px;">Taro</a> <a href="/tags/VUE/" style="font-size: 11.43px;">VUE</a> <a href="/tags/allow-root/" style="font-size: 10px;">allow-root</a> <a href="/tags/aws/" style="font-size: 10px;">aws</a> <a href="/tags/bootstrap/" style="font-size: 11.43px;">bootstrap</a> <a href="/tags/chrome/" style="font-size: 10px;">chrome</a> <a href="/tags/commit/" style="font-size: 10px;">commit</a> <a href="/tags/css/" style="font-size: 18.57px;">css</a> <a href="/tags/dva/" style="font-size: 10px;">dva</a> <a href="/tags/electorn/" style="font-size: 10px;">electorn</a> <a href="/tags/error/" style="font-size: 12.86px;">error</a> <a href="/tags/es6/" style="font-size: 10px;">es6</a> <a href="/tags/git/" style="font-size: 17.14px;">git</a> <a href="/tags/github/" style="font-size: 11.43px;">github</a> <a href="/tags/gulp/" style="font-size: 14.29px;">gulp</a> <a href="/tags/height/" style="font-size: 10px;">height</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/http/" style="font-size: 11.43px;">http</a> <a href="/tags/ie6/" style="font-size: 10px;">ie6</a> <a href="/tags/install/" style="font-size: 10px;">install</a> <a href="/tags/jest/" style="font-size: 10px;">jest</a> <a href="/tags/js/" style="font-size: 20px;">js</a> <a href="/tags/linux%E5%91%BD%E4%BB%A4/" style="font-size: 10px;">linux命令</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/npm/" style="font-size: 11.43px;">npm</a> <a href="/tags/react/" style="font-size: 14.29px;">react</a> <a href="/tags/redux/" style="font-size: 10px;">redux</a> <a href="/tags/save/" style="font-size: 10px;">save</a> <a href="/tags/scss/" style="font-size: 10px;">scss</a> <a href="/tags/stash/" style="font-size: 10px;">stash</a> <a href="/tags/taro/" style="font-size: 12.86px;">taro</a> <a href="/tags/this/" style="font-size: 10px;">this</a> <a href="/tags/uglify/" style="font-size: 10px;">uglify</a> <a href="/tags/unsafe-perm-true/" style="font-size: 10px;">unsafe-perm=true</a> <a href="/tags/vscode/" style="font-size: 15.71px;">vscode</a> <a href="/tags/vue/" style="font-size: 10px;">vue</a> <a href="/tags/webpack/" style="font-size: 12.86px;">webpack</a> <a href="/tags/width/" style="font-size: 10px;">width</a> <a href="/tags/%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8/" style="font-size: 10px;">伪类选择器</a> <a href="/tags/%E5%85%BC%E5%AE%B9%E6%80%A7/" style="font-size: 10px;">兼容性</a> <a href="/tags/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/" style="font-size: 10px;">前端基础</a> <a href="/tags/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95/" style="font-size: 11.43px;">前端面试</a> <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" style="font-size: 11.43px;">微信小程序</a> <a href="/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/" style="font-size: 10px;">快捷键</a> <a href="/tags/%E6%89%93%E5%8C%85%E5%B7%A5%E5%85%B7/" style="font-size: 10px;">打包工具</a> <a href="/tags/%E6%8A%80%E5%B7%A7/" style="font-size: 10px;">技巧</a> <a href="/tags/%E6%8A%80%E6%9C%AF%E6%A0%88/" style="font-size: 10px;">技术栈</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E6%A0%A1%E9%AA%8C/" style="font-size: 10px;">数据校验</a> <a href="/tags/%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8/" style="font-size: 10px;">类选择器</a> <a href="/tags/%E8%B7%A8%E5%9F%9F/" style="font-size: 10px;">跨域</a> <a href="/tags/%E8%BF%9B%E9%98%B6/" style="font-size: 10px;">进阶</a> <a href="/tags/%E9%80%9A%E4%BF%A1/" style="font-size: 10px;">通信</a> <a href="/tags/%E9%A6%96%E9%80%89%E9%A1%B9/" style="font-size: 10px;">首选项</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">August 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">June 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">May 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">June 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">January 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/12/08/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2022/08/11/react%E9%9D%A2%E8%AF%95%E9%A2%98/">react面试题</a>
+          </li>
+        
+          <li>
+            <a href="/2022/08/05/flex-1%E8%AF%A6%E8%A7%A3/">flex: 1详解</a>
+          </li>
+        
+          <li>
+            <a href="/2022/06/30/npm%E5%91%BD%E4%BB%A4/">npm命令</a>
+          </li>
+        
+          <li>
+            <a href="/2022/06/30/react%E7%9B%B8%E5%85%B3%E6%8A%A5%E9%94%99/">react相关报错</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2022 bubble<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

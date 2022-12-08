@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>bubble-blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="bubble-blog">
+<meta property="og:url" content="https://bubble93.github.io/page/2/index.html">
+<meta property="og:site_name" content="bubble-blog">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="bubble">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="bubble-blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">bubble-blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://bubble93.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-docker安装nginx" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/06/18/docker%E5%AE%89%E8%A3%85nginx/" class="article-date">
+  <time datetime="2021-06-18T07:38:03.000Z" itemprop="datePublished">2021-06-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/06/18/docker%E5%AE%89%E8%A3%85nginx/">docker安装nginx</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/docker/docker-install-nginx.html">菜鸟教程</a></p>
+</blockquote>
+<h2 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h2><p>参考docker安装笔记</p>
+<h2 id="查询docker-nginx镜像"><a href="#查询docker-nginx镜像" class="headerlink" title="查询docker nginx镜像"></a>查询docker nginx镜像</h2><p>docker search nginx</p>
+<h2 id="拉取docker-nginx镜像"><a href="#拉取docker-nginx镜像" class="headerlink" title="拉取docker nginx镜像"></a>拉取docker nginx镜像</h2><p>docker pull nginx:latest</p>
+<h2 id="查看已拉取镜像"><a href="#查看已拉取镜像" class="headerlink" title="查看已拉取镜像"></a>查看已拉取镜像</h2><p>docker images</p>
+<h2 id="运行容器"><a href="#运行容器" class="headerlink" title="运行容器"></a>运行容器</h2><p>docker run –name nginx-test -p 8080:80 -d nginx</p>
+<blockquote>
+<p>–name nginx-test：容器名称。<br>-p 8080:80： 端口进行映射，将本地 8080 端口映射到容器内部的 80 端口。<br>-d nginx： 设置容器在在后台一直运行。</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://bubble93.github.io/2021/06/18/docker%E5%AE%89%E8%A3%85nginx/" data-id="clbem5z2q002stb03du9p1by8" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-docker中使用mongodb" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/06/18/docker%E4%B8%AD%E4%BD%BF%E7%94%A8mongodb/" class="article-date">
+  <time datetime="2021-06-18T06:16:58.000Z" itemprop="datePublished">2021-06-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/06/18/docker%E4%B8%AD%E4%BD%BF%E7%94%A8mongodb/">docker中使用mongodb</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/docker/docker-install-mongodb.html">菜鸟教程</a></p>
+</blockquote>
+<h2 id="安装docker"><a href="#安装docker" class="headerlink" title="安装docker"></a>安装docker</h2><p>参考docker安装笔记</p>
+<h2 id="查询docker-mongo镜像"><a href="#查询docker-mongo镜像" class="headerlink" title="查询docker mongo镜像"></a>查询docker mongo镜像</h2><p>docker search mongo</p>
+<h2 id="拉取docker-mongo镜像"><a href="#拉取docker-mongo镜像" class="headerlink" title="拉取docker mongo镜像"></a>拉取docker mongo镜像</h2><p>docker pull mongo:latest</p>
+<h2 id="查看已拉取镜像"><a href="#查看已拉取镜像" class="headerlink" title="查看已拉取镜像"></a>查看已拉取镜像</h2><p>docker images</p>
+<h2 id="创建容器"><a href="#创建容器" class="headerlink" title="创建容器"></a>创建容器</h2><p>docker run -itd –name mongo -p 27017:27017 mongo –auth</p>
+<blockquote>
+<p>-p 27017:27017 ：映射容器服务的 27017 端口到宿主机的 27017 端口。外部可以直接通过 宿主机 ip:27017 访问到 mongo 的服务。<br>–auth：需要密码才能访问容器服务。</p>
+</blockquote>
+<h2 id="运行容器"><a href="#运行容器" class="headerlink" title="运行容器"></a>运行容器</h2><p>docker start 容器id</p>
+<blockquote>
+<p>容器id可通过 <code>docker ps -a</code> 查询</p>
+</blockquote>
+<h2 id="连接"><a href="#连接" class="headerlink" title="连接"></a>连接</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">docker exec -it mongo mongo admin</span><br><span class="line">// 创建一个名为 admin，密码为 123456 的用户。</span><br><span class="line">db.createUser(&#123; user:&#x27;admin&#x27;,pwd:&#x27;123456&#x27;,roles:[ &#123; role:&#x27;userAdminAnyDatabase&#x27;, db: &#x27;admin&#x27;&#125;,&quot;readWriteAnyDatabase&quot;]&#125;);</span><br><span class="line">// 尝试使用上面创建的用户信息进行连接。</span><br><span class="line">db.auth(&#x27;admin&#x27;, &#x27;123456&#x27;)</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://bubble93.github.io/2021/06/18/docker%E4%B8%AD%E4%BD%BF%E7%94%A8mongodb/" data-id="clbem5z2r002vtb03b05z7910" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-opencv4-历险记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/06/10/opencv4-%E5%8E%86%E9%99%A9%E8%AE%B0/" class="article-date">
+  <time datetime="2021-06-10T11:56:07.000Z" itemprop="datePublished">2021-06-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/06/10/opencv4-%E5%8E%86%E9%99%A9%E8%AE%B0/">opencv4 历险记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>环境为 ubuntu 18.04</p>
+</blockquote>
+<p>1.E: Could not get lock /var/lib/dpkg/lock - open (11: Resource temporarily unavailable)<br>E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using it?</p>
+<p>描述：执行<code>sudo apt-get update</code>命令后执行<code>sudo apt-get upgrade</code>报错</p>
+<p>解决方案：该问题是由于apt-get命令未执行完毕导致进程被占用，可以使用如下两种方式解决<br>1.<code>ps -A | grep apt</code>查询出apt命令占用进程，执行<code>sudo kill -9 processnumber</code>杀掉该进程<br>2. 等待apt命令执行完毕</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://bubble93.github.io/2021/06/10/opencv4-%E5%8E%86%E9%99%A9%E8%AE%B0/" data-id="clbem5z3q0067tb034i853bz2" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-npm私有组件库" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/06/03/npm%E7%A7%81%E6%9C%89%E7%BB%84%E4%BB%B6%E5%BA%93/" class="article-date">
+  <time datetime="2021-06-03T14:21:31.000Z" itemprop="datePublished">2021-06-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/06/03/npm%E7%A7%81%E6%9C%89%E7%BB%84%E4%BB%B6%E5%BA%93/">npm私有组件库</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>npm install bubble-ui<br>后再工程中 import BubbleUI from ‘bubble-ui’<br>提示 These dependencies were not found: bubble-ui<br>原因是由于打包时未正确设置导出文件名称，与package.json中的main字段不一致导致引入失败</p>
+<p>npm publish 发布时提示403<br>有以下三种可能</p>
+<ol>
+<li>npm源并非官方</li>
+<li>未执行npm login</li>
+<li>发布版本号与当前发布版本号相同</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://bubble93.github.io/2021/06/03/npm%E7%A7%81%E6%9C%89%E7%BB%84%E4%BB%B6%E5%BA%93/" data-id="clbem5z3p0064tb03dok33ie4" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-linux学习笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/05/30/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="article-date">
+  <time datetime="2021-05-30T12:14:40.000Z" itemprop="datePublished">2021-05-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/05/30/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">linux学习笔记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="cal命令报错"><a href="#cal命令报错" class="headerlink" title="cal命令报错"></a>cal命令报错</h2><p>执行cal命令提示command not found，检查发现未安装bsdmainutils。<br>使用apt-get安装bsdmainutils，提示未找到安装包。<br>执行apt-get update更新apt-get后再次执行apt-get install bsdmainutils<br>cal命令执行成功</p>
+<h2 id="bc命令报错"><a href="#bc命令报错" class="headerlink" title="bc命令报错"></a>bc命令报错</h2><p>执行apt-get install bc安装后可以正常执行</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://bubble93.github.io/2021/05/30/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-id="clbem5z3j0059tb0325wch4tc" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-docker常用命令" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/05/30/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="article-date">
+  <time datetime="2021-05-30T10:42:18.000Z" itemprop="datePublished">2021-05-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/05/30/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">docker常用命令</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="查看所有docker容器信息"><a href="#查看所有docker容器信息" class="headerlink" title="查看所有docker容器信息"></a>查看所有docker容器信息</h2><p>docker ps -a</p>
+<h2 id="启动docker容器"><a href="#启动docker容器" class="headerlink" title="启动docker容器"></a>启动docker容器</h2><p>docker start 容器id</p>
+<h2 id="进入docker容器"><a href="#进入docker容器" class="headerlink" title="进入docker容器"></a>进入docker容器</h2><p>docker attach 容器id<br>docker exec 容器id<br>docker exec -it 容器id/name bash // 以bash进入容器</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://bubble93.github.io/2021/05/30/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" data-id="clbem5z2s0031tb03gt5i6mig" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-docker安装笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/05/27/docker%E5%AE%89%E8%A3%85%E7%AC%94%E8%AE%B0/" class="article-date">
+  <time datetime="2021-05-27T14:44:29.000Z" itemprop="datePublished">2021-05-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/05/27/docker%E5%AE%89%E8%A3%85%E7%AC%94%E8%AE%B0/">docker学习历险记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="下载docker一键安装包"><a href="#下载docker一键安装包" class="headerlink" title="下载docker一键安装包"></a>下载docker一键安装包</h2><ul>
+<li>官方安装脚本<br>curl -fsSL <a target="_blank" rel="noopener" href="https://get.docker.com/">https://get.docker.com</a> | bash -s docker –mirror aliyun</li>
+<li>国内安装脚本<br>curl -sSL <a target="_blank" rel="noopener" href="https://get.daocloud.io/docker">https://get.daocloud.io/docker</a> | sh</li>
+</ul>
+<h2 id="运行docker容器"><a href="#运行docker容器" class="headerlink" title="运行docker容器"></a>运行docker容器</h2><p>sudo docker run -i -t ubuntu /bin/bash</p>
+<h2 id="查看主机名称"><a href="#查看主机名称" class="headerlink" title="查看主机名称"></a>查看主机名称</h2><p>hostname</p>
+<h2 id="检查容器hosts文件"><a href="#检查容器hosts文件" class="headerlink" title="检查容器hosts文件"></a>检查容器hosts文件</h2><p>cat /etc/hosts</p>
+<h2 id="检查容器接口"><a href="#检查容器接口" class="headerlink" title="检查容器接口"></a>检查容器接口</h2><p>ip a</p>
+<blockquote>
+<p>此处报错：bash: ip: command not found。<br>因为未安装 iproute2</p>
+</blockquote>
+<h2 id="安装-iproute2"><a href="#安装-iproute2" class="headerlink" title="安装 iproute2"></a>安装 iproute2</h2><p>apt-get install -y iproute2</p>
+<blockquote>
+<p>此处报错：未找到该工具</p>
+</blockquote>
+<h2 id="更新-apt-get"><a href="#更新-apt-get" class="headerlink" title="更新 apt-get"></a>更新 apt-get</h2><p>apt-get update</p>
+<h2 id="再次安装-iproute2"><a href="#再次安装-iproute2" class="headerlink" title="再次安装 iproute2"></a>再次安装 iproute2</h2><p>apt-get install -y iproute2</p>
+<h2 id="再次检查容器接口"><a href="#再次检查容器接口" class="headerlink" title="再次检查容器接口"></a>再次检查容器接口</h2><p>ip a</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://bubble93.github.io/2021/05/27/docker%E5%AE%89%E8%A3%85%E7%AC%94%E8%AE%B0/" data-id="clbem5z2s002ztb03gfyc7c7w" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-前端打印页面" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/03/11/%E5%89%8D%E7%AB%AF%E6%89%93%E5%8D%B0%E9%A1%B5%E9%9D%A2/" class="article-date">
+  <time datetime="2021-03-11T13:06:47.000Z" itemprop="datePublished">2021-03-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/03/11/%E5%89%8D%E7%AB%AF%E6%89%93%E5%8D%B0%E9%A1%B5%E9%9D%A2/">前端打印页面</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>前端打印网页主要依靠<code>window.print()</code>方法触发打印</p>
+<h2 id="设置打印方向-amp-打印纸张大小"><a href="#设置打印方向-amp-打印纸张大小" class="headerlink" title="设置打印方向&amp;打印纸张大小"></a>设置打印方向&amp;打印纸张大小</h2><p>主要靠css中<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/@page">@page</a>的<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/CSS/@page/size">size</a>属性来实现</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">        <span class="keyword">@page</span> &#123;</span></span><br><span class="line"><span class="language-css">            size: landscape;</span></span><br><span class="line"><span class="language-css">        &#125;</span></span><br><span class="line"><span class="language-css">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">&#x27;window.print()&#x27;</span>&gt;</span>横向打印<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">        <span class="keyword">@page</span> &#123;</span></span><br><span class="line"><span class="language-css">            size: portrait;</span></span><br><span class="line"><span class="language-css">        &#125;</span></span><br><span class="line"><span class="language-css">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">&#x27;window.print()&#x27;</span>&gt;</span>竖向打印<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://bubble93.github.io/2021/03/11/%E5%89%8D%E7%AB%AF%E6%89%93%E5%8D%B0%E9%A1%B5%E9%9D%A2/" data-id="clbem5z4d0088tb03eopiaf9v" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/" rel="tag">js</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-移动端适配方案" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/03/11/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D%E6%96%B9%E6%A1%88/" class="article-date">
+  <time datetime="2021-03-11T12:06:15.000Z" itemprop="datePublished">2021-03-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/03/11/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D%E6%96%B9%E6%A1%88/">移动端适配方案</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1-rem方案（此方案产生背景源于之前的浏览器vw的兼容性不好，目前的浏览器对vw支持良好所以该方案基本废弃）"><a href="#1-rem方案（此方案产生背景源于之前的浏览器vw的兼容性不好，目前的浏览器对vw支持良好所以该方案基本废弃）" class="headerlink" title="1.rem方案（此方案产生背景源于之前的浏览器vw的兼容性不好，目前的浏览器对vw支持良好所以该方案基本废弃）"></a>1.rem方案（此方案产生背景源于之前的浏览器vw的兼容性不好，目前的浏览器对vw支持良好所以该方案基本废弃）</h2><p>rem的解决方案主要是依据1rem代表的长度与html根元素的字体大小来实现移动端适配<br>将如下代码加入到工程中，则会依据窗口大小动态设置font-size从而达到适配效果</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">(<span class="keyword">function</span>(<span class="params">doc, win</span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> docEl = doc.<span class="property">documentElement</span>,</span><br><span class="line">        resizeEvt = <span class="string">&#x27;orientationchange&#x27;</span> <span class="keyword">in</span> <span class="variable language_">window</span> ? <span class="string">&#x27;orientationchange&#x27;</span> : <span class="string">&#x27;resize&#x27;</span>,</span><br><span class="line">        recalc = <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">            <span class="keyword">var</span> clientWidth = docEl.<span class="property">clientWidth</span>;</span><br><span class="line">            <span class="keyword">if</span> (!clientWidth) <span class="keyword">return</span>;</span><br><span class="line">            docEl.<span class="property">style</span>.<span class="property">fontSize</span> = <span class="number">20</span> * (clientWidth / <span class="number">320</span>) + <span class="string">&#x27;px&#x27;</span>;</span><br><span class="line">        &#125;;</span><br><span class="line">    <span class="keyword">if</span> (!doc.<span class="property">addEventListener</span>) <span class="keyword">return</span>;</span><br><span class="line">    win.<span class="title function_">addEventListener</span>(resizeEvt, recalc, <span class="literal">false</span>);</span><br><span class="line">    doc.<span class="title function_">addEventListener</span>(<span class="string">&#x27;DOMContentLoaded&#x27;</span>, recalc, <span class="literal">false</span>);</span><br><span class="line">&#125;)(<span class="variable language_">document</span>, <span class="variable language_">window</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-vw方案"><a href="#2-vw方案" class="headerlink" title="2.vw方案"></a>2.vw方案</h2><p>vw的解决方案主要依据1vw代表当前窗口宽度的1%来实现移动端适配效果<br>less（7.2表示设计图尺寸为720px）</p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.pv</span>(<span class="variable">@px</span>) &#123;</span><br><span class="line">    <span class="variable">@r:</span> <span class="built_in">round</span>( <span class="variable">@px</span> / <span class="number">7.2vw</span>, <span class="number">5</span> )</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: .<span class="built_in">pv</span>(<span class="number">10</span>)[<span class="variable">@r</span>]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<p>sass（7.2表示设计图尺寸为720px）</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@function</span> pv(<span class="variable">$px</span>) &#123;</span><br><span class="line">    <span class="keyword">@return</span> <span class="variable">$px</span> / <span class="number">7.2</span> * <span class="number">1vw</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="built_in">pv</span>(<span class="number">10</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-vw-rem方案"><a href="#3-vw-rem方案" class="headerlink" title="3.vw+rem方案"></a>3.vw+rem方案</h2><p><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000019457118">参考地址</a><br>该方案与rem方案逻辑一致，主要区别是不再使用js来动态设置font-size而是使用vw来控制</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$rootSize</span>: <span class="number">16px</span>!default;</span><br><span class="line"><span class="variable">$designWidth</span>: <span class="number">750px</span>!default;</span><br><span class="line"><span class="variable">$designRatio</span>: <span class="number">2</span>!default;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">    实际尺寸 = 设计尺寸 / 设计比例</span></span><br><span class="line"><span class="comment">    实际rem = 实际尺寸 / 根级字体大小</span></span><br><span class="line"><span class="comment">    实际rem = 设计尺寸 / 设计比例 / 根级字体大小</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">@function</span> rem(<span class="variable">$px</span>) &#123;</span><br><span class="line">    <span class="keyword">@return</span> <span class="variable">$px</span> / <span class="variable">$rootSize</span> / <span class="variable">$designRatio</span> * <span class="number">1rem</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@function</span> rootVw() &#123;</span><br><span class="line">    <span class="keyword">@return</span> <span class="variable">$rootSize</span> / <span class="variable">$designWidth</span> * <span class="variable">$designRatio</span> * <span class="number">100vmin</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">html</span>&#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="built_in">rootVw</span>();</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="built_in">rem</span>(<span class="number">15px</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://bubble93.github.io/2021/03/11/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%80%82%E9%85%8D%E6%96%B9%E6%A1%88/" data-id="clbem5z5400b4tb033fae0aap" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/" rel="tag">css</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-尾调用优化" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/02/09/%E5%B0%BE%E8%B0%83%E7%94%A8%E4%BC%98%E5%8C%96/" class="article-date">
+  <time datetime="2021-02-09T14:42:56.000Z" itemprop="datePublished">2021-02-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/02/09/%E5%B0%BE%E8%B0%83%E7%94%A8%E4%BC%98%E5%8C%96/">尾调用优化</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><p>尾调用<br>在某个函数的最后一步调用其他函数，被称为尾调用。</p>
+</li>
+<li><p>尾调用优化<br>指的是在函数内部的函数不再使用上一个函数中的变量，<br>如果有必须要使用的变量则改为参数的形式传入</p>
+</li>
+</ul>
+<ul>
+<li><p>尾调用优化逻辑为: 一个函数调用另一个函数后，如果在其内部引用了上一个函数的变量，则在该函数未执行完毕时，会保留上一个函数中的变量，从而占据了内存。</p>
+</li>
+<li><p>用途: 进行尾调用优化后，就可以做到执行时调用帧只有一项，大大节省内存</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://bubble93.github.io/2021/02/09/%E5%B0%BE%E8%B0%83%E7%94%A8%E4%BC%98%E5%8C%96/" data-id="clbem5z4l0090tb03g16z3y3j" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/es6/" rel="tag">es6</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/3/">Next &amp;raquo;</a>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/MAC/">MAC</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/git/">git</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/ide/">ide</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/markdown/">markdown</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/react/">react</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%88%86%E7%B1%BB1/">分类1</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/">单元测试</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%99/">博客建站</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AE%A2%E6%88%B7%E7%AB%AF/">客户端</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B0%8F%E7%9B%AE%E6%A0%87/">小目标</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/">开发工具</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BF%AB%E6%8D%B7%E9%94%AE/">快捷键</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%8E%AF%E5%A2%83/">服务器环境</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/">版本管理工具</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%94%9F%E4%BA%A7%E5%8A%9B%E6%8F%90%E5%8D%87/">生产力提升</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A7%84%E8%8C%83/">规范</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9D%A2%E8%AF%95/">面试</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/before/" rel="tag">::before</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/first-child/" rel="tag">:first-child</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/last-child/" rel="tag">:last-child</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS%E4%B8%96%E7%95%8C/" rel="tag">CSS世界</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ES6/" rel="tag">ES6</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ESlint/" rel="tag">ESlint</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github/" rel="tag">Github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JS/" rel="tag">JS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux%E5%91%BD%E4%BB%A4/" rel="tag">Linux命令</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MAC-error/" rel="tag">MAC-error</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Taro/" rel="tag">Taro</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VUE/" rel="tag">VUE</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/allow-root/" rel="tag">allow-root</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/aws/" rel="tag">aws</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bootstrap/" rel="tag">bootstrap</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/chrome/" rel="tag">chrome</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/commit/" rel="tag">commit</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dva/" rel="tag">dva</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/electorn/" rel="tag">electorn</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/error/" rel="tag">error</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/es6/" rel="tag">es6</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/" rel="tag">github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gulp/" rel="tag">gulp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/height/" rel="tag">height</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/" rel="tag">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/http/" rel="tag">http</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ie6/" rel="tag">ie6</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/install/" rel="tag">install</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jest/" rel="tag">jest</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/" rel="tag">js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux%E5%91%BD%E4%BB%A4/" rel="tag">linux命令</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/" rel="tag">markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/" rel="tag">nodejs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/npm/" rel="tag">npm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/react/" rel="tag">react</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/redux/" rel="tag">redux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/save/" rel="tag">save</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/scss/" rel="tag">scss</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/stash/" rel="tag">stash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/taro/" rel="tag">taro</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/this/" rel="tag">this</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/uglify/" rel="tag">uglify</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unsafe-perm-true/" rel="tag">unsafe-perm=true</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vscode/" rel="tag">vscode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/" rel="tag">vue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/webpack/" rel="tag">webpack</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/width/" rel="tag">width</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8/" rel="tag">伪类选择器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%85%BC%E5%AE%B9%E6%80%A7/" rel="tag">兼容性</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/" rel="tag">前端基础</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95/" rel="tag">前端面试</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" rel="tag">微信小程序</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/" rel="tag">快捷键</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%89%93%E5%8C%85%E5%B7%A5%E5%85%B7/" rel="tag">打包工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8A%80%E5%B7%A7/" rel="tag">技巧</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF%E6%A0%88/" rel="tag">技术栈</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E6%A0%A1%E9%AA%8C/" rel="tag">数据校验</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8/" rel="tag">类选择器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B7%A8%E5%9F%9F/" rel="tag">跨域</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BF%9B%E9%98%B6/" rel="tag">进阶</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%80%9A%E4%BF%A1/" rel="tag">通信</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%A6%96%E9%80%89%E9%A1%B9/" rel="tag">首选项</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/before/" style="font-size: 10px;">::before</a> <a href="/tags/first-child/" style="font-size: 10px;">:first-child</a> <a href="/tags/last-child/" style="font-size: 10px;">:last-child</a> <a href="/tags/CSS%E4%B8%96%E7%95%8C/" style="font-size: 10px;">CSS世界</a> <a href="/tags/ES6/" style="font-size: 10px;">ES6</a> <a href="/tags/ESlint/" style="font-size: 10px;">ESlint</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/Hexo/" style="font-size: 12.86px;">Hexo</a> <a href="/tags/JS/" style="font-size: 12.86px;">JS</a> <a href="/tags/Linux%E5%91%BD%E4%BB%A4/" style="font-size: 10px;">Linux命令</a> <a href="/tags/MAC-error/" style="font-size: 10px;">MAC-error</a> <a href="/tags/Taro/" style="font-size: 11.43px;">Taro</a> <a href="/tags/VUE/" style="font-size: 11.43px;">VUE</a> <a href="/tags/allow-root/" style="font-size: 10px;">allow-root</a> <a href="/tags/aws/" style="font-size: 10px;">aws</a> <a href="/tags/bootstrap/" style="font-size: 11.43px;">bootstrap</a> <a href="/tags/chrome/" style="font-size: 10px;">chrome</a> <a href="/tags/commit/" style="font-size: 10px;">commit</a> <a href="/tags/css/" style="font-size: 18.57px;">css</a> <a href="/tags/dva/" style="font-size: 10px;">dva</a> <a href="/tags/electorn/" style="font-size: 10px;">electorn</a> <a href="/tags/error/" style="font-size: 12.86px;">error</a> <a href="/tags/es6/" style="font-size: 10px;">es6</a> <a href="/tags/git/" style="font-size: 17.14px;">git</a> <a href="/tags/github/" style="font-size: 11.43px;">github</a> <a href="/tags/gulp/" style="font-size: 14.29px;">gulp</a> <a href="/tags/height/" style="font-size: 10px;">height</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/http/" style="font-size: 11.43px;">http</a> <a href="/tags/ie6/" style="font-size: 10px;">ie6</a> <a href="/tags/install/" style="font-size: 10px;">install</a> <a href="/tags/jest/" style="font-size: 10px;">jest</a> <a href="/tags/js/" style="font-size: 20px;">js</a> <a href="/tags/linux%E5%91%BD%E4%BB%A4/" style="font-size: 10px;">linux命令</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/npm/" style="font-size: 11.43px;">npm</a> <a href="/tags/react/" style="font-size: 14.29px;">react</a> <a href="/tags/redux/" style="font-size: 10px;">redux</a> <a href="/tags/save/" style="font-size: 10px;">save</a> <a href="/tags/scss/" style="font-size: 10px;">scss</a> <a href="/tags/stash/" style="font-size: 10px;">stash</a> <a href="/tags/taro/" style="font-size: 12.86px;">taro</a> <a href="/tags/this/" style="font-size: 10px;">this</a> <a href="/tags/uglify/" style="font-size: 10px;">uglify</a> <a href="/tags/unsafe-perm-true/" style="font-size: 10px;">unsafe-perm=true</a> <a href="/tags/vscode/" style="font-size: 15.71px;">vscode</a> <a href="/tags/vue/" style="font-size: 10px;">vue</a> <a href="/tags/webpack/" style="font-size: 12.86px;">webpack</a> <a href="/tags/width/" style="font-size: 10px;">width</a> <a href="/tags/%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8/" style="font-size: 10px;">伪类选择器</a> <a href="/tags/%E5%85%BC%E5%AE%B9%E6%80%A7/" style="font-size: 10px;">兼容性</a> <a href="/tags/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/" style="font-size: 10px;">前端基础</a> <a href="/tags/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95/" style="font-size: 11.43px;">前端面试</a> <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" style="font-size: 11.43px;">微信小程序</a> <a href="/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/" style="font-size: 10px;">快捷键</a> <a href="/tags/%E6%89%93%E5%8C%85%E5%B7%A5%E5%85%B7/" style="font-size: 10px;">打包工具</a> <a href="/tags/%E6%8A%80%E5%B7%A7/" style="font-size: 10px;">技巧</a> <a href="/tags/%E6%8A%80%E6%9C%AF%E6%A0%88/" style="font-size: 10px;">技术栈</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E6%A0%A1%E9%AA%8C/" style="font-size: 10px;">数据校验</a> <a href="/tags/%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8/" style="font-size: 10px;">类选择器</a> <a href="/tags/%E8%B7%A8%E5%9F%9F/" style="font-size: 10px;">跨域</a> <a href="/tags/%E8%BF%9B%E9%98%B6/" style="font-size: 10px;">进阶</a> <a href="/tags/%E9%80%9A%E4%BF%A1/" style="font-size: 10px;">通信</a> <a href="/tags/%E9%A6%96%E9%80%89%E9%A1%B9/" style="font-size: 10px;">首选项</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">August 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">June 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">May 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">June 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">January 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/12/08/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2022/08/11/react%E9%9D%A2%E8%AF%95%E9%A2%98/">react面试题</a>
+          </li>
+        
+          <li>
+            <a href="/2022/08/05/flex-1%E8%AF%A6%E8%A7%A3/">flex: 1详解</a>
+          </li>
+        
+          <li>
+            <a href="/2022/06/30/npm%E5%91%BD%E4%BB%A4/">npm命令</a>
+          </li>
+        
+          <li>
+            <a href="/2022/06/30/react%E7%9B%B8%E5%85%B3%E6%8A%A5%E9%94%99/">react相关报错</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2022 bubble<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
