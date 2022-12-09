@@ -64,6 +64,96 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-创建对象和原型链" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/07/29/%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE/" class="article-date">
+  <time datetime="2019-07-29T11:26:01.000Z" itemprop="datePublished">2019-07-29</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/07/29/%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE/">创建对象和原型链</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="原型，构造函数，实例三者之间关系"><a href="#原型，构造函数，实例三者之间关系" class="headerlink" title="原型，构造函数，实例三者之间关系"></a>原型，构造函数，实例三者之间关系</h2><p><img src="../images/%E5%8E%9F%E5%9E%8B%E5%AE%9E%E4%BE%8B%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0.png" alt="原型，构造函数，实例三者之间关系"></p>
+<blockquote>
+<p>原型中的constructor属性指向了构造函数<br>构造函数中的prototype和实例中的_proto_属性指向了原型</p>
+</blockquote>
+<h2 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h2><blockquote>
+<p><strong>原型链的基本原理</strong>：任何一个实例，通过原型链，找到它上面的原型，该原型对象中的方法和属性，可以被所有的原型实例共享。</p>
+</blockquote>
+<blockquote>
+<p>Object是原型链的顶端。</p>
+</blockquote>
+<blockquote>
+<p>原型可以起到继承的作用。原型里的方法都可以被不同的实例共享：</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//给Foo的原型添加 say 函数</span><br><span class="line">Foo.prototype.say = function () &#123;</span><br><span class="line">    console.log(&#x27;&#x27;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>原型链的关键</strong>：在访问一个实例的时候，如果实例本身没找到此方法或属性，就往原型上找。如果还是找不到，继续往上一级的原型上找。</p>
+</blockquote>
+<h2 id="instanceof的原理"><a href="#instanceof的原理" class="headerlink" title="instanceof的原理"></a><code>instanceof</code>的原理</h2><blockquote>
+<p><code>instanceof</code>的原理：判断实例对象的<code>__proto__</code>属性，和构造函数的prototype属性，是否为同一个引用（是否指向同一个地址）。<br><strong>注意1</strong>：虽然说，实例是由构造函数 new 出来的，但是实例的<code>__proto__</code>属性引用的是构造函数的prototype。也就是说，实例的<code>__proto__</code>属性与构造函数本身无关。<br><strong>注意2</strong>：在原型链上，原型的上面可能还会有原型，以此类推往上走，继续找<code>__proto__</code>属性。这条链上如果能找到， <code>instanceof</code> 的返回结果也是 true。</p>
+</blockquote>
+<blockquote>
+<p>比如说：<br><code>foo instance of Foo</code>的结果为true，因为<code>foo.__proto__===Foo.prototype</code>为true。<br><code>foo instance of Objecet</code>的结果也为true，因为<code>Foo.prototype.__proto__ === Object.prototype</code>为true。</p>
+</blockquote>
+<ul>
+<li>但我们不能轻易的说：foo 一定是 由Object创建的实例。这句话是错误的。我们来看下一个问题就明白了。</li>
+</ul>
+<blockquote>
+<p>分析一个问题<br>问题：已知A继承了B，B继承了C。怎么判断 a 是由A直接生成的实例，还是B直接生成的实例呢？还是C直接生成的实例呢？</p>
+<blockquote>
+<ul>
+<li>分析：这就要用到原型的constructor属性了。</li>
+<li><code>foo.__proto__.constructor === Foo</code>的结果为true，但是 <code>foo.__proto__.constructor === Object</code>的结果为false。<br>所以，用 consturctor判断就比用 instanceof判断，更为严谨。</li>
+</ul>
+</blockquote>
+</blockquote>
+<h2 id="new-运算符"><a href="#new-运算符" class="headerlink" title="new 运算符"></a>new 运算符</h2><blockquote>
+<p>当new Foo()时发生了什么：</p>
+</blockquote>
+<ul>
+<li><p>（1）创建一个新的空对象实例。</p>
+</li>
+<li><p>（2）将此空对象的隐式原型指向其构造函数的显示原型。</p>
+</li>
+<li><p>（3）执行构造函数（传入相应的参数，如果没有参数就不用传），同时 this 指向这个新实例。</p>
+</li>
+<li><p>（4）如果返回值是一个新对象，那么直接返回该对象；如果无返回值或者返回一个非对象值，那么就将步骤（1）创建的对象返回。</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://bubble93.github.io/2019/07/29/%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE/" data-id="clbem5z49007ytb034ehaeel6" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/" rel="tag">js</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-HTTP协议" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/07/29/HTTP%E5%8D%8F%E8%AE%AE/" class="article-date">
@@ -699,52 +789,6 @@
 
 
   
-    <article id="post-bootstrap下拉框在ie中显示异常解决方案" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/07/09/bootstrap%E4%B8%8B%E6%8B%89%E6%A1%86%E5%9C%A8ie%E4%B8%AD%E6%98%BE%E7%A4%BA%E5%BC%82%E5%B8%B8%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" class="article-date">
-  <time datetime="2019-07-09T01:23:13.000Z" itemprop="datePublished">2019-07-09</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/09/bootstrap%E4%B8%8B%E6%8B%89%E6%A1%86%E5%9C%A8ie%E4%B8%AD%E6%98%BE%E7%A4%BA%E5%BC%82%E5%B8%B8%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">bootstrap下拉框在ie中显示异常解决方案</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>/<em>很关键：将默认的select选择框样式清除</em>/<br>appearance:none;<br>-moz-appearance:none;<br>-webkit-appearance:none;</p>
-<p>/<em>清除ie的默认选择框样式清除，隐藏下拉箭头</em>/<br>select::-ms-expand { display: none; }</p>
-<hr>
-<p>作者：ZNYSYS520<br>来源：CSDN<br>原文：<a target="_blank" rel="noopener" href="https://blog.csdn.net/ZNYSYS520/article/details/77533813">https://blog.csdn.net/ZNYSYS520/article/details/77533813</a><br>版权声明：本文为博主原创文章，转载请附上博文链接！</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://bubble93.github.io/2019/07/09/bootstrap%E4%B8%8B%E6%8B%89%E6%A1%86%E5%9C%A8ie%E4%B8%AD%E6%98%BE%E7%A4%BA%E5%BC%82%E5%B8%B8%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" data-id="clbem5z2d001dtb03acmj2aq6" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bootstrap/" rel="tag">bootstrap</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 
   <nav id="page-nav">
@@ -770,7 +814,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/before/" rel="tag">::before</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/first-child/" rel="tag">:first-child</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/last-child/" rel="tag">:last-child</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS%E4%B8%96%E7%95%8C/" rel="tag">CSS世界</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ES6/" rel="tag">ES6</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ESlint/" rel="tag">ESlint</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github/" rel="tag">Github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JS/" rel="tag">JS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux%E5%91%BD%E4%BB%A4/" rel="tag">Linux命令</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MAC-error/" rel="tag">MAC-error</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Taro/" rel="tag">Taro</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VUE/" rel="tag">VUE</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/allow-root/" rel="tag">allow-root</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/aws/" rel="tag">aws</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bootstrap/" rel="tag">bootstrap</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/chrome/" rel="tag">chrome</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/commit/" rel="tag">commit</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dva/" rel="tag">dva</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/electorn/" rel="tag">electorn</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/error/" rel="tag">error</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/es6/" rel="tag">es6</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/" rel="tag">github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gulp/" rel="tag">gulp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/height/" rel="tag">height</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/" rel="tag">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/http/" rel="tag">http</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ie6/" rel="tag">ie6</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/install/" rel="tag">install</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jest/" rel="tag">jest</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/" rel="tag">js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux%E5%91%BD%E4%BB%A4/" rel="tag">linux命令</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/" rel="tag">markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/" rel="tag">nodejs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/npm/" rel="tag">npm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/react/" rel="tag">react</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/redux/" rel="tag">redux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/save/" rel="tag">save</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/scss/" rel="tag">scss</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/stash/" rel="tag">stash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/taro/" rel="tag">taro</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/this/" rel="tag">this</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/uglify/" rel="tag">uglify</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unsafe-perm-true/" rel="tag">unsafe-perm=true</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vscode/" rel="tag">vscode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/" rel="tag">vue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/webpack/" rel="tag">webpack</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/width/" rel="tag">width</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8/" rel="tag">伪类选择器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%85%BC%E5%AE%B9%E6%80%A7/" rel="tag">兼容性</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/" rel="tag">前端基础</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95/" rel="tag">前端面试</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" rel="tag">微信小程序</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/" rel="tag">快捷键</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%89%93%E5%8C%85%E5%B7%A5%E5%85%B7/" rel="tag">打包工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8A%80%E5%B7%A7/" rel="tag">技巧</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF%E6%A0%88/" rel="tag">技术栈</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E6%A0%A1%E9%AA%8C/" rel="tag">数据校验</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8/" rel="tag">类选择器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B7%A8%E5%9F%9F/" rel="tag">跨域</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BF%9B%E9%98%B6/" rel="tag">进阶</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%80%9A%E4%BF%A1/" rel="tag">通信</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%A6%96%E9%80%89%E9%A1%B9/" rel="tag">首选项</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/before/" rel="tag">::before</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/first-child/" rel="tag">:first-child</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/last-child/" rel="tag">:last-child</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS%E4%B8%96%E7%95%8C/" rel="tag">CSS世界</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ES6/" rel="tag">ES6</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ESlint/" rel="tag">ESlint</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github/" rel="tag">Github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JS/" rel="tag">JS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux%E5%91%BD%E4%BB%A4/" rel="tag">Linux命令</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MAC-error/" rel="tag">MAC-error</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Taro/" rel="tag">Taro</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VUE/" rel="tag">VUE</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/allow-root/" rel="tag">allow-root</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/aws/" rel="tag">aws</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bootstrap/" rel="tag">bootstrap</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/chrome/" rel="tag">chrome</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/commit/" rel="tag">commit</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dva/" rel="tag">dva</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/electorn/" rel="tag">electorn</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/error/" rel="tag">error</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/es6/" rel="tag">es6</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/" rel="tag">github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gulp/" rel="tag">gulp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/height/" rel="tag">height</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/" rel="tag">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/http/" rel="tag">http</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/https/" rel="tag">https</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ie6/" rel="tag">ie6</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/install/" rel="tag">install</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jest/" rel="tag">jest</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/" rel="tag">js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux%E5%91%BD%E4%BB%A4/" rel="tag">linux命令</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/" rel="tag">markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nginx/" rel="tag">nginx</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/" rel="tag">nodejs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/npm/" rel="tag">npm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/react/" rel="tag">react</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/redux/" rel="tag">redux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/save/" rel="tag">save</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/scss/" rel="tag">scss</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/stash/" rel="tag">stash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/taro/" rel="tag">taro</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/this/" rel="tag">this</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/uglify/" rel="tag">uglify</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unsafe-perm-true/" rel="tag">unsafe-perm=true</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vscode/" rel="tag">vscode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/" rel="tag">vue</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/webpack/" rel="tag">webpack</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/width/" rel="tag">width</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8/" rel="tag">伪类选择器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%85%BC%E5%AE%B9%E6%80%A7/" rel="tag">兼容性</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/" rel="tag">前端基础</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95/" rel="tag">前端面试</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" rel="tag">微信小程序</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/" rel="tag">快捷键</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%89%93%E5%8C%85%E5%B7%A5%E5%85%B7/" rel="tag">打包工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8A%80%E5%B7%A7/" rel="tag">技巧</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF%E6%A0%88/" rel="tag">技术栈</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E6%A0%A1%E9%AA%8C/" rel="tag">数据校验</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8/" rel="tag">类选择器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B7%A8%E5%9F%9F/" rel="tag">跨域</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BF%9B%E9%98%B6/" rel="tag">进阶</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%80%9A%E4%BF%A1/" rel="tag">通信</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%A6%96%E9%80%89%E9%A1%B9/" rel="tag">首选项</a></li></ul>
     </div>
   </div>
 
@@ -780,7 +824,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/before/" style="font-size: 10px;">::before</a> <a href="/tags/first-child/" style="font-size: 10px;">:first-child</a> <a href="/tags/last-child/" style="font-size: 10px;">:last-child</a> <a href="/tags/CSS%E4%B8%96%E7%95%8C/" style="font-size: 10px;">CSS世界</a> <a href="/tags/ES6/" style="font-size: 10px;">ES6</a> <a href="/tags/ESlint/" style="font-size: 10px;">ESlint</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/Hexo/" style="font-size: 12.86px;">Hexo</a> <a href="/tags/JS/" style="font-size: 12.86px;">JS</a> <a href="/tags/Linux%E5%91%BD%E4%BB%A4/" style="font-size: 10px;">Linux命令</a> <a href="/tags/MAC-error/" style="font-size: 10px;">MAC-error</a> <a href="/tags/Taro/" style="font-size: 11.43px;">Taro</a> <a href="/tags/VUE/" style="font-size: 11.43px;">VUE</a> <a href="/tags/allow-root/" style="font-size: 10px;">allow-root</a> <a href="/tags/aws/" style="font-size: 10px;">aws</a> <a href="/tags/bootstrap/" style="font-size: 11.43px;">bootstrap</a> <a href="/tags/chrome/" style="font-size: 10px;">chrome</a> <a href="/tags/commit/" style="font-size: 10px;">commit</a> <a href="/tags/css/" style="font-size: 18.57px;">css</a> <a href="/tags/dva/" style="font-size: 10px;">dva</a> <a href="/tags/electorn/" style="font-size: 10px;">electorn</a> <a href="/tags/error/" style="font-size: 12.86px;">error</a> <a href="/tags/es6/" style="font-size: 10px;">es6</a> <a href="/tags/git/" style="font-size: 17.14px;">git</a> <a href="/tags/github/" style="font-size: 11.43px;">github</a> <a href="/tags/gulp/" style="font-size: 14.29px;">gulp</a> <a href="/tags/height/" style="font-size: 10px;">height</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/http/" style="font-size: 11.43px;">http</a> <a href="/tags/ie6/" style="font-size: 10px;">ie6</a> <a href="/tags/install/" style="font-size: 10px;">install</a> <a href="/tags/jest/" style="font-size: 10px;">jest</a> <a href="/tags/js/" style="font-size: 20px;">js</a> <a href="/tags/linux%E5%91%BD%E4%BB%A4/" style="font-size: 10px;">linux命令</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/npm/" style="font-size: 11.43px;">npm</a> <a href="/tags/react/" style="font-size: 14.29px;">react</a> <a href="/tags/redux/" style="font-size: 10px;">redux</a> <a href="/tags/save/" style="font-size: 10px;">save</a> <a href="/tags/scss/" style="font-size: 10px;">scss</a> <a href="/tags/stash/" style="font-size: 10px;">stash</a> <a href="/tags/taro/" style="font-size: 12.86px;">taro</a> <a href="/tags/this/" style="font-size: 10px;">this</a> <a href="/tags/uglify/" style="font-size: 10px;">uglify</a> <a href="/tags/unsafe-perm-true/" style="font-size: 10px;">unsafe-perm=true</a> <a href="/tags/vscode/" style="font-size: 15.71px;">vscode</a> <a href="/tags/vue/" style="font-size: 10px;">vue</a> <a href="/tags/webpack/" style="font-size: 12.86px;">webpack</a> <a href="/tags/width/" style="font-size: 10px;">width</a> <a href="/tags/%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8/" style="font-size: 10px;">伪类选择器</a> <a href="/tags/%E5%85%BC%E5%AE%B9%E6%80%A7/" style="font-size: 10px;">兼容性</a> <a href="/tags/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/" style="font-size: 10px;">前端基础</a> <a href="/tags/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95/" style="font-size: 11.43px;">前端面试</a> <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" style="font-size: 11.43px;">微信小程序</a> <a href="/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/" style="font-size: 10px;">快捷键</a> <a href="/tags/%E6%89%93%E5%8C%85%E5%B7%A5%E5%85%B7/" style="font-size: 10px;">打包工具</a> <a href="/tags/%E6%8A%80%E5%B7%A7/" style="font-size: 10px;">技巧</a> <a href="/tags/%E6%8A%80%E6%9C%AF%E6%A0%88/" style="font-size: 10px;">技术栈</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E6%A0%A1%E9%AA%8C/" style="font-size: 10px;">数据校验</a> <a href="/tags/%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8/" style="font-size: 10px;">类选择器</a> <a href="/tags/%E8%B7%A8%E5%9F%9F/" style="font-size: 10px;">跨域</a> <a href="/tags/%E8%BF%9B%E9%98%B6/" style="font-size: 10px;">进阶</a> <a href="/tags/%E9%80%9A%E4%BF%A1/" style="font-size: 10px;">通信</a> <a href="/tags/%E9%A6%96%E9%80%89%E9%A1%B9/" style="font-size: 10px;">首选项</a>
+      <a href="/tags/before/" style="font-size: 10px;">::before</a> <a href="/tags/first-child/" style="font-size: 10px;">:first-child</a> <a href="/tags/last-child/" style="font-size: 10px;">:last-child</a> <a href="/tags/CSS%E4%B8%96%E7%95%8C/" style="font-size: 10px;">CSS世界</a> <a href="/tags/ES6/" style="font-size: 10px;">ES6</a> <a href="/tags/ESlint/" style="font-size: 10px;">ESlint</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/Hexo/" style="font-size: 12.86px;">Hexo</a> <a href="/tags/JS/" style="font-size: 12.86px;">JS</a> <a href="/tags/Linux%E5%91%BD%E4%BB%A4/" style="font-size: 10px;">Linux命令</a> <a href="/tags/MAC-error/" style="font-size: 10px;">MAC-error</a> <a href="/tags/Taro/" style="font-size: 11.43px;">Taro</a> <a href="/tags/VUE/" style="font-size: 11.43px;">VUE</a> <a href="/tags/allow-root/" style="font-size: 10px;">allow-root</a> <a href="/tags/aws/" style="font-size: 10px;">aws</a> <a href="/tags/bootstrap/" style="font-size: 11.43px;">bootstrap</a> <a href="/tags/chrome/" style="font-size: 10px;">chrome</a> <a href="/tags/commit/" style="font-size: 10px;">commit</a> <a href="/tags/css/" style="font-size: 18.57px;">css</a> <a href="/tags/dva/" style="font-size: 10px;">dva</a> <a href="/tags/electorn/" style="font-size: 10px;">electorn</a> <a href="/tags/error/" style="font-size: 12.86px;">error</a> <a href="/tags/es6/" style="font-size: 10px;">es6</a> <a href="/tags/git/" style="font-size: 17.14px;">git</a> <a href="/tags/github/" style="font-size: 11.43px;">github</a> <a href="/tags/gulp/" style="font-size: 14.29px;">gulp</a> <a href="/tags/height/" style="font-size: 10px;">height</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/http/" style="font-size: 11.43px;">http</a> <a href="/tags/https/" style="font-size: 10px;">https</a> <a href="/tags/ie6/" style="font-size: 10px;">ie6</a> <a href="/tags/install/" style="font-size: 10px;">install</a> <a href="/tags/jest/" style="font-size: 10px;">jest</a> <a href="/tags/js/" style="font-size: 20px;">js</a> <a href="/tags/linux%E5%91%BD%E4%BB%A4/" style="font-size: 10px;">linux命令</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/nginx/" style="font-size: 10px;">nginx</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/npm/" style="font-size: 11.43px;">npm</a> <a href="/tags/react/" style="font-size: 14.29px;">react</a> <a href="/tags/redux/" style="font-size: 10px;">redux</a> <a href="/tags/save/" style="font-size: 10px;">save</a> <a href="/tags/scss/" style="font-size: 10px;">scss</a> <a href="/tags/stash/" style="font-size: 10px;">stash</a> <a href="/tags/taro/" style="font-size: 12.86px;">taro</a> <a href="/tags/this/" style="font-size: 10px;">this</a> <a href="/tags/uglify/" style="font-size: 10px;">uglify</a> <a href="/tags/unsafe-perm-true/" style="font-size: 10px;">unsafe-perm=true</a> <a href="/tags/vscode/" style="font-size: 15.71px;">vscode</a> <a href="/tags/vue/" style="font-size: 10px;">vue</a> <a href="/tags/webpack/" style="font-size: 12.86px;">webpack</a> <a href="/tags/width/" style="font-size: 10px;">width</a> <a href="/tags/%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8/" style="font-size: 10px;">伪类选择器</a> <a href="/tags/%E5%85%BC%E5%AE%B9%E6%80%A7/" style="font-size: 10px;">兼容性</a> <a href="/tags/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/" style="font-size: 10px;">前端基础</a> <a href="/tags/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95/" style="font-size: 11.43px;">前端面试</a> <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" style="font-size: 11.43px;">微信小程序</a> <a href="/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/" style="font-size: 10px;">快捷键</a> <a href="/tags/%E6%89%93%E5%8C%85%E5%B7%A5%E5%85%B7/" style="font-size: 10px;">打包工具</a> <a href="/tags/%E6%8A%80%E5%B7%A7/" style="font-size: 10px;">技巧</a> <a href="/tags/%E6%8A%80%E6%9C%AF%E6%A0%88/" style="font-size: 10px;">技术栈</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E6%A0%A1%E9%AA%8C/" style="font-size: 10px;">数据校验</a> <a href="/tags/%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8/" style="font-size: 10px;">类选择器</a> <a href="/tags/%E8%B7%A8%E5%9F%9F/" style="font-size: 10px;">跨域</a> <a href="/tags/%E8%BF%9B%E9%98%B6/" style="font-size: 10px;">进阶</a> <a href="/tags/%E9%80%9A%E4%BF%A1/" style="font-size: 10px;">通信</a> <a href="/tags/%E9%A6%96%E9%80%89%E9%A1%B9/" style="font-size: 10px;">首选项</a>
     </div>
   </div>
 
@@ -806,6 +850,10 @@
           </li>
         
           <li>
+            <a href="/2022/12/09/%E7%BD%91%E7%AB%99%E5%BC%80%E5%90%AFhttps/">网站开启https</a>
+          </li>
+        
+          <li>
             <a href="/2022/08/11/react%E9%9D%A2%E8%AF%95%E9%A2%98/">react面试题</a>
           </li>
         
@@ -815,10 +863,6 @@
         
           <li>
             <a href="/2022/06/30/npm%E5%91%BD%E4%BB%A4/">npm命令</a>
-          </li>
-        
-          <li>
-            <a href="/2022/06/30/react%E7%9B%B8%E5%85%B3%E6%8A%A5%E9%94%99/">react相关报错</a>
           </li>
         
       </ul>
